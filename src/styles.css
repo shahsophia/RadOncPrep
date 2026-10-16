@@ -59,6 +59,7 @@
   --svc-gyn:#B93E94;
   --svc-cns:#1C9A61;
   --svc-gi:#D48A15;
+  --svc-palliative:#C2563A;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
@@ -105,6 +106,7 @@
     --svc-gyn:#E17AC4;
     --svc-cns:#4FD397;
     --svc-gi:#F0B75A;
+    --svc-palliative:#F08A6C;
   }
 }
 :root[data-theme="dark"]{
@@ -151,6 +153,7 @@
   --svc-gyn:#E17AC4;
   --svc-cns:#4FD397;
   --svc-gi:#F0B75A;
+  --svc-palliative:#F08A6C;
 }
 
 *{box-sizing:border-box;}
@@ -2186,6 +2189,13 @@ main:focus{outline:none;}
 @media (max-width:1200px){ .sec-grid{grid-template-columns:repeat(3,minmax(0,1fr));} }
 @media (max-width:900px){ .sec-grid{grid-template-columns:repeat(2,minmax(0,1fr));} }
 @media (max-width:560px){ .sec-grid{grid-template-columns:1fr;} }
+/* With eight sites the structure card is the ninth tile, so where the grid has
+   4 or 2 columns it becomes a full-width strip instead of an orphan. */
+@media (min-width:1201px), (min-width:561px) and (max-width:900px){
+  .structure-card{grid-column:1/-1;}
+  .structure-card .structure-list{flex-direction:row;flex-wrap:wrap;gap:0 28px;}
+  .structure-card .structure-list li{border-bottom:0;padding:4px 0;}
+}
 
 .sc-topics span + span::before,.mod-topics span + span::before{content:none;}
 .sc-topics span:not(:last-child)::after,.mod-topics span:not(:last-child)::after{content:"·";margin:0 2px 0 7px;color:var(--ink-faint);font-weight:400;}

@@ -47,5 +47,13 @@
     "icon": "◐",
     "color": "var(--svc-gi)",
     "blurb": "Esophageal, pancreatic, rectal & anal"
+  },
+  {
+    "id": "palliative",
+    "name": "Palliative & Benign",
+    "icon": "◎",
+    "color": "var(--svc-palliative)",
+    "blurb": "Bone metastases, emergencies, benign disease, and other sites",
+    "kicker": "Across sites"
   }
 ]

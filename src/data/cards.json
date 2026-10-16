@@ -27,6 +27,10 @@
   "image": "images/cards/gi.jpg",
   "credit": "Pancreatic-protocol CT. Louis M et al., Cureus 2025 (PMC11981547), CC BY 4.0."
  },
+ "palliative": {
+  "image": "images/cards/palliative.jpg",
+  "credit": "Sagittal T2 MRI of metastatic spinal cord compression. Kuah T et al., Cancers 2022 (PMC9265325), CC BY 4.0."
+ },
  "rad-onc-101": {
   "image": "images/cards/rad-onc-101.jpg",
   "credit": "External beam radiotherapy. National Cancer Institute (Wikimedia Commons), public domain."

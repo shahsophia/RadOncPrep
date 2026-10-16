@@ -1305,6 +1305,251 @@
      ]
     }
    }
+  },
+  "palliative": {
+   "title": "Palliative & Benign",
+   "summary": "The rest of the radiation service: palliative radiation for bone metastases and other symptoms, oncologic emergencies, benign conditions from osteoarthritis to Dupuytren disease, radiosurgery for trigeminal neuralgia and AVMs, and a short tour of lymphoma, skin, sarcoma, and other sites.",
+   "mentalModel": [
+    {
+     "label": "Palliative",
+     "steps": [
+      "Symptom and goal",
+      "Prognosis",
+      "Stable and cord safe?",
+      "Shortest course that reaches the goal"
+     ]
+    },
+    {
+     "label": "Emergency",
+     "steps": [
+      "Steroids, imaging, or a proceduralist first",
+      "Surgery or a stent if needed",
+      "Urgent radiation"
+     ]
+    },
+    {
+     "label": "Benign",
+     "steps": [
+      "Conservative care failed",
+      "Right stage of disease",
+      "Lowest effective dose",
+      "Consent about cancer risk"
+     ]
+    }
+   ],
+   "centralQuestion": "What is the goal, how long is this patient likely to live, and what is the least burdensome treatment that reaches that goal?",
+   "card": "Bone metastases, cord compression, benign disease, radiosurgery for trigeminal neuralgia and AVMs, and the sites without their own module.",
+   "topics": [
+    "8 Gy vs 20 Gy vs 30 Gy",
+    "Cord Compression",
+    "SINS and Mirels",
+    "Benign Disease",
+    "Trigeminal Neuralgia and AVMs"
+   ],
+   "objectives": [
+    "Explain how the goal, prognosis, and stability replace stage in palliative decisions",
+    "Choose between 8 Gy in 1, 20 Gy in 5, 30 Gy in 10, and SBRT for a bone metastasis",
+    "Manage metastatic spinal cord compression and SVC syndrome in the right order",
+    "Recognize which benign conditions respond to radiation and at what stage",
+    "Describe radiosurgery for trigeminal neuralgia and AVMs, including the delay before benefit",
+    "Know where radiation fits in lymphoma, skin cancer, sarcoma, myeloma, and pediatric tumors",
+    "Recall the core trial behind each palliative decision"
+   ],
+   "guideline": "ASTRO Palliative Radiation Therapy for Bone Metastases Guideline",
+   "staging": [],
+   "trials": [
+    "RTOG 9714",
+    "Dutch Bone Metastasis Study",
+    "TROG 96.05",
+    "NCIC SC.23",
+    "NCIC SC.20",
+    "SC.24",
+    "RTOG 0631",
+    "Gillespie (MSKCC)",
+    "SABR-COMET",
+    "ORIOLE",
+    "STOMP",
+    "Gomez",
+    "CURB",
+    "NRG-BR002",
+    "ALSYMPCA",
+    "VISION",
+    "NETTER-1",
+    "Patchell",
+    "SCORAD III",
+    "ICORG 05-03",
+    "Mahler (osteoarthritis sham trials)",
+    "Niewald",
+    "ARUBA",
+    "GHSG HD10/HD11",
+    "RAPID",
+    "H10",
+    "HD16",
+    "FORT",
+    "NCIC SR2",
+    "STRASS",
+    "BC2001",
+    "COMS"
+   ],
+   "attendingQuestions": [
+    {
+     "q": "What replaces staging when you plan a palliative course?",
+     "module": "Workup & Prognosis"
+    },
+    {
+     "q": "What does a SINS score of 7 or higher mean, and who do you call?",
+     "module": "Workup & Prognosis"
+    },
+    {
+     "q": "Why would you give 8 Gy in 1 instead of 30 Gy in 10 for a painful bone metastasis, and what is the trade-off?",
+     "module": "Palliative Radiation"
+    },
+    {
+     "q": "What did the Gillespie trial show about asymptomatic bone metastases?",
+     "module": "Palliative Radiation"
+    },
+    {
+     "q": "A patient with cancer has new back pain and leg weakness. What are your first two orders?",
+     "module": "Oncologic Emergencies"
+    },
+    {
+     "q": "Why shouldn't you radiate a stable patient with SVC syndrome before a biopsy?",
+     "module": "Oncologic Emergencies"
+    },
+    {
+     "q": "Which patients with Dupuytren disease benefit from radiation?",
+     "module": "Benign Disease"
+    },
+    {
+     "q": "When do you give radiation to prevent heterotopic ossification?",
+     "module": "Benign Disease"
+    },
+    {
+     "q": "After AVM radiosurgery, when is the patient protected from bleeding?",
+     "module": "Functional & Vascular Radiosurgery"
+    },
+    {
+     "q": "Preoperative or postoperative radiation for extremity sarcoma: what is the trade-off?",
+     "module": "Other Sites in Brief"
+    }
+   ],
+   "coreTrials": [
+    "RTOG 9714",
+    "Gillespie (MSKCC, 2024)",
+    "SABR-COMET",
+    "Patchell (2005)",
+    "ARUBA",
+    "NCIC SR2 (O'Sullivan)"
+   ],
+   "modules": {
+    "Background & Epidemiology": {
+     "lede": "Who you'll see on the rest of the service: palliative, emergency, benign, and radiosurgery patients, and why the dose depends on the goal.",
+     "essentials": [
+      "Four kinds of patients",
+      "Which cancers go to bone",
+      "Anti-inflammatory vs anti-proliferative doses",
+      "The rule for benign radiation"
+     ],
+     "objectives": [
+      "Sort a patient into palliative, emergency, benign, or radiosurgery",
+      "Name the cancers that most often spread to bone",
+      "Explain the two ways low-dose radiation treats benign disease",
+      "Describe the safety rules for benign radiation"
+     ]
+    },
+    "Workup & Prognosis": {
+     "lede": "No stage here. Five questions decide the plan: the symptom, the goal, the prognosis, stability and the cord, and prior radiation.",
+     "essentials": [
+      "Prognosis picks the fractionation",
+      "Whole-spine MRI for cord compression",
+      "SINS 7 or higher: call spine surgery",
+      "Mirels 9 or higher: prophylactic fixation"
+     ],
+     "objectives": [
+      "Estimate prognosis and match it to a course length",
+      "Choose the right imaging for each palliative question",
+      "Use SINS, Bilsky, and NOMS to sort spine metastases",
+      "Use the Mirels score for a long-bone lesion"
+     ]
+    },
+    "Palliative Radiation": {
+     "lede": "The shortest, simplest course that reaches the goal: the fractionation menu, SBRT, prophylactic radiation, oligometastases, and radiopharmaceuticals.",
+     "essentials": [
+      "8 Gy in 1 = 20 Gy in 5 = 30 Gy in 10 for pain",
+      "More retreatment after one fraction",
+      "Gillespie: prophylactic RT for high-risk lesions",
+      "SABR-COMET and oligometastases"
+     ],
+     "objectives": [
+      "Choose a fractionation for a painful bone metastasis",
+      "Counsel a patient on timing, pain flare, and retreatment",
+      "Know when SBRT adds value",
+      "Explain prophylactic radiation and oligometastatic treatment",
+      "Name the radiopharmaceuticals and who gets them"
+     ]
+    },
+    "Oncologic Emergencies": {
+     "lede": "Cord compression, SVC syndrome, bleeding, airway, and fracture: what has to happen first, and where radiation fits.",
+     "essentials": [
+      "Dexamethasone and whole-spine MRI",
+      "Patchell: surgery then RT for selected patients",
+      "SVC: tissue before radiation",
+      "Ambulatory status predicts outcome"
+     ],
+     "objectives": [
+      "Recognize and work up metastatic spinal cord compression",
+      "Choose between surgery plus RT and RT alone",
+      "Manage SVC syndrome in the right order",
+      "Know where radiation fits for bleeding, airway, and fracture"
+     ]
+    },
+    "Benign Disease": {
+     "lede": "Low doses for benign conditions: which ones, at what stage, after which other treatments, and how to discuss the risk.",
+     "essentials": [
+      "Osteoarthritis and plantar fasciitis: a few Gy",
+      "Dupuytren: only early disease",
+      "HO: 7-8 Gy within a day before or 3 days after",
+      "Age and site limit benign RT"
+     ],
+     "objectives": [
+      "Name the benign conditions treated with radiation and their goals",
+      "Pick the right stage of Dupuytren disease for radiation",
+      "Time radiation for heterotopic ossification and keloids",
+      "Discuss the evidence and risks of benign radiation"
+     ]
+    },
+    "Functional & Vascular Radiosurgery": {
+     "lede": "Trigeminal neuralgia and AVMs: a single high dose to a tiny target, and a benefit that takes weeks to years.",
+     "essentials": [
+      "Trigeminal neuralgia: 70-90 Gy maximum, relief in weeks",
+      "Facial numbness is the main side effect",
+      "Spetzler-Martin grade",
+      "AVM bleeding risk lasts until obliteration"
+     ],
+     "objectives": [
+      "Recognize trigeminal neuralgia and its first-line treatment",
+      "Compare procedures for refractory trigeminal neuralgia",
+      "Grade an AVM with Spetzler-Martin",
+      "Explain the latency period after AVM radiosurgery",
+      "Know what ARUBA showed"
+     ]
+    },
+    "Other Sites in Brief": {
+     "lede": "Lymphoma, skin, sarcoma, plasmacytoma, pediatrics, TBI, and a few smaller sites: where radiation fits and the one thing to know.",
+     "essentials": [
+      "Lymphoma: low doses after chemo",
+      "Skin: RT for the nose, eyelid, lip, and ear",
+      "Sarcoma: pre-op vs post-op trade-off",
+      "Plasmacytoma vs myeloma"
+     ],
+     "objectives": [
+      "Describe where radiation fits in Hodgkin and non-Hodgkin lymphoma",
+      "Choose radiation over surgery for selected skin cancers",
+      "Weigh preoperative against postoperative sarcoma radiation",
+      "Know the radiation role in plasmacytoma, myeloma, pediatrics, and TBI"
+     ]
+    }
+   }
   }
  }
 }

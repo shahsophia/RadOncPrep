@@ -176,7 +176,7 @@ function homeSections(){
     const docs = docCategoriesFor(svc.id);
     out.push({
       kind: "site", id: svc.id, order: 100 + i, name: svc.name, blurb: svc.blurb,
-      badge: "Disease Site", color: svc.color,
+      badge: "Disease Site", kicker: svc.kicker || "Disease site", color: svc.color,
       cards: svcCards(svc.id), cases: casesFor(svc.id), sections: docs.length,
       topics: docs,
     });
@@ -396,7 +396,7 @@ function renderSectionGrid(){
         ${art ? `<img src="${art.image}" alt="" loading="lazy">` : ""}
       </button>
       <div class="sec-body">
-        <div class="sc-kicker"><span class="sc-dot" aria-hidden="true"></span>Disease site</div>
+        <div class="sc-kicker"><span class="sc-dot" aria-hidden="true"></span>${escapeHtml(sec.kicker || "Disease site")}</div>
         <h3 class="sc-title">${escapeHtml(info.title || sec.name)}</h3>
         <p class="sc-topics">${escapeHtml(about)}</p>
         ${progress}
@@ -604,6 +604,8 @@ const SEARCH_TOOLS = {
   "gpa-builder": ["Brain metastasis GPA", "graded prognostic assessment brain metastases KPS survival prognosis"],
   "rectal-builder": ["Rectal MRI: from features to plan", "rectal MRI mesorectal fascia EMVI T stage TNT short-course long-course"],
   "pancreas-builder": ["Pancreas resectability", "SMA celiac SMV portal vein contact resectable borderline locally advanced"],
+  "sins-builder": ["SINS: spinal instability score", "SINS spinal instability neoplastic score spine metastasis mechanical pain collapse junctional stability"],
+  "mirels-builder": ["Mirels score: fracture risk", "Mirels pathologic fracture impending long bone femur humerus prophylactic fixation"],
   "contour-exercise": ["Contouring exercise", "contour draw GTV OAR rectum brain metastasis"],
 };
 function toolEntries(html, where, go){
@@ -3107,6 +3109,21 @@ function renderNStageDrill(container){
     An item can carry its own "choices" to override the set's.)
    ============================================================ */
 const DRILL_SETS = {
+  "pal-fx": {
+    title: "Pick the Fractionation",
+    choices: ["8 Gy in 1", "20 Gy in 5", "30 Gy in 10", "SBRT"],
+    items: [
+      { p: "84-year-old, metastatic lung cancer, <strong>ECOG 3</strong>, lives 2 hours away, painful rib metastasis.", a: "8 Gy in 1", why: "Same pain relief as longer courses in <strong>one visit</strong>. Retreatment is possible if pain returns." },
+      { p: "Myeloma with a painful lytic rib lesion.", a: "8 Gy in 1", why: "Myeloma is <strong>very radiosensitive</strong>; low doses work, and small, short courses protect marrow for future therapy." },
+      { p: "Pain is back 3 months after 8 Gy in 1 to a hip metastasis. No fracture risk, prognosis months.", a: "8 Gy in 1", why: "Re-irradiation is common after a single fraction; a second <strong>8 Gy in 1</strong> was noninferior in SC.20, with fewer side effects." },
+      { p: "Breast cancer, bone-only disease, <strong>femur rod placed</strong> for an impending fracture. Prognosis likely years.", choices: ["8 Gy in 1 to the lesion", "30 Gy in 10 to the whole rod", "SBRT to the lesion only"], a: "30 Gy in 10 to the whole rod", why: "Postoperative RT covers the <strong>full length of the hardware</strong>, and a long expected survival favors a <strong>multifraction</strong> course (20 Gy in 5 is also used)." },
+      { p: "Renal cell carcinoma, controlled primary, a <strong>single painful T9 metastasis</strong>, no cord compression, KPS 90.", a: "SBRT", why: "Renal cell is <strong>radioresistant</strong> to conventional doses, and a good prognosis justifies durable control." },
+      { p: "Prostate cancer recurrence: <strong>two pelvic nodes</strong> on PSMA PET, nothing else, wants to delay ADT.", a: "SBRT", why: "Oligorecurrent disease: metastasis-directed SBRT delayed progression (ORIOLE) and ADT (STOMP)." },
+      { p: "Lung cancer with <strong>cord compression</strong> at T6, cannot walk, poor performance status, prognosis weeks to a few months.", a: "8 Gy in 1", why: "For limited prognosis, a single fraction gave walking outcomes close to 20 Gy in 5 (SCORAD III), with one visit." },
+      { p: "Pain shooting down the leg from an L5 metastasis pressing on the nerve root. Prognosis several months.", a: "20 Gy in 5", why: "For <strong>neuropathic</strong> bone pain, 8 Gy in 1 couldn't be proven as good as 20 Gy in 5 (TROG 96.05), so many use the 5-fraction course." },
+      { p: "Bleeding, fungating head and neck cancer in a frail patient who can come in for a few days at a time.", choices: ["Quad shot (3.7 Gy twice daily for 2 days)", "70 Gy in 35", "No radiation"], a: "Quad shot (3.7 Gy twice daily for 2 days)", why: "The <strong>quad shot</strong> (14.8 Gy in 4, repeated every 4 weeks up to 3 times) controls bleeding and pain with little toxicity." },
+    ],
+  },
   "hn-tnm": {
     title: "Stage It: H&amp;N TNM",
     choices: [],
@@ -3358,6 +3375,67 @@ function renderGliomaBuilder(container){
     container.querySelectorAll("[data-toggle]").forEach(b => b.addEventListener("click", () => { o[b.dataset.toggle] = !o[b.dataset.toggle]; render(); }));
   }
   render();
+}
+
+/* ============================================================
+   SPINE STABILITY (SINS) AND LONG-BONE FRACTURE RISK (MIRELS)
+   ============================================================ */
+function renderScoreBuilder(container, cls, spec){
+  container.classList.add("quiz-carousel", "stage-builder", cls);
+  const o = Object.fromEntries(spec.rows.map(([k, , opts]) => [k, opts[opts.length - 1][0]]));
+  Object.assign(o, spec.start || {});
+  function render(){
+    const score = spec.rows.reduce((n, [k]) => n + o[k], 0);
+    const r = spec.result(score);
+    container.innerHTML = `
+      <div class="qc-header"><span class="qc-badge">${spec.title}</span><span class="qc-counter">${spec.range}</span></div>
+      ${spec.rows.map(([k, label, opts]) => `<div class="sb-row sb-row-wide"><span class="sb-row-label">${label}</span><div class="sb-pills">${
+        opts.map(([v, txt]) => `<button type="button" class="sb-pill ${o[k]===v?'active':''}" data-k="${k}" data-v="${v}">${txt} <small>(${v})</small></button>`).join("")
+      }</div></div>`).join("")}
+      <div class="sb-result">
+        <div class="sb-stage"><span class="sb-code">${spec.code}</span><span class="sb-arrow">&rarr;</span><span class="sb-group">${score}</span></div>
+        <ul class="sb-defs"><li><b>${r.label}</b></li></ul>
+        <div class="sb-meaning">${r.body}</div>
+      </div>`;
+    container.querySelectorAll("[data-k]").forEach(b => b.addEventListener("click", () => { o[b.dataset.k] = parseFloat(b.dataset.v); render(); }));
+  }
+  render();
+}
+function renderSinsBuilder(container){
+  renderScoreBuilder(container, "sins-builder", {
+    title: "Spinal Instability Neoplastic Score", range: "Score 0-18", code: "SINS",
+    start: { loc: 3, pain: 3, lesion: 2 },
+    rows: [
+      ["loc", "Level", [[3, "Junctional (C0-C2, C7-T2, T11-L1, L5-S1)"], [2, "Mobile (C3-C6, L2-L4)"], [1, "Semirigid (T3-T10)"], [0, "Rigid (S2-S5)"]]],
+      ["pain", "Pain", [[3, "Mechanical"], [1, "Occasional, not mechanical"], [0, "Pain free"]]],
+      ["lesion", "Bone", [[2, "Lytic"], [1, "Mixed"], [0, "Blastic"]]],
+      ["align", "Alignment", [[4, "Subluxation or translation"], [2, "New deformity (kyphosis, scoliosis)"], [0, "Normal"]]],
+      ["collapse", "Collapse", [[3, "More than 50%"], [2, "Less than 50%"], [1, "None, but over half the body involved"], [0, "None"]]],
+      ["post", "Posterior", [[3, "Bilateral facet, pedicle, or rib joint"], [1, "Unilateral"], [0, "None"]]],
+    ],
+    result: (n) => n >= 13
+      ? { label: "13-18: Unstable", body: "Stabilization is usually needed. <strong>Radiation does not fix a mechanically unstable spine</strong>; RT usually follows surgery." }
+      : n >= 7
+      ? { label: "7-12: Potentially unstable", body: "Get a <strong>spine surgery consultation</strong>. Mechanical pain and collapse push toward stabilization; radiation alone may still be reasonable after review." }
+      : { label: "0-6: Stable", body: "Stability doesn't stand in the way: <strong>radiation alone</strong> (conventional or SBRT) is reasonable, guided by the Bilsky grade and tumor type." },
+  });
+}
+function renderMirelsBuilder(container){
+  renderScoreBuilder(container, "mirels-builder", {
+    title: "Mirels Score: Long-Bone Fracture Risk", range: "Score 4-12", code: "Mirels",
+    start: { site: 2, pain: 3, lesion: 3, size: 2 },
+    rows: [
+      ["site", "Site", [[1, "Upper limb"], [2, "Lower limb"], [3, "Peritrochanteric"]]],
+      ["pain", "Pain", [[1, "Mild"], [2, "Moderate"], [3, "Functional (with weight bearing)"]]],
+      ["lesion", "Lesion", [[1, "Blastic"], [2, "Mixed"], [3, "Lytic"]]],
+      ["size", "Width", [[1, "Less than 1/3"], [2, "1/3 to 2/3"], [3, "More than 2/3"]]],
+    ],
+    result: (n) => n >= 9
+      ? { label: "9 or more: High fracture risk", body: "Orthopedics for <strong>prophylactic fixation</strong>, then <strong>postoperative RT</strong> to the full length of the hardware. Protect weight bearing until then." }
+      : n === 8
+      ? { label: "8: Borderline", body: "Use judgment: lesion size, pain with weight bearing, and prognosis. Many get an orthopedic opinion." }
+      : { label: "7 or less: Lower fracture risk", body: "<strong>Radiation alone</strong> is reasonable, with follow-up imaging if pain changes." },
+  });
 }
 
 /* ============================================================
@@ -3744,7 +3822,7 @@ function mountQuizCarousels(){
     const items = QUIZ_SETS[el.dataset.quizSet];
     if(items) renderQuizCarousel(el, items);
   });
-  document.querySelectorAll("#doc-body .stage-builder:not(.gleason-builder):not(.risk-builder):not(.sedlis-builder):not(.glioma-builder):not(.gpa-builder):not(.rectal-builder):not(.pancreas-builder)").forEach(renderStageBuilder);
+  document.querySelectorAll("#doc-body .stage-builder:not(.gleason-builder):not(.risk-builder):not(.sedlis-builder):not(.glioma-builder):not(.gpa-builder):not(.rectal-builder):not(.pancreas-builder):not(.sins-builder):not(.mirels-builder)").forEach(renderStageBuilder);
   document.querySelectorAll("#doc-body .nstage-drill").forEach(renderNStageDrill);
   document.querySelectorAll("#doc-body .choice-drill[data-drill-set]").forEach(renderChoiceDrill);
   document.querySelectorAll("#doc-body .gleason-builder").forEach(renderGleasonBuilder);
@@ -3754,6 +3832,8 @@ function mountQuizCarousels(){
   document.querySelectorAll("#doc-body .gpa-builder").forEach(renderGpaBuilder);
   document.querySelectorAll("#doc-body .rectal-builder").forEach(renderRectalBuilder);
   document.querySelectorAll("#doc-body .pancreas-builder").forEach(renderPancreasBuilder);
+  document.querySelectorAll("#doc-body .sins-builder").forEach(renderSinsBuilder);
+  document.querySelectorAll("#doc-body .mirels-builder").forEach(renderMirelsBuilder);
 }
 
 /* ============================================================
@@ -3790,7 +3870,7 @@ function openService(svcId){
     [plateCount(svcId), "interactive plates"],
     [cards.length, "flashcards", `${st.mastered} mastered &middot; ${dueN} due`],
     [caseList.length, "clinical cases", caseList.length ? `${casesDone} completed` : "Not yet available"],
-  ];
+  ].filter(([n, l]) => n || l !== "interactive plates");
   document.getElementById("svc-detail-stats").innerHTML = stats.map(([n, l, sub]) =>
     `<div><dt>${l}</dt><dd><span class="ms-n tabular">${n}</span>${sub ? `<span class="ms-sub">${sub}</span>` : ""}</dd></div>`).join("");
   document.getElementById("svc-due-count").textContent = dueN;

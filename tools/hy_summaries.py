@@ -285,6 +285,57 @@ HY = {
  "Limited-stage small cell gets platinum and etoposide with early concurrent thoracic radiation, consolidation immunotherapy, and a brain plan, while extensive stage starts with chemo-immunotherapy.",
 ],
 },
+"palliative": {
+"Background & Epidemiology": [
+ "This service sees four kinds of patients: palliative, emergency, benign, and functional or vascular radiosurgery, and each uses a very different dose.",
+ "A painful bone metastasis is the most common reason for palliative radiation, and prostate, breast, lung, kidney, and thyroid cancer and myeloma are the usual sources.",
+ "Pain relief after palliative radiation usually starts in 1 to 2 weeks and peaks at about 4 to 6 weeks.",
+ "Benign conditions are treated either with a few Gy to calm inflammation or with moderate doses to stop tissue from overgrowing.",
+ "Benign radiation is offered after other treatments fail, at the lowest effective dose, with honest consent about the small lifetime cancer risk, especially in young patients.",
+],
+"Workup & Prognosis": [
+ "In palliative care, the goal, the prognosis, and the stability of the bone or spine decide the plan, the way stage does in curative disease.",
+ "Performance status is the most useful predictor of survival, and clinicians tend to overestimate how long patients will live.",
+ "New back pain in a patient with cancer needs an MRI of the whole spine, and a bone scan can miss purely lytic lesions such as myeloma.",
+ "A SINS score of 7 or higher means a spine surgeon should see the patient, and mechanical pain suggests instability that radiation cannot fix.",
+ "A Mirels score of 9 or higher in a long bone means a high fracture risk and a referral for prophylactic fixation before radiation.",
+],
+"Palliative Radiation": [
+ "For an uncomplicated painful bone metastasis, 8 Gy in 1, 20 Gy in 5, and 30 Gy in 10 relieve pain equally well, but retreatment is about twice as common after a single fraction.",
+ "Longer courses or SBRT make sense when the patient is expected to live a long time, after surgical fixation, for radioresistant tumors, or for limited metastatic disease.",
+ "Dexamethasone around treatment lowers the risk of a pain flare, and re-irradiation is possible when pain comes back.",
+ "The Gillespie trial showed that radiating asymptomatic, high-risk bone metastases prevented skeletal events and hospitalizations and improved survival in a phase II setting.",
+ "SABR-COMET showed that treating a few metastases with SBRT can extend survival in selected patients, while NRG-BR002 showed that the benefit is not universal.",
+],
+"Oncologic Emergencies": [
+ "For metastatic cord compression, give dexamethasone and get an MRI of the whole spine right away, because walking before treatment predicts walking after.",
+ "Fit patients with a single area of compression from a tumor that is not very radiosensitive do best with surgery followed by radiation, as shown by Patchell.",
+ "Patients with a limited prognosis can be treated for cord compression with a single 8 Gy fraction or 20 Gy in 5.",
+ "In superior vena cava syndrome, protect the airway, stent severely symptomatic patients, and get tissue before radiating, because small cell lung cancer and lymphoma are treated with chemotherapy.",
+ "Bleeding, airway obstruction, and fractures usually need a proceduralist first, with radiation adding durable control afterward.",
+],
+"Benign Disease": [
+ "Osteoarthritis and plantar fasciitis are treated with a few Gy in small fractions for pain, although sham-controlled trials in osteoarthritis have questioned the benefit.",
+ "Dupuytren disease responds to radiation only in its early stage of nodules and cords, before a fixed contracture develops.",
+ "Heterotopic ossification is prevented with a single 7 to 8 Gy within about a day before or 3 days after surgery, and prior heterotopic ossification is the strongest risk factor.",
+ "Keloids are treated with radiation started within a day or two after excision, and gynecomastia must be prevented before the breast tissue grows.",
+ "Benign radiation is generally avoided in young patients and kept away from the thyroid, breast, eyes, and gonads.",
+],
+"Functional & Vascular Radiosurgery": [
+ "Trigeminal neuralgia causes brief, electric shock-like facial pain in the V2 or V3 distribution, and carbamazepine is the first-line treatment.",
+ "Radiosurgery for trigeminal neuralgia gives a maximum dose of about 70 to 90 Gy to the nerve root, relief starts within weeks to months, and facial numbness is the main side effect.",
+ "The Spetzler-Martin grade adds AVM size, eloquent location, and deep venous drainage, and small AVMs in deep or eloquent brain are the classic radiosurgery patients.",
+ "After AVM radiosurgery, the vessels close over 1 to 3 years, and the bleeding risk remains until obliteration is confirmed by angiography.",
+ "ARUBA found that medical management alone did better than intervention for unruptured AVMs over its short follow-up, which made observation a real option.",
+],
+"Other Sites in Brief": [
+ "Lymphoma is very radiosensitive, so involved-site radiation uses low doses, usually after chemotherapy, and early follicular lymphoma can be cured with 24 Gy alone.",
+ "Radiation is an excellent alternative to surgery for basal and squamous cell skin cancers of the nose, eyelid, lip, and ear in older patients.",
+ "Preoperative radiation for extremity sarcoma causes more wound complications, while postoperative radiation causes more permanent fibrosis and stiffness.",
+ "A solitary plasmacytoma is treated definitively with about 40 to 50 Gy, while myeloma needs only low palliative doses.",
+ "Children are the most vulnerable to late effects, so pediatric radiation uses the lowest effective dose and often protons.",
+],
+},
 }
 
 PEARL = re.compile(r"<div class=['\"]pearl(?: hy-summary)?['\"]>\s*<strong>High-Yield Summary</strong>\s*<ul[^>]*>.*?</ul>\s*</div>", re.S)
