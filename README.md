@@ -40,7 +40,7 @@ RadOnc-SubI-Companion/
 1. Edit the relevant file:
    - Fix a flashcard or add cards → `src/data/decks/<service>.json`
    - Edit a reading doc's text → `src/data/docs/<service>.json` (the `html` field for that category)
-   - Edit a "Before You Start" reading → `tools/background_readings.py`, then `python3 tools/background_readings.py`
+   - Edit a "Before You Start" reading → `tools/background_readings.py` (figures for Radiation Modalities live in `tools/bys_figures.py`), then `python3 tools/background_readings.py`. These six readings are written for a first-year medical student, as one story, with no contractions; the script refuses to write contractions or em/en dashes.
    - Edit a disease-site High-Yield Summary → `tools/hy_summaries.py`, then `python3 tools/hy_summaries.py`
    - Edit a Palliative & Benign reading → `tools/palliative_readings.py`, then `python3 tools/palliative_readings.py` and `python3 tools/hy_summaries.py` (the readings script writes placeholder summaries)
    - Edit a site's mental model, central question, attending questions, or core trials → `src/data/curriculum.json`

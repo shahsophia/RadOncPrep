@@ -1817,26 +1817,26 @@ function mountContourExercises(){
   if(gtvMount){
     renderContourExercise(gtvMount, {
       title: "Try It: Contour the GTV",
-      instructions: "This is a schematic axial T1 post-contrast brain MRI with a solitary metastasis. Freehand-draw what you think the GTV is, then compare. Remember: GTV = the visible, enhancing tumor only, not the surrounding edema.",
+      instructions: "This is a drawing of a brain MRI slice (not a real scan) with one metastasis. Draw what you think the GTV is, then compare. Remember: the GTV is only the visible, bright tumor, not the swelling around it.",
       sceneDraw: drawBrainMetScene,
       correctPts: BRAINMET_LESION_PTS,
       correctColor: "#4ade80",
       userColor: "#f5b942",
       correctLabel: "Correct GTV",
-      explanation: "<strong>How'd you do?</strong> The correct GTV hugs only the enhancing lesion itself. The lighter, blurrier halo around it is vasogenic edema, real, and worth noting, but it isn't part of the GTV. For brain mets, CTV is usually skipped entirely (see &ldquo;When a Layer Gets Skipped&rdquo; above): GTV goes straight to PTV.",
+      explanation: "<strong>How did you do?</strong> The correct GTV hugs only the bright, enhancing tumor itself. The lighter, blurry halo around it is swelling (edema). It is real and worth noting, but it is not part of the GTV. For a brain metastasis the CTV is usually skipped (see &ldquo;When a layer is skipped&rdquo; above), so the GTV goes straight to the PTV.",
     });
   }
   const oarMount = document.getElementById("exercise-oar-rectum");
   if(oarMount){
     renderContourExercise(oarMount, {
       title: "Try It: Contour the Rectum (OAR)",
-      instructions: "This is a schematic axial pelvic CT at the level of the prostate. Freehand-draw the rectum, the key posterior OAR for prostate radiation.",
+      instructions: "This is a drawing of a pelvic CT slice (not a real scan) at the level of the prostate. Draw the rectum, the main organ at risk just behind the prostate.",
       sceneDraw: drawPelvisScene,
       correctPts: PELVIS_RECTUM_PTS,
       correctColor: "#60a5fa",
       userColor: "#f5b942",
       correctLabel: "Correct Rectum",
-      explanation: "<strong>How'd you do?</strong> The rectum is contoured as a solid organ immediately posterior to the prostate, from the rectosigmoid junction down to the anus. It's one of the two dose-limiting OARs (with the bladder) that shapes how tightly a prostate plan can be built.",
+      explanation: "<strong>How did you do?</strong> The rectum is drawn as a solid organ just behind the prostate, from where it joins the sigmoid colon down to the anus. Along with the bladder, it is one of the two organs that limit how much dose a prostate plan can give.",
     });
   }
 }
@@ -1850,68 +1850,68 @@ function mountContourExercises(){
 const QUIZ_SETS = {
   "rad101-intents": [
     {
-      q: "A patient with rectal cancer receives chemoradiation <em>before</em> surgery, to shrink the tumor and improve the odds of a clean resection. What intent is this?",
-      a: "<strong>Neoadjuvant.</strong> Radiation is being given before the primary treatment (surgery) specifically to set that treatment up for success.",
+      q: "A patient with rectal cancer receives chemoradiation <em>before</em> surgery, to shrink the tumor and make a clean operation more likely. What is the intent?",
+      a: "<strong>Neoadjuvant.</strong> The radiation comes before the main treatment (surgery) to set that treatment up for success.",
     },
     {
-      q: "A patient completes a lumpectomy for early breast cancer, then receives whole-breast radiation to lower the chance the cancer returns locally. What intent is this?",
-      a: "<strong>Adjuvant.</strong> The visible tumor is already gone; radiation is cleaning up any microscopic disease left behind after the primary treatment (surgery).",
+      q: "A woman has a lumpectomy for early breast cancer, then receives radiation to the breast to lower the chance the cancer comes back there. What is the intent?",
+      a: "<strong>Adjuvant.</strong> The visible tumor is already gone. The radiation destroys any cancer cells left behind after surgery.",
     },
     {
-      q: "A patient with locally advanced head and neck cancer isn't a surgical candidate. She receives chemoradiation as her main treatment, aiming to cure her disease. What intent is this?",
-      a: "<strong>Definitive.</strong> Radiation (often with concurrent chemotherapy) is the main treatment, aiming to cure or permanently control the cancer, with nothing else planned to follow it.",
+      q: "A patient with advanced head and neck cancer is not a candidate for surgery. She receives chemoradiation as her main treatment, aiming for cure. What is the intent?",
+      a: "<strong>Definitive.</strong> Radiation, often with chemotherapy, is the main treatment, aiming to cure the cancer without an operation.",
     },
     {
-      q: "A patient with widely metastatic cancer has a painful bone metastasis. She receives a short course of radiation to that site to relieve the pain, not to treat her cancer overall. What intent is this?",
-      a: "<strong>Palliative.</strong> The goal is symptom relief, not cure, which is why these courses are usually shorter than definitive treatment.",
+      q: "A patient whose cancer has spread widely has a painful bone metastasis. She receives a short course of radiation to that spot to relieve the pain. What is the intent?",
+      a: "<strong>Palliative.</strong> The goal is relief of a symptom, not cure, which is why these courses are usually short.",
     },
     {
-      q: "A patient with bulky lymphoma has a residual mass after completing chemotherapy. Radiation is given to that site to improve control. What intent is this?",
-      a: "<strong>Consolidative.</strong> Radiation follows another treatment modality (here, chemotherapy) to improve control of disease that remains after it.",
+      q: "A patient with lymphoma still has a large mass after finishing chemotherapy. Radiation is given to that mass to control what is left. What is the intent?",
+      a: "<strong>Consolidative.</strong> The radiation follows another treatment (here, chemotherapy) to control the disease that remains.",
     },
     {
-      q: "A patient with metastatic cancer has three small metastases that are stable on systemic therapy. SBRT is offered to each one, aiming for durable control. What intent is this?",
-      a: "<strong>Oligometastatic.</strong> Ablative treatment of limited metastatic disease in a selected patient, usually alongside systemic therapy. The goal is durable control, not symptom relief.",
+      q: "A patient has three small metastases that are holding steady on medicines. Stereotactic radiation is offered to each one, aiming for long-term control. What is the intent?",
+      a: "<strong>Oligometastatic.</strong> Treating a few spots of spread in a carefully selected patient, usually alongside medicines. The goal is long-term control, not only symptom relief.",
     },
   ],
   "modalities-pick": [
     {
-      q: "A head and neck tumor wraps around the spinal cord and parotid glands, and needs a highly sculpted dose distribution over several weeks. Which technique, and why?",
-      a: "<strong>IMRT or VMAT.</strong> The target sits close to critical structures, so beam intensity modulation is needed to shape dose around them while sparing the cord and parotids. That's a job 3D-CRT's simple fixed beams can't do as precisely.",
+      q: "A head and neck tumor wraps around the spinal cord and sits right next to the salivary glands. The dose needs to curve around those organs. Which technique, and why?",
+      a: "<strong>IMRT or VMAT.</strong> Varying the strength within each beam lets the high dose bend around the cord and salivary glands. The simple, even beams of 3D-CRT cannot do that as well.",
     },
     {
-      q: "A patient has a single, small brain metastasis. The team wants to deliver a very high, tightly conformal dose in a single session, with minimal margin and rapid falloff outside the target. Which technique?",
-      a: "<strong>SRS</strong> (stereotactic radiosurgery). It's used for small intracranial targets like brain mets, delivering a highly precise, high dose in one or a few fractions, with no incision involved.",
+      q: "A patient has one small brain metastasis. The team wants to give a very high, very precise dose in a single session. Which technique?",
+      a: "<strong>SRS</strong> (stereotactic radiosurgery). Many beams cross at the small target, giving a very high dose there and very little to the brain around it. There is no incision, despite the name.",
     },
     {
-      q: "A patient with cervical cancer is receiving definitive chemoradiation. After external beam treatment, the team plans to place a radioactive source directly in the uterus and vagina to boost dose to the cervix. Which technique, and why can't it just be replaced with more external beam?",
-      a: "<strong>Brachytherapy.</strong> Because dose falls off so rapidly with distance from the source, it can deliver a very high dose right at the cervix while sparing nearby tissue, a dose gradient external beam alone can't reproduce. For definitive cervical cancer, brachytherapy is considered essential, not optional.",
+      q: "A woman with cervical cancer is finishing external beam radiation. Next, the team will place a radioactive source inside the uterus and vagina to boost the dose to the cervix. Which technique is this, and why can more external beam not replace it?",
+      a: "<strong>Brachytherapy.</strong> The dose drops off quickly with distance from the source, so the cervix gets a very high dose while the bladder and rectum nearby are spared. External beam alone cannot match that, which is why brachytherapy is essential for this cancer.",
     },
     {
-      q: "A patient needs palliative radiation to a painful bone metastasis. The team wants a simple, fast plan without much sculpting. Which technique fits best?",
-      a: "<strong>3D-CRT.</strong> A few fixed beams shaped to the target is often all that's needed for a straightforward palliative course, where speed and simplicity matter more than a highly conformal dose distribution.",
+      q: "A patient needs radiation to relieve a painful bone metastasis. The team wants a simple plan that can start quickly. Which technique fits best?",
+      a: "<strong>3D-CRT.</strong> A few shaped beams are usually all that is needed when the goal is quick relief and there is no nearby organ that requires the dose to curve around it.",
     },
     {
-      q: "A family asks whether their father's prostate cancer should be treated with protons because \"protons are better radiation.\" How do you frame it?",
-      a: "<strong>Protons change the physical dose distribution</strong> (no exit dose past the Bragg peak). Whether that's a meaningful clinical advantage depends on the disease, the anatomy, and the photon plan it's compared with. Protons are not automatically better.",
+      q: "A family asks whether their father's prostate cancer should be treated with protons because \"protons are better radiation.\" How would you answer?",
+      a: "<strong>Protons stop at the Bragg peak</strong>, so they leave no exit dose behind the target. Whether that helps depends on the cancer, the anatomy, and the photon plan it is compared with. Protons are not automatically better.",
     },
   ],
   "consult-spiel": [
     {
-      q: "How would you adjust the side-effect discussion for a head and neck patient versus a pelvic patient?",
-      a: "For head and neck, emphasize mucositis, dysphagia, dry mouth, and skin changes in the neck. For pelvic radiation, emphasize bowel changes (diarrhea), bladder symptoms (frequency, urgency, burning), and skin changes in the treated area. Same framework, different expected toxicity profile.",
+      q: "How would you change the side-effect discussion for a head and neck patient compared with a pelvic patient?",
+      a: "For the head and neck, talk about mouth sores, trouble swallowing, dry mouth, and skin changes on the neck. For the pelvis, talk about diarrhea, bladder symptoms (going often, urgency, burning), and skin changes in the treated area. Same approach, different side effects.",
     },
     {
-      q: "A patient assumes that today's simulation appointment means treatment is starting today. What should you clarify?",
-      a: "<strong>Simulation is not treatment.</strong> It's a planning CT done in the treatment position, used to build the plan. Actual treatment typically doesn't start until one to two weeks later, after contouring, planning, and quality assurance are complete.",
+      q: "A patient thinks that today's simulation appointment means treatment starts today. What should you explain?",
+      a: "<strong>Simulation is not treatment.</strong> It is a planning CT scan in the treatment position. Treatment usually starts one to two weeks later, after the team has drawn the targets, built the plan, and checked it.",
     },
     {
-      q: "A patient is worried that daily treatment visits will take up their whole day. What can you tell them about how that time is actually spent?",
-      a: "Visits are usually around an hour, but the actual radiation delivery itself only takes a few minutes; most of the visit is spent getting the patient positioned and lined up correctly.",
+      q: "A patient worries that daily treatment will take up the whole day. How is the time actually spent?",
+      a: "Visits usually last about an hour, but the radiation itself takes only a few minutes. Most of the time goes into positioning the patient and lining everything up carefully.",
     },
     {
-      q: "A patient feels completely fine during week one of treatment and wonders if it's even working. What should you prepare them for?",
-      a: "Side effects generally build gradually over the course of treatment, so the later weeks (and sometimes the period right after finishing) are often harder than the first few days. Feeling well early on doesn't mean the treatment isn't working.",
+      q: "A patient feels completely fine in the first week of treatment and wonders whether it is working. What should you tell them?",
+      a: "Side effects build up slowly over the course, so the later weeks, and sometimes the week or two after finishing, are usually harder than the first days. Feeling well early on does not mean the treatment is not working.",
     },
   ],
   "breast-epi": [
