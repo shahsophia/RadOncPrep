@@ -164,7 +164,7 @@
   "id": "br-54",
   "category": "Treatment Paradigms",
   "front": "Which patient factors can make breast radiation (and so lumpectomy) unsafe?",
-  "back": "Pregnancy (RT can't be given during it) and prior radiation to the breast/chest; relative ones are active scleroderma or lupus and Li-Fraumeni syndrome.",
+  "back": "Pregnancy (RT cannot be given during it) and prior radiation to the breast/chest; relative ones are active scleroderma or lupus and Li-Fraumeni syndrome.",
   "extra": "Tumor factors against lumpectomy: inflammatory cancer, diffuse suspicious calcifications, persistently positive margins."
  },
  {
@@ -185,7 +185,7 @@
   "id": "br-30",
   "category": "Treatment Paradigms",
   "front": "Which features call for a tumor bed boost after whole-breast RT?",
-  "back": "Younger age (about ≤50), high grade, or a close/positive margin that can't be re-excised",
+  "back": "Younger age (about ≤50), high grade, or a close/positive margin that cannot be re-excised",
   "extra": "Typical boost: 10 Gy in 4 fractions, or a simultaneous boost."
  },
  {
@@ -205,14 +205,14 @@
  {
   "id": "br-26",
   "category": "Treatment Paradigms",
-  "front": "What does radiation add once breast cancer is node-positive, and what's the evidence?",
+  "front": "What does radiation add once breast cancer is node-positive, and what is the evidence?",
   "back": "Regional nodal irradiation (level III, supraclavicular, and internal mammary nodes) on top of the breast or chest wall; MA.20 and EORTC 22922 showed better disease-free survival.",
   "extra": "Exception: Z0011-type patients (1-2 positive sentinel nodes after lumpectomy) often get whole-breast RT alone, sometimes with high tangents."
  },
  {
   "id": "br-52",
   "category": "Treatment Paradigms",
-  "front": "Why isn't a dissected axilla (levels I-II) usually retreated with radiation?",
+  "front": "Why is a dissected axilla (levels I-II) usually not retreated with radiation?",
   "back": "Radiation on top of an axillary dissection sharply raises lymphedema risk.",
   "extra": "Axillary dissection alone causes lymphedema in about 20-25% of patients, which is why sentinel node biopsy is standard for a clinically negative axilla."
  },
@@ -220,7 +220,7 @@
   "id": "br-42",
   "category": "Treatment Paradigms",
   "front": "After neoadjuvant therapy, which stage do you use for the radiation decision?",
-  "back": "Both: the pre-treatment clinical stage (cT/cN) and the post-surgery response (ypT/ypN), plus the biology. A complete response doesn't erase the original stage.",
+  "back": "Both: the pre-treatment clinical stage (cT/cN) and the post-surgery response (ypT/ypN), plus the biology. A complete response does not erase the original stage.",
   "extra": "Locally advanced disease (e.g., cN3c) still gets comprehensive nodal RT after a pCR. For cN1 that converts to ypN0, NSABP B-51 found no significant benefit from adding regional nodal RT, so omission can be discussed. Always record the pre-treatment cT and cN."
  },
  {

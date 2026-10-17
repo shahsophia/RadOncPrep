@@ -1,6 +1,6 @@
 {
  "anat-gi-organs": {
-  "intro": "<p>Walk down the GI tract the way you'll treat it: <strong>esophagus &rarr; GEJ and stomach &rarr; pancreas &rarr; liver &rarr; rectum &rarr; anal canal</strong>. For each organ, know its <strong>regions</strong> and the <strong>landmarks</strong> that change staging and surgery. Explore each view, then switch to Quiz mode.</p>",
+  "intro": "<p>Walk down the GI tract the way you will treat it: <strong>esophagus &rarr; GEJ and stomach &rarr; pancreas &rarr; liver &rarr; rectum &rarr; anal canal</strong>. For each organ, know its <strong>regions</strong> and the <strong>landmarks</strong> that change staging and surgery. Explore each view, then switch to Quiz mode.</p>",
   "plates": [
    {
     "id": "gi-esoph",
@@ -329,7 +329,7 @@
       "label": "Internal & External Sphincters",
       "x": 59.4,
       "y": 68.2,
-      "blurb": "Invasion doesn't make anal cancer T4; it affects whether a rectal tumor can be sphincter-sparing."
+      "blurb": "Invasion does not make anal cancer T4; it affects whether a rectal tumor can be sphincter-sparing."
      },
      {
       "id": "verge",
@@ -358,7 +358,7 @@
   ]
  },
  "anat-gi-nodes": {
-  "intro": "<p>Each GI organ drains along its <strong>blood supply</strong>. Learn the nodal basins for the three sites you'll treat most: the <strong>esophagus/stomach</strong>, the <strong>pancreas</strong>, and the <strong>rectum/anus</strong>.</p>",
+  "intro": "<p>Each GI organ drains along its <strong>blood supply</strong>. Learn the nodal basins for the three sites you will treat most: the <strong>esophagus/stomach</strong>, the <strong>pancreas</strong>, and the <strong>rectum/anus</strong>.</p>",
   "plates": [
    {
     "id": "gi-nodes-esoph",

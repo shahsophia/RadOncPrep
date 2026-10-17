@@ -98,7 +98,7 @@
       "Systemic therapy alone"
      ],
      "correctIndex": 1,
-     "explanation": "For a fit patient with N0 disease, surgery is the standard; SBRT is the curative option for medically inoperable patients or selected patients who decline surgery. For a peripheral N0 tumor 2 cm or smaller, segmentectomy is now standard: CALGB 140503 showed it was noninferior to lobectomy, and JCOG0802 showed better overall survival."
+     "explanation": "For a fit patient with N0 disease, surgery is the standard; SBRT is the curative option for medically inoperable patients or selected patients who decline surgery. For a peripheral N0 tumor 2 cm or smaller, segmentectomy is now standard: CALGB 140503 showed sublobar resection (segmentectomy or wedge) was noninferior to lobectomy, and JCOG0802 showed better overall survival."
     },
     {
      "label": "Surprise",
@@ -166,8 +166,8 @@
      "image": "images/thoracic/th-g-pet7.jpg",
      "caption": "Fused PET/CT: an FDG-avid subcarinal (station 7) node. Khosa J, Cho RJ, Diagnostics 2026 (PMC13206069), CC BY 4.0.",
      "prompt": "Stage this tumor (AJCC 9th edition).",
-     "answer": "T3 N2a M0, Stage IIIB",
-     "explanation": "5.2 cm is T3 (over 5 and up to 7 cm). The subcarinal station has a single digit, so it is N2, and one station is N2a. T3 N2a is stage IIIB."
+     "answer": "T3 N2a M0, Stage IIIA",
+     "explanation": "5.2 cm is T3 (over 5 and up to 7 cm). The subcarinal station has a single digit, so it is N2, and one station is N2a. T3 N2a is stage IIIA in the 9th edition (it was IIIB in the 8th)."
     },
     {
      "label": "Treatment",
@@ -210,7 +210,7 @@
      "label": "Dose",
      "prompt": "Give the dose and fractionation.",
      "answer": "60 Gy in 30 fractions (2 Gy per fraction), with concurrent chemo.",
-     "explanation": "Conventional fractionation, not SBRT. Don't escalate past 60 Gy."
+     "explanation": "Conventional fractionation, not SBRT. Do not escalate past 60 Gy."
     },
     {
      "label": "Side effects",
@@ -294,12 +294,12 @@
   {
    "id": "th-case-pancoast",
    "level": "Intermediate",
-   "title": "Case 5: The Shoulder That Won't Quit",
-   "oneLiner": "A 57-year-old heavy smoker has 4 months of right shoulder pain that now runs down the inner arm into his ring and little fingers. Physical therapy hasn't helped. His wife says his right eyelid droops.",
+   "title": "Case 5: The Shoulder That Will not Quit",
+   "oneLiner": "A 57-year-old heavy smoker has 4 months of right shoulder pain that now runs down the inner arm into his ring and little fingers. Physical therapy has not helped. His wife says his right eyelid droops.",
    "steps": [
     {
      "label": "Localize",
-     "prompt": "His right pupil is small and the right side of his face doesn't sweat. What explains the whole picture?",
+     "prompt": "His right pupil is small and the right side of his face does not sweat. What explains the whole picture?",
      "choices": [
       "Rotator cuff tear",
       "A tumor at the right lung apex invading the lower brachial plexus and the sympathetic chain (Horner syndrome)",
@@ -470,7 +470,7 @@
       "Pulmonary embolism"
      ],
      "correctIndex": 1,
-     "explanation": "Radiation pneumonitis typically appears 1-6 months after RT, with ground-glass opacity and consolidation that match the high-dose region of the plan, often with straight edges that don't follow anatomy."
+     "explanation": "Radiation pneumonitis typically appears 1-6 months after RT, with ground-glass opacity and consolidation that match the high-dose region of the plan, often with straight edges that do not follow anatomy."
     },
     {
      "label": "Two causes",
@@ -525,7 +525,7 @@
       "RTOG 0236"
      ],
      "correctIndex": 0,
-     "explanation": "SABR-COMET (up to 5 metastases) and the Gomez phase II trial (up to 3) support treating every site in oligometastatic disease while continuing systemic therapy."
+     "explanation": "Two randomized phase II trials, SABR-COMET (up to 5 metastases) and Gomez (up to 3), support treating every site in oligometastatic disease while continuing systemic therapy."
     },
     {
      "label": "Dose",

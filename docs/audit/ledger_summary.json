@@ -1,0 +1,71 @@
+{
+ "total_claims": 11517,
+ "by_risk": {
+  "HIGH": 3295,
+  "LOWER": 5241,
+  "MODERATE": 2981
+ },
+ "by_status": {
+  "Pending": 11473,
+  "Verified": 30,
+  "Expert review": 14
+ },
+ "high_by_status": {
+  "Pending": 3257,
+  "Verified": 26,
+  "Expert review": 12
+ },
+ "high_first_pass": {
+  "Read 2026-10-16/17": 3293,
+  "Not individually read": 2
+ },
+ "all_first_pass": {
+  "Read 2026-10-16/17": 3379,
+  "Not individually read": 8138
+ },
+ "by_site": {
+  "breast": 1169,
+  "thoracic": 1524,
+  "cns": 1372,
+  "gi": 1330,
+  "prostate": 1417,
+  "gyn": 1392,
+  "headneck": 1414,
+  "palliative": 1063,
+  "overview": 836
+ },
+ "high_by_site": {
+  "breast": 312,
+  "thoracic": 604,
+  "cns": 361,
+  "gi": 334,
+  "prostate": 463,
+  "gyn": 365,
+  "headneck": 292,
+  "palliative": 409,
+  "overview": 155
+ },
+ "by_category": {
+  "indication": 1167,
+  "framing": 4287,
+  "epidemiology": 369,
+  "serious-toxicity": 248,
+  "workup-imaging": 1910,
+  "trial": 929,
+  "anatomy": 1537,
+  "prognosis": 365,
+  "staging": 1485,
+  "history": 59,
+  "technique": 937,
+  "toxicity": 405,
+  "follow-up": 114,
+  "dose-fractionation": 871,
+  "oar-constraint": 92,
+  "reirradiation": 50,
+  "brachytherapy": 248,
+  "emergency": 265,
+  "figure-caption": 242
+ },
+ "findings": 31,
+ "unmatched_finding_targets": []
+}

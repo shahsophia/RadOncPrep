@@ -34,7 +34,7 @@
       "label": "Left Brachiocephalic Vein",
       "x": 58.3,
       "y": 24.2,
-      "blurb": "Crosses from left to right in front of the arch branches. Its upper border is where station 2R ends and 4R begins."
+      "blurb": "Crosses from left to right in front of the arch branches. Its lower edge, where it crosses the trachea, is where station 2R ends and 4R begins."
      },
      {
       "id": "lsca",
@@ -92,7 +92,7 @@
       "label": "Superior Vena Cava (SVC)",
       "x": 43.4,
       "y": 38.3,
-      "blurb": "Right of the arch, in front of the trachea's right side. Tumor or bulky 4R nodes can compress it (SVC syndrome), an urgent indication for RT."
+      "blurb": "Right of the arch, in front of the trachea's right side. Tumor or bulky 4R nodes can compress it (SVC syndrome). Unless the airway is threatened, get tissue first; a stent relieves severe symptoms fastest, and RT follows the histology."
      },
      {
       "id": "trachea",
@@ -150,7 +150,7 @@
       "label": "Superior Vena Cava (SVC)",
       "x": 39.0,
       "y": 39.5,
-      "blurb": "Right of the ascending aorta. Dense contrast arriving from an arm injection makes it look bright and mottled; don't mistake it for a mass."
+      "blurb": "Right of the ascending aorta. Dense contrast arriving from an arm injection makes it look bright and mottled; do not mistake it for a mass."
      },
      {
       "id": "mpa",
@@ -375,7 +375,7 @@
   ]
  },
  "img-th-ct-nodes": {
-  "intro": "<p>The same IASLC stations, now on the axial CT slices you'll contour on. Each slice shows the stations at that level in color. Explore each one, then quiz yourself. The frontal map is below to jog your memory, along with a real CT showing enlarged nodes.</p>",
+  "intro": "<p>The same IASLC stations, now on the axial CT slices you will contour on. Each slice shows the stations at that level in color. Explore each one, then quiz yourself. The frontal map is below to jog your memory, along with a real CT showing enlarged nodes.</p>",
   "plates": [
    {
     "id": "th-nodes-ax-arch",
@@ -564,7 +564,7 @@
       "label": "Chest Wall Contact",
       "x": 21.5,
       "y": 28.5,
-      "blurb": "Broad contact with the chest wall. Rib destruction or tumor in the chest wall muscles is T3; contact alone isn't. For SBRT: rib fracture and chest wall pain risk, so many use 4 to 5 fractions."
+      "blurb": "Broad contact with the chest wall. Rib destruction or tumor in the chest wall muscles is T3; contact alone is not. For SBRT: rib fracture and chest wall pain risk, so many use 4 to 5 fractions."
      },
      {
       "id": "heart",

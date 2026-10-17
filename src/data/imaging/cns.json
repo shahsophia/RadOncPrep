@@ -1,6 +1,6 @@
 {
  "img-cns-normal": {
-  "intro": "<p>This is how you'll actually see the brain: a <strong>midline sagittal</strong> view for orientation, then <strong>axial slices</strong> scrolling from the top of the head down to the foramen magnum. Find the structures you learned on the drawings in Neuroanatomy; many are organs at risk.</p>",
+  "intro": "<p>This is how you will see the brain on a scan: a <strong>midline sagittal</strong> view for orientation, then <strong>axial slices</strong> scrolling from the top of the head down to the foramen magnum. Find the structures you learned on the drawings in Neuroanatomy; many are organs at risk.</p>",
   "plates": [
    {
     "id": "cns-sagittal",
@@ -369,7 +369,7 @@
   ]
  },
  "img-cns-special": {
-  "intro": "<p>Three regions you'll plan around constantly: the <strong>sella and cavernous sinus</strong>, the <strong>orbits and optic pathway</strong>, and the <strong>spinal cord</strong>. Each holds organs at risk with strict dose limits.</p>",
+  "intro": "<p>Three regions you will plan around constantly: the <strong>sella and cavernous sinus</strong>, the <strong>orbits and optic pathway</strong>, and the <strong>spinal cord</strong>. Each holds organs at risk with strict dose limits.</p>",
   "plates": [
    {
     "id": "cor-sella",
@@ -527,7 +527,7 @@
   ]
  },
  "img-cns-glioma": {
-  "intro": "<p>Gliomas are read on two sequences side by side: <strong>T1 post-contrast</strong> (enhancing tumor) and <strong>T2/FLAIR</strong> (edema and infiltrative tumor). High-grade gliomas enhance; most low-grade gliomas don't.</p>",
+  "intro": "<p>Gliomas are read on two sequences side by side: <strong>T1 post-contrast</strong> (enhancing tumor) and <strong>T2/FLAIR</strong> (edema and infiltrative tumor). High-grade gliomas enhance; most low-grade gliomas do not.</p>",
   "plates": [],
   "gallery": [
    {
@@ -551,7 +551,7 @@
   ]
  },
  "img-cns-mets": {
-  "intro": "<p>Brain metastases are the most common tumors you'll treat with radiation. Contrast MRI (thin slices) finds them and plans them.</p>",
+  "intro": "<p>Brain metastases are the most common tumors you will treat with radiation. Contrast MRI (thin slices) finds them and plans them.</p>",
   "plates": [],
   "gallery": [
    {

@@ -37,7 +37,7 @@
  {
   "id": "cnsx-8",
   "category": "Tumor Biology & Risk Factors",
-  "front": "Why don't brain tumors get a TNM stage, and how are they described instead?",
+  "front": "Why do brain tumors not get a TNM stage, and how are they described instead?",
   "back": "They almost never spread outside the CNS, so they are classified by WHO tumor type and grade (1-4), now driven by molecular markers.",
   "extra": "For adult diffuse gliomas, IDH and 1p/19q status are the foundation of the integrated diagnosis."
  },
@@ -116,7 +116,7 @@
   "category": "Workup & Decision-Making",
   "front": "What does MGMT promoter methylation mean in glioblastoma?",
   "back": "It is prognostic and associated with greater benefit from temozolomide",
-  "extra": "The predictive link isn't absolute: fit patients with unmethylated tumors still get standard RT + temozolomide (or a trial)."
+  "extra": "The predictive link is not absolute: fit patients with unmethylated tumors still get standard RT + temozolomide (or a trial)."
  },
  {
   "id": "cnsx-31",
@@ -163,7 +163,7 @@
  {
   "id": "cnsx-41",
   "category": "Treatment Paradigms",
-  "front": "Why isn't whole-brain RT routinely added to SRS for limited brain metastases?",
+  "front": "Why is whole-brain RT not routinely added to SRS for limited brain metastases?",
   "back": "It causes more cognitive decline without improving survival (NCCTG N0574).",
   "extra": "WBRT does improve intracranial control, which is why close MRI follow-up is needed after SRS alone."
  },
@@ -220,7 +220,7 @@
   "id": "cnsx-47",
   "category": "Treatment Paradigms",
   "front": "When is radiation used for a meningioma?",
-  "back": "For tumors that can't be safely removed (e.g., skull base), residual or recurrent tumor, or higher-grade (grade 2-3) disease",
+  "back": "For tumors that cannot be safely removed (e.g., skull base), residual or recurrent tumor, or higher-grade (grade 2-3) disease",
   "extra": "Small tumors away from the optic apparatus get SRS; larger ones or those touching the chiasm get fractionated RT."
  },
  {
@@ -235,7 +235,7 @@
   "category": "Treatment Paradigms",
   "front": "What is the initial treatment for primary CNS lymphoma?",
   "back": "High-dose methotrexate-based chemotherapy",
-  "extra": "Whole-brain RT is used for consolidation or when chemo isn't possible; neurotoxicity is a big risk in older patients. PCNSL is linked to immunosuppression (HIV, transplant) and EBV."
+  "extra": "Whole-brain RT is used for consolidation or when chemo is not possible; neurotoxicity is a big risk in older patients. PCNSL is linked to immunosuppression (HIV, transplant) and EBV."
  },
  {
   "id": "cnsx-50",
@@ -247,7 +247,7 @@
  {
   "id": "cnsx-51",
   "category": "Treatment Paradigms",
-  "front": "How is metastatic spinal cord compression treated in a fit patient vs one who can't have surgery?",
+  "front": "How is metastatic spinal cord compression treated in a fit patient vs one who cannot have surgery?",
   "back": "Fit, with compression or instability: surgery then RT. Not a surgical candidate: urgent RT plus steroids.",
   "extra": "Patchell: surgery + RT kept more patients walking. Common regimens are 8 Gy/1, 20 Gy/5, or 30 Gy/10; SBRT for selected radioresistant or oligometastatic disease."
  },
@@ -256,7 +256,7 @@
   "category": "Treatment Paradigms",
   "front": "Which non-cancer conditions are treated with radiosurgery?",
   "back": "Arteriovenous malformations (AVMs) and trigeminal neuralgia",
-  "extra": "AVM obliteration takes 2-3 years, and bleeding risk persists until then. Trigeminal neuralgia pain relief comes in weeks to months."
+  "extra": "AVM obliteration usually takes 1-3 years, and bleeding risk is lower but not gone until then. Trigeminal neuralgia pain relief usually begins within weeks."
  },
  {
   "id": "cnsx-64",
@@ -270,7 +270,7 @@
   "category": "Radiation Planning & Toxicity",
   "front": "Which tumors need craniospinal irradiation, and why?",
   "back": "Tumors that spread through the CSF (e.g., medulloblastoma, some germ cell tumors), because the whole CSF space is at risk",
-  "extra": "The field covers the brain and spine down to the bottom of the thecal sac. Planning detail: the brain and spine field junctions are \"feathered\" (shifted every few fractions) so hot and cold spots don't pile up at one level. The adult cord ends at L1-L2, but the thecal sac ends about S2, which sets the bottom of the spine field."
+  "extra": "The field covers the brain and spine down to the bottom of the thecal sac. Planning detail: the brain and spine field junctions are \"feathered\" (shifted every few fractions) so hot and cold spots do not pile up at one level. The adult cord ends at L1-L2, but the thecal sac ends about S2, which sets the bottom of the spine field."
  },
  {
   "id": "cnsx-66",
@@ -282,7 +282,7 @@
  {
   "id": "cnsx-67",
   "category": "Radiation Planning & Toxicity",
-  "front": "Why does a glioblastoma plan include a CTV, while SRS for an intact brain metastasis usually doesn't?",
+  "front": "Why does a glioblastoma plan include a CTV, while SRS for an intact brain metastasis usually does not?",
   "back": "Glioblastoma infiltrates microscopically beyond the visible tumor; a metastasis is well-defined",
   "extra": "The glioblastoma CTV is trimmed at anatomic barriers such as the skull, falx, and tentorium."
  },

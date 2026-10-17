@@ -184,7 +184,7 @@
  {
   "id": "thx-60",
   "category": "Treatment Paradigms",
-  "front": "Why isn't SBRT used for node-positive NSCLC?",
+  "front": "Why is SBRT not used for node-positive NSCLC?",
   "back": "SBRT treats only the primary tumor. Once nodes are involved they must be in the field, so an inoperable patient gets concurrent chemoradiation instead.",
   "extra": "This is why the nodes are confirmed negative (PET ± EBUS) before SBRT."
  },
@@ -207,7 +207,7 @@
   "category": "Treatment Paradigms",
   "front": "What is the standard treatment sequence for a resectable superior sulcus (Pancoast) tumor?",
   "back": "Neoadjuvant concurrent chemoradiation (~45-50 Gy), then surgery, then more systemic therapy",
-  "extra": "SWOG 9416 / INT 0160: complete resection in over 90%. Unresectable → definitive chemoRT; watch the brachial plexus dose."
+  "extra": "SWOG 9416 / INT 0160: complete resection in 76% of all patients (over 90% of those who reached surgery); 5-year survival 44%. Unresectable → definitive chemoRT; watch the brachial plexus dose."
  },
  {
   "id": "thx-45",
@@ -219,7 +219,7 @@
  {
   "id": "thx-46",
   "category": "Treatment Paradigms",
-  "front": "Why isn't stage III NSCLC treated to doses higher than 60 Gy?",
+  "front": "Why is stage III NSCLC not treated to doses higher than 60 Gy?",
   "back": "RTOG 0617: 74 Gy gave worse overall survival than 60 Gy.",
   "extra": "Heart dose predicted death, which is why cardiac sparing matters in lung plans."
  },
@@ -270,7 +270,7 @@
   "category": "Treatment Paradigms",
   "front": "What is the role of radiation in oligometastatic NSCLC?",
   "back": "SBRT to every site of disease (local consolidative therapy) alongside systemic therapy",
-  "extra": "Usually ≤3-5 stable or responding metastases. Gomez and SABR-COMET showed better survival. A single brain met gets SRS."
+  "extra": "Usually ≤3-5 stable or responding metastases. Gomez and SABR-COMET, both randomized phase II trials, showed longer survival (SABR-COMET used a relaxed p < 0.20 threshold). A single brain met gets SRS."
  },
  {
   "id": "thx-51",

@@ -11,7 +11,7 @@
   "category": "Epidemiology & Risk Factors",
   "front": "Besides HPV infection itself, what raises the risk of cervical cancer?",
   "back": "Smoking and immunosuppression (which keep HPV from clearing), more HPV exposure, and above all lack of screening",
-  "extra": "The HPV vaccine prevents new infections but doesn't clear existing ones, so vaccinated women are still screened. Nearly all cervical cancers start in the transformation zone, where glandular canal cells meet the squamous outer cervix."
+  "extra": "The HPV vaccine prevents new infections but does not clear existing ones, so vaccinated women are still screened. Nearly all cervical cancers start in the transformation zone, where glandular canal cells meet the squamous outer cervix."
  },
  {
   "id": "gynx-5",
@@ -170,7 +170,7 @@
  {
   "id": "gynx-60",
   "category": "Treatment Paradigms",
-  "front": "Why can't brachytherapy be replaced by IMRT or SBRT in cervical cancer?",
+  "front": "Why cannot brachytherapy be replaced by IMRT or SBRT in cervical cancer?",
   "back": "Brachytherapy is what delivers the curative dose to the cervix while sparing the bladder and rectum; leaving it out lowers cure rates.",
   "extra": "Bulky or parametrial residual tumor gets interstitial needles added. Brachy is planned on MRI (or CT) with the applicator in place; the common goal is HR-CTV D90 ≥85 Gy EQD2 (EBRT + brachy), with bladder, rectum, and sigmoid D2cc limits (EMBRACE)."
  },

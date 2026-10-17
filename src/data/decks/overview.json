@@ -269,8 +269,8 @@
   "id": "ov-95",
   "category": "Treatment Planning",
   "front": "What parotid dose goal helps preserve salivary function?",
-  "back": "Mean dose under about 26 Gy",
-  "extra": "A parallel organ, so the mean dose matters. Sparing the parotids reduces xerostomia."
+  "back": "Mean dose under about 25 Gy to both parotids (or about 20 Gy to one)",
+  "extra": "QUANTEC (Deasy 2010). A parallel organ, so the mean dose matters. Many protocols use about 26 Gy. Sparing the parotids reduces xerostomia."
  },
  {
   "id": "ov-12",
@@ -324,7 +324,7 @@
  {
   "id": "ov-104",
   "category": "Treatment Planning",
-  "front": "Why is not a DVH enough on its own to judge a plan?",
+  "front": "Why is a DVH not enough on its own to judge a plan?",
   "back": "It shows how much dose each structure receives, not where; hotspots and coverage gaps must be checked on the isodose lines slice by slice.",
   "extra": ""
  },

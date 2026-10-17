@@ -192,7 +192,7 @@
       "label": "Right Upper Lobe (Eparterial) Bronchus",
       "x": 55,
       "y": 39,
-      "blurb": "The RUL bronchus arises above the pulmonary artery, which is why it's called eparterial. Unique to the right."
+      "blurb": "The RUL bronchus arises above the pulmonary artery, which is why it is called eparterial. Unique to the right."
      },
      {
       "id": "rb",
@@ -262,7 +262,7 @@
   ]
  },
  "anat-th-nodes": {
-  "intro": "<p>This is the map that stages lung cancer: the <strong>IASLC lymph node map</strong>. Learn each station on the frontal map, then switch to Quiz mode and name it from the marker. You'll find the same stations on axial CT in the Imaging section.</p>",
+  "intro": "<p>This is the map that stages lung cancer: the <strong>IASLC lymph node map</strong>. Learn each station on the frontal map, then switch to Quiz mode and name it from the marker. You will find the same stations on axial CT in the Imaging section.</p>",
   "plates": [
    {
     "id": "th-iaslc",

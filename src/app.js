@@ -70,7 +70,7 @@ function isDue(cardId){
    want in their daily review from the Flashcards page, and can
    suspend single cards mid-session. Only explicit choices are
    stored, so flipping CARDS_START_SUSPENDED changes the default
-   for anything the student hasn't touched.
+   for anything the student has not touched.
    ------------------------------------------------------------ */
 const CARDS_START_SUSPENDED = true;
 const SUSPEND_KEY = "radonc-companion-suspended-v1";
@@ -141,7 +141,7 @@ function categoriesFor(svcId){
   }
   return map;
 }
-// Reading sections (DOCS) are the primary navigation structure and don't require
+// Reading sections (DOCS) are the primary navigation structure and do not require
 // a matching flashcard deck (mirrors how "Before You Start" pages work). This
 // returns category names in doc order first, then any deck-only categories.
 function docCategoriesFor(svcId){
@@ -558,7 +558,7 @@ function siteSourcesHTML(svcId){
   const rows = [];
   if(info.guideline) rows.push(["Clinical practice guideline", `${escapeHtml(info.guideline)}<span class="ref-note">Workup and treatment tables are simplified from this guideline for learning.</span>`]);
   if((info.staging || []).length) rows.push(["Staging", info.staging.map(escapeHtml).join(" &middot; ")]);
-  if((info.trials || []).length) rows.push(["Trials discussed", `<span class="trial-list">${info.trials.map(t => `<span>${escapeHtml(t)}</span>`).join("")}</span>`]);
+  if((info.trials || []).length) rows.push(["Trials discussed", `<span class="trial-list">${info.trials.map(t => `<span>${trialRefHTML(t)}</span>`).join("")}</span><span class="ref-note">Each linked trial opens its original publication on PubMed.</span>`]);
   if(imgs.total) rows.push(["Images", imgs.credited === imgs.total
     ? `${plural(imgs.total, "image")} in the interactive plates, from open-access, peer-reviewed literature and openly licensed collections. The source and license are in each caption.`
     : `${plural(imgs.total, "image")} in the interactive plates. Sources and licenses are listed in the captions where recorded.`]);
@@ -928,7 +928,7 @@ function wireAccount(){
       msg.textContent = "Progress restored.";
       refreshAfterDataChange();
       if(document.getElementById("account-signin").hidden === false && isSignedIn()) openAccount();
-    }catch(err){ msg.textContent = "That code didn't work. Copy the whole code from your other device and paste it again."; }
+    }catch(err){ msg.textContent = "That code did not work. Copy the whole code from your other device and paste it again."; }
   };
   document.getElementById("import-btn-a").addEventListener("click", () => doImport("import-code-a", "import-msg-a"));
   document.getElementById("import-btn-b").addEventListener("click", () => doImport("import-code-b", "account-msg"));
@@ -1257,7 +1257,7 @@ function wireMegaMenus(){
   const canHover = window.matchMedia("(hover: hover) and (pointer: fine)");
   document.querySelectorAll(".pn-item.has-mega").forEach(item => {
     const trigger = item.querySelector(".pn-trigger");
-    // a click right after hover-open shouldn't immediately close the panel
+    // a click right after hover-open should not immediately close the panel
     trigger.addEventListener("click", () => {
       if(!item.classList.contains("open")) openMega(item);
       else if(Date.now() - megaOpenedAt > 400) closeMega(item);
@@ -1451,7 +1451,7 @@ function openBackground(id){
    CONTOUR-DRAWING EXERCISES
    (schematic canvas scenes; freehand draw + compare to the
     correct contour. Point arrays are shared between the scene
-    that gets drawn and the "correct" overlay, so they can't drift.)
+    that gets drawn and the "correct" overlay, so they cannot drift.)
    ============================================================ */
 
 const BRAINMET_EDEMA_PTS = [
@@ -1925,7 +1925,7 @@ const QUIZ_SETS = {
     },
     {
       q: "A patient treated with mantle-field radiation for Hodgkin lymphoma at age 16 asks about her breast cancer risk. What should you tell her?",
-      a: "Her risk is <strong>substantially increased</strong>. Chest radiation at a young age is a major risk factor, and she qualifies for <strong>high-risk screening with annual MRI</strong> plus mammography, usually starting 8 years after radiation or at age 25.",
+      a: "Her risk is <strong>substantially increased</strong>. Chest radiation at a young age is a major risk factor, and she qualifies for <strong>high-risk screening with annual MRI</strong> plus mammography, usually starting at age 25 or 8 years after radiation, whichever comes later.",
     },
     {
       q: "Why might a patient with a germline TP53 mutation be steered toward mastectomy instead of lumpectomy?",
@@ -1965,7 +1965,7 @@ const QUIZ_SETS = {
     },
     {
       q: "A 55-year-old has a 1.2 cm ER+ cancer and no palpable nodes. Should she get a PET/CT?",
-      a: "<strong>No.</strong> Systemic staging imaging isn't recommended for asymptomatic early-stage disease; it finds more false positives than metastases. It's for <strong>higher-risk or locally advanced</strong> disease, or symptoms or findings that suggest metastases.",
+      a: "<strong>No.</strong> Systemic staging imaging is not recommended for asymptomatic early-stage disease; it finds more false positives than metastases. It is for <strong>higher-risk or locally advanced</strong> disease, or symptoms or findings that suggest metastases.",
     },
   ],
   "breast-staging": [
@@ -1983,75 +1983,75 @@ const QUIZ_SETS = {
     },
     {
       q: "A patient has a positive contralateral axillary node. What does that do to the stage?",
-      a: "It's <strong>M1 (Stage IV)</strong>. Contralateral nodes count as distant disease, unlike <strong>ipsilateral</strong> supraclavicular nodes, which are cN3c (Stage IIIC).",
+      a: "It is <strong>M1 (Stage IV)</strong>. Contralateral nodes count as distant disease, unlike <strong>ipsilateral</strong> supraclavicular nodes, which are cN3c (Stage IIIC).",
     },
     {
       q: "A cT2 cN1 HER2+ cancer has a complete response to neoadjuvant therapy (ypT0 ypN0). Which stage do you use when planning radiation?",
-      a: "<strong>Both.</strong> The <strong>initial cT2 cN1</strong> still matters, and the <strong>ypT0 ypN0</strong> response adds information. A complete response doesn't erase the original stage, which is why the pre-treatment cT and cN must always be recorded.",
+      a: "<strong>Both.</strong> The <strong>initial cT2 cN1</strong> still matters, and the <strong>ypT0 ypN0</strong> response adds information. A complete response does not erase the original stage, which is why the pre-treatment cT and cN must always be recorded.",
     },
   ],
   "breast-treatment": [
     {
       q: "A 62-year-old has a 1.8 cm ER+ cancer with 1 of 3 positive sentinel nodes after lumpectomy. Does she need an axillary dissection?",
-      a: "<strong>No.</strong> She fits <strong>ACOSOG Z0011</strong>: cT1-2 cN0, 1-2 positive sentinel nodes, lumpectomy with planned whole-breast RT. Omitting ALND didn't change survival.",
+      a: "<strong>No.</strong> She fits <strong>ACOSOG Z0011</strong>: cT1-2 cN0, 1-2 positive sentinel nodes, lumpectomy with planned whole-breast RT. Omitting ALND did not change survival.",
     },
     {
       q: "After mastectomy, pathology shows a 3 cm tumor with 5 of 12 positive nodes and negative margins. Is PMRT indicated?",
       a: "<strong>Yes.</strong> <strong>&ge;4 positive nodes</strong> is an absolute PMRT indication. Treat the chest wall plus regional nodes (SCV, level III, IMN).",
     },
     {
-      q: "A 74-year-old has a 1.1 cm ER+ grade 1 cancer, node-negative, with clear margins, and plans to take an aromatase inhibitor. What's a reasonable radiation option?",
-      a: "<strong>Omitting radiation</strong> (CALGB 9343, PRIME II): RT lowers local recurrence but doesn't change survival for this group. Short-course whole-breast or partial breast RT are also reasonable.",
+      q: "A 74-year-old has a 1.1 cm ER+ grade 1 cancer, node-negative, with clear margins, and plans to take an aromatase inhibitor. What is a reasonable radiation option?",
+      a: "<strong>Omitting radiation</strong> (CALGB 9343, PRIME II): RT lowers local recurrence but does not change survival for this group. Short-course whole-breast or partial breast RT are also reasonable.",
     },
     {
-      q: "Why isn't chemotherapy given at the same time as breast radiation?",
+      q: "Why is chemotherapy not given at the same time as breast radiation?",
       a: "Concurrent cytotoxic chemo adds <strong>toxicity</strong> (skin, lung, blood counts) without a clear benefit, so RT follows chemo. <strong>Trastuzumab</strong> and <strong>endocrine therapy</strong> can be given during RT.",
     },
     {
-      q: "A patient met Z0011 criteria and skipped axillary dissection. Does that mean she shouldn't get regional nodal RT?",
+      q: "A patient met Z0011 criteria and skipped axillary dissection. Does that mean she should not get regional nodal RT?",
       a: "<strong>No.</strong> Z0011 answers a <strong>surgical</strong> question (can she avoid ALND?). Whether to treat the regional nodes is a <strong>separate</strong> decision based on nodal burden, biology, tumor location, and other risk features.",
     },
   ],
   "hn-epi": [
     {
-      q: "What is the surrogate IHC marker used clinically to identify HPV-driven oropharyngeal cancer, and what upstream viral event causes it to be overexpressed?",
+      q: "Which IHC marker is used to identify HPV-driven oropharyngeal cancer, and what viral event makes it overexpressed?",
       a: "<strong>p16.</strong> HPV's E7 oncoprotein inactivates the retinoblastoma protein (pRb), which normally keeps p16 suppressed, so p16 becomes overexpressed. A p16-positive oropharynx cancer is staged with the HPV-associated system.",
     },
     {
-      q: "A 45-year-old non-smoker presents with a tonsil mass. Compared to a 65-year-old heavy smoker/drinker with the same diagnosis, what's different about the tumor biology to expect?",
-      a: "The younger nonsmoker's tumor is more likely <strong>HPV-positive</strong>: nonkeratinizing/basaloid histology, p16+, driven by E6/E7 oncoproteins - and it carries a substantially better prognosis stage-for-stage, even though it may present with more extensive nodal disease.",
+      q: "A 45-year-old non-smoker presents with a tonsil mass. Compared with a 65-year-old heavy smoker and drinker with the same diagnosis, how is the tumor biology likely to differ?",
+      a: "The younger nonsmoker's tumor is more likely <strong>HPV-positive</strong>: nonkeratinizing/basaloid histology, p16+, and driven by the E6 and E7 oncoproteins. It carries a much better prognosis stage for stage, even though it may present with more extensive nodal disease.",
     },
     {
-      q: "What premalignant oral mucosal lesion should never be dismissed as “just irritation,” and what's its approximate 10-year transformation risk?",
-      a: "<strong>Leukoplakia</strong> - a white mucosal patch with roughly a 1-20% risk of transforming into invasive squamous cell carcinoma over 10 years. Any nonhealing white or red oral lesion deserves biopsy.",
+      q: "Which premalignant oral lesion should never be dismissed as “just irritation,” and roughly how often does it become cancer over 10 years?",
+      a: "<strong>Leukoplakia</strong>, a white mucosal patch with roughly a 1-20% risk of transforming into invasive squamous cell carcinoma over 10 years. Any nonhealing white or red oral lesion deserves biopsy.",
     },
     {
-      q: "What single virus is detectable in nearly 95% of endemic nasopharyngeal carcinoma cases, and what dietary exposure is classically linked to it?",
+      q: "Which virus is found in nearly 95% of endemic nasopharyngeal carcinoma, and which dietary exposure is classically linked to the disease?",
       a: "<strong>Epstein-Barr virus (EBV).</strong> Salt-preserved fish (along with other preserved foods and a low fruit/vegetable diet) is the classic dietary risk factor in endemic regions.",
     },
   ],
   "hn-anatomy": [
     {
       q: "A patient has a lower motor neuron injury to CN XII on the right. Which way does the tongue deviate on protrusion, and why?",
-      a: "<strong>Toward the right</strong> (the side of the lesion) - the unopposed, intact left genioglossus pushes the tongue tip toward the weak side.",
+      a: "<strong>Toward the right</strong> (the side of the lesion). The intact left genioglossus is unopposed and pushes the tongue tip toward the weak side.",
     },
     {
-      q: "A patient with a tonsil mass presents with ear pain but a completely normal ear exam. What's the anatomic explanation?",
-      a: "Referred otalgia via <strong>CN IX (glossopharyngeal)</strong> - specifically Jacobson's nerve (tympanic nerve), which carries sensation from the middle ear and shares its root with the nerve supplying the oropharynx/tonsil.",
+      q: "A patient with a tonsil mass presents with ear pain but a completely normal ear exam. What is the anatomic explanation?",
+      a: "Referred otalgia via <strong>CN IX (glossopharyngeal)</strong>. Its tympanic branch (Jacobson's nerve) carries sensation from the middle ear, and the same nerve supplies the tonsil and oropharynx, so the brain reads tonsil pain as ear pain.",
     },
     {
       q: "Why does early glottic cancer so rarely need elective neck treatment, while early supraglottic cancer almost always does?",
       a: "The glottis has almost no lymphatics, so early glottic cancer rarely spreads to nodes (~2% for T1). The supraglottis has a rich lymphatic network, so occult nodal spread is assumed from the outset.",
     },
     {
-      q: "A patient develops hoarseness and is found to have vocal cord paralysis from tumor invasion near the tracheoesophageal groove. Which nerve is involved, and what does this finding mean for T-stage?",
-      a: "The <strong>recurrent laryngeal nerve</strong> (a branch of CN X). Cord immobility/fixation is a T-stage-defining finding - at least T3 disease.",
+      q: "A patient becomes hoarse and has a paralyzed vocal cord from tumor near the tracheoesophageal groove. Which nerve is involved, and what does the finding mean for T stage?",
+      a: "The <strong>recurrent laryngeal nerve</strong> (a branch of CN X). A fixed vocal cord makes the tumor at least T3.",
     },
   ],
   "hn-lymph": [
     {
-      q: "A tumor of the anterior oral tongue is being planned. Which nodal level, not routinely covered for most other oral cavity subsites, needs specific attention here?",
-      a: "<strong>Level Ia (submental)</strong> - at risk from the lower lip, anterior oral tongue, and anterior floor of mouth specifically; most other oral cavity subsites drain to Ib instead.",
+      q: "An anterior oral tongue tumor is being planned. Which nodal level needs attention here that is not routinely covered for most other oral cavity subsites?",
+      a: "<strong>Level Ia (submental)</strong>. It drains the lower lip, anterior oral tongue, and anterior floor of mouth. Most other oral cavity subsites drain to level Ib instead.",
     },
     {
       q: "Which nodal regions are at risk in nasopharyngeal carcinoma, and how does that differ from most other H&N sites?",
@@ -2062,14 +2062,14 @@ const QUIZ_SETS = {
       a: "The node itself is <strong>GTVn</strong> and gets the <strong>full definitive dose</strong>. The levels at risk for microscopic spread (which become more likely when a neighboring level is involved) form the <strong>elective CTV</strong> at a lower dose. The exact levels depend on the primary site, laterality, and extent.",
     },
     {
-      q: "Subglottic tumor extension specifically mandates coverage of which nodal level, and why?",
-      a: "<strong>Level VI</strong> (central/pretracheal, including the Delphian node) - the subglottis' lymphatics drain directly into this central compartment.",
+      q: "Subglottic extension adds which nodal level to the field, and why?",
+      a: "<strong>Level VI</strong> (the central and pretracheal nodes, including the Delphian node). Lymphatics from the subglottis drain directly into this central compartment.",
     },
   ],
   "hn-imaging": [
     {
       q: "Why is MRI generally preferred over CT for staging an oral cavity primary?",
-      a: "Depth of invasion - the single biggest driver of oral cavity T-stage - is a soft-tissue measurement, and MRI's soft-tissue contrast resolves it far better than CT.",
+      a: "Depth of invasion drives oral cavity T stage more than anything else. It is a soft-tissue measurement, and MRI shows soft tissue far better than CT.",
     },
     {
       q: "What is the earliest imaging sign of nasopharyngeal carcinoma, and where does it occur?",
@@ -2080,44 +2080,44 @@ const QUIZ_SETS = {
       a: "<strong>PET/CT about 12 weeks after treatment.</strong> Active tumor is FDG-avid while scar usually is not, so a negative scan can spare the patient a neck dissection.",
     },
     {
-      q: "A patient completes chemoradiation for oropharyngeal cancer and a follow-up scan shows an FDG-avid area along a nerve near the treated site. How does PET-CT help distinguish what this represents?",
-      a: "True recurrent tumor spreading along a nerve is <strong>FDG-avid</strong>, while radiation-induced neuritis typically is <strong>not</strong> - a distinction plain CT or MRI alone often cannot make.",
+      q: "After chemoradiation for oropharyngeal cancer, a follow-up scan shows a possible abnormality along a nerve near the treated site. How does PET/CT help tell recurrence from treatment effect?",
+      a: "True recurrent tumor spreading along a nerve is <strong>FDG-avid</strong>, while radiation-induced neuritis usually is <strong>not</strong>. CT or MRI alone often cannot make this distinction.",
     },
   ],
   "hn-staging": [
     {
-      q: "A patient's oral tongue tumor is 1.8cm on exam (which alone would suggest T1) but has a measured depth of invasion of 7mm on MRI. What does DOI >5mm do to the T-stage here?",
-      a: "It upgrades the tumor from <strong>T1 to T2</strong>, despite the small surface diameter - DOI, not surface size, is driving the stage. (For tumors &gt;2cm, a DOI &gt;10mm pushes the tumor to T3, or to T4a if it is also &gt;4cm.)",
+      q: "An oral tongue tumor is 1.8 cm on exam, which alone would suggest T1, but its depth of invasion on MRI is 7 mm. What does a DOI over 5 mm do to the T stage?",
+      a: "It upgrades the tumor from <strong>T1 to T2</strong>, despite the small surface diameter, because DOI, not surface size, is driving the stage. (For tumors &gt;2 cm, a DOI &gt;10 mm pushes the tumor to T3, or to T4a if it is also &gt;4 cm.)",
     },
     {
-      q: "What two variables define N-stage in nasopharyngeal carcinoma, replacing the size/count-based system used elsewhere?",
-      a: "<strong>Location of involved nodes relative to the caudal border of the cricoid cartilage, and laterality.</strong> Any node below the cricoid, or over 6cm, is N3 regardless of node count.",
+      q: "Which two features define N stage in nasopharyngeal carcinoma, in place of the size and node-count system used at other H&N sites?",
+      a: "<strong>Location of involved nodes relative to the caudal border of the cricoid cartilage, and laterality.</strong> Any node below the cricoid, or larger than 6 cm, is N3 regardless of node count.",
     },
     {
-      q: "A resected tumor has extranodal extension (ENE) on final pathology, with negative margins. Does this patient need adjuvant treatment intensification, and why?",
-      a: "Yes - ENE is one of only two definite indications for postoperative chemoradiation (the other being a positive margin), because it signals disease already outside the node's capsule.",
+      q: "A resected tumor has extranodal extension (ENE) on final pathology, with negative margins. Does the adjuvant treatment need to be intensified, and why?",
+      a: "<strong>Yes.</strong> ENE is one of the two definite indications for postoperative chemoradiation (the other being a positive margin), because it signals disease already outside the node's capsule.",
     },
     {
-      q: "A patient's workup shows no evidence of disease outside the head and neck region. What M-stage is this?",
-      a: "<strong>M0.</strong> There's no further subdivision in H&N cancer - M-stage is simply M0 or M1, unlike some other cancers that split M1 into subcategories.",
+      q: "The workup shows no disease outside the head and neck. What is the M stage?",
+      a: "<strong>M0.</strong> H&N cancer has no further subdivision: M stage is M0 or M1, unlike some other cancers that split M1 into subcategories.",
     },
   ],
   "hn-treatment": [
     {
       q: "A patient with T4a, cN2 oropharyngeal cancer is being treated definitively with radiation. What should be added to the radiation, and to what dose is the gross disease treated?",
-      a: "<strong>Concurrent cisplatin</strong> (given cT3-4 or cN2+ in the definitive setting) - with <strong>70 Gy/35 fractions</strong> to the gross primary/involved nodes as a simultaneous integrated boost.",
+      a: "<strong>Concurrent cisplatin</strong> (given for cT3-4 or cN2+ disease in the definitive setting), with <strong>70 Gy in 35 fractions</strong> to the gross primary and involved nodes as a simultaneous integrated boost.",
     },
     {
-      q: "A patient with locally advanced laryngeal cancer has a non-functional larynx due to extensive tumor destruction. What's the treatment approach, and how does this differ from a patient with a functional larynx?",
-      a: "Upfront <strong>total laryngectomy</strong>. A patient with a functional larynx and similarly advanced disease would instead get definitive concurrent chemoradiation as an organ-preservation approach - the decision is a functional judgment, not purely a staging one.",
+      q: "A patient with locally advanced laryngeal cancer has a larynx that no longer works because the tumor has destroyed it. What is the treatment, and how would it differ if the larynx still worked?",
+      a: "Upfront <strong>total laryngectomy</strong>. A patient with a functional larynx and similarly advanced disease would instead get definitive concurrent chemoradiation as an organ-preservation approach. The decision rests on function, not only on stage.",
     },
     {
-      q: "Why is surgery not the primary treatment for nasopharyngeal carcinoma, unlike most other H&N subsites?",
-      a: "The tumor's deep skull-base location makes primary resection extremely difficult - surgery is reserved as a salvage option for recurrence, while chemoradiation is the primary approach.",
+      q: "Why is surgery not the primary treatment for nasopharyngeal carcinoma, when it is for many other H&N subsites?",
+      a: "The tumor's deep skull-base location makes primary resection very difficult, so chemoradiation is the primary treatment and surgery is reserved for salvage of a recurrence.",
     },
     {
-      q: "A patient with HPV-positive oropharyngeal cancer asks whether they can get a less intense treatment given their better prognosis. What's the current standard answer?",
-      a: "Outside of a clinical trial, HPV-positive disease is still treated with the <strong>same intensity</strong> as HPV-negative disease. Substituting cetuximab for cisplatin produced worse survival, and dose de-escalation strategies have so far failed to show they're safe.",
+      q: "A patient with HPV-positive oropharyngeal cancer asks whether they can get a less intense treatment given their better prognosis. What is the current standard answer?",
+      a: "Outside of a clinical trial, HPV-positive disease is still treated with the <strong>same intensity</strong> as HPV-negative disease. Substituting cetuximab for cisplatin produced worse survival, and dose de-escalation strategies have so far failed to show they are safe.",
     },
     {
       q: "A patient asks why the plan is trying to keep dose low in the muscles at the back of the throat. Which structures are these, and what toxicity are they linked to?",
@@ -2127,10 +2127,10 @@ const QUIZ_SETS = {
   "th-epi": [
     {
       q: "A 42-year-old woman who has never smoked is diagnosed with a peripheral lung adenocarcinoma. Which driver mutation is she most likely to have, and why does it matter?",
-      a: "<strong>EGFR</strong> (exon 19 deletion or L858R). It's most common in never-smokers, women, and patients of East Asian ancestry. It matters because it's <strong>targetable</strong> (osimertinib), including after surgery (ADAURA) and after chemoradiation (LAURA).",
+      a: "<strong>EGFR</strong> (exon 19 deletion or L858R). It is most common in never-smokers, women, and patients of East Asian ancestry. It matters because it is <strong>targetable</strong> (osimertinib), including after surgery (ADAURA) and after chemoradiation (LAURA).",
     },
     {
-      q: "A heavy smoker presents with a central lung mass and a calcium of 13.1. Which histology fits best, and what's the mechanism?",
+      q: "A heavy smoker presents with a central lung mass and a calcium of 13.1. Which histology fits best, and what is the mechanism?",
       a: "<strong>Squamous cell carcinoma</strong>, secreting <strong>PTH-related peptide (PTHrP)</strong>. Squamous is classically central, cavitates, and is strongly smoking-related.",
     },
     {
@@ -2175,7 +2175,7 @@ const QUIZ_SETS = {
     },
     {
       q: "A right lower lobe tumor has an FDG-avid station 5 (AP window) node. What N stage?",
-      a: "<strong>N3.</strong> Stations 5 and 6 are <strong>left-sided</strong> stations, so for a right-sided tumor they're contralateral. This is a classic staging trap.",
+      a: "<strong>N3.</strong> Stations 5 and 6 are <strong>left-sided</strong> stations, so for a right-sided tumor they are contralateral. This is a classic staging trap.",
     },
     {
       q: "Where is the boundary between stations 2R/4R and 2L/4L?",
@@ -2183,7 +2183,7 @@ const QUIZ_SETS = {
     },
     {
       q: "A left upper lobe tumor has a positive subcarinal node. Is that N2 or N3?",
-      a: "<strong>N2.</strong> Station 7 is a midline station that drains both lungs, and it's always counted as <strong>ipsilateral</strong> mediastinal disease, whichever side the tumor is on.",
+      a: "<strong>N2.</strong> Station 7 is a midline station that drains both lungs, and it is always counted as <strong>ipsilateral</strong> mediastinal disease, whichever side the tumor is on.",
     },
     {
       q: "Which stations can EBUS reach that mediastinoscopy cannot?",
@@ -2193,15 +2193,15 @@ const QUIZ_SETS = {
   "th-imaging": [
     {
       q: "Which three nodule features on CT most strongly favor malignancy?",
-      a: "A <strong>spiculated margin</strong>, <strong>upper lobe location</strong>, and <strong>larger size</strong> (above 3 cm it's called a mass and treated as cancer until proven otherwise). A <strong>part-solid</strong> nodule also carries a high cancer risk, with the solid part usually representing invasive tumor.",
+      a: "A <strong>spiculated margin</strong>, <strong>upper lobe location</strong>, and <strong>larger size</strong> (above 3 cm it is called a mass and treated as cancer until proven otherwise). A <strong>part-solid</strong> nodule also carries a high cancer risk, with the solid part usually representing invasive tumor.",
     },
     {
-      q: "Why does a patient with a PET/CT that's negative for distant disease still need a brain MRI before treatment for stage II-III NSCLC?",
+      q: "Why does a patient with a PET/CT that is negative for distant disease still need a brain MRI before treatment for stage II-III NSCLC?",
       a: "The brain has <strong>high normal FDG uptake</strong>, so PET is poor at finding brain metastases. <strong>Contrast-enhanced brain MRI</strong> is the test of choice, and finding a met changes the stage to IV.",
     },
     {
       q: "Name two classic causes of a false-positive FDG PET in the chest.",
-      a: "<strong>Infection and inflammation</strong>: tuberculosis, fungal infection, sarcoidosis, pneumonia, and recent radiation or surgery. That's why a PET-positive mediastinal node is usually <strong>sampled (EBUS)</strong> before it changes treatment.",
+      a: "<strong>Infection and inflammation</strong>: tuberculosis, fungal infection, sarcoidosis, pneumonia, and recent radiation or surgery. That is why a PET-positive mediastinal node is usually <strong>sampled (EBUS)</strong> before it changes treatment.",
     },
     {
       q: "Why do lower lobe tumors need extra attention during CT simulation?",
@@ -2215,14 +2215,14 @@ const QUIZ_SETS = {
   "th-staging": [
     {
       q: "A 1.8 cm peripheral N0 tumor is easily resectable, but the patient's lung function is too poor for surgery. Which term describes the problem: stage, resectability, or operability?",
-      a: "<strong>Operability.</strong> The stage is early and the tumor is resectable, but the <strong>patient</strong> can't tolerate the operation, so the plan is <strong>SBRT</strong>. Resectability is about the tumor's anatomy and nodal burden; operability is about the patient.",
+      a: "<strong>Operability.</strong> The stage is early and the tumor is resectable, but the <strong>patient</strong> cannot tolerate the operation, so the plan is <strong>SBRT</strong>. Resectability is about the tumor's anatomy and nodal burden; operability is about the patient.",
     },
     {
       q: "A tumor has a separate nodule in a different lobe of the same lung. T3, T4, or M1a?",
       a: "<strong>T4.</strong> Same lobe = T3. Different ipsilateral lobe = T4. Contralateral lung = M1a.",
     },
     {
-      q: "Under the AJCC 9th edition, what's the difference between N2a and N2b?",
+      q: "Under the AJCC 9th edition, what is the difference between N2a and N2b?",
       a: "<strong>N2a</strong> = a <strong>single</strong> ipsilateral mediastinal (or subcarinal) station. <strong>N2b</strong> = <strong>multiple</strong> ipsilateral mediastinal stations. It matters: T1N2a is IIB, but T1N2b is IIIA.",
     },
     {
@@ -2236,7 +2236,7 @@ const QUIZ_SETS = {
   ],
   "th-treatment-n0": [
     {
-      q: "A 1.8 cm peripheral adenocarcinoma, N0 on PET and EBUS, in a patient with FEV1 32% predicted. What's the treatment?",
+      q: "A 1.8 cm peripheral adenocarcinoma, N0 on PET and EBUS, in a patient with FEV1 32% predicted. What is the treatment?",
       a: "<strong>Definitive SBRT</strong>: a highly ablative course in a few fractions (for example, <strong>54 Gy in 3</strong>). No chemotherapy. Local control is high.",
     },
     {
@@ -2244,7 +2244,7 @@ const QUIZ_SETS = {
       a: "Nothing about the indication; the concern is <strong>chest wall pain and rib fracture</strong>. Many centers use <strong>more fractions</strong> (for example, 4-5) and limit the chest wall dose.",
     },
     {
-      q: "A 2 cm tumor sits 1.2 cm from the right main bronchus. What's the tumor called, and how does the SBRT regimen change?",
+      q: "A 2 cm tumor sits 1.2 cm from the right main bronchus. What is the tumor called, and how does the SBRT regimen change?",
       a: "<strong>Central.</strong> Three-fraction SBRT is generally avoided because of the risk of severe toxicity; safer regimens use more fractions (for example, <strong>50 Gy in 5</strong>, as in RTOG 0813).",
     },
     {
@@ -2254,7 +2254,7 @@ const QUIZ_SETS = {
   ],
   "th-treatment": [
     {
-      q: "A patient has T2a N2b (4R and 7) adenocarcinoma, judged unresectable. PD-L1 50%, no driver mutation. What's the plan?",
+      q: "A patient has T2a N2b (4R and 7) adenocarcinoma, judged unresectable. PD-L1 50%, no driver mutation. What is the plan?",
       a: "<strong>Concurrent chemoradiation</strong> to <strong>60 Gy in 30 fractions</strong> with a platinum doublet, then <strong>durvalumab for 12 months</strong> (PACIFIC).",
     },
     {
@@ -2262,7 +2262,7 @@ const QUIZ_SETS = {
       a: "Consolidation is <strong>osimertinib</strong> instead of durvalumab (<strong>LAURA</strong>, a large PFS benefit). Immunotherapy benefit appears limited in EGFR-mutant disease, and combining it with osimertinib raises pneumonitis risk.",
     },
     {
-      q: "Why don't we treat stage III NSCLC to 74 Gy?",
+      q: "Why is stage III NSCLC not treated to 74 Gy?",
       a: "<strong>RTOG 0617</strong>: 74 Gy was <strong>worse</strong> than 60 Gy for overall survival, likely related to heart dose and toxicity. <strong>60 Gy</strong> is the standard.",
     },
     {
@@ -2270,7 +2270,7 @@ const QUIZ_SETS = {
       a: "<strong>Not routinely.</strong> <strong>LungART</strong> found no disease-free survival benefit from PORT for resected N2 disease and more cardiopulmonary toxicity. PORT is for <strong>positive margins</strong> (R1/R2).",
     },
     {
-      q: "Limited-stage SCLC: what's the classic radiation regimen, and what's given after chemoradiation?",
+      q: "Limited-stage SCLC: what is the classic radiation regimen, and what is given after chemoradiation?",
       a: "<strong>45 Gy in 30 twice-daily fractions</strong> (Turrisi) or 60-66 Gy daily (CONVERT), <strong>concurrent with cisplatin/etoposide</strong>, starting early. Then <strong>durvalumab</strong> consolidation (ADRIATIC) and <strong>PCI or MRI surveillance</strong>.",
     },
     {
@@ -2281,7 +2281,7 @@ const QUIZ_SETS = {
   "pr-epi": [
     {
       q: "What is a US man's lifetime risk of prostate cancer, and where does it rank for cancer death?",
-      a: "About <strong>1 in 8</strong>. It's the most common non-skin cancer in men and the <strong>2nd leading cause of cancer death</strong> in men, after lung.",
+      a: "About <strong>1 in 8</strong>. It is the most common non-skin cancer in men and the <strong>2nd leading cause of cancer death</strong> in men, after lung.",
     },
     {
       q: "Which germline mutation is most strongly linked to aggressive prostate cancer, and why does a radiation oncologist care?",
@@ -2289,7 +2289,7 @@ const QUIZ_SETS = {
     },
     {
       q: "A 50-year-old Black man whose father had prostate cancer at 58 asks about screening. What do you tell him?",
-      a: "He's at <strong>increased risk</strong> on two counts (Black ancestry and a first-degree relative), so the shared decision-making conversation about screening should start <strong>earlier</strong>, at about 40-45 in current AUA guidance.",
+      a: "He is at <strong>increased risk</strong> on two counts (Black ancestry and a first-degree relative), so the shared decision-making conversation about screening should start <strong>earlier</strong>, at about 40-45 in current AUA guidance.",
     },
     {
       q: "Name three benign causes of a raised PSA.",
@@ -2307,7 +2307,7 @@ const QUIZ_SETS = {
   "pr-anatomy": [
     {
       q: "Where do most prostate cancers arise, and why does that matter for the rectal exam?",
-      a: "The <strong>peripheral zone</strong> (~70%), the posterior part of the gland right against the rectum. That's the part a DRE can feel. BPH arises in the <strong>transition zone</strong>.",
+      a: "The <strong>peripheral zone</strong> (~70%), the posterior part of the gland right against the rectum. That is the part a DRE can feel. BPH arises in the <strong>transition zone</strong>.",
     },
     {
       q: "Which structure separates the prostate from the rectum, and what can be placed there to protect the rectum?",
@@ -2336,7 +2336,7 @@ const QUIZ_SETS = {
       a: "The <strong>obturator, internal iliac, external iliac, and presacral</strong> nodes, plus the <strong>distal common iliac</strong> nodes. Exact contouring boundaries are resident-level detail.",
     },
     {
-      q: "What did the Roach formula estimate, and why isn't it a decision rule today?",
+      q: "What did the Roach formula estimate, and why is it not used as a decision rule on its own today?",
       a: "The <strong>risk of nodal involvement</strong> from PSA and Gleason score. It historically guided pelvic nodal RT, but contemporary decisions also weigh <strong>MRI, PSMA PET, Grade Group, clinical stage, and guideline-based risk</strong>.",
     },
   ],
@@ -2347,7 +2347,7 @@ const QUIZ_SETS = {
     },
     {
       q: "PSA 7, normal DRE, and a 2 cm PI-RADS 5 lesion on MRI. Does the MRI make this cT2?",
-      a: "<strong>No: cT1c.</strong> NCCN clinical T stage comes from the DRE. The MRI directs the biopsy and shapes the radiation plan, but MRI appearance doesn't automatically become the clinical T stage.",
+      a: "<strong>No: cT1c.</strong> NCCN clinical T stage comes from the DRE. The MRI directs the biopsy and shapes the radiation plan, but MRI appearance does not automatically become the clinical T stage.",
     },
     {
       q: "A bone scan shows uniformly intense skeletal uptake and the kidneys are barely visible. Normal?",
@@ -2368,7 +2368,7 @@ const QUIZ_SETS = {
       a: "<strong>GG3.</strong> 3+4 is GG2. The first (primary) pattern is the most common one; more pattern 4 means worse biology. GG3 makes intermediate risk <strong>unfavorable</strong>.",
     },
     {
-      q: "What's the difference between cT1c and cT2a?",
+      q: "What is the difference between cT1c and cT2a?",
       a: "<strong>cT1c</strong>: found on needle biopsy for a raised PSA, <strong>not palpable</strong>. <strong>cT2a</strong>: palpable, involving &le;half of one lobe. Clinical T stage is by <strong>DRE</strong> (NCCN).",
     },
     {
@@ -2386,8 +2386,8 @@ const QUIZ_SETS = {
   ],
   "pr-treatment-local": [
     {
-      q: "A 64-year-old has cT1c, Gleason 3+3, PSA 5, 2 of 12 cores. What's recommended?",
-      a: "<strong>Active surveillance</strong> (low risk): regular PSA, repeat MRI, and repeat biopsy, with curative treatment if the cancer is reclassified. It's active management, not doing nothing (ProtecT).",
+      q: "A 64-year-old has cT1c, Gleason 3+3, PSA 5, 2 of 12 cores. What is recommended?",
+      a: "<strong>Active surveillance</strong> (low risk): regular PSA, repeat MRI, and repeat biopsy, with curative treatment if the cancer is reclassified. It is active management, not doing nothing (ProtecT).",
     },
     {
       q: "Which step up in risk group is where ADT enters the radiation treatment paradigm?",
@@ -2404,7 +2404,7 @@ const QUIZ_SETS = {
   ],
   "pr-treatment": [
     {
-      q: "cN1 (pelvic nodes on PSMA PET), M0. What's the standard radiation-based treatment?",
+      q: "cN1 (pelvic nodes on PSMA PET), M0. What is the standard radiation-based treatment?",
       a: "<strong>RT to the prostate + pelvic nodes</strong> (boost the involved nodes) with <strong>long-term ADT</strong>, and systemic intensification such as <strong>abiraterone</strong> for appropriate patients (STAMPEDE).",
     },
     {
@@ -2431,7 +2431,7 @@ const QUIZ_SETS = {
   "gyn-epi": [
     {
       q: "A 34-year-old who was vaccinated against HPV asks whether she still needs cervical screening. What do you tell her?",
-      a: "<strong>Yes.</strong> The vaccine prevents <strong>new</strong> infections with the types it covers but doesn't clear existing ones or cover every high-risk type, so screening (cytology and/or HPV testing) still matters.",
+      a: "<strong>Yes.</strong> The vaccine prevents <strong>new</strong> infections with the types it covers but does not clear existing ones or cover every high-risk type, so screening (cytology and/or HPV testing) still matters.",
     },
     {
       q: "Is every endometrial cancer driven by unopposed estrogen?",
@@ -2450,7 +2450,7 @@ const QUIZ_SETS = {
       a: "<strong>HPV-associated</strong> (younger women, VIN/HSIL, smoking) and <strong>HPV-independent</strong> (older women, <strong>lichen sclerosus</strong>, differentiated VIN, p53-mutated, worse prognosis).",
     },
     {
-      q: "A 62-year-old has postmenopausal bleeding. What's the first test, and what threshold matters?",
+      q: "A 62-year-old has postmenopausal bleeding. What is the first test, and what threshold matters?",
       a: "<strong>Transvaginal ultrasound</strong>: an endometrial stripe <strong>&gt;4 mm</strong> needs an <strong>endometrial biopsy</strong> (or go straight to biopsy). Postmenopausal bleeding is endometrial cancer until proven otherwise.",
     },
   ],
@@ -2465,7 +2465,7 @@ const QUIZ_SETS = {
     },
     {
       q: "Where does the ureter sit relative to the uterine artery, and why do we care?",
-      a: "The ureter runs <strong>under</strong> the uterine artery about <strong>2 cm lateral to the cervix</strong> (\"water under the bridge\"). That's roughly where brachytherapy <strong>point A</strong> sits, and tumor there can block the ureter and cause <strong>hydronephrosis</strong>.",
+      a: "The ureter runs <strong>under</strong> the uterine artery about <strong>2 cm lateral to the cervix</strong> (\"water under the bridge\"). That is roughly where brachytherapy <strong>point A</strong> sits, and tumor there can block the ureter and cause <strong>hydronephrosis</strong>.",
     },
     {
       q: "Which part of the vagina drains like the cervix, and which like the vulva?",
@@ -2531,7 +2531,7 @@ const QUIZ_SETS = {
     },
     {
       q: "What does FIGO 2023 do with a p53-abnormal endometrial cancer that invades the myometrium?",
-      a: "It's upstaged to <strong>IIC (m-p53abn)</strong>, reflecting its poor prognosis. A <strong>POLE-mutated</strong> stage I-II tumor is downstaged to <strong>IA (m-POLEmut)</strong>.",
+      a: "It is upstaged to <strong>IIC (m-p53abn)</strong>, reflecting its poor prognosis. A <strong>POLE-mutated</strong> stage I-II tumor is downstaged to <strong>IA (m-POLEmut)</strong>.",
     },
     {
       q: "Vulvar cancer, 1.5 cm, depth of invasion 0.8 mm. Stage, and do the nodes need to be checked?",
@@ -2570,7 +2570,7 @@ const QUIZ_SETS = {
       a: "Usually <strong>vaginal brachytherapy</strong>, because her main recurrence risk is at the vaginal cuff. PORTEC-2: as good as pelvic EBRT for vaginal control, with less GI toxicity.",
     },
     {
-      q: "Stage IIIC1 endometrial cancer: what's the adjuvant plan?",
+      q: "Stage IIIC1 endometrial cancer: what is the adjuvant plan?",
       a: "<strong>Chemotherapy &plusmn; pelvic EBRT</strong> (PORTEC-3 chemoRT; GOG 258 showed RT lowers pelvic/vaginal recurrence). Add immunotherapy for advanced disease, especially MMR-deficient (RUBY, NRG-GY018).",
     },
     {
@@ -2602,7 +2602,7 @@ const QUIZ_SETS = {
   ],
   "cns-anatomy": [
     {
-      q: "A patient can't speak fluently but understands. Where is the lesion?",
+      q: "A patient cannot speak fluently but understands. Where is the lesion?",
       a: "<strong>Broca's area</strong>: the inferior frontal lobe of the <strong>dominant (usually left)</strong> hemisphere. Fluent speech with poor comprehension = <strong>Wernicke's</strong> (temporal).",
     },
     {
@@ -2619,7 +2619,7 @@ const QUIZ_SETS = {
     },
     {
       q: "A meningioma sits just above the sella. Which organ at risk will shape the plan, and what does injury mean?",
-      a: "The <strong>optic chiasm</strong>: injury means <strong>vision loss</strong>. It's the critical constraint for any sellar or suprasellar tumor.",
+      a: "The <strong>optic chiasm</strong>: injury means <strong>vision loss</strong>. It is the critical constraint for any sellar or suprasellar tumor.",
     },
   ],
   "cns-imaging": [
@@ -2633,7 +2633,7 @@ const QUIZ_SETS = {
     },
     {
       q: "A month after chemoRT for glioblastoma, the enhancing area is larger. What else could it be besides progression, and what do you do?",
-      a: "<strong>Pseudoprogression</strong>, especially in <strong>MGMT-methylated</strong> tumors. Don't stop treatment for one scan: <strong>repeat the MRI</strong> (advanced imaging can help).",
+      a: "<strong>Pseudoprogression</strong>, especially in <strong>MGMT-methylated</strong> tumors. Do not stop treatment for one scan: <strong>repeat the MRI</strong> (advanced imaging can help).",
     },
     {
       q: "Name the classic MRI signs of a meningioma.",
@@ -2646,7 +2646,7 @@ const QUIZ_SETS = {
   ],
   "cns-staging": [
     {
-      q: "Why don't adult brain tumors have a TNM stage, and what three questions replace it?",
+      q: "Why do adult brain tumors not have a TNM stage, and what three questions replace it?",
       a: "They almost <strong>never spread outside the CNS</strong>. Instead ask: <strong>what is it</strong> (type, grade, markers), <strong>where and how big</strong>, and <strong>how is the patient</strong> (KPS, systemic disease).",
     },
     {
@@ -2699,7 +2699,7 @@ const QUIZ_SETS = {
     },
     {
       q: "A cavernous sinus meningioma wraps the carotid and sits 2 mm from the optic chiasm. SRS or fractionated RT?",
-      a: "<strong>Fractionated RT.</strong> It can't be safely resected, and it's too close to the chiasm for single-fraction SRS.",
+      a: "<strong>Fractionated RT.</strong> It cannot be safely resected, and it is too close to the chiasm for single-fraction SRS.",
     },
     {
       q: "A fit patient with a single level of high-grade spinal cord compression and an unstable spine. Plan?",
@@ -2712,15 +2712,15 @@ const QUIZ_SETS = {
       a: "The <strong>MRI</strong> shows the tumor and anatomy; the <strong>CT</strong> provides the <strong>electron density</strong> needed to calculate dose.",
     },
     {
-      q: "Why does a glioblastoma plan have a CTV but an intact brain metastasis SRS plan usually doesn't?",
-      a: "Glioblastoma <strong>infiltrates</strong> beyond what's visible, so the CTV covers microscopic spread (trimmed at anatomic barriers). A metastasis is <strong>well-defined</strong>, so GTV plus a tiny margin is enough.",
+      q: "Why does a glioblastoma plan have a CTV but an intact brain metastasis SRS plan usually does not?",
+      a: "Glioblastoma <strong>infiltrates</strong> beyond what is visible, so the CTV covers microscopic spread (trimmed at anatomic barriers). A metastasis is <strong>well-defined</strong>, so GTV plus a tiny margin is enough.",
     },
     {
       q: "Match the technique to the disease: small focal target, infiltrative tumor, diffuse intracranial disease, CSF spread.",
       a: "<strong>SRS</strong>; <strong>fractionated RT</strong>; <strong>WBRT</strong> (hippocampal avoidance); <strong>craniospinal RT</strong>.",
     },
     {
-      q: "Nine months after SRS, a treated metastasis is larger and enhancing, and the patient is mildly symptomatic. What is the dilemma, and the first-line treatment if it's necrosis?",
+      q: "Nine months after SRS, a treated metastasis is larger and enhancing, and the patient is mildly symptomatic. What is the dilemma, and the first-line treatment if it is necrosis?",
       a: "<strong>Radionecrosis vs recurrence</strong> (advanced imaging helps). Symptomatic necrosis: <strong>steroids</strong> first, then <strong>bevacizumab</strong> or laser ablation.",
     },
     {
@@ -2757,7 +2757,7 @@ const QUIZ_SETS = {
     },
     {
       q: "What is the mesorectal fascia, and why does it matter?",
-      a: "The envelope around the <strong>mesorectum</strong> (fat, vessels, nodes around the rectum). It's the plane surgeons remove in a <strong>total mesorectal excision</strong>, so tumor close to it on MRI threatens the surgical margin.",
+      a: "The envelope around the <strong>mesorectum</strong> (fat, vessels, nodes around the rectum). It is the plane surgeons remove in a <strong>total mesorectal excision</strong>, so tumor close to it on MRI threatens the surgical margin.",
     },
     {
       q: "What landmark divides the anal canal's lymphatic drainage?",
@@ -2814,7 +2814,7 @@ const QUIZ_SETS = {
   ],
   "gi-staging": [
     {
-      q: "Rectal MRI: tumor extends 6 mm into the mesorectal fat and is 0.5 mm from the mesorectal fascia. What's the concern?",
+      q: "Rectal MRI: tumor extends 6 mm into the mesorectal fat and is 0.5 mm from the mesorectal fascia. What is the concern?",
       a: "A <strong>T3</strong> tumor with a <strong>threatened MRF</strong> (&le;1 mm): higher risk of local recurrence, so it is higher-risk disease that usually gets <strong>TNT</strong>, often with long-course chemoRT.",
     },
     {
@@ -2916,8 +2916,8 @@ function lungStageGroup(t, n, m){
   }
   const grid = {
     N1:  { T1:"IIA",  T2:"IIB",  T3:"IIIA", T4:"IIIA" },
-    N2a: { T1:"IIB",  T2:"IIIA", T3:"IIIB", T4:"IIIB" },
-    N2b: { T1:"IIIA", T2:"IIIB", T3:"IIIC", T4:"IIIC" },
+    N2a: { T1:"IIB",  T2:"IIIA", T3:"IIIA", T4:"IIIB" },
+    N2b: { T1:"IIIA", T2:"IIIB", T3:"IIIB", T4:"IIIB" },
     N3:  { T1:"IIIB", T2:"IIIB", T3:"IIIC", T4:"IIIC" },
   };
   return grid[n][tg];
@@ -3057,8 +3057,8 @@ function nStageFor(tumorSide, s){
   const same = s.side === tumorSide;
   if(s.kind === "med"){
     if(s.st === "5" || s.st === "6") return same
-      ? { n: "N2", why: `Stations 5 and 6 are <strong>left-sided</strong> mediastinal stations, so for a left tumor they're ipsilateral N2.` }
-      : { n: "N3", why: `Stations 5 and 6 are <strong>left-sided</strong> by definition, so for a right tumor they're <strong>contralateral = N3</strong>.` };
+      ? { n: "N2", why: `Stations 5 and 6 are <strong>left-sided</strong> mediastinal stations, so for a left tumor they are ipsilateral N2.` }
+      : { n: "N3", why: `Stations 5 and 6 are <strong>left-sided</strong> by definition, so for a right tumor they are <strong>contralateral = N3</strong>.` };
     return same
       ? { n: "N2", why: `Single-digit station on the <strong>same side</strong> = ipsilateral mediastinal = N2.` }
       : { n: "N3", why: `Mediastinal station on the <strong>opposite side</strong> = contralateral = N3.` };
@@ -3084,7 +3084,7 @@ function renderNStageDrill(container){
         <span class="qc-badge">Station &rarr; N Stage Drill</span>
         <span class="qc-counter">${total ? `Score ${score} / ${total}` : "Endless practice"}</span>
       </div>
-      <div class="qc-question"><strong>${round.lobe.charAt(0).toUpperCase()+round.lobe.slice(1)}</strong> primary. The only involved node is <strong>station ${round.s.st}</strong> (${round.s.name}). What's the N stage?</div>
+      <div class="qc-question"><strong>${round.lobe.charAt(0).toUpperCase()+round.lobe.slice(1)}</strong> primary. The only involved node is <strong>station ${round.s.st}</strong> (${round.s.name}). What is the N stage?</div>
       <div class="quiz-choices nsd-choices">${["N1","N2","N3"].map(n => {
         let cls = "quiz-choice";
         if(answered){ if(n === round.res.n) cls += " correct"; else if(n === round.picked) cls += " incorrect"; }
@@ -3115,12 +3115,12 @@ const DRILL_SETS = {
     items: [
       { p: "84-year-old, metastatic lung cancer, <strong>ECOG 3</strong>, lives 2 hours away, painful rib metastasis.", a: "8 Gy in 1", why: "Same pain relief as longer courses in <strong>one visit</strong>. Retreatment is possible if pain returns." },
       { p: "Myeloma with a painful lytic rib lesion.", a: "8 Gy in 1", why: "Myeloma is <strong>very radiosensitive</strong>; low doses work, and small, short courses protect marrow for future therapy." },
-      { p: "Pain is back 3 months after 8 Gy in 1 to a hip metastasis. No fracture risk, prognosis months.", a: "8 Gy in 1", why: "Re-irradiation is common after a single fraction; a second <strong>8 Gy in 1</strong> was noninferior in SC.20, with fewer side effects." },
+      { p: "Pain is back 3 months after 8 Gy in 1 to a hip metastasis. No fracture risk, prognosis months.", a: "8 Gy in 1", why: "Re-irradiation is common after a single fraction; a second <strong>8 Gy in 1</strong> was noninferior to 20 Gy in 5 or 8 in the intention-to-treat analysis of SC.20, with fewer side effects." },
       { p: "Breast cancer, bone-only disease, <strong>femur rod placed</strong> for an impending fracture. Prognosis likely years.", choices: ["8 Gy in 1 to the lesion", "30 Gy in 10 to the whole rod", "SBRT to the lesion only"], a: "30 Gy in 10 to the whole rod", why: "Postoperative RT covers the <strong>full length of the hardware</strong>, and a long expected survival favors a <strong>multifraction</strong> course (20 Gy in 5 is also used)." },
       { p: "Renal cell carcinoma, controlled primary, a <strong>single painful T9 metastasis</strong>, no cord compression, KPS 90.", a: "SBRT", why: "Renal cell is <strong>radioresistant</strong> to conventional doses, and a good prognosis justifies durable control." },
       { p: "Prostate cancer recurrence: <strong>two pelvic nodes</strong> on PSMA PET, nothing else, wants to delay ADT.", a: "SBRT", why: "Oligorecurrent disease: metastasis-directed SBRT delayed progression (ORIOLE) and ADT (STOMP)." },
       { p: "Lung cancer with <strong>cord compression</strong> at T6, cannot walk, poor performance status, prognosis weeks to a few months.", a: "8 Gy in 1", why: "For limited prognosis, a single fraction gave walking outcomes close to 20 Gy in 5 (SCORAD III), with one visit." },
-      { p: "Pain shooting down the leg from an L5 metastasis pressing on the nerve root. Prognosis several months.", a: "20 Gy in 5", why: "For <strong>neuropathic</strong> bone pain, 8 Gy in 1 couldn't be proven as good as 20 Gy in 5 (TROG 96.05), so many use the 5-fraction course." },
+      { p: "Pain shooting down the leg from an L5 metastasis pressing on the nerve root. Prognosis several months.", a: "20 Gy in 5", why: "For <strong>neuropathic</strong> bone pain, 8 Gy in 1 could not be proven as good as 20 Gy in 5 (TROG 96.05), so many use the 5-fraction course." },
       { p: "Bleeding, fungating head and neck cancer in a frail patient who can come in for a few days at a time.", choices: ["Quad shot (3.7 Gy twice daily for 2 days)", "70 Gy in 35", "No radiation"], a: "Quad shot (3.7 Gy twice daily for 2 days)", why: "The <strong>quad shot</strong> (14.8 Gy in 4, repeated every 4 weeks up to 3 times) controls bleeding and pain with little toxicity." },
     ],
   },
@@ -3235,7 +3235,7 @@ const DRILL_SETS = {
       { p: "2.5 cm tumor with a PET-positive obturator node", a: "IIIC1", why: "Any pelvic node = <strong>IIIC1</strong> (r = imaging, p = pathology), regardless of tumor size." },
       { p: "5 cm tumor with a PET-positive para-aortic node", a: "IIIC2", why: "Para-aortic node = <strong>IIIC2</strong>." },
       { p: "Biopsy-proven invasion of the bladder mucosa", a: "IVA", why: "Bladder or rectal <strong>mucosa</strong> (biopsy-proven) = <strong>IVA</strong>." },
-      { p: "Parametrial invasion plus bullous edema of the bladder, negative bladder biopsy", a: "IIB", why: "<strong>Bullous edema alone doesn't make it IVA.</strong> Parametrial invasion = IIB." },
+      { p: "Parametrial invasion plus bullous edema of the bladder, negative bladder biopsy", a: "IIB", why: "<strong>Bullous edema alone does not make it IVA.</strong> Parametrial invasion = IIB." },
       { p: "Lung metastases", a: "IVB", why: "Distant metastases = <strong>IVB</strong>." },
     ],
   },
@@ -3275,7 +3275,7 @@ const DRILL_SETS = {
     items: [
       { p: "<strong>Rectum</strong>: mesorectal node", a: "Regional", why: "Mesorectal nodes are the first echelon: regional (N)." },
       { p: "<strong>Rectum</strong>: internal iliac node", a: "Regional", why: "Internal iliac (and obturator/presacral) nodes are regional for the rectum." },
-      { p: "<strong>Rectum</strong> (not involving the anal canal): inguinal node", a: "Distant (M1)", why: "Inguinal nodes are generally <strong>nonregional</strong> for rectal cancer (staged as M1). Anal canal involvement changes the drainage and the field. They're regional for anal cancer." },
+      { p: "<strong>Rectum</strong> (not involving the anal canal): inguinal node", a: "Distant (M1)", why: "Inguinal nodes are generally <strong>nonregional</strong> for rectal cancer (staged as M1). Anal canal involvement changes the drainage and the field. They are regional for anal cancer." },
       { p: "<strong>Rectum</strong>: external iliac node", a: "Distant (M1)", why: "AJCC treats external iliac nodes as <strong>nonregional</strong> for rectal cancer (unless the tumor invades an organ that drains there)." },
       { p: "<strong>Anal canal</strong>: inguinal node", a: "Regional", why: "Regional (N1a) for anal cancer: the reason the groins are part of the standard field." },
       { p: "<strong>Anal canal</strong>: external iliac node", a: "Regional", why: "Regional for anal cancer (N1b)." },
@@ -3293,7 +3293,7 @@ const DRILL_SETS = {
       { p: "3.5 cm tumor invading the internal and external sphincter", a: "T2", why: "Size decides (&gt;2-5 cm = <strong>T2</strong>). Sphincter invasion does <strong>not</strong> make it T4." },
       { p: "6 cm tumor", a: "T3", why: "&gt;5 cm = <strong>T3</strong>." },
       { p: "3 cm tumor invading the posterior vaginal wall", a: "T4", why: "Invasion of an adjacent organ (<strong>vagina, urethra, bladder</strong>) = <strong>T4</strong>, regardless of size." },
-      { p: "2.5 cm tumor extending onto the perianal skin", a: "T2", why: "Skin, subcutaneous tissue, and sphincter involvement don't count as T4." },
+      { p: "2.5 cm tumor extending onto the perianal skin", a: "T2", why: "Skin, subcutaneous tissue, and sphincter involvement do not count as T4." },
     ],
   },
   "gyn-endo-adjuvant": {
@@ -3323,8 +3323,8 @@ function cervixPostop(o){
   return sedlis ? "sedlis" : "none";
 }
 const POSTOP_TX = {
-  peters: { title: "High risk (Peters)", body: "<strong>Adjuvant pelvic chemoradiation</strong>: 45-50.4 Gy + weekly cisplatin (GOG 109). Extend the field to the para-aortics if common iliac or para-aortic nodes are positive; add vaginal brachy for a positive vaginal margin." },
-  sedlis: { title: "Intermediate risk (Sedlis)", body: "<strong>Adjuvant pelvic RT</strong>: 45-50.4 Gy (GOG 92 cut recurrences roughly in half). Chemo isn't routinely added." },
+  peters: { title: "High risk (Peters)", body: "<strong>Adjuvant pelvic chemoradiation</strong>: 45-50.4 Gy with concurrent cisplatin-based chemo (GOG 109 used cisplatin + 5-FU; weekly cisplatin is the common modern choice). Extend the field to the para-aortics if common iliac or para-aortic nodes are positive; add vaginal brachy for a positive vaginal margin." },
+  sedlis: { title: "Intermediate risk (Sedlis)", body: "<strong>Adjuvant pelvic RT</strong>: 45-50.4 Gy (GOG 92 cut recurrences roughly in half). Chemo is not routinely added." },
   none: { title: "Low risk", body: "<strong>Observation.</strong> No Sedlis or Peters criteria." },
 };
 /* ============================================================
@@ -3417,7 +3417,7 @@ function renderSinsBuilder(container){
       ? { label: "13-18: Unstable", body: "Stabilization is usually needed. <strong>Radiation does not fix a mechanically unstable spine</strong>; RT usually follows surgery." }
       : n >= 7
       ? { label: "7-12: Potentially unstable", body: "Get a <strong>spine surgery consultation</strong>. Mechanical pain and collapse push toward stabilization; radiation alone may still be reasonable after review." }
-      : { label: "0-6: Stable", body: "Stability doesn't stand in the way: <strong>radiation alone</strong> (conventional or SBRT) is reasonable, guided by the Bilsky grade and tumor type." },
+      : { label: "0-6: Stable", body: "Stability alone does not call for surgery: <strong>radiation</strong> (conventional or SBRT) is reasonable from a stability standpoint, guided by the Bilsky grade, tumor type, and symptoms. SINS supports the decision; it does not make it." },
   });
 }
 function renderMirelsBuilder(container){
@@ -3433,7 +3433,7 @@ function renderMirelsBuilder(container){
     result: (n) => n >= 9
       ? { label: "9 or more: High fracture risk", body: "Orthopedics for <strong>prophylactic fixation</strong>, then <strong>postoperative RT</strong> to the full length of the hardware. Protect weight bearing until then." }
       : n === 8
-      ? { label: "8: Borderline", body: "Use judgment: lesion size, pain with weight bearing, and prognosis. Many get an orthopedic opinion." }
+      ? { label: "8: Borderline", body: "Use judgment: lesion size, pain with weight bearing, activity, and prognosis. Mirels' original paper suggested fixation at 8 or more, so many get an orthopedic opinion. The score is sensitive but not very specific." }
       : { label: "7 or less: Lower fracture risk", body: "<strong>Radiation alone</strong> is reasonable, with follow-up imaging if pain changes." },
   });
 }
@@ -3481,7 +3481,7 @@ function rectalPlan(o){
   if(o.dmmr && adv) return { title: "MMR-deficient, locally advanced",
     body: "<strong>Checkpoint immunotherapy</strong> is considered first: complete clinical responses have been seen in nearly all patients treated (Cercek), which may spare RT and surgery. Usually managed at experienced centers." };
   if(!adv) return { title: "Early (T1-T2 N0)",
-    body: "<strong>TME surgery</strong> (low anterior resection, or APR if the sphincter can't be saved), usually without RT. Small T1: <strong>local excision</strong> in selected patients. Low tumor + wants to keep the rectum: neoadjuvant therapy aiming for <strong>organ preservation</strong> in selected patients." };
+    body: "<strong>TME surgery</strong> (low anterior resection, or APR if the sphincter cannot be saved), usually without RT. Small T1: <strong>local excision</strong> in selected patients. Low tumor + wants to keep the rectum: neoadjuvant therapy aiming for <strong>organ preservation</strong> in selected patients." };
   const high = o.t === "T4" || o.mrf || o.emvi || o.lat || o.low;
   if(!high) return { title: "Locally advanced, lower risk",
     body: "More than one reasonable path: neoadjuvant chemo with <strong>selective RT omission</strong> in carefully selected mid/upper tumors (PROSPECT), short- or long-course RT then <strong>TME</strong>, or <strong>TNT</strong>." };
@@ -3982,8 +3982,47 @@ function mentalModelHTML(chain){
       `<li><span class="mm-step">${escapeHtml(s)}</span>${i < steps.length - 1 ? `<span class="mm-arrow" aria-hidden="true">&rarr;</span>` : ""}</li>`).join("")}</ol></div>`;
 }
 
+// Verified trial citations (src/data/sources.json, built by tools/sources.py).
+// A box or list name maps to one or more trials: an exact key, an alias, or a
+// combined name such as "START B / FAST-Forward" split into its parts.
+function sourceKeysFor(name){
+  if(typeof SOURCES === "undefined") return [];
+  const n = String(name).replace(/&amp;/g, "&").replace(/<[^>]+>/g, "").trim();
+  const al = SOURCES.aliases || {}, tr = SOURCES.trials || {};
+  if(al[n]) return al[n].slice();
+  if(tr[n]) return [n];
+  const keys = [];
+  n.split(/\s*(?:\/|\+|&)\s*/).forEach(part => {
+    if(al[part]) keys.push(...al[part]); else if(tr[part]) keys.push(part);
+  });
+  return [...new Set(keys)];
+}
+function sourceLinkHTML(key, label){
+  const s = SOURCES.trials[key];
+  return `<a href="${s.url}" target="_blank" rel="noopener" title="${escapeHtml(s.cite + ": " + s.title)}">${escapeHtml(label || s.cite)}</a>`;
+}
+// A trial name for a reference list: linked to PubMed when it is verified.
+function trialRefHTML(name){
+  const keys = sourceKeysFor(name);
+  if(!keys.length) return escapeHtml(name);
+  if(keys.length === 1) return sourceLinkHTML(keys[0], name);
+  return `${escapeHtml(name)} (${keys.map(k => sourceLinkHTML(k, k)).join(", ")})`;
+}
+// Adds a "Source" line with the original publication under each trial box.
+function linkTrialSources(root){
+  root.querySelectorAll(".study .st-name, .trial .tr-name").forEach(nameEl => {
+    const box = nameEl.closest(".study, .trial");
+    if(box.querySelector(".st-src")) return;
+    const clone = nameEl.cloneNode(true);
+    clone.querySelectorAll(".st-tier").forEach(t => t.remove());
+    const keys = sourceKeysFor(clone.textContent);
+    if(!keys.length) return;
+    box.insertAdjacentHTML("beforeend", `<p class="st-src"><span class="st-src-k">Source</span> ${keys.map(k => sourceLinkHTML(k)).join(" &middot; ")}</p>`);
+  });
+}
+
 // Labels each trial box in a reading as "Core trial" (curriculum.json
-// coreTrials: know the takeaway) or "Know the name" (you'll hear it on service).
+// coreTrials: know the takeaway) or "Know the name" (you will hear it on service).
 function tierTrials(root, svcId){
   const core = new Set((siteInfo(svcId).coreTrials || []).map(n => n.toLowerCase()));
   if(!core.size) return;
@@ -4199,11 +4238,12 @@ function tocListHTML(sections){
 function moduleRefsHTML(svcId, html){
   const info = siteInfo(svcId);
   const text = String(html).replace(/<[^>]+>/g, " ").replace(/&[a-z#0-9]+;/gi, " ");
-  const trials = (info.trials || []).filter(t => new RegExp(`(^|[^A-Za-z0-9])${t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}([^A-Za-z0-9]|$)`).test(text));
+  const named = (t) => new RegExp(`(^|[^A-Za-z0-9])${t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}([^A-Za-z0-9]|$)`).test(text);
+  const trials = (info.trials || []).filter(t => named(t) || named(t.replace(/\s*\(.*\)$/, "")));
   const rows = [];
   if(info.guideline) rows.push(["Guideline", escapeHtml(info.guideline)]);
   if((info.staging || []).length) rows.push(["Staging", info.staging.map(escapeHtml).join(" &middot; ")]);
-  if(trials.length) rows.push(["Trials cited here", `<span class="trial-list">${trials.map(t => `<span>${escapeHtml(t)}</span>`).join("")}</span>`]);
+  if(trials.length) rows.push(["Trials cited here", `<span class="trial-list">${trials.map(t => `<span>${trialRefHTML(t)}</span>`).join("")}</span>`]);
   if(!rows.length) return "";
   const svc = SERVICES.find(s => s.id === svcId);
   return `<dl class="ref-dl">${rows.map(([k, v]) => `<div><dt>${k}</dt><dd>${v}</dd></div>`).join("")}</dl>
@@ -4245,6 +4285,7 @@ function renderModulePage(o){
   mountQuizCarousels();
   labelCallouts(bodyEl);
   if(o.trialSvc) tierTrials(bodyEl, o.trialSvc);
+  linkTrialSources(bodyEl);
   styleLearningComponents(bodyEl, o.bigIdeaBadge);
 
   // on-this-page (desktop rail + mobile disclosure)
@@ -4291,11 +4332,11 @@ function renderModulePage(o){
     const nextIdx = list.findIndex(c => !isCaseDone(svcId, c.id));
     const svc = SERVICES.find(s => s.id === svcId);
     const lead = o.practiceFirst
-      ? `You've finished the ${escapeHtml(svc.name)} readings. Now work through a patient from consult to plan.`
+      ? `You have finished the ${escapeHtml(svc.name)} readings. Now work through a patient from consult to plan.`
       : `Try what you just read on a patient.`;
     document.getElementById("loop-a-sub").innerHTML = nextIdx >= 0
       ? `${lead} Up next: <strong>${escapeHtml(list[nextIdx].title)}</strong> <span class="loop-meta tabular">(${done} of ${list.length} completed)</span>`
-      : `You've completed all ${list.length} ${escapeHtml(svc.name)} cases. Revisit any of them.`;
+      : `You have completed all ${list.length} ${escapeHtml(svc.name)} cases. Revisit any of them.`;
     const btn = document.getElementById("btn-doc-case");
     btn.className = o.practiceFirst ? "btn-cta" : "btn-cta-secondary";
     btn.innerHTML = nextIdx >= 0 ? `Start ${escapeHtml(svc.name)} case <span aria-hidden="true">&rarr;</span>` : `Review ${escapeHtml(svc.name)} cases <span aria-hidden="true">&rarr;</span>`;
@@ -5113,7 +5154,7 @@ function renderCaseCompleteScreen(){
     <div class="complete-wrap" style="padding-top:40px;">
       <div class="complete-icon">&#10003;</div>
       <h2>Case complete</h2>
-      <p>You've worked through every step of &ldquo;${escapeHtml(cases[idx].title)}.&rdquo;</p>
+      <p>You have worked through every step of &ldquo;${escapeHtml(cases[idx].title)}.&rdquo;</p>
       <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:10px;">
         <button class="btn-secondary" id="case-btn-list">Back to case list</button>
         ${!isLastCase ? `<button class="btn-primary" id="case-btn-next-case">Next case &rarr;</button>` : ""}
@@ -5289,7 +5330,7 @@ function renderCompleteOptions(){
     const addedDue = session.added.filter(id => isDue(id)).length;
     title = "Cards added";
     msg = `${session.added.length} card${session.added.length === 1 ? "" : "s"} from "${label}" ${session.added.length === 1 ? "is" : "are"} now in your reviews.`
-      + (addedDue ? "" : " None are due today; they'll come back on their scheduled day.");
+      + (addedDue ? "" : " None are due today; they will come back on their scheduled day.");
     actions = (addedDue ? `<button class="btn-primary" data-complete="study-these">Study just these <span class="count-pill">${addedDue}</span></button>` : "")
       + studyAllBtn(!addedDue);
   } else if(empty && suspendedIds.length && !isAll){
@@ -5305,7 +5346,7 @@ function renderCompleteOptions(){
       : `No cards are due in "${label}" right now. Check back later or study another set.`;
     actions = isAll ? `<button class="btn-primary" data-complete="decks">Choose flashcard decks</button>` : studyAllBtn(true);
   } else {
-    msg = `You've reviewed every due card in "${label}".`;
+    msg = `You have reviewed every due card in "${label}".`;
     if(!isAll) actions = studyAllBtn(true);
   }
 
@@ -5500,7 +5541,7 @@ function ratePanelCard(rating){
 
 /* ============================================================
    LIGHTBOX (gallery images are embedded data URIs, which browsers
-   won't open in a new tab, so enlarge them in-page instead)
+   will not open in a new tab, so enlarge them in-page instead)
    ============================================================ */
 function openLightbox(src, title, caption){
   const box = document.getElementById("lightbox");

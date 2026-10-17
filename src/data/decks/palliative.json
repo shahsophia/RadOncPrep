@@ -24,15 +24,15 @@
   "id": "pal-4",
   "category": "Background & Epidemiology",
   "front": "How long does pain relief take after palliative bone radiation?",
-  "back": "It usually starts in 1-2 weeks and peaks at about 4-6 weeks",
-  "extra": "So a patient with only days to live may not benefit."
+  "back": "It often starts within 1-2 weeks; most responses are seen by 4-8 weeks",
+  "extra": "So a patient with only days to live may not benefit. Trials usually measure response at 1-3 months."
  },
  {
   "id": "pal-5",
   "category": "Background & Epidemiology",
-  "front": "What are the two ways low-dose radiation treats benign disease?",
-  "back": "Anti-inflammatory (a few Gy, e.g. osteoarthritis) and anti-proliferative (moderate doses, e.g. Dupuytren, keloid, heterotopic ossification)",
-  "extra": "Functional and vascular radiosurgery (trigeminal neuralgia, AVM) is a third, very high single-dose group."
+  "front": "Besides radiosurgery, what are the two broad ways radiation treats benign disease at low or moderate doses?",
+  "back": "Low doses to reduce inflammation and pain (e.g., osteoarthritis, plantar fasciitis) and moderate doses to stop overgrowth (e.g., Dupuytren, keloid, heterotopic ossification)",
+  "extra": "Benign tumors such as desmoids get tumor-control doses (about 50-56 Gy), so dose alone does not define intent. Evidence quality differs by indication."
  },
  {
   "id": "pal-6",
@@ -67,7 +67,7 @@
   "category": "Workup & Prognosis",
   "front": "What SINS score should prompt a spine surgery consultation?",
   "back": "7 or higher",
-  "extra": "0-6 stable, 7-12 potentially unstable, 13-18 unstable. Radiation doesn't fix an unstable spine."
+  "extra": "0-6 stable, 7-12 potentially unstable, 13-18 unstable. Radiation does not fix an unstable spine."
  },
  {
   "id": "pal-11",
@@ -88,14 +88,14 @@
   "category": "Workup & Prognosis",
   "front": "In the NOMS framework, why does histology matter for a patient with high-grade cord compression?",
   "back": "Radiosensitive tumors (lymphoma, myeloma, breast, prostate) can get conventional RT even with high-grade compression; radioresistant tumors (kidney, melanoma, sarcoma) often need surgery first or SBRT.",
-  "extra": "NOMS = Neurologic (Bilsky), Oncologic (radiosensitivity), Mechanical (SINS), Systemic (fitness and prognosis)."
+  "extra": "NOMS = Neurologic (Bilsky), Oncologic (radiosensitivity), Mechanical (stability, an independent reason for stabilization), Systemic (fitness and prognosis)."
  },
  {
   "id": "pal-14",
   "category": "Workup & Prognosis",
   "front": "What Mirels score means high fracture risk and a referral for prophylactic fixation?",
-  "back": "9 or higher",
-  "extra": "Four features scored 1-3: site, pain, lesion type, and fraction of the bone's width involved. 8 is borderline."
+  "back": "9 or higher (8 is borderline)",
+  "extra": "Four features scored 1-3: site, pain, lesion type, and fraction of the bone's width involved. Mirels originally suggested fixation at 8 or more; the score is sensitive but not very specific."
  },
  {
   "id": "pal-15",
@@ -105,11 +105,18 @@
   "extra": "Protect weight bearing and get orthopedics involved."
  },
  {
+  "id": "pal-57",
+  "category": "Palliative Radiation",
+  "front": "What makes a painful bone metastasis \"uncomplicated\"?",
+  "back": "No impending or completed pathologic fracture, no cord or cauda equina compression, and no prior surgery or radiation to that site",
+  "extra": "The single vs multiple fraction trials apply to uncomplicated lesions; complicated ones need imaging and often a surgical opinion first."
+ },
+ {
   "id": "pal-16",
   "category": "Palliative Radiation",
   "front": "For an uncomplicated painful bone metastasis, how do 8 Gy in 1, 20 Gy in 5, and 30 Gy in 10 compare for pain relief?",
   "back": "Equal pain relief",
-  "extra": "About 60% respond and about a quarter become pain free."
+  "extra": "Pooled randomized trials: about 60% respond and about a quarter become pain free with either single or multiple fractions. Uncomplicated = no fracture, cord compression, or prior surgery or RT to the site."
  },
  {
   "id": "pal-17",
@@ -123,42 +130,42 @@
   "category": "Palliative Radiation",
   "front": "For neuropathic bone pain (pain following a nerve root), which regimen is often preferred over 8 Gy in 1?",
   "back": "20 Gy in 5",
-  "extra": "TROG 96.05 couldn't prove 8 Gy in 1 was as good. Longer courses also fit long expected survival and post-fixation RT."
+  "extra": "TROG 96.05 could not prove 8 Gy in 1 was as good. Longer courses also fit long expected survival and post-fixation RT."
  },
  {
   "id": "pal-19",
   "category": "Palliative Radiation",
   "front": "What reduces the risk of a pain flare after palliative bone RT?",
-  "back": "Dexamethasone around treatment (NCIC SC.23)",
-  "extra": "Pain flare occurs within the first few days in roughly a third of patients."
+  "back": "Dexamethasone around treatment (NCIC SC.23: 35% to 26%)",
+  "extra": "Pain flare occurs in the first few days. A later Dutch trial found dexamethasone delayed flare and lowered early pain without significantly reducing its incidence."
  },
  {
   "id": "pal-20",
   "category": "Palliative Radiation",
   "front": "Can a bone metastasis be re-irradiated after 8 Gy in 1?",
-  "back": "Yes; a second 8 Gy in 1 was noninferior to 20 Gy in 5 or 8 in the main analysis of NCIC SC.20",
-  "extra": "With fewer side effects."
+  "back": "Yes; a second 8 Gy in 1 was noninferior to 20 Gy in 5 or 8 in the intention-to-treat analysis of NCIC SC.20",
+  "extra": "With fewer side effects. The per-protocol analysis did not confirm noninferiority."
  },
  {
   "id": "pal-21",
   "category": "Palliative Radiation",
   "front": "What did SC.24 show for painful spine metastases?",
   "back": "SBRT 24 Gy in 2 gave more complete pain responses than 20 Gy in 5",
-  "extra": "RTOG 0631 found single-fraction SBRT (16-18 Gy) no better than 8 Gy in 1 for pain at 3 months."
+  "extra": "But RTOG 0631 found single-fraction SBRT (16-18 Gy) gave less pain response at 3 months than 8 Gy in 1 (41% vs 61%): higher dose is not automatically better pain relief."
  },
  {
   "id": "pal-22",
   "category": "Palliative Radiation",
   "front": "What did the Gillespie trial show?",
-  "back": "Prophylactic RT to asymptomatic high-risk bone metastases reduced skeletal-related events and hospitalizations and improved survival (randomized phase II)",
-  "extra": "High risk: bulky (2 cm or more), hip, shoulder, or SI joint, junctional spine, or posterior vertebral involvement."
+  "back": "In patients with more than 5 metastases, prophylactic RT to asymptomatic high-risk bone metastases reduced skeletal-related events and related hospitalizations (randomized phase II)",
+  "extra": "High risk: bulky (2 cm or more), hip, shoulder, or SI joint, junctional spine, or posterior vertebral involvement. Survival was longer but was a secondary, underpowered endpoint; phase III confirmation is needed."
  },
  {
   "id": "pal-23",
   "category": "Palliative Radiation",
   "front": "What did SABR-COMET show?",
   "back": "SABR to up to 5 metastases (controlled primary) plus standard care improved overall survival (randomized phase II)",
-  "extra": "With a small risk of treatment-related death. NRG-BR002 showed no benefit in oligometastatic breast cancer."
+  "extra": "Randomized phase II with a relaxed significance threshold; 4.5% treatment-related deaths. NRG-BR002 showed no benefit in oligometastatic breast cancer."
  },
  {
   "id": "pal-24",
@@ -207,7 +214,7 @@
   "category": "Oncologic Emergencies",
   "front": "Can a patient with cord compression and a short prognosis be treated with a single fraction?",
   "back": "Yes; 8 Gy in 1 gave walking outcomes close to 20 Gy in 5 (SCORAD III)",
-  "extra": "ICORG 05-03: 10 Gy in 1 noninferior to 20 Gy in 5. Longer courses may give better local control for longer survivors."
+  "extra": "SCORAD III did not formally meet noninferiority at 8 weeks (69% vs 73% walking) but did at 1, 4, and 12 weeks. ICORG 05-03: 10 Gy in 1 noninferior to 20 Gy in 5."
  },
  {
   "id": "pal-31",
@@ -242,7 +249,7 @@
   "category": "Benign Disease",
   "front": "What dose range is used for painful osteoarthritis or plantar fasciitis?",
   "back": "About 0.5-1 Gy per fraction, 3-6 Gy total",
-  "extra": "Dutch sham-controlled trials (Mahler) found no benefit over sham in knee and hand OA; Niewald found 6 Gy beat 0.6 Gy for heel pain."
+  "extra": "Contested: Dutch sham-controlled trials (Mahler) found no benefit over sham in knee and hand OA. Niewald found 6 Gy beat 0.6 Gy for heel pain, without a sham arm."
  },
  {
   "id": "pal-36",
@@ -270,7 +277,7 @@
   "category": "Benign Disease",
   "front": "What radiation prevents heterotopic ossification, and when is it given?",
   "back": "A single 7-8 Gy within about 24 hours before or 72 hours after surgery",
-  "extra": "Shield uncemented, porous prosthesis components. NSAIDs are the alternative."
+  "extra": "Randomized trials and a meta-analysis support it; NSAIDs are the alternative. Whether to shield porous-coated implant components varies by institution."
  },
  {
   "id": "pal-40",
@@ -284,7 +291,7 @@
   "category": "Benign Disease",
   "front": "Why must gynecomastia radiation be given before antiandrogen therapy starts?",
   "back": "Once breast tissue has grown and become fibrotic, radiation works poorly",
-  "extra": "A single low dose with electrons; tamoxifen prevents it even more effectively."
+  "extra": "A single 10-12 Gy with electrons. In a head-to-head trial, tamoxifen prevented gynecomastia more effectively than radiation."
  },
  {
   "id": "pal-42",
@@ -312,7 +319,7 @@
   "category": "Functional & Vascular Radiosurgery",
   "front": "What is the main side effect of radiosurgery for trigeminal neuralgia?",
   "back": "Facial numbness or tingling",
-  "extra": "Relief usually starts within 1-3 months; pain can recur over years and SRS can be repeated."
+  "extra": "Roughly a quarter of patients develop new numbness, often months later. Relief usually begins within about a month; pain can recur over years, and SRS can be repeated."
  },
  {
   "id": "pal-46",
@@ -326,21 +333,21 @@
   "category": "Functional & Vascular Radiosurgery",
   "front": "What is the typical marginal dose for AVM radiosurgery?",
   "back": "About 16-25 Gy in one session (often 18-22 Gy)",
-  "extra": "Obliteration occurs in roughly 70-80% of small AVMs."
+  "extra": "Obliteration occurs in roughly 70-80% of small AVMs, usually over 1-3 years."
  },
  {
   "id": "pal-48",
   "category": "Functional & Vascular Radiosurgery",
   "front": "After AVM radiosurgery, when is the patient protected from bleeding?",
-  "back": "Only after complete obliteration, which usually takes 1-3 years",
-  "extra": "Confirm with angiography, usually around 3 years."
+  "back": "Best protection comes after complete obliteration, usually 1-3 years; risk is lower but not gone during the latency period",
+  "extra": "Confirm obliteration with angiography, usually around 3 years."
  },
  {
   "id": "pal-49",
   "category": "Functional & Vascular Radiosurgery",
   "front": "What did the ARUBA trial show?",
   "back": "For unruptured AVMs, medical management alone led to fewer strokes and deaths than intervention over its short follow-up",
-  "extra": "Debated, but it made observation a real option for unruptured AVMs."
+  "extra": "Stopped early (death or stroke 10% vs 31%, mean follow-up about 33 months). Debated because of short follow-up and mixed interventions, but it made observation a real option for unruptured AVMs."
  },
  {
   "id": "pal-50",
@@ -374,7 +381,7 @@
   "id": "pal-54",
   "category": "Other Sites in Brief",
   "front": "How is a solitary plasmacytoma treated?",
-  "back": "Definitive RT, about 40-50 Gy",
+  "back": "Definitive RT, about 35-50 Gy depending on site and size",
   "extra": "Myeloma, in contrast, needs only low palliative doses."
  },
  {

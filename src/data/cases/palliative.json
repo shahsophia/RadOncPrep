@@ -62,8 +62,8 @@
     {
      "label": "Counseling",
      "prompt": "What do you tell him to expect?",
-     "answer": "Pain usually starts improving in 1-2 weeks and is best at about 4-6 weeks, so keep taking pain medicine until then. A temporary pain flare in the first few days is common, and dexamethasone lowers that risk. Fatigue is mild. About 1 in 5 patients need retreatment later.",
-     "explanation": "Dexamethasone around treatment reduced pain flare in NCIC SC.23."
+     "answer": "Pain often starts improving in 1-2 weeks, and most responses are seen by 4-8 weeks, so keep taking pain medicine until then. A temporary pain flare in the first few days is common; dexamethasone can lower the risk. Fatigue is usually mild. About 1 in 5 patients need retreatment after a single fraction.",
+     "explanation": "In NCIC SC.23, dexamethasone lowered pain flare from 35% to 26%; a later Dutch trial found it delayed flare without significantly reducing how often it happened."
     },
     {
      "label": "Three months later",
@@ -119,15 +119,15 @@
     },
     {
      "label": "Surgery or RT",
-     "prompt": "She can still walk with help, the compression is at one level, she has bone-only disease, and the spine surgeon thinks she can tolerate surgery. What is the best plan?",
+     "prompt": "She can still walk with help and has been weak for 2 days. The compression is at one level. Her back pain is much worse when she sits up, CT shows 50% collapse, and her SINS is 12. She has bone-only disease likely to give her years, and the spine surgeon thinks she can tolerate surgery. What is the best plan?",
      "choices": [
-      "Decompressive surgery and stabilization, then radiation",
-      "Radiation alone, 8 Gy in 1",
-      "Steroids alone",
-      "Chemotherapy first"
+      "Decompression and stabilization, then radiation",
+      "Systemic therapy first",
+      "Steroids alone until she stops walking",
+      "Radiation alone, 8 Gy in 1"
      ],
      "correctIndex": 0,
-     "explanation": "For a fit patient with single-level compression and a good prognosis, surgery followed by RT keeps more patients walking. Breast cancer is fairly radiosensitive, so RT alone is also reasonable for patients who can't have surgery."
+     "explanation": "Two things point to surgery here: high-grade single-level compression in a fit patient with a long prognosis (the Patchell population), and mechanical pain with collapse suggesting instability, which radiation cannot fix. Breast cancer is relatively radiosensitive, so if her spine were stable or she could not have surgery, urgent radiation alone would be a reasonable choice (NOMS). Steroids are a bridge, not a treatment, and systemic therapy works too slowly for a cord at risk."
     },
     {
      "label": "Trial",
@@ -154,7 +154,7 @@
    "id": "pal-case-5",
    "level": "Foundational",
    "title": "Case 3: Lumps in the Palm",
-   "oneLiner": "A 67-year-old retired carpenter has firm, slowly growing nodules in his right palm at the base of the ring finger for 8 months. They're tender when he grips tools.",
+   "oneLiner": "A 67-year-old retired carpenter has firm, slowly growing nodules in his right palm at the base of the ring finger for 8 months. They are tender when he grips tools.",
    "steps": [
     {
      "label": "Diagnosis",
@@ -174,11 +174,11 @@
      "choices": [
       "RT is only for recurrence after surgery",
       "RT reverses established contractures",
-      "RT works on the proliferating fibroblasts of early disease, slowing progression; it can't straighten a finger once a mature cord has formed",
+      "RT works on the proliferating fibroblasts of early disease, slowing progression; it cannot straighten a finger once a mature cord has formed",
       "RT is used only for the foot"
      ],
      "correctIndex": 2,
-     "explanation": "The key word for Dupuytren radiation is early. Established contractures need needle aponeurotomy, collagenase, or surgery."
+     "explanation": "The key word for Dupuytren radiation is early. Established contractures need needle aponeurotomy, collagenase, or surgery. Be honest that the evidence is limited: there is no randomized comparison with no treatment, and early disease does not always progress (NICE IPG573)."
     },
     {
      "label": "Regimen",
@@ -240,19 +240,19 @@
      "label": "Regimen and timing",
      "prompt": "What radiation do you offer, and when?",
      "answer": "A single 7-8 Gy to the hip, within about 24 hours before surgery or within 72 hours after.",
-     "explanation": "Radiation kills the precursor cells before they become bone-forming cells, which happens in the first few days. Once bone has formed, radiation can't remove it."
+     "explanation": "Radiation kills the precursor cells before they become bone-forming cells, which happens in the first few days. Once bone has formed, radiation cannot remove it."
     },
     {
      "label": "Technique",
-     "prompt": "His new prosthesis will be uncemented, with a porous coating. What do you do?",
+     "prompt": "His new prosthesis will be uncemented, with a porous coating. Which statement about the plan is most accurate?",
      "choices": [
-      "Treat the whole pelvis",
-      "Shield the porous components so bone can still grow into them",
-      "Double the dose",
-      "Nothing different"
+      "Treat the whole pelvis to 30 Gy in 10",
+      "Cover the soft tissue around the joint where bone would form; whether to shield the porous components varies by institution",
+      "Radiation is contraindicated with any uncemented implant",
+      "Wait until bone is visible on X-ray, then treat"
      ],
      "correctIndex": 1,
-     "explanation": "Uncemented implants rely on bone ingrowth for fixation, so those surfaces are blocked from the field."
+     "explanation": "The field covers the periarticular soft tissue where heterotopic bone forms. Some centers shield porous-coated components to protect bone ingrowth; a 2022 series found unshielded low-dose preoperative RT did not increase loosening, so practice varies and is agreed with the orthopedic surgeon. Radiation prevents bone from forming; it cannot remove bone that is already there."
     },
     {
      "label": "Alternative",
@@ -316,8 +316,8 @@
      "choices": [
       "8 Gy causes more side effects",
       "Insurance requires 10 fractions",
-      "Her bone-only breast cancer may give her years, and she needs durable local control so the hardware doesn't fail",
-      "Single fractions don't relieve pain"
+      "Her bone-only breast cancer may give her years, and she needs durable local control so the hardware does not fail",
+      "Single fractions do not relieve pain"
      ],
      "correctIndex": 2,
      "explanation": "Single fractions are excellent for uncomplicated lesions and short prognosis. After fixation, with a long expected survival, most clinicians use a multifraction course."
@@ -426,7 +426,7 @@
       "Radiosurgery"
      ],
      "correctIndex": 0,
-     "explanation": "Carbamazepine (or oxcarbazepine) controls pain in most patients at first. Procedures are for pain that drugs no longer control or side effects that can't be tolerated."
+     "explanation": "Carbamazepine (or oxcarbazepine) controls pain in most patients at first. Procedures are for pain that drugs no longer control or side effects that cannot be tolerated."
     },
     {
      "label": "Procedure",
@@ -438,7 +438,7 @@
       "Glycerol rhizotomy"
      ],
      "correctIndex": 2,
-     "explanation": "SRS is noninvasive and doesn't require stopping anticoagulation, which suits an older patient on a blood thinner. Microvascular decompression is most durable but needs a craniotomy."
+     "explanation": "SRS is noninvasive and does not require stopping anticoagulation, which suits an older patient on a blood thinner. Microvascular decompression is most durable but needs a craniotomy."
     },
     {
      "label": "Dose and target",
@@ -449,8 +449,8 @@
     {
      "label": "Counseling",
      "prompt": "What do you tell her about timing and side effects?",
-     "answer": "Relief is delayed, usually starting within about 1-3 months, so she should keep her medicine until then. The main side effect is facial numbness or tingling in a minority of patients. Pain can return over years, and SRS can be repeated.",
-     "explanation": "Outcomes are reported with the BNI pain score."
+     "answer": "Relief is delayed, often starting within about a month (sometimes longer), so she should keep her medicine until then. The main side effect is new facial numbness, in roughly a quarter of patients, often months later. Pain returns in a substantial minority over years, and SRS can be repeated.",
+     "explanation": "In an 871-patient multicenter series (2024), about 80% had initial relief at a median of about a month, about 4 in 10 of them later had pain return, and about a quarter developed new numbness. Outcomes are reported with the BNI pain score."
     }
    ]
   },
@@ -500,13 +500,13 @@
      "label": "Latency",
      "prompt": "He asks when he will be protected from another bleed. What do you tell him?",
      "choices": [
-      "Immediately after treatment",
-      "Not until the AVM is completely closed, which usually takes 1-3 years",
-      "Never; SRS doesn't affect bleeding",
-      "After 1 month"
+      "He is fully protected as soon as treatment is done",
+      "The risk is lower while the vessels close but not gone; the best protection comes after complete obliteration, usually 1-3 years",
+      "Radiosurgery does not change bleeding risk",
+      "He is protected after 1 month"
      ],
      "correctIndex": 1,
-     "explanation": "The vessels close slowly. Until obliteration is confirmed by angiography, usually around 3 years, the bleeding risk remains."
+     "explanation": "The vessels close slowly. In a large series, bleeding risk fell by about half during the latency period and much further after obliteration, but was not zero in either period. Obliteration is confirmed by angiography, usually around 3 years."
     },
     {
      "label": "Trial",
@@ -544,15 +544,15 @@
     {
      "label": "Trial",
      "tag": "Landmark trial",
-     "prompt": "Which trial showed that radiating asymptomatic high-risk bone metastases reduced skeletal-related events and hospitalizations and improved survival?",
+     "prompt": "Which randomized phase II trial found that radiating asymptomatic high-risk bone metastases reduced skeletal-related events and related hospitalizations?",
      "choices": [
-      "RTOG 9714",
-      "Dutch Bone Metastasis Study",
       "Gillespie (MSKCC)",
-      "SCORAD III"
+      "Dutch Bone Metastasis Study",
+      "SCORAD III",
+      "RTOG 9714"
      ],
-     "correctIndex": 2,
-     "explanation": "The Gillespie randomized phase II trial: skeletal-related events fell from about 29% to about 2%. Larger trials are confirming it."
+     "correctIndex": 0,
+     "explanation": "Gillespie (JCO 2024): in 78 patients with more than 5 metastases, skeletal-related events at 1 year fell from 29% to 1.6% of lesions. Survival was longer, but that was a secondary endpoint the trial was not powered for, and a phase III trial is needed before this becomes a universal standard."
     },
     {
      "label": "Plan",
@@ -561,10 +561,10 @@
       "Radiate every lesion including the ribs",
       "Observation until they hurt",
       "Stop immunotherapy and start RT",
-      "Prophylactic RT to the acetabular and T12-L1 lesions, continuing systemic therapy"
+      "Discuss prophylactic RT to the acetabular and T12-L1 lesions, continuing systemic therapy"
      ],
      "correctIndex": 3,
-     "explanation": "Treat the lesions likely to cause trouble and leave small, low-risk rib lesions alone. Systemic therapy continues."
+     "explanation": "Offering treatment to the lesions likely to cause trouble is reasonable, framed as a shared decision based on promising phase II data. Small, low-risk rib lesions are left alone, and systemic therapy continues."
     },
     {
      "label": "Six months later",
@@ -637,12 +637,12 @@
     },
     {
      "label": "Hospice",
-     "prompt": "The hospice team asks whether radiation means she can't enroll. What is the best answer?",
+     "prompt": "The hospice team asks whether radiation means she cannot enroll. What is the best answer?",
      "choices": [
       "She must finish all treatment before hospice",
-      "Hospice patients can't receive radiation",
+      "Hospice patients cannot receive radiation",
       "She needs 10 fractions first",
-      "A single palliative fraction doesn't need to delay hospice, and many hospices can coordinate it"
+      "A single palliative fraction does not need to delay hospice, and many hospices can coordinate it"
      ],
      "correctIndex": 3,
      "explanation": "Palliative radiation aimed at comfort fits within hospice goals. Starting long courses near the end of life usually adds burden without benefit."

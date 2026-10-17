@@ -81,6 +81,7 @@ data = "\n".join([
     f"const CASES = {js(cases)};",
     f"const CARD_ART = {js(cards)};",
     f"const CURRICULUM = {js(read_json(os.path.join(SRC, 'data', 'curriculum.json')))};",
+    f"const SOURCES = {js(read_json(os.path.join(SRC, 'data', 'sources.json')))};",
     f"const IMG_POOL = {js(IMG_POOL)};",
     "(function resolve(n){if(Array.isArray(n)){n.forEach(resolve);return;}if(n&&typeof n==='object'){for(const k in n){const v=n[k];if(k==='image'&&typeof v==='string'&&v.startsWith('imgpool:'))n[k]=IMG_POOL[+v.slice(8)];else resolve(v);}}})([ANATOMY,IMAGING,CASES,CARD_ART]);",
 ])

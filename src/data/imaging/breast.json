@@ -121,7 +121,7 @@
   ]
  },
  "img-breast-mri": {
-  "intro": "<p>Breast MRI is the most sensitive test. Contrast shows where tumors pull in blood, and the pattern of enhancement tells you what you're looking at.</p>",
+  "intro": "<p>Breast MRI is the most sensitive test. Contrast shows where tumors pull in blood, and the pattern of enhancement tells you what you are looking at.</p>",
   "plates": [
    {
     "id": "br-mri-dce",
@@ -177,7 +177,7 @@
   ]
  },
  "img-breast-ct": {
-  "intro": "<p>The planning (simulation) CT is the scan radiation oncologists look at every day. Learn what's on it before you sit down with a resident to contour.</p>",
+  "intro": "<p>The planning (simulation) CT is the scan radiation oncologists look at every day. Learn what is on it before you sit down with a resident to contour.</p>",
   "plates": [
    {
     "id": "br-ct-sim",

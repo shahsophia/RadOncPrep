@@ -341,7 +341,7 @@
      "label": "Risk group",
      "prompt": "What is his NCCN risk group?",
      "answer": "Very high risk",
-     "explanation": "Very high risk is 2 or more of: T3-4, Gleason 8-10, PSA 40 or more. He has all three."
+     "explanation": "Very high risk means T3b-T4, primary Gleason pattern 5, more than 4 cores with Grade Group 4-5, or 2-3 high-risk features (T3a, GG4-5, PSA over 20). He has T3b plus two high-risk features (GG5, PSA 45). He also meets the STAMPEDE criteria for abiraterone (2 or more of T3-4, Gleason 8-10, PSA 40 or more)."
     },
     {
      "label": "Genetics",
@@ -481,7 +481,7 @@
     {
      "label": "Trial",
      "tag": "Landmark trial",
-     "prompt": "At the time of surgery, why wasn't he given adjuvant RT for pT3a disease?",
+     "prompt": "At the time of surgery, why was he not given adjuvant RT for pT3a disease?",
      "choices": [
       "Because RT is never used after prostatectomy",
       "RAVES, RADICALS-RT, and GETUG-AFU 17 showed early salvage RT works as well as adjuvant RT, and about half of men never need RT",

@@ -273,7 +273,7 @@ MODALITIES = f"""
 <li>The <strong>multileaf collimator (MLC)</strong> sits in the head of the machine. It is made of dozens of thin metal leaves that slide in and out, controlled by a computer. Together they form an opening in the shape of the tumor. Radiation passes through the opening, and the leaves block it everywhere else.</li>
 </ul>
 {linac_mlc()}
-<p>Keep the MLC in mind. The techniques in the next two sections are really just different ways of moving these leaves and this gantry.</p>
+<p>Keep the MLC in mind. The techniques in the next two sections are different ways of moving these leaves and this gantry.</p>
 
 <h3 id='shape'>How Do We Shape the Dose?</h3>
 <p>Once we know we are using a linac, the next question is how closely the dose needs to fit the tumor. A tumor sitting in open space is easy to treat. A tumor curled around the spinal cord is much harder, because the cord can only tolerate a limited dose. There are two main ways to shape the dose.</p>
@@ -395,7 +395,7 @@ PRESENTATION = f"""
 <p>After one sentence, the attending already knows the disease, the stage, and the question.</p>
 
 <h4>2. The story so far</h4>
-<p>Doctors call this the <strong>history of present illness</strong>, or HPI. It tells how the cancer was found and what has happened since. The key is to keep only facts that change the <strong>diagnosis</strong>, the <strong>stage</strong>, the <strong>treatment</strong>, or the <strong>safety of radiation</strong>.</p>
+<p>Doctors call this the <strong>history of present illness</strong>, or HPI. It tells how the cancer was found and what has happened since. Keep only the facts that change the <strong>diagnosis</strong>, the <strong>stage</strong>, the <strong>treatment</strong>, or the <strong>safety of radiation</strong>.</p>
 <div class='big-idea'>Before each detail, ask: would this fact change what we do? If not, it can probably be left out.</div>
 {compare(
     ("Keep", "Changes the plan", "<ul><li>How the cancer showed up, and symptoms that make it urgent (bleeding, blockage, pain)</li><li>How active and independent the patient is</li><li><strong>Any radiation in the past</strong>: where, how much, and when</li><li>Things that make radiation riskier, such as certain autoimmune diseases, inflammatory bowel disease before pelvic radiation, a pacemaker, pregnancy, or being unable to lie flat</li><li>What the patient hopes for, such as keeping an organ</li></ul>"),
@@ -594,73 +594,67 @@ CONSULT = f"""
 # ---------------------------------------------------------------------------
 # 06  TREATMENT PLANNING
 # ---------------------------------------------------------------------------
-NESTED_SVG = """<figure>
-<svg viewBox='0 0 520 300' xmlns='http://www.w3.org/2000/svg' role='img' aria-labelledby='nesttitle'>
-<title id='nesttitle'>Schematic nested target volumes on an axial chest CT: GTV inside CTV inside ITV inside PTV</title>
-<rect x='0' y='0' width='520' height='300' rx='14' fill='#06090d'/>
-<ellipse cx='185' cy='150' rx='155' ry='118' fill='#20262d'/>
-<ellipse cx='185' cy='150' rx='155' ry='118' fill='none' stroke='#3a4048' stroke-width='2'/>
-<path d='M255,95 C290,85 320,105 330,135 C338,158 328,180 305,192 C280,204 250,198 235,178 C222,160 225,120 255,95 Z' fill='none' stroke='#f5b942' stroke-width='2.5' stroke-dasharray='2 6' stroke-linecap='round'/>
-<path d='M262,105 C290,97 313,113 320,137 C326,156 317,173 298,183 C278,193 254,188 242,172 C231,157 235,124 262,105 Z' fill='none' stroke='#4ade80' stroke-width='2.5' stroke-linecap='round'/>
-<path d='M268,113 C288,108 304,120 309,138 C314,153 307,166 292,174 C277,181 259,177 250,164 C242,152 246,128 268,113 Z' fill='none' stroke='#60a5fa' stroke-width='2.5' stroke-linecap='round'/>
-<path d='M274,120 C288,117 298,126 301,138 C304,148 299,157 289,163 C278,168 265,165 259,156 C253,148 256,131 274,120 Z' fill='#ef4444' fill-opacity='0.85' stroke='#ef4444' stroke-width='2'/>
-<circle cx='400' cy='60' r='6' fill='#ef4444'/>
-<text x='412' y='65' font-size='13' fill='#e7ebf0' font-family='var(--font-body)'>GTV: visible tumor</text>
-<circle cx='400' cy='90' r='6' fill='none' stroke='#60a5fa' stroke-width='2.5'/>
-<text x='412' y='95' font-size='13' fill='#e7ebf0' font-family='var(--font-body)'>CTV: + microscopic</text>
-<circle cx='400' cy='120' r='6' fill='none' stroke='#4ade80' stroke-width='2.5'/>
-<text x='412' y='125' font-size='13' fill='#e7ebf0' font-family='var(--font-body)'>ITV: + internal motion</text>
-<circle cx='400' cy='150' r='6' fill='none' stroke='#f5b942' stroke-width='2.5'/>
-<text x='412' y='155' font-size='13' fill='#e7ebf0' font-family='var(--font-body)'>PTV: + setup error</text>
-</svg>
-<figcaption>
-Schematic axial chest CT (not a real scan) showing nested target volumes for a lung tumor. Each layer adds a margin for one specific source of uncertainty.
-</figcaption>
+# Treatment Planning figures. The target-volume and dose-distribution figures
+# are plain HTML/CSS (styles: "PLANNING FIGURES" in styles.css) so labels never
+# clip and they follow light and dark mode. The DVH stays a small SVG chart.
+NESTED_FIG = """<figure class='edu-fig' role='group' aria-label='Nested target volumes for a lung tumor'>
+<div class='tv-fig'>
+<div class='tv-stage' aria-hidden='true'>
+<div class='tv-body'><div class='tv-ring tv-ptv'><div class='tv-ring tv-itv'><div class='tv-ring tv-ctv'><div class='tv-ring tv-gtv'></div></div></div></div></div>
+</div>
+<ul class='tv-legend'>
+<li><span class='tv-sw tv-sw-gtv'></span><span><strong>GTV</strong> the tumor you can see</span></li>
+<li><span class='tv-sw tv-sw-ctv'></span><span><strong>CTV</strong> adds tissue where cancer cells may be hiding</span></li>
+<li><span class='tv-sw tv-sw-itv'></span><span><strong>ITV</strong> adds room for movement, such as breathing</span></li>
+<li><span class='tv-sw tv-sw-ptv'></span><span><strong>PTV</strong> adds a small margin for day-to-day setup differences</span></li>
+</ul>
+</div>
+<figcaption>Schematic, not a real scan and not to scale. Each layer adds a margin for one kind of uncertainty. Real margins depend on the tumor, the technique, and the imaging used.</figcaption>
 </figure>"""
 
-DVH_SVG = """<figure>
-<svg viewBox='0 0 520 300' xmlns='http://www.w3.org/2000/svg' role='img' aria-labelledby='dvhtitle'>
-<title id='dvhtitle'>Sample dose-volume histogram showing a target curve and an organ-at-risk curve</title>
-<line x1='55' y1='20' x2='55' y2='250' stroke='var(--ink-faint)' stroke-width='1.5'/>
-<line x1='55' y1='250' x2='490' y2='250' stroke='var(--ink-faint)' stroke-width='1.5'/>
-<text x='14' y='24' font-size='11' fill='var(--ink-faint)' font-family='var(--font-mono)'>% Volume</text>
-<text x='420' y='272' font-size='11' fill='var(--ink-faint)' font-family='var(--font-mono)'>Dose (Gy) &rarr;</text>
-<line x1='340' y1='20' x2='340' y2='250' stroke='var(--ink-faint)' stroke-width='1' stroke-dasharray='4 5'/>
-<text x='300' y='14' font-size='10.5' fill='var(--ink-faint)' font-family='var(--font-mono)'>Rx dose</text>
-<path d='M55,32 L300,32 C320,32 330,50 335,80 C338,110 339,180 340,250' fill='none' stroke='var(--accent)' stroke-width='3' stroke-linecap='round'/>
-<path d='M55,32 C110,60 150,95 190,130 C240,172 290,205 340,222 C380,234 420,242 460,246' fill='none' stroke='var(--accent-2)' stroke-width='3' stroke-linecap='round'/>
-<circle cx='190' cy='130' r='4.5' fill='var(--accent-2)'/>
-<text x='198' y='126' font-size='10.5' fill='var(--ink-soft)' font-family='var(--font-mono)'>D_mean</text>
-<circle cx='340' cy='222' r='4.5' fill='var(--accent-2)'/>
-<text x='348' y='218' font-size='10.5' fill='var(--ink-soft)' font-family='var(--font-mono)'>D_max</text>
+DVH_SVG = """<figure class='edu-fig' role='group' aria-label='Sample dose-volume histogram'>
+<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg' role='img' aria-labelledby='dvhtitle dvhdesc' style='max-width:640px;margin:0 auto'>
+<title id='dvhtitle'>Sample dose-volume histogram with a target curve and an organ-at-risk curve</title>
+<desc id='dvhdesc'>The target curve stays near 100 percent of its volume until the prescribed dose and then drops steeply. The organ-at-risk curve falls early. A dashed line at 20 Gy shows how to read V20, the percent of the organ receiving at least 20 Gy.</desc>
+<line x1='70' y1='30' x2='70' y2='260' stroke='var(--ink-faint)' stroke-width='1.5'/>
+<line x1='70' y1='260' x2='530' y2='260' stroke='var(--ink-faint)' stroke-width='1.5'/>
+<text x='62' y='34' font-size='12' fill='var(--ink-faint)' text-anchor='end' font-family='var(--font-body)'>100%</text>
+<text x='62' y='149' font-size='12' fill='var(--ink-faint)' text-anchor='end' font-family='var(--font-body)'>50%</text>
+<text x='62' y='264' font-size='12' fill='var(--ink-faint)' text-anchor='end' font-family='var(--font-body)'>0%</text>
+<text x='18' y='150' font-size='12.5' fill='var(--ink-soft)' text-anchor='middle' font-family='var(--font-body)' transform='rotate(-90 18 150)'>Percent of the structure</text>
+<text x='300' y='296' font-size='12.5' fill='var(--ink-soft)' text-anchor='middle' font-family='var(--font-body)'>Dose (Gy), increasing to the right</text>
+<line x1='360' y1='30' x2='360' y2='260' stroke='var(--ink-faint)' stroke-width='1' stroke-dasharray='4 5'/>
+<text x='360' y='22' font-size='12' fill='var(--ink-soft)' text-anchor='middle' font-family='var(--font-body)'>Prescribed dose</text>
+<path d='M70,32 L320,32 C340,32 350,50 355,80 C358,110 359,180 360,260' fill='none' stroke='var(--accent)' stroke-width='3' stroke-linecap='round'/>
+<path d='M70,32 C120,62 160,98 200,132 C250,174 300,206 350,224 C390,236 440,246 490,252' fill='none' stroke='var(--svc-headneck)' stroke-width='3' stroke-linecap='round'/>
+<line x1='150' y1='260' x2='150' y2='86' stroke='var(--svc-headneck)' stroke-width='1.2' stroke-dasharray='3 4'/>
+<line x1='70' y1='86' x2='150' y2='86' stroke='var(--svc-headneck)' stroke-width='1.2' stroke-dasharray='3 4'/>
+<circle cx='150' cy='86' r='4.5' fill='var(--svc-headneck)'/>
+<text x='158' y='80' font-size='12' fill='var(--ink-soft)' font-family='var(--font-body)'>V20: read up from 20 Gy</text>
+<text x='150' y='276' font-size='11.5' fill='var(--ink-faint)' text-anchor='middle' font-family='var(--font-body)'>20 Gy</text>
+<text x='250' y='50' font-size='12.5' fill='var(--accent)' font-weight='700' font-family='var(--font-body)'>Target</text>
+<text x='410' y='232' font-size='12.5' fill='var(--svc-headneck)' font-weight='700' font-family='var(--font-body)'>Organ at risk</text>
 </svg>
-<figcaption>
-Sample DVH (not real patient data). <span style='color:var(--accent);font-weight:700;'>&#9679; Target</span> stays near 100% of its volume up to the prescription dose, then drops sharply: good coverage. <span style='color:var(--accent-2);font-weight:700;'>&#9679; OAR</span> slopes down early: most of the organ gets little dose.
-</figcaption>
+<figcaption>Sample DVH (not real patient data). The target curve stays near 100% until the prescribed dose and then drops steeply, which means good coverage. The organ-at-risk curve falls early, which means most of the organ gets little dose. Reading up from 20 Gy to the organ curve and across gives V20, the percent of the organ that receives 20 Gy or more.</figcaption>
 </figure>"""
 
-ISODOSE_SVG = """<figure>
-<svg viewBox='0 0 520 300' xmlns='http://www.w3.org/2000/svg' role='img' aria-labelledby='isotitle'>
-<title id='isotitle'>Schematic isodose lines wrapping a PTV, with a hotspot and a spared nearby organ at risk</title>
-<rect x='0' y='0' width='520' height='300' rx='14' fill='#06090d'/>
-<ellipse cx='230' cy='150' rx='190' ry='125' fill='#20262d'/>
-<path d='M120,90 C170,60 260,58 305,85 C345,108 355,150 335,190 C315,228 260,245 205,235 C155,226 110,195 100,150 C95,125 100,105 120,90 Z' fill='#f59e0b' fill-opacity='0.10' stroke='#f59e0b' stroke-width='1.5' stroke-dasharray='3 5'/>
-<path d='M135,100 C178,76 255,74 292,97 C324,116 332,150 316,182 C300,213 254,228 208,220 C167,213 132,188 124,150 C120,130 122,113 135,100 Z' fill='#4ade80' fill-opacity='0.14' stroke='#4ade80' stroke-width='2'/>
-<path d='M150,112 C185,93 245,92 273,111 C298,127 304,150 292,175 C280,199 244,211 208,205 C176,199 149,180 143,150 C140,134 141,122 150,112 Z' fill='#f5b942' fill-opacity='0.22' stroke='#f5b942' stroke-width='2'/>
-<path d='M167,124 C193,110 233,109 253,124 C271,136 275,150 266,168 C257,186 231,194 205,190 C182,186 165,172 161,150 C159,138 160,131 167,124 Z' fill='#ef4444' fill-opacity='0.75' stroke='#ef4444' stroke-width='2'/>
-<circle cx='222' cy='142' r='9' fill='#fff' fill-opacity='0.9' stroke='#fff' stroke-width='1'/>
-<ellipse cx='400' cy='170' rx='34' ry='44' fill='#60a5fa' fill-opacity='0.5' stroke='#60a5fa' stroke-width='2'/>
-<text x='400' y='172' font-size='11' fill='#06090d' font-family='var(--font-body)' text-anchor='middle' font-weight='700'>OAR</text>
-<circle cx='430' cy='55' r='6' fill='none' stroke='#f5b942' stroke-width='2'/>
-<text x='442' y='60' font-size='12' fill='#e7ebf0' font-family='var(--font-body)'>Prescription isodose</text>
-<circle cx='430' cy='80' r='6' fill='none' stroke='#4ade80' stroke-width='2'/>
-<text x='442' y='85' font-size='12' fill='#e7ebf0' font-family='var(--font-body)'>Lower isodose (falloff)</text>
-<circle cx='430' cy='105' r='6' fill='#fff'/>
-<text x='442' y='110' font-size='12' fill='#e7ebf0' font-family='var(--font-body)'>Hotspot</text>
-</svg>
-<figcaption>
-Schematic dose distribution (not a real plan). Isodose lines hugging the dashed PTV mean good coverage and conformity. The white spot is a hotspot. The blue OAR sits outside the higher isodose lines.
-</figcaption>
+ISODOSE_FIG = """<figure class='edu-fig' role='group' aria-label='Schematic dose distribution'>
+<div class='iso-fig' aria-hidden='true'>
+<div class='iso-body'></div>
+<div class='iso-line iso-low'></div>
+<div class='iso-line iso-rx'></div>
+<div class='iso-ptv'></div>
+<div class='iso-hot'></div>
+<div class='iso-oar'>OAR</div>
+</div>
+<ul class='iso-legend'>
+<li><span class='iso-sw iso-sw-ptv'></span>Target (PTV), dashed outline</li>
+<li><span class='iso-sw iso-sw-rx'></span>Prescription dose line, hugging the target</li>
+<li><span class='iso-sw iso-sw-low'></span>A lower dose line, as the dose falls off</li>
+<li><span class='iso-sw iso-sw-hot'></span>Hot spot, a small area above the planned dose</li>
+<li><span class='iso-sw iso-sw-oar'></span>Organ at risk, outside the high-dose lines</li>
+</ul>
+<figcaption>Schematic cross-section, not a real plan. Isodose lines are like contour lines on a map: each one joins points that receive the same dose. Good coverage means the prescription line wraps the whole target; good conformity means it does not spill far beyond it.</figcaption>
 </figure>"""
 
 PLANNING = f"""
@@ -683,7 +677,7 @@ PLANNING = f"""
 <div class='spec-row'><dt>ITV</dt><dd><strong>Internal target volume:</strong> extra room for movement inside the body, such as a lung tumor moving as the patient breathes.</dd></div>
 <div class='spec-row'><dt>PTV</dt><dd><strong>Planning target volume:</strong> a final small margin for the tiny differences in how the patient lies from day to day.</dd></div>
 </dl>
-{NESTED_SVG}
+{NESTED_FIG}
 <p>Knowing how the layers are used matters more than memorizing the definitions. Three examples:</p>
 {cards([
     ("Lung SBRT", "The tumor is drawn on a breathing CT scan, the ITV covers everywhere it moves, and a small PTV goes around that. There is often no separate CTV."),
@@ -741,7 +735,7 @@ PLANNING = f"""
 <li><strong>Conformity:</strong> how tightly does the high dose hug the target?</li>
 <li><strong>Hot spots:</strong> small areas that get more than the planned dose. Usually acceptable inside the tumor, but not inside a healthy organ.</li>
 </ul>
-{ISODOSE_SVG}
+{ISODOSE_FIG}
 <p>When these goals conflict, the doctor decides. If the target touches the spinal cord, for example, the plan usually accepts a slightly lower dose to that edge of the target to protect the cord.</p>
 <details class='reveal'>
 <summary>Following along at a plan review: CB-CHOP<span class='chev'>&#9662;</span></summary>
@@ -800,7 +794,7 @@ PLANNING = f"""
 SECTIONS = [
     {
         "id": "rad-onc-101", "num": 1, "title": "Radiation 101",
-        "question": "What actually happens when a patient receives radiation?",
+        "question": "What happens when a patient receives radiation?",
         "objectives": [
             "Describe the steps a patient goes through, from consult to follow-up.",
             "Define dose, fraction, and treatment course.",

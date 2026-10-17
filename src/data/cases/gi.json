@@ -52,7 +52,7 @@
       "German CAO/ARO/AIO-94"
      ],
      "correctIndex": 0,
-     "explanation": "Nigro first showed chemoRT could replace APR. RTOG 9811 favored mitomycin, and ACT II confirmed cisplatin was no better and maintenance chemo didn't help."
+     "explanation": "Nigro first showed chemoRT could replace APR. RTOG 9811 favored mitomycin, and ACT II confirmed cisplatin was no better and maintenance chemo did not help."
     },
     {
      "label": "Field",
@@ -85,7 +85,7 @@
   {
    "id": "gi-case-5",
    "level": "Foundational",
-   "title": "Case 2: Food That Won't Go Down",
+   "title": "Case 2: Food That Will not Go Down",
    "oneLiner": "A 63-year-old man with obesity and long-standing heartburn has 3 months of trouble swallowing solids and a 12 lb weight loss.",
    "steps": [
     {
@@ -268,8 +268,8 @@
      "image": "images/gi/gi-apet.jpg",
      "caption": "Fused FDG PET/CT of anal cancer in another patient: (a) primary, (b) avid inguinal node, (c) external iliac node. Koppula BR et al., Cancers 2022 (PMC9179927), CC BY 4.0.",
      "prompt": "What is his TNM stage and group?",
-     "answer": "T3 N1a M0, Stage IIIC",
-     "explanation": "Over 5 cm is T3. Inguinal, mesorectal, or internal iliac nodes are N1a; external iliac N1b; both N1c."
+     "answer": "T3 N1a M0, Stage IIIA",
+     "explanation": "Over 5 cm is T3. Inguinal, mesorectal, or internal iliac nodes are N1a; external iliac N1b; both N1c. In AJCC version 9, T3 N0-1 is stage IIIA (it was IIIC in the 8th edition); IIIC is T4 N1."
     },
     {
      "label": "Treatment",
@@ -322,7 +322,7 @@
       "To check for asthma",
       "To rule out tracheal or bronchial invasion or a fistula",
       "To biopsy the lung",
-      "It isn't needed"
+      "It is not needed"
      ],
      "correctIndex": 1,
      "explanation": "Mid- and upper-thoracic tumors sit right behind the trachea and left main bronchus. Airway invasion (T4b) or a fistula changes the plan."
@@ -495,7 +495,7 @@
     {
      "label": "Trial",
      "tag": "Landmark trial",
-     "prompt": "Which trial showed that adding SBRT to sorafenib improved overall and progression-free survival in unresectable HCC?",
+     "prompt": "Which trial found that adding SBRT to sorafenib improved progression-free survival, with a borderline overall survival gain, in locally advanced HCC?",
      "choices": [
       "RTOG 1112",
       "LAP07",
@@ -503,7 +503,7 @@
       "OPRA"
      ],
      "correctIndex": 0,
-     "explanation": "RTOG 1112 made SBRT a real option for HCC."
+     "explanation": "RTOG 1112: PFS 9.2 vs 5.5 months; OS 15.8 vs 12.3 months, significant only after adjusting for stratification factors. It supports a selected role for SBRT, though sorafenib is no longer the usual first-line drug."
     },
     {
      "label": "Plan limit",
@@ -585,7 +585,7 @@
     },
     {
      "label": "If incomplete",
-     "prompt": "If she didn't respond fully to immunotherapy, what would come next?",
+     "prompt": "If she did not respond fully to immunotherapy, what would come next?",
      "answer": "Standard chemoRT or TNT, then TME; radiation and surgery are still available.",
      "explanation": ""
     },

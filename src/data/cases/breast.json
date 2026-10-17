@@ -6,7 +6,7 @@
    "id": "br-case-1",
    "level": "Foundational",
    "title": "Case 1: A Lump in the Shower",
-   "oneLiner": "A 27-year-old woman felt a smooth, rubbery lump in her left breast while showering. It moves easily under her fingers and doesn't hurt. She has no family history of breast or ovarian cancer.",
+   "oneLiner": "A 27-year-old woman felt a smooth, rubbery lump in her left breast while showering. It moves easily under her fingers and does not hurt. She has no family history of breast or ovarian cancer.",
    "steps": [
     {
      "label": "First test",
@@ -40,9 +40,9 @@
      "prompt": "Because the lump is new and palpable, it is biopsied. Why use a core needle biopsy rather than FNA for a breast mass?",
      "choices": [
       "FNA is more painful",
-      "FNA gives loose cells, not tissue architecture, so it can't tell DCIS from invasive cancer",
+      "FNA gives loose cells, not tissue architecture, so it cannot tell DCIS from invasive cancer",
       "Core biopsy is cheaper",
-      "FNA can't be guided by ultrasound"
+      "FNA cannot be guided by ultrasound"
      ],
      "correctIndex": 1,
      "explanation": "Core biopsy keeps the tissue architecture, so the pathologist can see invasion and run ER, PR, and HER2. A clip is placed so the spot can be found later."
@@ -82,7 +82,7 @@
     {
      "label": "Mammogram",
      "image": "images/breast/br-g-calcs.jpg",
-     "caption": "Magnified craniocaudal mammogram view of the area of concern. Jmarchn, Wikimedia Commons, CC BY-SA 3.0.",
+     "caption": "Magnified craniocaudal mammogram view of the area of concern.",
      "prompt": "The magnified views show fine, linear, branching (casting) calcifications over a 2.5 cm segment, BI-RADS 4C. What do calcifications like these most suggest?",
      "choices": [
       "Benign fat necrosis",
@@ -135,7 +135,7 @@
       "Whole-breast RT plus regional nodal irradiation"
      ],
      "correctIndex": 1,
-     "explanation": "She isn't low risk: omission (RTOG 9804) is for small, low or intermediate grade DCIS with widely clear margins, and hers is high grade with comedo necrosis. Nodes are not treated for DCIS. ER-positive DCIS can get endocrine therapy for risk reduction."
+     "explanation": "She is not low risk: omission (RTOG 9804) is for small, low or intermediate grade DCIS with widely clear margins, and hers is high grade with comedo necrosis. Nodes are not treated for DCIS. ER-positive DCIS can get endocrine therapy for risk reduction."
     },
     {
      "label": "Side effects",
@@ -207,13 +207,13 @@
       "Her lymph nodes must be irradiated instead"
      ],
      "correctIndex": 1,
-     "explanation": "The omission trials enrolled women taking endocrine therapy. If she doesn't plan to take it, the case for skipping RT gets much weaker."
+     "explanation": "The omission trials enrolled women taking endocrine therapy. If she does not plan to take it, the case for skipping RT gets much weaker."
     },
     {
      "label": "If she wants RT",
      "prompt": "If she chooses radiation, what is the shortest evidence-based whole-breast regimen, and what is one alternative?",
      "answer": "26 Gy in 5 daily fractions over 1 week (FAST-Forward). Alternative: partial breast RT (for example 30 Gy in 5 fractions), since she meets low-risk criteria.",
-     "explanation": "40 Gy in 15 fractions is also standard. She doesn't need a boost: she is over 50, the tumor is low grade, and the margins are negative."
+     "explanation": "40 Gy in 15 fractions is also standard. She does not need a boost: she is over 50, the tumor is low grade, and the margins are negative."
     }
    ]
   },
@@ -251,7 +251,7 @@
       "No radiation"
      ],
      "correctIndex": 1,
-     "explanation": "She is node-negative, so no nodal fields. Age 50 or younger and high grade are both boost indications. She is too young for partial breast RT or omission."
+     "explanation": "She is node-negative, so no nodal fields. Age 50 or younger and high grade are both boost indications. Her grade 3 tumor over 2 cm makes partial breast RT a poor fit, and she is too young and too high-risk for omission."
     },
     {
      "label": "The heart",
@@ -398,7 +398,7 @@
       "Only if she skips reconstruction"
      ],
      "correctIndex": 1,
-     "explanation": "PMRT is indicated for T3-T4 tumors, 4 or more positive nodes, or a positive margin, and strongly considered for 1-3 nodes."
+     "explanation": "PMRT is indicated for T4 tumors, T3 with positive nodes, 4 or more positive nodes, or a positive margin; it is strongly considered for 1-3 nodes, and T3N0 is individualized."
     },
     {
      "label": "Nodal levels",
@@ -412,7 +412,7 @@
       "Supraclavicular nodes only"
      ],
      "correctIndex": 1,
-     "explanation": "PMRT treats the chest wall and regional nodes. A dissected axilla (levels I-II) usually isn't retreated, because RT on top of a dissection sharply raises lymphedema risk. The internal mammary nodes sit beside the sternum in intercostal spaces 1-3."
+     "explanation": "PMRT treats the chest wall and regional nodes. A dissected axilla (levels I-II) usually is not retreated, because RT on top of a dissection sharply raises lymphedema risk. The internal mammary nodes sit beside the sternum in intercostal spaces 1-3."
     },
     {
      "label": "Trial",
@@ -464,7 +464,7 @@
   {
    "id": "br-case-7",
    "level": "Advanced",
-   "title": "Case 7: The Rash That Wasn't",
+   "title": "Case 7: The Rash That Was not",
    "oneLiner": "A 51-year-old woman has had 5 weeks of a red, warm, swollen right breast. She was treated for mastitis with two courses of antibiotics, but the redness has spread to cover more than half of the breast.",
    "steps": [
     {
@@ -480,7 +480,7 @@
       "Contact dermatitis: topical steroids"
      ],
      "correctIndex": 1,
-     "explanation": "Rapid-onset redness and edema covering at least a third of the breast that doesn't respond to antibiotics is inflammatory breast cancer until proven otherwise. It is a clinical diagnosis confirmed with a biopsy, often with no discrete mass."
+     "explanation": "Rapid-onset redness and edema covering at least a third of the breast that does not respond to antibiotics is inflammatory breast cancer until proven otherwise. It is a clinical diagnosis confirmed with a biopsy, often with no discrete mass."
     },
     {
      "label": "Stage",
@@ -569,7 +569,7 @@
       "A triple-negative cancer at 36 with a mother who had ovarian cancer: BRCA1",
       "Her tumor size: TP53",
       "The grade: PTEN",
-      "None; testing isn't needed"
+      "None; testing is not needed"
      ],
      "correctIndex": 0,
      "explanation": "Young age, triple-negative disease, and a family history of ovarian cancer all point to BRCA1, which is strongly linked to triple-negative cancer."

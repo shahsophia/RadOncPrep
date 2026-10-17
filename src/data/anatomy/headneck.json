@@ -1,12 +1,12 @@
 {
   "anat-oral-cavity": {
-    "intro": "<p>The oral cavity has seven subsites, and the single most testable boundary in all of head and neck anatomy sits right in the middle of the tongue. Work this plate in <strong>Explore mode</strong> first, then switch to <strong>Quiz mode</strong> and see if you can place each subsite cold.</p>",
+    "intro": "<p>The oral cavity has seven subsites, and the boundary you will be asked about most often sits in the middle of the tongue. Work this plate in <strong>Explore mode</strong> first, then switch to <strong>Quiz mode</strong> and see if you can place each subsite cold.</p>",
     "plates": [
       {
         "id": "hn-oral-cavity",
         "title": "Oral Cavity Subsites",
         "style": "photo",
-        "caption": "Midsagittal view of the head (face on the left). Buccal mucosa and retromolar trigone sit laterally, so they aren't visible on a midline cut.",
+        "caption": "Midsagittal view of the head (face on the left). Buccal mucosa and retromolar trigone sit laterally, so they are not visible on a midline cut.",
         "hotspots": [
           {
             "id": "lip",
@@ -20,7 +20,7 @@
             "label": "Oral Tongue (anterior 2/3)",
             "x": 40,
             "y": 56,
-            "blurb": "Anterior to the circumvallate papillae - the boundary with the base of tongue (oropharynx). Anterior tongue drains to Ia; lateral tongue to Ib; medial/deep tongue can skip directly to II-IV."
+            "blurb": "Everything in front of the circumvallate papillae, which mark the border with the base of tongue (oropharynx). The tip drains to Ia and the lateral tongue to Ib, and deep midline tumors can skip straight to levels II-IV."
           },
           {
             "id": "floor-of-mouth",
@@ -41,7 +41,7 @@
             "label": "Hard Palate",
             "x": 42,
             "y": 33,
-            "blurb": "Bony roof of the mouth. Drains to II-IV - it does not follow the level I pattern of the rest of the oral cavity."
+            "blurb": "Bony roof of the mouth. It drains to levels II-IV and does not follow the level I pattern of the rest of the oral cavity."
           }
         ],
         "image": "images/headneck/hn-oral-cavity.jpg"
@@ -209,7 +209,7 @@
             "label": "Larynx (Thyroid Cartilage)",
             "x": 47,
             "y": 87,
-            "blurb": "Far below the nasopharynx. Included here so you can see how high up the nasopharynx really sits."
+            "blurb": "Far below the nasopharynx. Included here to show how high the nasopharynx sits."
           }
         ]
       },
@@ -334,14 +334,14 @@
             "label": "True Vocal Cord (Glottis)",
             "x": 60,
             "y": 44,
-            "blurb": "About two-thirds of laryngeal cancers arise here. Sparse lymphatics mean early glottic cancers rarely have nodal spread (~2% for T1) - the anatomic reason elective neck treatment can often be skipped."
+            "blurb": "About two-thirds of laryngeal cancers arise here. Sparse lymphatics mean early glottic cancers rarely have nodal spread (~2% for T1), which is why elective neck treatment can often be skipped."
           },
           {
             "id": "anterior-commissure",
             "label": "Anterior Commissure",
             "x": 52,
             "y": 33,
-            "blurb": "Where the true cords meet anteriorly, with almost no perichondrium protecting the thyroid cartilage beneath it. Soft tissue thickness >1mm here is abnormal and suggests tumor extension - a classic pimp point."
+            "blurb": "Where the true cords meet anteriorly, with almost no perichondrium protecting the thyroid cartilage beneath it. Soft tissue thicker than 1 mm here is abnormal and suggests tumor extension, a common question on rounds."
           },
           {
             "id": "subglottis",
@@ -540,7 +540,7 @@
     ]
   },
   "anat-lymph-by-site": {
-    "intro": "<p>Click between subsites to see how the levels actually covered change with where the primary tumor sits - this is the logic an attending is running every time they draw an elective nodal volume.</p>",
+    "intro": "<p>Click between subsites to see how the covered levels change with the location of the primary. An attending runs through this same reasoning every time they draw an elective nodal volume.</p>",
     "plates": [
       {
         "id": "hn-lymph-oral-cavity",
@@ -553,21 +553,21 @@
             "label": "Level Ia",
             "x": 81,
             "y": 48,
-            "blurb": "At risk from the lower lip, anterior oral tongue, and anterior floor of mouth. The upper lip is the exception - it drains to facial lymphatics instead."
+            "blurb": "At risk from the lower lip, anterior oral tongue, and anterior floor of mouth. The upper lip is the exception: it drains to facial lymphatics instead."
           },
           {
             "id": "oc-1b",
             "label": "Level Ib",
             "x": 71,
             "y": 45,
-            "blurb": "The workhorse level for oral cavity disease - at risk from nearly every subsite (tongue, floor of mouth, gingiva, buccal mucosa, retromolar trigone, hard palate)."
+            "blurb": "The main level for oral cavity disease, at risk from nearly every subsite (tongue, floor of mouth, gingiva, buccal mucosa, retromolar trigone, and hard palate)."
           },
           {
             "id": "oc-2",
             "label": "Level II",
             "x": 47,
             "y": 47,
-            "blurb": "First echelon nodal group for oral tongue and most other oral cavity subsites; covered essentially always."
+            "blurb": "First echelon nodal group for the oral tongue and most other oral cavity subsites, so it is almost always covered."
           },
           {
             "id": "oc-3-4",
@@ -618,7 +618,7 @@
             "label": "Level VII (Retropharyngeal)",
             "x": 51,
             "y": 36,
-            "blurb": "Covered for any pharyngeal primary - oropharynx included. Easy to forget because these nodes are deep and not palpable on exam."
+            "blurb": "Covered for any pharyngeal primary, including the oropharynx. These nodes are easy to forget because they are deep and cannot be felt on exam."
           },
           {
             "id": "op-unilateral",
@@ -663,7 +663,7 @@
             "label": "Level VI",
             "x": 68,
             "y": 75,
-            "blurb": "Added when there is subglottic extension - the pretracheal (Delphian) and paratracheal nodes sit right in the path of subglottic spread."
+            "blurb": "Added when there is subglottic extension, because the pretracheal (Delphian) and paratracheal nodes sit in the path of subglottic spread."
           }
         ],
         "image": "images/headneck/hn-neck-levels.jpg"
@@ -679,7 +679,7 @@
             "label": "Level VII (Retropharyngeal)",
             "x": 51,
             "y": 36,
-            "blurb": "The classic first echelon for NPC - nearly all patients have retropharyngeal nodal involvement at diagnosis, even when the neck exam is unremarkable."
+            "blurb": "The classic first echelon for NPC. Nearly all patients have retropharyngeal nodal involvement at diagnosis, even when the neck exam is normal."
           },
           {
             "id": "np-2-4",

@@ -20,7 +20,7 @@
       "label": "Uterine Body",
       "x": 33,
       "y": 33,
-      "blurb": "Tumor can extend up into the lower uterine segment (doesn't change FIGO stage, but changes the target)."
+      "blurb": "Tumor can extend up into the lower uterine segment (does not change FIGO stage, but changes the target)."
      },
      {
       "id": "cx-fornix",

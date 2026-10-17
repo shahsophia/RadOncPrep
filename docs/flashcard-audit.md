@@ -413,3 +413,16 @@ the radiobiology cards (ov-26, ov-31, ov-32, ov-92) moved to How Radiation Works
 ov-90 now asks whether protons are automatically better (no; the benefit depends on
 disease, anatomy, and the comparison photon plan). Added ov-103 (consolidative
 intent) and ov-104 (a DVH shows how much dose, not where).
+
+**Palliative & Benign evidence pass (October 17, 2026), 393 → 394 cards.** Cards were
+checked against the source trials while the readings were corrected (see
+docs/quality-audit-2026-10.md). Revised: pal-4 (response by 4-8 weeks), pal-5 (dose
+groups, desmoid tumor-level doses), pal-13 (instability as an independent surgical
+indication), pal-14 (Mirels 8 borderline, original threshold, low specificity), pal-16,
+pal-19 (SC.23 numbers and the negative Dutch trial), pal-20 (SC.20 noninferior by ITT
+only), pal-21 (RTOG 0631 favored 8 Gy), pal-22 (Gillespie: polymetastatic, phase II,
+survival secondary), pal-23, pal-30 (SCORAD noninferiority at 8 weeks not met), pal-35
+(osteoarthritis contested), pal-39 (shielding varies), pal-41 (tamoxifen more effective),
+pal-45, pal-47, pal-48 (AVM latency risk lower, not gone), pal-49, pal-54 (plasmacytoma
+35-50 Gy). Added pal-57 (what makes a bone metastasis uncomplicated). CNS cnsx-52 aligned
+on AVM latency.

@@ -144,7 +144,7 @@
   "category": "Imaging",
   "front": "An adult has a cystic level II neck node and no obvious primary. What diagnosis must be ruled out?",
   "back": "HPV-positive oropharynx cancer (often a small or hidden tonsil or base of tongue primary)",
-  "extra": "Don't call a cystic neck node in an adult a benign branchial cleft cyst until this is excluded."
+  "extra": "Do not call a cystic neck node in an adult a benign branchial cleft cyst until this is excluded."
  },
  {
   "id": "hn-13",
@@ -242,7 +242,7 @@
   "category": "Treatment Paradigms",
   "front": "What is the standard concurrent chemotherapy given with head and neck radiation?",
   "back": "Cisplatin",
-  "extra": "Weekly or every 3 weeks. If cisplatin can't be given: carboplatin/paclitaxel or cetuximab."
+  "extra": "Weekly or every 3 weeks. If cisplatin cannot be given: carboplatin/paclitaxel or cetuximab."
  },
  {
   "id": "hn-43",

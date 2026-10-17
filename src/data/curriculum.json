@@ -164,7 +164,7 @@
      ]
     },
     "Treatment Paradigms": {
-     "lede": "Use four questions to decide what to treat and why, see what a head and neck radiation plan looks like, then add each site's twist and the toxicities you're trying to prevent.",
+     "lede": "Use four questions to decide what to treat and why, see what a head and neck radiation plan looks like, then add each site's twist and the toxicities you are trying to prevent.",
      "essentials": [
       "The four questions",
       "Adjuvant RT and chemo triggers",
@@ -260,7 +260,7 @@
      "module": "Treatment Paradigms"
     },
     {
-     "q": "Does meeting Z0011 criteria mean the patient doesn't need regional nodal radiation?",
+     "q": "Does meeting Z0011 criteria mean the patient does not need regional nodal radiation?",
      "module": "Treatment Paradigms"
     },
     {
@@ -289,7 +289,7 @@
       "Explain why aggressive subtypes respond best to neoadjuvant therapy",
       "Distinguish IDC from ILC and DCIS from LCIS",
       "Identify the high-value risk factors",
-      "Know which germline results change a radiation recommendation and which don't"
+      "Know which germline results change a radiation recommendation and which do not"
      ]
     },
     "Anatomy & Lymphatics": {
@@ -324,7 +324,7 @@
      ]
     },
     "Workup & Staging": {
-     "lede": "Work out what the patient actually has: biopsy and receptors, clinical TNM, systemic staging when needed, the post-neoadjuvant stage, and anatomic versus prognostic stage.",
+     "lede": "Work out what the patient has: biopsy and receptors, clinical TNM, systemic staging when needed, the post-neoadjuvant stage, and anatomic versus prognostic stage.",
      "essentials": [
       "The core workup",
       "Who needs systemic staging",
@@ -337,7 +337,7 @@
       "Know when systemic staging imaging is indicated",
       "Assign T and clinical N stage",
       "Explain why the pre-treatment clinical stage still matters after neoadjuvant therapy",
-      "Explain why radiation decisions aren't made from prognostic stage alone"
+      "Explain why radiation decisions are not made from prognostic stage alone"
      ]
     },
     "Treatment Paradigms": {
@@ -423,7 +423,7 @@
      "module": "Workup & Staging"
     },
     {
-     "q": "When would you get an EBUS, and why isn't a PET-positive node enough?",
+     "q": "When would you get an EBUS, and why is a PET-positive node not enough?",
      "module": "Workup & Staging"
     },
     {
@@ -439,7 +439,7 @@
      "module": "Treatment Paradigms"
     },
     {
-     "q": "Why isn't SBRT used for node-positive disease?",
+     "q": "Why is SBRT not used for node-positive disease?",
      "module": "Treatment Paradigms"
     },
     {
@@ -610,7 +610,7 @@
      "module": "Workup & Staging"
     },
     {
-     "q": "What does PSMA PET change, and what can't a negative scan tell you?",
+     "q": "What does PSMA PET change, and what cannot a negative scan tell you?",
      "module": "Imaging"
     },
     {
@@ -704,7 +704,7 @@
      ]
     },
     "Treatment Paradigms": {
-     "lede": "What does this patient's risk actually mean for radiation? Follow localized, node-positive, post-prostatectomy, and metastatic disease, then build the plan.",
+     "lede": "What does this patient's risk mean for radiation? Follow localized, node-positive, post-prostatectomy, and metastatic disease, then build the plan.",
      "essentials": [
       "Risk group frames the options; patient factors decide",
       "Where ADT enters, and when pelvic nodes are treated",
@@ -798,7 +798,7 @@
      "module": "Workup & Staging"
     },
     {
-     "q": "Why can't external beam replace brachytherapy in definitive cervical cancer treatment?",
+     "q": "Why cannot external beam replace brachytherapy in definitive cervical cancer treatment?",
      "module": "Treatment Paradigms"
     },
     {
@@ -927,7 +927,7 @@
     "MRI to Plan"
    ],
    "objectives": [
-    "Separate primary CNS tumors from metastases and name the five tumors you'll see most",
+    "Separate primary CNS tumors from metastases and name the five tumors you will see most",
     "Localize a lesion and identify the skull base structures and organs at risk around it",
     "Use each imaging test for the question it answers, and recognize that enhancement is not always tumor",
     "Follow the three workflows: primary tumor, brain metastasis, and spine metastasis",
@@ -984,7 +984,7 @@
      "module": "Treatment Paradigms"
     },
     {
-     "q": "Why does a glioblastoma plan have a CTV when SRS for a brain metastasis usually doesn't?",
+     "q": "Why does a glioblastoma plan have a CTV when SRS for a brain metastasis usually does not?",
      "module": "Radiation Planning & Toxicity"
     }
    ],
@@ -1078,7 +1078,7 @@
      ]
     },
     "Radiation Planning & Toxicity": {
-     "lede": "Turn the MRI into a plan (fusion, target, organs at risk, technique) and connect each organ at risk to the side effect you'll counsel about.",
+     "lede": "Turn the MRI into a plan (fusion, target, organs at risk, technique) and connect each organ at risk to the side effect you will counsel about.",
      "essentials": [
       "MRI fused to the planning CT",
       "GTV, CTV, and PTV",
@@ -1087,7 +1087,7 @@
      ],
      "objectives": [
       "Describe the four steps from MRI to treatment plan",
-      "Explain why a glioma plan has a CTV and a metastasis SRS plan usually doesn't",
+      "Explain why a glioma plan has a CTV and a metastasis SRS plan usually does not",
       "Match SRS, fractionated RT, WBRT, and craniospinal RT to the shape of the disease",
       "Link each organ at risk to its toxicity",
       "Recognize and manage radionecrosis"
@@ -1271,7 +1271,7 @@
      ]
     },
     "Workup & Staging": {
-     "lede": "GI has no single staging logic. Learn what actually decides the plan at each site, from MRI risk in the rectum to resectability in the pancreas and liver function in HCC.",
+     "lede": "GI has no single staging logic. Learn what decides the plan at each site, from MRI risk in the rectum to resectability in the pancreas and liver function in HCC.",
      "essentials": [
       "What decides the plan at each site",
       "Pancreatic resectability",
@@ -1355,7 +1355,7 @@
     "Know where radiation fits in lymphoma, skin cancer, sarcoma, myeloma, and pediatric tumors",
     "Recall the core trial behind each palliative decision"
    ],
-   "guideline": "ASTRO Palliative Radiation Therapy for Bone Metastases Guideline",
+   "guideline": "ASTRO guideline on palliative radiation for symptomatic bone metastases (2024)",
    "staging": [],
    "trials": [
     "RTOG 9714",
@@ -1389,7 +1389,10 @@
     "NCIC SR2",
     "STRASS",
     "BC2001",
-    "COMS"
+    "COMS",
+    "ANZMTG/TROG",
+    "MRC TE18",
+    "EORTC 62991"
    ],
    "attendingQuestions": [
     {
@@ -1413,7 +1416,7 @@
      "module": "Oncologic Emergencies"
     },
     {
-     "q": "Why shouldn't you radiate a stable patient with SVC syndrome before a biopsy?",
+     "q": "Why should a stable patient with SVC syndrome not be radiated before a biopsy?",
      "module": "Oncologic Emergencies"
     },
     {
@@ -1439,92 +1442,94 @@
     "SABR-COMET",
     "Patchell (2005)",
     "ARUBA",
-    "NCIC SR2 (O'Sullivan)"
+    "NCIC SR2 (O'Sullivan)",
+    "SC.24",
+    "RTOG 0631"
    ],
    "modules": {
     "Background & Epidemiology": {
-     "lede": "Who you'll see on the rest of the service: palliative, emergency, benign, and radiosurgery patients, and why the dose depends on the goal.",
+     "lede": "Who you will see on the rest of the service: palliative, emergency, benign, and radiosurgery patients, and why the intent comes before the dose.",
      "essentials": [
       "Four kinds of patients",
-      "Which cancers go to bone",
-      "Anti-inflammatory vs anti-proliferative doses",
-      "The rule for benign radiation"
+      "Name the intent: palliative, prophylactic, emergency, ablative",
+      "Dose does not define intent",
+      "Benign radiation: alternatives, evidence, and long-term risk"
      ],
      "objectives": [
       "Sort a patient into palliative, emergency, benign, or radiosurgery",
-      "Name the cancers that most often spread to bone",
-      "Explain the two ways low-dose radiation treats benign disease",
-      "Describe the safety rules for benign radiation"
+      "Distinguish palliative, prophylactic, emergency, and definitive or ablative intent",
+      "Explain why dose ranges overlap and cannot define intent on their own",
+      "Describe the safety and consent rules for benign radiation"
      ]
     },
     "Workup & Prognosis": {
      "lede": "No stage here. Five questions decide the plan: the symptom, the goal, the prognosis, stability and the cord, and prior radiation.",
      "essentials": [
-      "Prognosis picks the fractionation",
-      "Whole-spine MRI for cord compression",
-      "SINS 7 or higher: call spine surgery",
-      "Mirels 9 or higher: prophylactic fixation"
+      "Prognosis shapes the fractionation",
+      "Biologic vs mechanical pain vs neurologic compromise",
+      "SINS 7 or higher: spine surgery opinion",
+      "Scores support decisions; they do not make them"
      ],
      "objectives": [
-      "Estimate prognosis and match it to a course length",
-      "Choose the right imaging for each palliative question",
+      "Run a five-question palliative consult checklist",
+      "Tell biologic, mechanical, and neuropathic pain from neurologic compromise",
       "Use SINS, Bilsky, and NOMS to sort spine metastases",
-      "Use the Mirels score for a long-bone lesion"
+      "Use the Mirels score for a long-bone lesion, including its limits"
      ]
     },
     "Palliative Radiation": {
      "lede": "The shortest, simplest course that reaches the goal: the fractionation menu, SBRT, prophylactic radiation, oligometastases, and radiopharmaceuticals.",
      "essentials": [
-      "8 Gy in 1 = 20 Gy in 5 = 30 Gy in 10 for pain",
+      "8 Gy in 1 = 20 Gy in 5 = 30 Gy in 10 for uncomplicated pain",
       "More retreatment after one fraction",
-      "Gillespie: prophylactic RT for high-risk lesions",
-      "SABR-COMET and oligometastases"
+      "Higher dose is not automatically better pain relief",
+      "Gillespie: promising phase II, not yet a universal standard"
      ],
      "objectives": [
-      "Choose a fractionation for a painful bone metastasis",
+      "Define an uncomplicated bone metastasis and choose a fractionation",
       "Counsel a patient on timing, pain flare, and retreatment",
-      "Know when SBRT adds value",
-      "Explain prophylactic radiation and oligometastatic treatment",
+      "Know when SBRT adds value and what SC.24 and RTOG 0631 showed",
+      "Explain prophylactic radiation and oligometastatic treatment, with their evidence limits",
       "Name the radiopharmaceuticals and who gets them"
      ]
     },
     "Oncologic Emergencies": {
      "lede": "Cord compression, SVC syndrome, bleeding, airway, and fracture: what has to happen first, and where radiation fits.",
      "essentials": [
-      "Dexamethasone and whole-spine MRI",
+      "Something usually comes before radiation",
+      "Dexamethasone, whole-spine MRI, spine team",
       "Patchell: surgery then RT for selected patients",
-      "SVC: tissue before radiation",
-      "Ambulatory status predicts outcome"
+      "SVC: airway, stent if severe, tissue before radiation"
      ],
      "objectives": [
       "Recognize and work up metastatic spinal cord compression",
       "Choose between surgery plus RT and RT alone",
       "Manage SVC syndrome in the right order",
-      "Know where radiation fits for bleeding, airway, and fracture"
+      "Know where radiation fits for bleeding, airway, and fracture, and how fast it helps"
      ]
     },
     "Benign Disease": {
-     "lede": "Low doses for benign conditions: which ones, at what stage, after which other treatments, and how to discuss the risk.",
+     "lede": "Benign conditions treated with radiation: which ones, at what stage, after which other treatments, how strong the evidence is, and how to discuss the risk.",
      "essentials": [
-      "Osteoarthritis and plantar fasciitis: a few Gy",
-      "Dupuytren: only early disease",
+      "Each indication has its own dose and evidence",
       "HO: 7-8 Gy within a day before or 3 days after",
-      "Age and site limit benign RT"
+      "Dupuytren: early disease only, limited evidence",
+      "Osteoarthritis: contested after negative sham trials"
      ],
      "objectives": [
       "Name the benign conditions treated with radiation and their goals",
-      "Pick the right stage of Dupuytren disease for radiation",
+      "Distinguish well-supported from limited or contested indications",
       "Time radiation for heterotopic ossification and keloids",
-      "Discuss the evidence and risks of benign radiation"
+      "Discuss alternatives, uncertainty, and long-term cancer risk"
      ]
     },
     "Functional & Vascular Radiosurgery": {
      "lede": "Trigeminal neuralgia and AVMs: a single high dose to a tiny target, and a benefit that takes weeks to years.",
      "essentials": [
-      "Trigeminal neuralgia: 70-90 Gy maximum, relief in weeks",
-      "Facial numbness is the main side effect",
-      "Spetzler-Martin grade",
-      "AVM bleeding risk lasts until obliteration"
+      "Trigeminal neuralgia: 70-90 Gy maximum, relief in about a month",
+      "New facial numbness is the main side effect",
+      "Spetzler-Martin estimates surgical risk",
+      "AVM bleeding risk is lower but not gone until obliteration"
      ],
      "objectives": [
       "Recognize trigeminal neuralgia and its first-line treatment",

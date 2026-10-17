@@ -68,7 +68,7 @@ CASES = [
         image="images/headneck/hn-g-lx-scope.jpg",
         caption="Laryngoscopy showing a lesion on the left vocal cord. Crosetti E et al., Curr Oncol Rep 2024 (PMC11168980), CC BY 4.0."),
       mcq("Imaging",
-        "Which scan is the workhorse for staging laryngeal cancer, and why?",
+        "Which scan is used most for staging laryngeal cancer, and why?",
         ["MRI, because it has the best soft-tissue detail",
          "CT, because cartilage invasion defines the T-stage and CT shows bone and cartilage best",
          "PET-CT, because it shows the primary tumor best",
@@ -141,7 +141,7 @@ CASES = [
         ["Both sides of the neck, levels II-IV",
          "Left neck only: levels II-IV and VII (retropharyngeal), plus Ib and V because level II is involved",
          "Left level II only, where the node is",
-         "Left levels II-IV, skipping level VII because it can't be felt on exam"],
+         "Left levels II-IV, skipping level VII because it cannot be felt on exam"],
         1,
         "A well-lateralized tonsil cancer without base of tongue or soft palate involvement is the classic exception that allows one-sided neck treatment. Any pharyngeal primary adds level VII, and an involved level adds its neighbors (involved II: cover Ib and V) at an elective dose."),
       fill("Side effects",
@@ -154,7 +154,7 @@ CASES = [
   },
   {
     "id": "hn-case-4", "level": "Intermediate",
-    "title": "Case 4: The Ear That Won't Clear",
+    "title": "Case 4: The Ear That Will not Clear",
     "oneLiner": "A 44-year-old man who grew up in Guangdong, China, has felt fullness in his right ear for 3 months. His doctor found fluid behind the right eardrum and treated it twice without improvement. He now has lumps on both sides of his neck.",
     "steps": [
       mcq("Localize",
@@ -206,8 +206,8 @@ CASES = [
   },
   {
     "id": "hn-case-5", "level": "Intermediate",
-    "title": "Case 5: The Sore That Won't Heal",
-    "oneLiner": "A 62-year-old woman who smoked for 40 years has had a painful sore on the side of her tongue for 2 months that she blamed on a sharp tooth. Filing the tooth down didn't help, and the pain now spreads to her left ear.",
+    "title": "Case 5: The Sore That Will not Heal",
+    "oneLiner": "A 62-year-old woman who smoked for 40 years has had a painful sore on the side of her tongue for 2 months that she blamed on a sharp tooth. Filing the tooth down did not help, and the pain now spreads to her left ear.",
     "steps": [
       mcq("Exam",
         "Biopsy shows invasive squamous cell carcinoma. Which imaging best measures the feature that drives T-stage at this site?",
@@ -311,7 +311,7 @@ CASES = [
          "RT alone",
          "Hospice"],
         1,
-        "Through the outer thyroid cartilage cortex is T4a, a destroyed larynx. Organ preservation works poorly here and often leaves a larynx that doesn't function, so surgery comes first; chemoRT is only for select patients who decline surgery.",
+        "Through the outer thyroid cartilage cortex is T4a, a destroyed larynx. Organ preservation works poorly here and often leaves a larynx that does not function, so surgery comes first; chemoRT is only for select patients who decline surgery.",
         image="images/headneck/hn-lx-invasion.jpg",
         caption="A different patient: axial contrast CT of an advanced laryngeal cancer destroying the cricoid and thyroid cartilages. Joshi VM et al., Indian J Radiol Imaging 2012 (PMC3624744), CC BY-NC-SA 3.0."),
     ],
@@ -328,7 +328,7 @@ CASES = [
          "It shows the vocal cords in more detail",
          "It avoids IV contrast, protecting the kidneys"],
         1,
-        "After treatment, CT and MRI often can't tell residual tumor from scar. Metabolically active tumor takes up FDG, while fibrosis and settled inflammation usually do not, which is why PET-CT is the post-treatment workhorse."),
+        "After treatment, CT and MRI often cannot tell residual tumor from scar. Metabolically active tumor takes up FDG, while fibrosis and settled inflammation usually do not, which is why PET/CT is the main post-treatment scan."),
       mcq("Symptoms",
         "He has felt tired and cold all the time, has gained 8 pounds, and his skin is dry. What should you check first?",
         ["TSH (thyroid function)", "Plasma EBV DNA", "Serum calcium", "PSA"],
@@ -365,7 +365,7 @@ CASES = [
   },
   {
     "id": "hn-case-8", "level": "Advanced",
-    "title": "Case 8: Can't Open Wide",
+    "title": "Case 8: Cannot Open Wide",
     "oneLiner": "A 59-year-old man who smokes and chews tobacco has 3 months of right jaw pain. Over the last month he can barely open his mouth, and the right side of his lower lip and chin have gone numb.",
     "steps": [
       mcq("Exam",
@@ -402,7 +402,7 @@ CASES = [
          "Palliative RT alone, 20 Gy in 5 fractions",
          "Postoperative-dose RT, 60 Gy"],
         1,
-        "T4b disease, unresectable nodes, or an unfit patient means definitive chemoradiation to about 70 Gy, induction chemo followed by RT or chemoRT, or a clinical trial. RT alone is for patients who can't take chemo."),
+        "T4b disease, unresectable nodes, or an unfit patient means definitive chemoradiation to about 70 Gy, induction chemo followed by RT or chemoRT, or a clinical trial. RT alone is for patients who cannot take chemo."),
       fill("Target",
         "Besides the gross tumor and involved nodes, what else must be in the radiation target?",
         "The path of V3 back through the foramen ovale to the skull base (perineural spread), the whole masticator space, and the elective neck: at least the right levels I-IV plus the levels next to the involved Ib and II nodes, with the left neck based on how close the disease comes to midline.",

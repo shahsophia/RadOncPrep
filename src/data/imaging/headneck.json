@@ -1,10 +1,10 @@
 {
   "img-oral-cavity": {
-    "intro": "<p>For the oral cavity, three modalities each answer a different question. Work through MRI, then CT, then PET/CT below - in Explore mode first, then Quiz mode.</p>",
+    "intro": "<p>For the oral cavity, three modalities each answer a different question. Work through MRI, then CT, then PET/CT below, in Explore mode first and then Quiz mode.</p>",
     "plates": [
       {
         "id": "hn-oc-mri",
-        "title": "Oral Cavity - MRI",
+        "title": "Oral Cavity: MRI",
         "style": "mri",
         "caption": "Axial contrast-enhanced T1 MRI of a clinical T2 left oral tongue cancer. Source: Radiologic evaluation of AJCC 8 oral cavity staging, J Korean Soc Radiol 2026 (PMC12883927), Fig. 2C, CC BY-NC 4.0; arrow and labels removed.",
         "hotspots": [
@@ -13,14 +13,14 @@
             "label": "Primary Tumor (Enhancing)",
             "x": 56,
             "y": 32,
-            "blurb": "The enhancing mass in the left anterior oral tongue. MRI is the workhorse for the oral cavity primary because soft-tissue contrast is unmatched, which is essential for measuring depth of invasion, the biggest T-stage driver here."
+            "blurb": "The enhancing mass in the left anterior oral tongue. MRI is the main test for an oral cavity primary because its soft-tissue contrast is the best available, and that contrast is what lets you measure depth of invasion, the biggest driver of T stage here."
           },
           {
             "id": "oc-mri-doi",
             "label": "Depth of Invasion Plane",
             "x": 53,
             "y": 38,
-            "blurb": "Measured perpendicular to the basement membrane, from the level of the adjacent normal mucosa down to the deepest point of invasion. DOI >5mm upgrades a ≤2cm tumor from T1 to T2; DOI >10mm pushes a tumor to at least T3."
+            "blurb": "Measured perpendicular to the basement membrane, from the level of the adjacent normal mucosa down to the deepest point of invasion. A DOI over 5 mm upgrades a tumor of 2 cm or less from T1 to T2, and a DOI over 10 mm makes it at least T3."
           },
           {
             "id": "oc-mri-muscle",
@@ -48,7 +48,7 @@
       },
       {
         "id": "hn-oc-ct",
-        "title": "Oral Cavity - CT",
+        "title": "Oral Cavity: CT",
         "style": "ct",
         "caption": "Axial contrast CT: retromolar trigone cancer eroding the right mandible. Source: Jones W et al., Oral Oncol Rep 2025 (PMC12199806), Fig. 1A, CC BY-NC 4.0; arrow and panel letter removed.",
         "hotspots": [
@@ -64,7 +64,7 @@
             "label": "Primary Tumor (Retromolar Trigone)",
             "x": 39,
             "y": 44,
-            "blurb": "CT still shows the primary, but with less soft-tissue contrast than MRI - useful when MRI isn't tolerated or available."
+            "blurb": "CT still shows the primary, with less soft-tissue contrast than MRI. It is useful when MRI is not tolerated or not available."
           },
           {
             "id": "oc-ct-normal",
@@ -85,7 +85,7 @@
       },
       {
         "id": "hn-oc-pet",
-        "title": "Oral Cavity - PET/CT",
+        "title": "Oral Cavity: PET/CT",
         "style": "pet",
         "caption": "Staging FDG PET/CT for a T4aN2b left buccal mucosa cancer: fused PET/CT on top, matching CT below. Arrows and panel letters removed. Marcus C, Cancers 2025 (PMC12523320), Fig. 1A-D, CC BY 4.0.",
         "hotspots": [
@@ -130,7 +130,7 @@
     ]
   },
   "img-nasopharynx": {
-    "intro": "<p>MRI is the imaging modality of choice for nasopharyngeal carcinoma - it sees the skull base and perineural spread far better than CT.</p>",
+    "intro": "<p>MRI is the imaging test of choice for nasopharyngeal carcinoma because it shows the skull base and perineural spread far better than CT.</p>",
     "plates": [
       {
         "id": "hn-mri-skull-base",
@@ -183,7 +183,7 @@
     "plates": [
       {
         "id": "hn-ct-laryngeal-invasion",
-        "title": "Laryngeal Cartilage Invasion - Axial CT",
+        "title": "Laryngeal Cartilage Invasion: Axial CT",
         "style": "ct",
         "caption": "Axial contrast CT through the subglottis: advanced subglottic cancer destroying the cricoid and thyroid cartilages. Source: Joshi VM et al., Imaging in laryngeal cancers, Indian J Radiol Imaging 2012 (PMC3624744), Fig. 16, CC BY-NC-SA 3.0; arrows removed.",
         "hotspots": [

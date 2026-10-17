@@ -256,7 +256,7 @@
   "category": "Treatment Paradigms",
   "front": "What is the role of radiation in gastric cancer?",
   "back": "Selective: some postoperative situations (positive margin or inadequate node dissection) and palliation of bleeding, pain, or obstruction",
-  "extra": "Surgery plus perioperative systemic therapy is the backbone. After periop chemo and D2 surgery, adding postoperative chemoRT didn't help (CRITICS)."
+  "extra": "Surgery plus perioperative systemic therapy is the backbone. After periop chemo and D2 surgery, adding postoperative chemoRT did not help (CRITICS)."
  },
  {
   "id": "gix-50",
@@ -277,6 +277,6 @@
   "category": "Treatment Paradigms",
   "front": "When is SBRT used for hepatocellular carcinoma, and what patient factor limits it?",
   "back": "For tumors not suited to resection or ablation, as a bridge to transplant, or for selected portal vein thrombus; limited by liver function (usually Child-Pugh A, selected B)",
-  "extra": "RTOG 1112: SBRT + sorafenib improved outcomes. In HCC the liver is also the critical organ at risk, so enough normal liver must be spared to avoid radiation-induced liver disease."
+  "extra": "RTOG 1112: SBRT + sorafenib improved progression-free survival, with a borderline overall survival gain. In HCC the liver is also the critical organ at risk, so enough normal liver must be spared to avoid radiation-induced liver disease."
  }
 ]

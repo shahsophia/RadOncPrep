@@ -1,0 +1,989 @@
+{
+ "trials": {
+  "RTOG 91-11": {
+   "pmid": "23182993",
+   "cite": "Forastiere et al., J Clin Oncol 2013",
+   "title": "Long-term results of RTOG 91-11: a comparison of three nonsurgical treatment strategies to preserve the larynx in patients with locally advanced larynx cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/23182993/"
+  },
+  "VA Larynx": {
+   "pmid": "2034244",
+   "cite": "VA Laryngeal Cancer Study Group, N Engl J Med 1991",
+   "title": "Induction chemotherapy plus radiation compared with surgery plus radiation in patients with advanced laryngeal cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/2034244/"
+  },
+  "RTOG 9501": {
+   "pmid": "15128893",
+   "cite": "Cooper et al., N Engl J Med 2004",
+   "title": "Postoperative concurrent radiotherapy and chemotherapy for high-risk squamous-cell carcinoma of the head and neck",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/15128893/"
+  },
+  "EORTC 22931": {
+   "pmid": "15128894",
+   "cite": "Bernier et al., N Engl J Med 2004",
+   "title": "Postoperative irradiation with or without concomitant chemotherapy for locally advanced head and neck cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/15128894/"
+  },
+  "RTOG 1016": {
+   "pmid": "30449625",
+   "cite": "Gillison et al., Lancet 2019",
+   "title": "Radiotherapy plus cetuximab or cisplatin in human papillomavirus-positive oropharyngeal cancer (NRG Oncology RTOG 1016): a randomised, multicentre, non-inferiority trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/30449625/"
+  },
+  "De-ESCALaTE": {
+   "pmid": "30449623",
+   "cite": "Mehanna et al., Lancet 2019",
+   "title": "Radiotherapy plus cisplatin or cetuximab in low-risk human papillomavirus-positive oropharyngeal cancer (De-ESCALaTE HPV): an open-label randomised controlled phase 3 trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/30449623/"
+  },
+  "Tata Memorial": {
+   "pmid": "26027881",
+   "cite": "D'Cruz et al., N Engl J Med 2015",
+   "title": "Elective versus Therapeutic Neck Dissection in Node-Negative Oral Cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/26027881/"
+  },
+  "PARSPORT": {
+   "pmid": "21236730",
+   "cite": "Nutting et al., Lancet Oncol 2011",
+   "title": "Parotid-sparing intensity modulated versus conventional radiotherapy in head and neck cancer (PARSPORT): a phase 3 multicentre randomised controlled trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/21236730/"
+  },
+  "NSABP B-06": {
+   "pmid": "12393820",
+   "cite": "Fisher et al., N Engl J Med 2002",
+   "title": "Twenty-year follow-up of a randomized trial comparing total mastectomy, lumpectomy, and lumpectomy plus irradiation for the treatment of invasive breast cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/12393820/"
+  },
+  "Milan": {
+   "pmid": "12393819",
+   "cite": "Veronesi et al., N Engl J Med 2002",
+   "title": "Twenty-year follow-up of a randomized study comparing breast-conserving surgery with radical mastectomy for early breast cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/12393819/"
+  },
+  "EBCTCG meta-analysis": {
+   "pmid": "22019144",
+   "cite": "EBCTCG, Lancet 2011",
+   "title": "Effect of radiotherapy after breast-conserving surgery on 10-year recurrence and 15-year breast cancer death: meta-analysis of individual patient data for 10,801 women in 17 randomised trials",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/22019144/"
+  },
+  "ACOSOG Z0011": {
+   "pmid": "28898379",
+   "cite": "Giuliano et al., JAMA 2017",
+   "title": "Effect of Axillary Dissection vs No Axillary Dissection on 10-Year Overall Survival Among Women With Invasive Breast Cancer and Sentinel Node Metastasis: The ACOSOG Z0011 (Alliance) Randomized Clinical Trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/28898379/"
+  },
+  "AMAROS": {
+   "pmid": "25439688",
+   "cite": "Donker et al., Lancet Oncol 2014",
+   "title": "Radiotherapy or surgery of the axilla after a positive sentinel node in breast cancer (EORTC 10981-22023 AMAROS): a randomised, multicentre, open-label, phase 3 non-inferiority trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/25439688/"
+  },
+  "NSABP B-17": {
+   "pmid": "8292119",
+   "cite": "Fisher et al., N Engl J Med 1993",
+   "title": "Lumpectomy compared with lumpectomy and radiation therapy for the treatment of intraductal breast cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/8292119/"
+  },
+  "EORTC 10853": {
+   "pmid": "24043739",
+   "cite": "Donker et al., J Clin Oncol 2013",
+   "title": "Breast-conserving treatment with or without radiotherapy in ductal carcinoma In Situ: 15-year recurrence rates and outcome after a recurrence, from the EORTC 10853 randomized phase III trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/24043739/"
+  },
+  "RTOG 9804": {
+   "pmid": "25605856",
+   "cite": "McCormick et al., J Clin Oncol 2015",
+   "title": "RTOG 9804: a prospective randomized trial for good-risk ductal carcinoma in situ comparing radiotherapy with observation",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/25605856/"
+  },
+  "START B": {
+   "pmid": "24055415",
+   "cite": "Haviland et al., Lancet Oncol 2013",
+   "title": "The UK Standardisation of Breast Radiotherapy (START) trials of radiotherapy hypofractionation for treatment of early breast cancer: 10-year follow-up results of two randomised controlled trials",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/24055415/"
+  },
+  "FAST-Forward": {
+   "pmid": "32580883",
+   "cite": "Murray Brunt et al., Lancet 2020",
+   "title": "Hypofractionated breast radiotherapy for 1 week versus 3 weeks (FAST-Forward): 5-year efficacy and late normal tissue effects results from a multicentre, non-inferiority, randomised, phase 3 trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/32580883/"
+  },
+  "EORTC 22881": {
+   "pmid": "25500422",
+   "cite": "Bartelink et al., Lancet Oncol 2015",
+   "title": "Whole-breast irradiation with or without a boost for patients treated with breast-conserving surgery for early breast cancer: 20-year follow-up of a randomised phase 3 trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/25500422/"
+  },
+  "CALGB 9343": {
+   "pmid": "23690420",
+   "cite": "Hughes et al., J Clin Oncol 2013",
+   "title": "Lumpectomy plus tamoxifen with or without irradiation in women age 70 years or older with early breast cancer: long-term follow-up of CALGB 9343",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/23690420/"
+  },
+  "PRIME II": {
+   "pmid": "36791159",
+   "cite": "Kunkler et al., N Engl J Med 2023",
+   "title": "Breast-Conserving Surgery with or without Irradiation in Early Breast Cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/36791159/"
+  },
+  "MA.20": {
+   "pmid": "26200977",
+   "cite": "Whelan et al., N Engl J Med 2015",
+   "title": "Regional Nodal Irradiation in Early-Stage Breast Cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/26200977/"
+  },
+  "EORTC 22922": {
+   "pmid": "26200978",
+   "cite": "Poortmans et al., N Engl J Med 2015",
+   "title": "Internal Mammary and Medial Supraclavicular Irradiation in Breast Cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/26200978/"
+  },
+  "NSABP B-51": {
+   "pmid": "40466065",
+   "cite": "Mamounas et al., N Engl J Med 2025",
+   "title": "Omitting Regional Nodal Irradiation after Response to Neoadjuvant Chemotherapy",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/40466065/"
+  },
+  "KEYNOTE-522": {
+   "pmid": "32101663",
+   "cite": "Schmid et al., N Engl J Med 2020",
+   "title": "Pembrolizumab for Early Triple-Negative Breast Cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/32101663/"
+  },
+  "RTOG 0236": {
+   "pmid": "20233825",
+   "cite": "Timmerman et al., JAMA 2010",
+   "title": "Stereotactic body radiation therapy for inoperable early stage lung cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/20233825/"
+  },
+  "Indiana phase II (Timmerman)": {
+   "pmid": "17050868",
+   "cite": "Timmerman et al., J Clin Oncol 2006",
+   "title": "Excessive toxicity when treating central tumors in a phase II study of stereotactic body radiation therapy for medically inoperable early-stage lung cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/17050868/"
+  },
+  "RTOG 0813": {
+   "pmid": "30943123",
+   "cite": "Bezjak et al., J Clin Oncol 2019",
+   "title": "Safety and Efficacy of a Five-Fraction Stereotactic Body Radiotherapy Schedule for Centrally Located Non-Small-Cell Lung Cancer: NRG Oncology/RTOG 0813 Trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/30943123/"
+  },
+  "HILUS": {
+   "pmid": "33823286",
+   "cite": "Lindberg et al., J Thorac Oncol 2021",
+   "title": "The HILUS-Trial-a Prospective Nordic Multicenter Phase 2 Study of Ultracentral Lung Tumors Treated With Stereotactic Body Radiotherapy",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/33823286/"
+  },
+  "JCOG0802": {
+   "pmid": "35461558",
+   "cite": "Saji et al., Lancet 2022",
+   "title": "Segmentectomy versus lobectomy in small-sized peripheral non-small-cell lung cancer (JCOG0802/WJOG4607L): a multicentre, open-label, phase 3, randomised, controlled, non-inferiority trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/35461558/"
+  },
+  "SWOG 9416 / INT 0160": {
+   "pmid": "17235046",
+   "cite": "Rusch et al., J Clin Oncol 2007",
+   "title": "Induction chemoradiation and surgical resection for superior sulcus non-small-cell lung carcinomas: long-term results of Southwest Oncology Group Trial 9416 (Intergroup Trial 0160)",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/17235046/"
+  },
+  "RTOG 0617": {
+   "pmid": "25601342",
+   "cite": "Bradley et al., Lancet Oncol 2015",
+   "title": "Standard-dose versus high-dose conformal radiotherapy with concurrent and consolidation carboplatin plus paclitaxel with or without cetuximab for patients with stage IIIA or IIIB non-small-cell lung cancer (RTOG 0617): a randomised, two-by-two factorial phase 3 study",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/25601342/"
+  },
+  "PACIFIC": {
+   "pmid": "28885881",
+   "cite": "Antonia et al., N Engl J Med 2017",
+   "title": "Durvalumab after Chemoradiotherapy in Stage III Non-Small-Cell Lung Cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/28885881/"
+  },
+  "LAURA": {
+   "pmid": "38828946",
+   "cite": "Lu et al., N Engl J Med 2024",
+   "title": "Osimertinib after Chemoradiotherapy in Stage III EGFR-Mutated NSCLC",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/38828946/"
+  },
+  "CheckMate 816": {
+   "pmid": "35403841",
+   "cite": "Forde et al., N Engl J Med 2022",
+   "title": "Neoadjuvant Nivolumab plus Chemotherapy in Resectable Lung Cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/35403841/"
+  },
+  "KEYNOTE-671": {
+   "pmid": "37272513",
+   "cite": "Wakelee et al., N Engl J Med 2023",
+   "title": "Perioperative Pembrolizumab for Early-Stage Non-Small-Cell Lung Cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/37272513/"
+  },
+  "LungART": {
+   "pmid": "34919827",
+   "cite": "Le Pechoux et al., Lancet Oncol 2022",
+   "title": "Postoperative radiotherapy versus no postoperative radiotherapy in patients with completely resected non-small-cell lung cancer and proven mediastinal N2 involvement (Lung ART): an open-label, randomised, phase 3 trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/34919827/"
+  },
+  "SABR-COMET": {
+   "pmid": "30982687",
+   "cite": "Palma et al., Lancet 2019",
+   "title": "Stereotactic ablative radiotherapy versus standard of care palliative treatment in patients with oligometastatic cancers (SABR-COMET): a randomised, phase 2, open-label trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/30982687/"
+  },
+  "Turrisi": {
+   "pmid": "9920950",
+   "cite": "Turrisi et al., N Engl J Med 1999",
+   "title": "Twice-daily compared with once-daily thoracic radiotherapy in limited small-cell lung cancer treated concurrently with cisplatin and etoposide",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/9920950/"
+  },
+  "CONVERT": {
+   "pmid": "28642008",
+   "cite": "Faivre-Finn et al., Lancet Oncol 2017",
+   "title": "Concurrent once-daily versus twice-daily chemoradiotherapy in patients with limited-stage small-cell lung cancer (CONVERT): an open-label, phase 3, randomised, superiority trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/28642008/"
+  },
+  "ADRIATIC": {
+   "pmid": "39268857",
+   "cite": "Cheng et al., N Engl J Med 2024",
+   "title": "Durvalumab after Chemoradiotherapy in Limited-Stage Small-Cell Lung Cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/39268857/"
+  },
+  "ProtecT": {
+   "pmid": "36912538",
+   "cite": "Hamdy et al., N Engl J Med 2023",
+   "title": "Fifteen-Year Outcomes after Monitoring, Surgery, or Radiotherapy for Prostate Cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/36912538/"
+  },
+  "RTOG 9408": {
+   "pmid": "21751904",
+   "cite": "Jones et al., N Engl J Med 2011",
+   "title": "Radiotherapy and short-term androgen deprivation for localized prostate cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/21751904/"
+  },
+  "RTOG 9202": {
+   "pmid": "18413638",
+   "cite": "Horwitz et al., J Clin Oncol 2008",
+   "title": "Ten-year follow-up of radiation therapy oncology group protocol 92-02: a phase III trial of the duration of elective androgen deprivation in locally advanced prostate cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/18413638/"
+  },
+  "EORTC 22961": {
+   "pmid": "19516032",
+   "cite": "Bolla et al., N Engl J Med 2009",
+   "title": "Duration of androgen suppression in the treatment of prostate cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/19516032/"
+  },
+  "RTOG 9413": {
+   "pmid": "12743142",
+   "cite": "Roach et al., J Clin Oncol 2003",
+   "title": "Phase III trial comparing whole-pelvic versus prostate-only radiotherapy and neoadjuvant versus adjuvant combined androgen suppression: Radiation Therapy Oncology Group 9413",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/12743142/"
+  },
+  "RTOG 0415": {
+   "pmid": "38759121",
+   "cite": "Lee et al., J Clin Oncol 2024",
+   "title": "Long-Term Analysis of NRG Oncology RTOG 0415: A Randomized Phase III Noninferiority Study Comparing Two Fractionation Schedules in Patients With Low-Risk Prostate Cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/38759121/"
+  },
+  "CHHiP": {
+   "pmid": "27339115",
+   "cite": "Dearnaley et al., Lancet Oncol 2016",
+   "title": "Conventional versus hypofractionated high-dose intensity-modulated radiotherapy for prostate cancer: 5-year outcomes of the randomised, non-inferiority, phase 3 CHHiP trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/27339115/"
+  },
+  "PROFIT": {
+   "pmid": "28296582",
+   "cite": "Catton et al., J Clin Oncol 2017",
+   "title": "Randomized Trial of a Hypofractionated Radiation Regimen for the Treatment of Localized Prostate Cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/28296582/"
+  },
+  "HYPO-RT-PC": {
+   "pmid": "31227373",
+   "cite": "Widmark et al., Lancet 2019",
+   "title": "Ultra-hypofractionated versus conventionally fractionated radiotherapy for prostate cancer: 5-year outcomes of the HYPO-RT-PC randomised, non-inferiority, phase 3 trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/31227373/"
+  },
+  "PACE-B": {
+   "pmid": "39413377",
+   "cite": "van As et al., N Engl J Med 2024",
+   "title": "Phase 3 Trial of Stereotactic Body Radiotherapy in Localized Prostate Cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/39413377/"
+  },
+  "ASCENDE-RT": {
+   "pmid": "28262473",
+   "cite": "Morris et al., Int J Radiat Oncol Biol Phys 2017",
+   "title": "Androgen Suppression Combined with Elective Nodal and Dose Escalated Radiation Therapy (the ASCENDE-RT Trial): An Analysis of Survival Endpoints for a Randomized Trial Comparing a Low-Dose-Rate Brachytherapy Boost to a Dose-Escalated External Beam Boost for High- and Intermediate-risk Prostate Cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/28262473/"
+  },
+  "RTOG 0232": {
+   "pmid": "37315297",
+   "cite": "Michalski et al., J Clin Oncol 2023",
+   "title": "Effect of Brachytherapy With External Beam Radiation Therapy Versus Brachytherapy Alone for Intermediate-Risk Prostate Cancer: NRG Oncology RTOG 0232 Randomized Clinical Trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/37315297/"
+  },
+  "FLAME": {
+   "pmid": "33471548",
+   "cite": "Kerkmeijer et al., J Clin Oncol 2021",
+   "title": "Focal Boost to the Intraprostatic Tumor in External Beam Radiotherapy for Patients With Localized Prostate Cancer: Results From the FLAME Randomized Phase III Trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/33471548/"
+  },
+  "POP-RT": {
+   "pmid": "33497252",
+   "cite": "Murthy et al., J Clin Oncol 2021",
+   "title": "Prostate-Only Versus Whole-Pelvic Radiation Therapy in High-Risk and Very High-Risk Prostate Cancer (POP-RT): Outcomes From Phase III Randomized Controlled Trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/33497252/"
+  },
+  "RTOG 9601": {
+   "pmid": "28146658",
+   "cite": "Shipley et al., N Engl J Med 2017",
+   "title": "Radiation with or without Antiandrogen Therapy in Recurrent Prostate Cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/28146658/"
+  },
+  "SPPORT": {
+   "pmid": "35569466",
+   "cite": "Pollack et al., Lancet 2022",
+   "title": "The addition of androgen deprivation therapy and pelvic lymph node treatment to prostate bed salvage radiotherapy (NRG Oncology/RTOG 0534 SPPORT): an international, multicentre, randomised phase 3 trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/35569466/"
+  },
+  "GETUG-AFU 17": {
+   "pmid": "33002438",
+   "cite": "Sargos et al., Lancet Oncol 2020",
+   "title": "Adjuvant radiotherapy versus early salvage radiotherapy plus short-term androgen deprivation therapy in men with localised prostate cancer after radical prostatectomy (GETUG-AFU 17): a randomised, phase 3 trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/33002438/"
+  },
+  "RADICALS": {
+   "pmid": "33002429",
+   "cite": "Parker et al., Lancet 2020",
+   "title": "Timing of radiotherapy after radical prostatectomy (RADICALS-RT): a randomised, controlled phase 3 trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/33002429/"
+  },
+  "RAVES": {
+   "pmid": "33002437",
+   "cite": "Kneebone et al., Lancet Oncol 2020",
+   "title": "Adjuvant radiotherapy versus early salvage radiotherapy following radical prostatectomy (TROG 08.03/ANZUP RAVES): a randomised, controlled, phase 3, non-inferiority trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/33002437/"
+  },
+  "STAMPEDE": {
+   "pmid": "30355464",
+   "cite": "Parker et al., Lancet 2018",
+   "title": "Radiotherapy to the primary tumour for newly diagnosed, metastatic prostate cancer (STAMPEDE): a randomised controlled phase 3 trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/30355464/"
+  },
+  "GOG 85": {
+   "pmid": "10334517",
+   "cite": "Whitney et al., J Clin Oncol 1999",
+   "title": "Randomized comparison of fluorouracil plus cisplatin versus hydroxyurea as an adjunct to radiation therapy in stage IIB-IVA carcinoma of the cervix with negative para-aortic lymph nodes: a Gynecologic Oncology Group and Southwest Oncology Group study",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/10334517/"
+  },
+  "GOG 92": {
+   "pmid": "10329031",
+   "cite": "Sedlis et al., Gynecol Oncol 1999",
+   "title": "A randomized trial of pelvic radiation therapy versus no further therapy in selected patients with stage IB carcinoma of the cervix after radical hysterectomy and pelvic lymphadenectomy: A Gynecologic Oncology Group Study",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/10329031/"
+  },
+  "GOG 109": {
+   "pmid": "10764420",
+   "cite": "Peters et al., J Clin Oncol 2000",
+   "title": "Concurrent chemotherapy and pelvic radiation therapy compared with pelvic radiation therapy alone as adjuvant therapy after radical surgery in high-risk early-stage cancer of the cervix",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/10764420/"
+  },
+  "RTOG 9001": {
+   "pmid": "10202164",
+   "cite": "Morris et al., N Engl J Med 1999",
+   "title": "Pelvic radiation with concurrent chemotherapy compared with pelvic and para-aortic radiation for high-risk cervical cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/10202164/"
+  },
+  "GOG 120": {
+   "pmid": "10202165",
+   "cite": "Rose et al., N Engl J Med 1999",
+   "title": "Concurrent cisplatin-based radiotherapy and chemotherapy for locally advanced cervical cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/10202165/"
+  },
+  "GOG 123": {
+   "pmid": "10202166",
+   "cite": "Keys et al., N Engl J Med 1999",
+   "title": "Cisplatin, radiation, and adjuvant hysterectomy compared with radiation and adjuvant hysterectomy for bulky stage IB cervical carcinoma",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/10202166/"
+  },
+  "GOG 99": {
+   "pmid": "14984936",
+   "cite": "Keys et al., Gynecol Oncol 2004",
+   "title": "A phase III trial of surgery with or without adjunctive external pelvic radiation therapy in intermediate risk endometrial adenocarcinoma: a Gynecologic Oncology Group study",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/14984936/"
+  },
+  "PORTEC-1": {
+   "pmid": "10791524",
+   "cite": "Creutzberg et al., Lancet 2000",
+   "title": "Surgery and postoperative radiotherapy versus surgery alone for patients with stage-1 endometrial carcinoma: multicentre randomised trial. PORTEC Study Group. Post Operative Radiation Therapy in Endometrial Carcinoma",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/10791524/"
+  },
+  "PORTEC-2": {
+   "pmid": "20206777",
+   "cite": "Nout et al., Lancet 2010",
+   "title": "Vaginal brachytherapy versus pelvic external beam radiotherapy for patients with endometrial cancer of high-intermediate risk (PORTEC-2): an open-label, non-inferiority, randomised trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/20206777/"
+  },
+  "PORTEC-3": {
+   "pmid": "29449189",
+   "cite": "de Boer et al., Lancet Oncol 2018",
+   "title": "Adjuvant chemoradiotherapy versus radiotherapy alone for women with high-risk endometrial cancer (PORTEC-3): final results of an international, open-label, multicentre, randomised, phase 3 trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/29449189/"
+  },
+  "GOG 258": {
+   "pmid": "31189035",
+   "cite": "Matei et al., N Engl J Med 2019",
+   "title": "Adjuvant Chemotherapy plus Radiation for Locally Advanced Endometrial Cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/31189035/"
+  },
+  "RUBY": {
+   "pmid": "36972026",
+   "cite": "Mirza et al., N Engl J Med 2023",
+   "title": "Dostarlimab for Primary Advanced or Recurrent Endometrial Cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/36972026/"
+  },
+  "NRG-GY018": {
+   "pmid": "36972022",
+   "cite": "Eskander et al., N Engl J Med 2023",
+   "title": "Pembrolizumab plus Chemotherapy in Advanced Endometrial Cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/36972022/"
+  },
+  "RTOG 1203": {
+   "pmid": "29989857",
+   "cite": "Klopp et al., J Clin Oncol 2018",
+   "title": "Patient-Reported Toxicity During Pelvic Intensity-Modulated Radiation Therapy: NRG Oncology-RTOG 1203",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/29989857/"
+  },
+  "LACC": {
+   "pmid": "30380365",
+   "cite": "Ramirez et al., N Engl J Med 2018",
+   "title": "Minimally Invasive versus Abdominal Radical Hysterectomy for Cervical Cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/30380365/"
+  },
+  "SHAPE": {
+   "pmid": "38416430",
+   "cite": "Plante et al., N Engl J Med 2024",
+   "title": "Simple versus Radical Hysterectomy in Women with Low-Risk Cervical Cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/38416430/"
+  },
+  "EMBRACE": {
+   "pmid": "33794207",
+   "cite": "Pötter et al., Lancet Oncol 2021",
+   "title": "MRI-guided adaptive brachytherapy in locally advanced cervical cancer (EMBRACE-I): a multicentre prospective cohort study",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/33794207/"
+  },
+  "INTERLACE": {
+   "pmid": "39419054",
+   "cite": "McCormack et al., Lancet 2024",
+   "title": "Induction chemotherapy followed by standard chemoradiotherapy versus standard chemoradiotherapy alone in patients with locally advanced cervical cancer (GCIG INTERLACE): an international, multicentre, randomised phase 3 trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/39419054/"
+  },
+  "KEYNOTE-A18": {
+   "pmid": "38521086",
+   "cite": "Lorusso et al., Lancet 2024",
+   "title": "Pembrolizumab or placebo with chemoradiotherapy followed by pembrolizumab or placebo for newly diagnosed, high-risk, locally advanced cervical cancer (ENGOT-cx11/GOG-3047/KEYNOTE-A18): a randomised, double-blind, phase 3 clinical trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/38521086/"
+  },
+  "KEYNOTE-826": {
+   "pmid": "34534429",
+   "cite": "Colombo et al., N Engl J Med 2021",
+   "title": "Pembrolizumab for Persistent, Recurrent, or Metastatic Cervical Cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/34534429/"
+  },
+  "GOG 37": {
+   "pmid": "3785783",
+   "cite": "Homesley et al., Obstet Gynecol 1986",
+   "title": "Radiation therapy versus pelvic node resection for carcinoma of the vulva with positive groin nodes",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/3785783/"
+  },
+  "GOG 205": {
+   "pmid": "22079361",
+   "cite": "Moore et al., Gynecol Oncol 2012",
+   "title": "A phase II trial of radiation therapy and weekly cisplatin chemotherapy for the treatment of locally-advanced squamous cell carcinoma of the vulva: a gynecologic oncology group study",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/22079361/"
+  },
+  "GROINSS-V": {
+   "pmid": "18281661",
+   "cite": "Van der Zee et al., J Clin Oncol 2008",
+   "title": "Sentinel node dissection is safe in the treatment of early-stage vulvar cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/18281661/"
+  },
+  "NCCTG N0574": {
+   "pmid": "27458945",
+   "cite": "Brown et al., JAMA 2016",
+   "title": "Effect of Radiosurgery Alone vs Radiosurgery With Whole Brain Radiation Therapy on Cognitive Function in Patients With 1 to 3 Brain Metastases: A Randomized Clinical Trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/27458945/"
+  },
+  "Mahajan": {
+   "pmid": "28687375",
+   "cite": "Mahajan et al., Lancet Oncol 2017",
+   "title": "Post-operative stereotactic radiosurgery versus observation for completely resected brain metastases: a single-centre, randomised, controlled, phase 3 trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/28687375/"
+  },
+  "N107C": {
+   "pmid": "28687377",
+   "cite": "Brown et al., Lancet Oncol 2017",
+   "title": "Postoperative stereotactic radiosurgery compared with whole brain radiotherapy for resected metastatic brain disease (NCCTG N107C/CEC·3): a multicentre, randomised, controlled, phase 3 trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/28687377/"
+  },
+  "NRG CC001": {
+   "pmid": "32058845",
+   "cite": "Brown et al., J Clin Oncol 2020",
+   "title": "Hippocampal Avoidance During Whole-Brain Radiotherapy Plus Memantine for Patients With Brain Metastases: Phase III Trial NRG Oncology CC001",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/32058845/"
+  },
+  "JLGK0901": {
+   "pmid": "24621620",
+   "cite": "Yamamoto et al., Lancet Oncol 2014",
+   "title": "Stereotactic radiosurgery for patients with multiple brain metastases (JLGK0901): a multi-institutional prospective observational study",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/24621620/"
+  },
+  "QUARTZ": {
+   "pmid": "27604504",
+   "cite": "Mulvenna et al., Lancet 2016",
+   "title": "Dexamethasone and supportive care with or without whole brain radiotherapy in treating patients with non-small cell lung cancer with brain metastases unsuitable for resection or stereotactic radiotherapy (QUARTZ): results from a phase 3, non-inferiority, randomised trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/27604504/"
+  },
+  "Stupp (EORTC/NCIC)": {
+   "pmid": "15758009",
+   "cite": "Stupp et al., N Engl J Med 2005",
+   "title": "Radiotherapy plus concomitant and adjuvant temozolomide for glioblastoma",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/15758009/"
+  },
+  "EF-14": {
+   "pmid": "29260225",
+   "cite": "Stupp et al., JAMA 2017",
+   "title": "Effect of Tumor-Treating Fields Plus Maintenance Temozolomide vs Maintenance Temozolomide Alone on Survival in Patients With Glioblastoma: A Randomized Clinical Trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/29260225/"
+  },
+  "Perry": {
+   "pmid": "28296618",
+   "cite": "Perry et al., N Engl J Med 2017",
+   "title": "Short-Course Radiation plus Temozolomide in Elderly Patients with Glioblastoma",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/28296618/"
+  },
+  "Roa": {
+   "pmid": "26392096",
+   "cite": "Roa et al., J Clin Oncol 2015",
+   "title": "International Atomic Energy Agency Randomized Phase III Study of Radiation Therapy in Elderly and/or Frail Patients With Newly Diagnosed Glioblastoma Multiforme",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/26392096/"
+  },
+  "RTOG 9802": {
+   "pmid": "27050206",
+   "cite": "Buckner et al., N Engl J Med 2016",
+   "title": "Radiation plus Procarbazine, CCNU, and Vincristine in Low-Grade Glioma",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/27050206/"
+  },
+  "INDIGO": {
+   "pmid": "37272516",
+   "cite": "Mellinghoff et al., N Engl J Med 2023",
+   "title": "Vorasidenib in IDH1- or IDH2-Mutant Low-Grade Glioma",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/37272516/"
+  },
+  "RTOG 9402": {
+   "pmid": "23071247",
+   "cite": "Cairncross et al., J Clin Oncol 2013",
+   "title": "Phase III trial of chemoradiotherapy for anaplastic oligodendroglioma: long-term results of RTOG 9402",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/23071247/"
+  },
+  "EORTC 26951": {
+   "pmid": "23071237",
+   "cite": "van den Bent et al., J Clin Oncol 2013",
+   "title": "Adjuvant procarbazine, lomustine, and vincristine chemotherapy in newly diagnosed anaplastic oligodendroglioma: long-term follow-up of EORTC brain tumor group study 26951",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/23071237/"
+  },
+  "CATNON": {
+   "pmid": "28801186",
+   "cite": "van den Bent et al., Lancet 2017",
+   "title": "Interim results from the CATNON trial (EORTC study 26053-22054) of treatment with concurrent and adjuvant temozolomide for 1p/19q non-co-deleted anaplastic glioma: a phase 3, randomised, open-label intergroup study",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/28801186/"
+  },
+  "RTOG 90-05": {
+   "pmid": "10802351",
+   "cite": "Shaw et al., Int J Radiat Oncol Biol Phys 2000",
+   "title": "Single dose radiosurgical treatment of recurrent previously irradiated primary brain tumors and brain metastases: final report of RTOG protocol 90-05",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/10802351/"
+  },
+  "Nigro": {
+   "pmid": "4830803",
+   "cite": "Nigro et al., Dis Colon Rectum 1974",
+   "title": "Combined therapy for cancer of the anal canal: a preliminary report",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/4830803/"
+  },
+  "RTOG 9811": {
+   "pmid": "18430910",
+   "cite": "Ajani et al., JAMA 2008",
+   "title": "Fluorouracil, mitomycin, and radiotherapy vs fluorouracil, cisplatin, and radiotherapy for carcinoma of the anal canal: a randomized controlled trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/18430910/"
+  },
+  "ACT II": {
+   "pmid": "23578724",
+   "cite": "James et al., Lancet Oncol 2013",
+   "title": "Mitomycin or cisplatin chemoradiation with or without maintenance chemotherapy for treatment of squamous-cell carcinoma of the anus (ACT II): a randomised, phase 3, open-label, 2 × 2 factorial trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/23578724/"
+  },
+  "RTOG 0529": {
+   "pmid": "23154075",
+   "cite": "Kachnic et al., Int J Radiat Oncol Biol Phys 2013",
+   "title": "RTOG 0529: a phase 2 evaluation of dose-painted intensity modulated radiation therapy in combination with 5-fluorouracil and mitomycin-C for the reduction of acute morbidity in carcinoma of the anal canal",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/23154075/"
+  },
+  "CAO/ARO/AIO-94": {
+   "pmid": "15496622",
+   "cite": "Sauer et al., N Engl J Med 2004",
+   "title": "Preoperative versus postoperative chemoradiotherapy for rectal cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/15496622/"
+  },
+  "RAPIDO": {
+   "pmid": "33301740",
+   "cite": "Bahadoer et al., Lancet Oncol 2021",
+   "title": "Short-course radiotherapy followed by chemotherapy before total mesorectal excision (TME) versus preoperative chemoradiotherapy, TME, and optional adjuvant chemotherapy in locally advanced rectal cancer (RAPIDO): a randomised, open-label, phase 3 trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/33301740/"
+  },
+  "PRODIGE 23": {
+   "pmid": "33862000",
+   "cite": "Conroy et al., Lancet Oncol 2021",
+   "title": "Neoadjuvant chemotherapy with FOLFIRINOX and preoperative chemoradiotherapy for patients with locally advanced rectal cancer (UNICANCER-PRODIGE 23): a multicentre, randomised, open-label, phase 3 trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/33862000/"
+  },
+  "OPRA": {
+   "pmid": "35483010",
+   "cite": "Garcia-Aguilar et al., J Clin Oncol 2022",
+   "title": "Organ Preservation in Patients With Rectal Adenocarcinoma Treated With Total Neoadjuvant Therapy",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/35483010/"
+  },
+  "PROSPECT": {
+   "pmid": "37272534",
+   "cite": "Schrag et al., N Engl J Med 2023",
+   "title": "Preoperative Treatment of Locally Advanced Rectal Cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/37272534/"
+  },
+  "CROSS": {
+   "pmid": "22646630",
+   "cite": "van Hagen et al., N Engl J Med 2012",
+   "title": "Preoperative chemoradiotherapy for esophageal or junctional cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/22646630/"
+  },
+  "RTOG 8501": {
+   "pmid": "1584260",
+   "cite": "Herskovic et al., N Engl J Med 1992",
+   "title": "Combined chemotherapy and radiotherapy compared with radiotherapy alone in patients with cancer of the esophagus",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/1584260/"
+  },
+  "RTOG 9405": {
+   "pmid": "11870157",
+   "cite": "Minsky et al., J Clin Oncol 2002",
+   "title": "INT 0123 (Radiation Therapy Oncology Group 94-05) phase III trial of combined-modality therapy for esophageal cancer: high-dose versus standard-dose radiation therapy",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/11870157/"
+  },
+  "ESOPEC": {
+   "pmid": "39842010",
+   "cite": "Hoeppner et al., N Engl J Med 2025",
+   "title": "Perioperative Chemotherapy or Preoperative Chemoradiotherapy in Esophageal Cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/39842010/"
+  },
+  "CheckMate 577": {
+   "pmid": "33789008",
+   "cite": "Kelly et al., N Engl J Med 2021",
+   "title": "Adjuvant Nivolumab in Resected Esophageal or Gastroesophageal Junction Cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/33789008/"
+  },
+  "PRODIGE 24": {
+   "pmid": "30575490",
+   "cite": "Conroy et al., N Engl J Med 2018",
+   "title": "FOLFIRINOX or Gemcitabine as Adjuvant Therapy for Pancreatic Cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/30575490/"
+  },
+  "LAP07": {
+   "pmid": "27139057",
+   "cite": "Hammel et al., JAMA 2016",
+   "title": "Effect of Chemoradiotherapy vs Chemotherapy on Survival in Patients With Locally Advanced Pancreatic Cancer Controlled After 4 Months of Gemcitabine With or Without Erlotinib: The LAP07 Randomized Clinical Trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/27139057/"
+  },
+  "PREOPANC": {
+   "pmid": "32105518",
+   "cite": "Versteijne et al., J Clin Oncol 2020",
+   "title": "Preoperative Chemoradiotherapy Versus Immediate Surgery for Resectable and Borderline Resectable Pancreatic Cancer: Results of the Dutch Randomized Phase III PREOPANC Trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/32105518/"
+  },
+  "RTOG 1112": {
+   "pmid": "39699905",
+   "cite": "Dawson et al., JAMA Oncol 2025",
+   "title": "Stereotactic Body Radiotherapy vs Sorafenib Alone in Hepatocellular Carcinoma: The NRG Oncology/RTOG 1112 Phase 3 Randomized Clinical Trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/39699905/"
+  },
+  "INT-0116": {
+   "pmid": "11547741",
+   "cite": "Macdonald et al., N Engl J Med 2001",
+   "title": "Chemoradiotherapy after surgery compared with surgery alone for adenocarcinoma of the stomach or gastroesophageal junction",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/11547741/"
+  },
+  "CRITICS": {
+   "pmid": "29650363",
+   "cite": "Cats et al., Lancet Oncol 2018",
+   "title": "Chemotherapy versus chemoradiotherapy after surgery and preoperative chemotherapy for resectable gastric cancer (CRITICS): an international, open-label, randomised phase 3 trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/29650363/"
+  },
+  "RTOG 9714": {
+   "pmid": "15928300",
+   "cite": "Hartsell et al., J Natl Cancer Inst 2005",
+   "title": "Randomized trial of short- versus long-course radiotherapy for palliation of painful bone metastases",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/15928300/"
+  },
+  "Dutch Bone Metastasis Study": {
+   "pmid": "10577695",
+   "cite": "Steenland et al., Radiother Oncol 1999",
+   "title": "The effect of a single fraction compared to multiple fractions on painful bone metastases: a global analysis of the Dutch Bone Metastasis Study",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/10577695/"
+  },
+  "TROG 96.05": {
+   "pmid": "15878101",
+   "cite": "Roos et al., Radiother Oncol 2005",
+   "title": "Randomized trial of 8 Gy in 1 versus 20 Gy in 5 fractions of radiotherapy for neuropathic pain due to bone metastases (Trans-Tasman Radiation Oncology Group, TROG 96.05)",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/15878101/"
+  },
+  "NCIC SC.23": {
+   "pmid": "26489389",
+   "cite": "Chow et al., Lancet Oncol 2015",
+   "title": "Dexamethasone in the prophylaxis of radiation-induced pain flare after palliative radiotherapy for bone metastases: a double-blind, randomised placebo-controlled, phase 3 trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/26489389/"
+  },
+  "NCIC SC.20": {
+   "pmid": "24369114",
+   "cite": "Chow et al., Lancet Oncol 2014",
+   "title": "Single versus multiple fractions of repeat radiation for painful bone metastases: a randomised, controlled, non-inferiority trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/24369114/"
+  },
+  "SC.24": {
+   "pmid": "34126044",
+   "cite": "Sahgal et al., Lancet Oncol 2021",
+   "title": "Stereotactic body radiotherapy versus conventional external beam radiotherapy in patients with painful spinal metastases: an open-label, multicentre, randomised, controlled, phase 2/3 trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/34126044/"
+  },
+  "RTOG 0631": {
+   "pmid": "37079324",
+   "cite": "Ryu et al., JAMA Oncol 2023",
+   "title": "Stereotactic Radiosurgery vs Conventional Radiotherapy for Localized Vertebral Metastases of the Spine: Phase 3 Results of NRG Oncology/RTOG 0631 Randomized Clinical Trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/37079324/"
+  },
+  "Gillespie (MSKCC)": {
+   "pmid": "37748124",
+   "cite": "Gillespie et al., J Clin Oncol 2024",
+   "title": "Prophylactic Radiation Therapy Versus Standard of Care for Patients With High-Risk Asymptomatic Bone Metastases: A Multicenter, Randomized Phase II Clinical Trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/37748124/"
+  },
+  "ORIOLE": {
+   "pmid": "32215577",
+   "cite": "Phillips et al., JAMA Oncol 2020",
+   "title": "Outcomes of Observation vs Stereotactic Ablative Radiation for Oligometastatic Prostate Cancer: The ORIOLE Phase 2 Randomized Clinical Trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/32215577/"
+  },
+  "STOMP": {
+   "pmid": "29240541",
+   "cite": "Ost et al., J Clin Oncol 2018",
+   "title": "Surveillance or Metastasis-Directed Therapy for Oligometastatic Prostate Cancer Recurrence: A Prospective, Randomized, Multicenter Phase II Trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/29240541/"
+  },
+  "Gomez": {
+   "pmid": "31067138",
+   "cite": "Gomez et al., J Clin Oncol 2019",
+   "title": "Local Consolidative Therapy Vs. Maintenance Therapy or Observation for Patients With Oligometastatic Non-Small-Cell Lung Cancer: Long-Term Results of a Multi-Institutional, Phase II, Randomized Study",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/31067138/"
+  },
+  "CURB": {
+   "pmid": "38104577",
+   "cite": "Tsai et al., Lancet 2024",
+   "title": "Standard-of-care systemic therapy with or without stereotactic body radiotherapy in patients with oligoprogressive breast cancer or non-small-cell lung cancer (Consolidative Use of Radiotherapy to Block [CURB] oligoprogression): an open-label, randomised, controlled, phase 2 study",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/38104577/"
+  },
+  "NRG-BR002": {
+   "pmid": "42842849",
+   "cite": "Chmura et al., J Clin Oncol 2026",
+   "title": "NRG-BR002: A Randomized Phase II/III Trial of Metastasis-Directed Ablation With First-Line Systemic Therapy for Oligometastatic Breast Cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42842849/"
+  },
+  "ALSYMPCA": {
+   "pmid": "23863050",
+   "cite": "Parker et al., N Engl J Med 2013",
+   "title": "Alpha emitter radium-223 and survival in metastatic prostate cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/23863050/"
+  },
+  "VISION": {
+   "pmid": "34161051",
+   "cite": "Sartor et al., N Engl J Med 2021",
+   "title": "Lutetium-177-PSMA-617 for Metastatic Castration-Resistant Prostate Cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/34161051/"
+  },
+  "NETTER-1": {
+   "pmid": "28076709",
+   "cite": "Strosberg et al., N Engl J Med 2017",
+   "title": "Phase 3 Trial of (177)Lu-Dotatate for Midgut Neuroendocrine Tumors",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/28076709/"
+  },
+  "Patchell": {
+   "pmid": "16112300",
+   "cite": "Patchell et al., Lancet 2005",
+   "title": "Direct decompressive surgical resection in the treatment of spinal cord compression caused by metastatic cancer: a randomised trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/16112300/"
+  },
+  "SCORAD III": {
+   "pmid": "31794625",
+   "cite": "Hoskin et al., JAMA 2019",
+   "title": "Effect of Single-Fraction vs Multifraction Radiotherapy on Ambulatory Status Among Patients With Spinal Canal Compression From Metastatic Cancer: The SCORAD Randomized Clinical Trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/31794625/"
+  },
+  "ICORG 05-03": {
+   "pmid": "32157242",
+   "cite": "Thirion et al., Br J Cancer 2020",
+   "title": "Non-inferiority randomised phase 3 trial comparing two radiation schedules (single vs. five fractions) in malignant spinal cord compression",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/32157242/"
+  },
+  "Mahler (osteoarthritis sham trials)": {
+   "pmid": "30366945",
+   "cite": "Mahler et al., Ann Rheum Dis 2019",
+   "title": "Effectiveness of low-dose radiation therapy on symptoms in patients with knee osteoarthritis: a randomised, double-blinded, sham-controlled trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/30366945/"
+  },
+  "Niewald": {
+   "pmid": "22836057",
+   "cite": "Niewald et al., Int J Radiat Oncol Biol Phys 2012",
+   "title": "Randomized, multicenter trial on the effect of radiation therapy on plantar fasciitis (painful heel spur) comparing a standard dose with a very low dose: mature results after 12 months' follow-up",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/22836057/"
+  },
+  "ARUBA": {
+   "pmid": "24268105",
+   "cite": "Mohr et al., Lancet 2014",
+   "title": "Medical management with or without interventional therapy for unruptured brain arteriovenous malformations (ARUBA): a multicentre, non-blinded, randomised trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/24268105/"
+  },
+  "GHSG HD10": {
+   "pmid": "20818855",
+   "cite": "Engert et al., N Engl J Med 2010",
+   "title": "Reduced treatment intensity in patients with early-stage Hodgkin's lymphoma",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/20818855/"
+  },
+  "GHSG HD11": {
+   "pmid": "20713848",
+   "cite": "Eich et al., J Clin Oncol 2010",
+   "title": "Intensified chemotherapy and dose-reduced involved-field radiotherapy in patients with early unfavorable Hodgkin's lymphoma: final analysis of the German Hodgkin Study Group HD11 trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/20713848/"
+  },
+  "RAPID": {
+   "pmid": "25901426",
+   "cite": "Radford et al., N Engl J Med 2015",
+   "title": "Results of a trial of PET-directed therapy for early-stage Hodgkin's lymphoma",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/25901426/"
+  },
+  "H10": {
+   "pmid": "28291393",
+   "cite": "André et al., J Clin Oncol 2017",
+   "title": "Early Positron Emission Tomography Response-Adapted Treatment in Stage I and II Hodgkin Lymphoma: Final Results of the Randomized EORTC/LYSA/FIL H10 Trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/28291393/"
+  },
+  "HD16": {
+   "pmid": "31498753",
+   "cite": "Fuchs et al., J Clin Oncol 2019",
+   "title": "Positron Emission Tomography-Guided Treatment in Early-Stage Favorable Hodgkin Lymphoma: Final Results of the International, Randomized Phase III HD16 Trial by the German Hodgkin Study Group",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/31498753/"
+  },
+  "FORT": {
+   "pmid": "24572077",
+   "cite": "Hoskin et al., Lancet Oncol 2014",
+   "title": "4 Gy versus 24 Gy radiotherapy for patients with indolent lymphoma (FORT): a randomised phase 3 non-inferiority trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/24572077/"
+  },
+  "NCIC SR2": {
+   "pmid": "12103287",
+   "cite": "O'Sullivan et al., Lancet 2002",
+   "title": "Preoperative versus postoperative radiotherapy in soft-tissue sarcoma of the limbs: a randomised trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/12103287/"
+  },
+  "STRASS": {
+   "pmid": "32941794",
+   "cite": "Bonvalot et al., Lancet Oncol 2020",
+   "title": "Preoperative radiotherapy plus surgery versus surgery alone for patients with primary retroperitoneal sarcoma (EORTC-62092: STRASS): a multicentre, open-label, randomised, phase 3 trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/32941794/"
+  },
+  "BC2001": {
+   "pmid": "22512481",
+   "cite": "James et al., N Engl J Med 2012",
+   "title": "Radiotherapy with or without chemotherapy in muscle-invasive bladder cancer",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/22512481/"
+  },
+  "COMS": {
+   "pmid": "17159027",
+   "cite": "COMS Group, Arch Ophthalmol 2006",
+   "title": "The COMS randomized trial of iodine 125 brachytherapy for choroidal melanoma: V. Twelve-year mortality rates and prognostic factors: COMS report No. 28",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/17159027/"
+  },
+  "ANZMTG/TROG": {
+   "pmid": "22575589",
+   "cite": "Burmeister et al., Lancet Oncol 2012",
+   "title": "Adjuvant radiotherapy versus observation alone for patients at risk of lymph-node field relapse after therapeutic lymphadenectomy for melanoma: a randomised trial",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/22575589/"
+  },
+  "MRC TE18": {
+   "pmid": "15718317",
+   "cite": "Jones et al., J Clin Oncol 2005",
+   "title": "Randomized trial of 30 versus 20 Gy in the adjuvant treatment of stage I Testicular Seminoma: a report on Medical Research Council Trial TE18, European Organisation for the Research and Treatment of Cancer Trial 30942 (ISRCTN18525328)",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/15718317/"
+  },
+  "EORTC 62991": {
+   "pmid": "23868907",
+   "cite": "Keus et al., Ann Oncol 2013",
+   "title": "Results of a phase II pilot study of moderate dose radiotherapy for inoperable desmoid-type fibromatosis--an EORTC STBSG and ROG study (EORTC 62991-22998)",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/23868907/"
+  }
+ },
+ "aliases": {
+  "Gillespie (MSKCC, 2024)": [
+   "Gillespie (MSKCC)"
+  ],
+  "Patchell (2005)": [
+   "Patchell"
+  ],
+  "NCIC SR2 (O'Sullivan)": [
+   "NCIC SR2"
+  ],
+  "GHSG HD10/HD11": [
+   "GHSG HD10",
+   "GHSG HD11"
+  ],
+  "EORTC 22881 boost trial": [
+   "EORTC 22881"
+  ],
+  "Tata Memorial (elective neck)": [
+   "Tata Memorial"
+  ],
+  "1999 Cisplatin Trials": [
+   "RTOG 9001",
+   "GOG 85",
+   "GOG 109",
+   "GOG 120",
+   "GOG 123"
+  ],
+  "SWOG 8797": [
+   "GOG 109"
+  ],
+  "SWOG 9416 / INT 0160": [
+   "SWOG 9416 / INT 0160"
+  ],
+  "HD11": [
+   "GHSG HD11"
+  ]
+ },
+ "guidelines": {
+  "ASTRO bone metastases guideline (2024)": {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/38788923/",
+   "cite": "Alcorn et al., Pract Radiat Oncol 2024"
+  },
+  "NICE NG234": {
+   "url": "https://www.nice.org.uk/guidance/ng234",
+   "cite": "Spinal metastases and metastatic spinal cord compression, NICE 2023"
+  },
+  "NICE IPG573": {
+   "url": "https://www.nice.org.uk/guidance/ipg573",
+   "cite": "Radiation therapy for early Dupuytren's disease, NICE 2016"
+  },
+  "EUGOGO 2021": {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/34297684/",
+   "cite": "Bartalena et al., Eur J Endocrinol 2021"
+  }
+ }
+}

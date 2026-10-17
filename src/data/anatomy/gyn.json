@@ -134,7 +134,7 @@
       "label": "Fallopian Tube",
       "x": 22,
       "y": 10,
-      "blurb": "Many high-grade serous 'ovarian' cancers actually start in the fimbriated end of the tube."
+      "blurb": "Many high-grade serous 'ovarian' cancers start in the fimbriated end of the tube."
      },
      {
       "id": "ovary",
@@ -407,7 +407,7 @@
   ]
  },
  "anat-gyn-drainage": {
-  "intro": "<p>Same map, four different primaries. Click through each site and follow the numbers in order: they trace the path lymph takes from the tumor outward. This is the logic behind every GYN nodal field.</p>",
+  "intro": "<p>Same map, four different primaries. Click through each site and follow the numbers in order: they trace the path lymph takes from the tumor outward. Every GYN nodal field follows this path.</p>",
   "plates": [
    {
     "id": "gyn-dr-cervix",

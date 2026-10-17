@@ -1,0 +1,997 @@
+[
+ {
+  "finding_id": "F-TH-01",
+  "type": "error",
+  "risk": "HIGH",
+  "status": "Verified",
+  "finding": "Lung stage builder grid assigns T3 N2a to IIIB (should be IIIA) and T3-4 N2b to IIIC (should be IIIB). In the AJCC/UICC 9th edition, T3N2a moved to IIIA, T2-T4 N2b are IIIB, and IIIC is T3-4 N3 only. Every quiz patient generated with these combinations is graded with the wrong answer.",
+  "match": [
+   {
+    "file": "src/app.js",
+    "text": "N2a: { T1:\"IIB\""
+   },
+   {
+    "file": "src/app.js",
+    "text": "N2b: { T1:\"IIIA\""
+   }
+  ],
+  "sources": [
+   {
+    "title": "IASLC Lung Cancer Staging Project: Proposals for Revision of the TNM Stage Groups in the Forthcoming (Ninth) Edition",
+    "year": "2024",
+    "pmid": "38447919",
+    "doi": "10.1016/j.jtho.2024.02.011",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38447919/"
+   },
+   {
+    "title": "Radiopaedia: Lung cancer staging (IASLC 9th edition)",
+    "year": "2025",
+    "url": "https://radiopaedia.org/articles/lung-cancer-staging-iaslc-9th-edition"
+   }
+  ],
+  "correction": "N2a: { T1:\"IIB\", T2:\"IIIA\", T3:\"IIIA\", T4:\"IIIB\" }; N2b: { T1:\"IIIA\", T2:\"IIIB\", T3:\"IIIB\", T4:\"IIIB\" }",
+  "date": "2026-10-16",
+  "reviewer": "Claude (AI-assisted audit); not a substitute for radiation oncologist review",
+  "original_match": [
+   {
+    "file": "src/app.js",
+    "text": "N2a: { T1:\"IIB\""
+   },
+   {
+    "file": "src/app.js",
+    "text": "N2b: { T1:\"IIIA\""
+   }
+  ],
+  "implemented": "Yes, 2026-10-17: src/app.js lungStageGroup grid. Claim now matches the cited source."
+ },
+ {
+  "finding_id": "F-TH-02",
+  "type": "error",
+  "risk": "HIGH",
+  "status": "Verified",
+  "finding": "Thoracic Workup & Staging AJCC stage-group table lists T3 N2a under IIIB and T3-4 N2b under IIIC. Under the 9th edition T3N2a is IIIA, T3-4 N2b is IIIB, and IIIC is T3-4 N3 only. Disagrees with the abstract of the IASLC proposal the page is based on.",
+  "match": [
+   {
+    "file": "src/data/docs/thoracic.json",
+    "text": "IIIA | T4 N0; T3-4 N1; T2-3 N2a; T1 N2b"
+   },
+   {
+    "file": "src/data/docs/thoracic.json",
+    "text": "IIIB | T4 N2a; T2-4 N2b; T1-2 N3"
+   },
+   {
+    "file": "src/data/docs/thoracic.json",
+    "text": "IIIC | T3-4 N3"
+   }
+  ],
+  "sources": [
+   {
+    "title": "IASLC proposals for stage groups, ninth edition",
+    "year": "2024",
+    "pmid": "38447919",
+    "doi": "10.1016/j.jtho.2024.02.011",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38447919/"
+   }
+  ],
+  "correction": "IIIA | T4 N0; T3-4 N1; T2-3 N2a; T1 N2b. IIIB | T4 N2a; T2-4 N2b; T1-2 N3. IIIC | T3-4 N3.",
+  "date": "2026-10-16",
+  "reviewer": "Claude (AI-assisted audit); not a substitute for radiation oncologist review",
+  "original_match": [
+   {
+    "file": "src/data/docs/thoracic.json",
+    "text": "IIIA | T4 N0; T3-4 N1; T2 N2a; T1 N2b"
+   },
+   {
+    "file": "src/data/docs/thoracic.json",
+    "text": "IIIB | T3-4 N2a; T2 N2b; T1-2 N3"
+   },
+   {
+    "file": "src/data/docs/thoracic.json",
+    "text": "IIIC | T3-4 N2b; T3-4 N3"
+   }
+  ],
+  "implemented": "Yes, 2026-10-17: src/data/docs/thoracic.json AJCC stage-group table. Claim now matches the cited source."
+ },
+ {
+  "finding_id": "F-TH-03",
+  "type": "error",
+  "risk": "HIGH",
+  "status": "Verified",
+  "finding": "Thoracic Case 3 stages a 5.2 cm tumor with a single subcarinal station as T3 N2a = Stage IIIB. Under the AJCC 9th edition (which the case says it uses) T3 N2a is Stage IIIA. Treatment answer (unresectable -> chemoRT -> durvalumab) is unaffected.",
+  "match": [
+   {
+    "file": "src/data/cases/thoracic.json",
+    "text": "T3 N2a M0, Stage IIIA"
+   },
+   {
+    "file": "src/data/cases/thoracic.json",
+    "text": "T3 N2a is stage IIIA in the 9th edition"
+   }
+  ],
+  "sources": [
+   {
+    "title": "IASLC proposals for stage groups, ninth edition",
+    "year": "2024",
+    "pmid": "38447919",
+    "doi": "10.1016/j.jtho.2024.02.011",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38447919/"
+   }
+  ],
+  "correction": "Answer: T3 N2a M0, Stage IIIA. Explanation: 'T3 N2a is stage IIIA in the 9th edition (it was IIIB in the 8th).'",
+  "date": "2026-10-16",
+  "reviewer": "Claude (AI-assisted audit); not a substitute for radiation oncologist review",
+  "original_match": [
+   {
+    "file": "src/data/cases/thoracic.json",
+    "text": "T3 N2a M0, Stage IIIB"
+   },
+   {
+    "file": "src/data/cases/thoracic.json",
+    "text": "T3 N2a is stage IIIB"
+   }
+  ],
+  "implemented": "Yes, 2026-10-17: tools/cases/thoracic_cases.py Case 3 (regenerated). Claim now matches the cited source."
+ },
+ {
+  "finding_id": "F-TH-04",
+  "type": "misleading",
+  "risk": "MODERATE",
+  "status": "Verified",
+  "finding": "Flashcard extra says SWOG 9416 achieved 'complete resection in over 90%'. In the trial, 83 of 110 eligible patients (76%) had complete resection; 83 of 88 who went to thoracotomy (94%). The over-90% figure applies only to patients who reached surgery. 5-year OS was 44% overall.",
+  "match": [
+   {
+    "file": "src/data/decks/thoracic.json",
+    "text": "complete resection in 76% of all patients"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Rusch VW et al. Induction chemoradiation and surgical resection for superior sulcus NSCLC: long-term results of SWOG 9416 (INT 0160). J Clin Oncol",
+    "year": "2007",
+    "pmid": "17235046",
+    "doi": "10.1200/jco.2006.08.2826",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/17235046/"
+   }
+  ],
+  "correction": "SWOG 9416 / INT 0160: complete resection in 76% of all patients (over 90% of those who reached surgery); 5-year survival 44%.",
+  "date": "2026-10-16",
+  "reviewer": "Claude (AI-assisted audit); not a substitute for radiation oncologist review",
+  "original_match": [
+   {
+    "file": "src/data/decks/thoracic.json",
+    "text": "complete resection in over 90%"
+   }
+  ],
+  "implemented": "Yes, 2026-10-17: src/data/decks/thoracic.json thx-44 extra. Claim now matches the cited source."
+ },
+ {
+  "finding_id": "F-TH-05",
+  "type": "contradiction",
+  "risk": "HIGH",
+  "status": "Verified",
+  "finding": "Thoracic imaging plate calls SVC compression 'an urgent indication for RT', contradicting thoracic Case 8 and the Palliative & Benign content, which correctly teach that SVC syndrome without airway compromise is not a radiation emergency: tissue diagnosis first, endovascular stent for severe symptoms.",
+  "match": [
+   {
+    "file": "src/data/imaging/thoracic.json",
+    "text": "Unless the airway is threatened, get tissue first"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wilson LD, Detterbeck FC, Yahalom J. Superior vena cava syndrome with malignant causes. N Engl J Med",
+    "year": "2007",
+    "pmid": "17476012",
+    "doi": "10.1056/nejmcp067190",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/17476012/"
+   }
+  ],
+  "correction": "Tumor or bulky 4R nodes can compress it (SVC syndrome). Get tissue first; severe symptoms are relieved fastest with a stent, and RT follows the histology.",
+  "date": "2026-10-16",
+  "reviewer": "Claude (AI-assisted audit); not a substitute for radiation oncologist review",
+  "original_match": [
+   {
+    "file": "src/data/imaging/thoracic.json",
+    "text": "an urgent indication for RT"
+   }
+  ],
+  "implemented": "Yes, 2026-10-17: src/data/imaging/thoracic.json SVC hotspot. Claim now matches the cited source."
+ },
+ {
+  "finding_id": "F-TH-06",
+  "type": "error",
+  "risk": "LOWER",
+  "status": "Verified",
+  "finding": "Imaging plate says the upper border of the left brachiocephalic vein is where station 2R ends and 4R begins. The IASLC map uses the caudal (lower) margin of the left brachiocephalic vein where it crosses the trachea.",
+  "match": [
+   {
+    "file": "src/data/imaging/thoracic.json",
+    "text": "Its lower edge, where it crosses the trachea"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Rusch VW et al. The IASLC lung cancer staging project: a proposal for a new international lymph node map. J Thorac Oncol",
+    "year": "2009",
+    "pmid": "19357537",
+    "doi": "10.1097/jto.0b013e3181a0d82e",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/19357537/"
+   }
+  ],
+  "correction": "Its lower edge, where it crosses the trachea, is where station 2R ends and 4R begins.",
+  "date": "2026-10-16",
+  "reviewer": "Claude (AI-assisted audit); not a substitute for radiation oncologist review",
+  "original_match": [
+   {
+    "file": "src/data/imaging/thoracic.json",
+    "text": "Its upper border is where station 2R ends and 4R begins"
+   }
+  ],
+  "implemented": "Yes, 2026-10-17: src/data/imaging/thoracic.json left brachiocephalic vein hotspot. Claim now matches the cited source."
+ },
+ {
+  "finding_id": "F-TH-07",
+  "type": "misleading",
+  "risk": "MODERATE",
+  "status": "Verified",
+  "finding": "Thoracic reading and Case 2 say CALGB 140503 showed segmentectomy was noninferior to lobectomy. The trial randomized lobar vs sublobar resection (wedge or segmentectomy) for peripheral T1a N0 tumors <=2 cm; sublobar resection was noninferior for DFS. JCOG0802 is the trial that compared segmentectomy specifically and showed better OS.",
+  "match": [
+   {
+    "file": "src/data/docs/thoracic.json",
+    "text": "CALGB 140503 showed sublobar resection"
+   },
+   {
+    "file": "src/data/cases/thoracic.json",
+    "text": "CALGB 140503 showed sublobar resection"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Altorki N et al. Lobar or Sublobar Resection for Peripheral Stage IA Non-Small-Cell Lung Cancer. N Engl J Med",
+    "year": "2023",
+    "pmid": "36780674",
+    "doi": "10.1056/nejmoa2212083",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/36780674/"
+   }
+  ],
+  "correction": "CALGB 140503 showed sublobar resection (segmentectomy or wedge) was noninferior to lobectomy, and JCOG0802 showed better overall survival with segmentectomy.",
+  "date": "2026-10-16",
+  "reviewer": "Claude (AI-assisted audit); not a substitute for radiation oncologist review",
+  "original_match": [
+   {
+    "file": "src/data/docs/thoracic.json",
+    "text": "CALGB 140503 showed it was noninferior to lobectomy"
+   },
+   {
+    "file": "src/data/cases/thoracic.json",
+    "text": "CALGB 140503 showed it was noninferior to lobectomy"
+   }
+  ],
+  "implemented": "Yes, 2026-10-17: docs/thoracic.json + tools/cases/thoracic_cases.py Case 2. Claim now matches the cited source."
+ },
+ {
+  "finding_id": "F-BR-01",
+  "type": "contradiction",
+  "risk": "HIGH",
+  "status": "Verified",
+  "finding": "Breast Case 6 explanation says PMRT 'is indicated for T3-T4 tumors', which treats T3N0 as a firm indication. The breast reading's NCCN table and flashcard br-25 say T3N0 is individualized, and the flashcard lists 'T3 with positive nodes' as the clear indication.",
+  "match": [
+   {
+    "file": "src/data/cases/breast.json",
+    "text": "PMRT is indicated for T4 tumors, T3 with positive nodes"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Recht A et al. Postmastectomy Radiotherapy: An ASCO, ASTRO, and SSO Focused Guideline Update. J Clin Oncol",
+    "year": "2016",
+    "pmid": "27646947",
+    "doi": "10.1200/JCO.2016.69.1188",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/27646947/"
+   }
+  ],
+  "correction": "PMRT is indicated for T4 tumors, T3 with positive nodes, 4 or more positive nodes, or a positive margin; it is strongly considered for 1-3 nodes, and T3N0 is individualized.",
+  "date": "2026-10-16",
+  "reviewer": "Claude (AI-assisted audit); not a substitute for radiation oncologist review",
+  "original_match": [
+   {
+    "file": "src/data/cases/breast.json",
+    "text": "PMRT is indicated for T3-T4 tumors"
+   }
+  ],
+  "implemented": "Yes, 2026-10-17: tools/cases/breast_cases.py Case 6 (regenerated). Claim now matches the cited source."
+ },
+ {
+  "finding_id": "F-BR-02",
+  "type": "outdated",
+  "risk": "HIGH",
+  "status": "Verified",
+  "finding": "Breast Case 4 says a 44-year-old is 'too young for partial breast RT'. The 2024 ASTRO PBI guideline lowered the age criterion to 40; her tumor is a poor fit for PBI because it is grade 3 and larger than 2 cm, not because of her age. The reading's description of PBI candidates as 'older' has the same problem.",
+  "match": [
+   {
+    "file": "src/data/cases/breast.json",
+    "text": "Her grade 3 tumor over 2 cm makes partial breast RT a poor fit"
+   },
+   {
+    "file": "src/data/docs/breast.json",
+    "text": "(generally 40 or older)"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Shaitelman SF et al. Partial Breast Irradiation for Patients With Early-Stage Invasive Breast Cancer or DCIS: An ASTRO Clinical Practice Guideline. Pract Radiat Oncol",
+    "year": "2024",
+    "pmid": "37977261",
+    "doi": "10.1016/j.prro.2023.11.001",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/37977261/"
+   },
+   {
+    "title": "Impact of the ASTRO 2024 Guideline on PBI Eligibility (KROG 24-01): age criterion expanded from 50 to 40. Pract Radiat Oncol",
+    "year": "2025",
+    "pmid": "39667667",
+    "doi": "10.1016/j.prro.2024.11.007",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39667667/"
+   }
+  ],
+  "correction": "Case 4: 'Her grade 3 tumor over 2 cm makes partial breast RT a poor fit, and she is too young and too high-risk for omission.' Reading: 'low-risk patients (generally 40 or older): small (<=2 cm), N0, ER+, lower grade, clear margins.'",
+  "date": "2026-10-16",
+  "reviewer": "Claude (AI-assisted audit); not a substitute for radiation oncologist review",
+  "original_match": [
+   {
+    "file": "src/data/cases/breast.json",
+    "text": "She is too young for partial breast RT or omission"
+   },
+   {
+    "file": "src/data/docs/breast.json",
+    "text": "Partial breast RT treats only the tumor bed in low-risk patients: older, small"
+   }
+  ],
+  "implemented": "Yes, 2026-10-17: tools/cases/breast_cases.py Case 4 + docs/breast.json. Claim now matches the cited source."
+ },
+ {
+  "finding_id": "F-BR-03",
+  "type": "misleading",
+  "risk": "MODERATE",
+  "status": "Verified",
+  "finding": "Quiz answer says high-risk screening after childhood mantle RT starts '8 years after radiation or at age 25'. The harmonized guideline starts surveillance at age 25 or 8 years after radiation, whichever comes LAST; 'or' reads as whichever comes first.",
+  "match": [
+   {
+    "file": "src/app.js",
+    "text": "whichever comes later"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Mulder RL et al. Recommendations for breast cancer surveillance for female survivors of childhood, adolescent, and young adult cancer given chest radiation (IGHG). Lancet Oncol",
+    "year": "2013",
+    "pmid": "24275135",
+    "doi": "10.1016/s1470-2045(13)70303-6",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/24275135/"
+   }
+  ],
+  "correction": "usually starting at age 25 or 8 years after radiation, whichever comes later",
+  "date": "2026-10-16",
+  "reviewer": "Claude (AI-assisted audit); not a substitute for radiation oncologist review",
+  "original_match": [
+   {
+    "file": "src/app.js",
+    "text": "usually starting 8 years after radiation or at age 25"
+   }
+  ],
+  "implemented": "Yes, 2026-10-17: src/app.js breast-epi quiz. Claim now matches the cited source."
+ },
+ {
+  "finding_id": "F-BR-04",
+  "type": "verified",
+  "risk": "HIGH",
+  "status": "Verified",
+  "finding": "NSABP B-51 statements (cN1 converting to ypN0; regional nodal RT did not significantly improve the invasive recurrence-free interval, HR 0.88, P=0.51; omission discussable, not applicable to cN3c) match the published trial.",
+  "match": [
+   {
+    "file": "src/data/decks/breast.json",
+    "text": "NSABP B-51 found no significant benefit"
+   },
+   {
+    "file": "src/data/docs/breast.json",
+    "text": "adding regional nodal RT did not significantly reduce invasive recurrence"
+   },
+   {
+    "file": "src/data/cases/breast.json",
+    "text": "Some ypN0 patients may omit nodal RT (NSABP B-51)"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Mamounas EP et al. Omitting Regional Nodal Irradiation after Response to Neoadjuvant Chemotherapy. N Engl J Med",
+    "year": "2025",
+    "pmid": "40466065",
+    "doi": "10.1056/nejmoa2414859",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/40466065/"
+   }
+  ],
+  "date": "2026-10-16",
+  "reviewer": "Claude (AI-assisted audit); not a substitute for radiation oncologist review"
+ },
+ {
+  "finding_id": "F-BR-05",
+  "type": "expert",
+  "risk": "HIGH",
+  "status": "Expert review",
+  "finding": "Flashcard br-54 lists prior breast/chest radiation alongside pregnancy as a factor that makes breast RT unsafe, and scleroderma/lupus and Li-Fraumeni as relative. Recent NCCN versions are understood to list prior chest RT as a relative contraindication (dose and interval matter). NCCN tables need a login and were not accessed, so the current wording could not be confirmed.",
+  "match": [
+   {
+    "file": "src/data/decks/breast.json",
+    "text": "Pregnancy (RT can't be given during it) and prior radiation to the breast/chest"
+   }
+  ],
+  "sources": [],
+  "correction": "Proposed (needs NCCN check): 'Pregnancy is an absolute contraindication; prior breast/chest RT, active scleroderma or lupus, and Li-Fraumeni syndrome are relative contraindications that need individual review.'",
+  "date": "2026-10-16",
+  "reviewer": "Claude (AI-assisted audit); not a substitute for radiation oncologist review"
+ },
+ {
+  "finding_id": "F-HN-01",
+  "type": "outdated",
+  "risk": "HIGH",
+  "status": "Expert review",
+  "finding": "Nasopharynx staging throughout (reading tables, Case 4, flashcard hn-42, quiz 'M-stage is simply M0 or M1') uses AJCC 8th edition. The AJCC/UICC 9th version for NPC (2024) adds advanced radiologic ENE as an N3 criterion, regroups nonmetastatic disease into stages I-III (I = T1-2 N0-1 with IA/IB, II = T3 or N2, III = T4 or N3), and splits M1 into M1a (<=3 lesions, IVA) and M1b (>3, IVB). The content is correct for the 8th edition and labeled as such in Case 4, but readers are not told a newer version exists. Whether to switch editions (and match NCCN's current choice) is an editorial/clinical decision.",
+  "match": [
+   {
+    "file": "src/data/docs/headneck.json",
+    "text": "Stage groups: I = T1N0 · II = T0-1N1 or T2N0-1"
+   },
+   {
+    "file": "src/data/cases/headneck.json",
+    "text": "Stage this cancer (AJCC 8th edition, nasopharynx)"
+   },
+   {
+    "file": "src/app.js",
+    "text": "There's no further subdivision in H&N cancer"
+   },
+   {
+    "file": "src/data/decks/headneck.json",
+    "text": "How is N stage determined in nasopharyngeal carcinoma?"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Pan JJ et al. Ninth Version of the AJCC and UICC Nasopharyngeal Cancer TNM Staging Classification. JAMA Oncol",
+    "year": "2024",
+    "pmid": "39388190",
+    "doi": "10.1001/jamaoncol.2024.4354",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39388190/"
+   }
+  ],
+  "correction": "Minimum: add an edition note to the NPC staging table ('AJCC 8th edition shown; the AJCC/UICC 9th version (2024) adds advanced radiologic ENE to N3, regroups stages I-III, and splits M1a/M1b'), and qualify the quiz answer ('M0 or M1 for most H&N sites in the 8th edition; NPC version 9 splits M1'). Full migration to version 9 needs radiation oncologist sign-off and a check of the current NCCN edition.",
+  "date": "2026-10-16",
+  "reviewer": "Claude (AI-assisted audit); not a substitute for radiation oncologist review"
+ },
+ {
+  "finding_id": "F-HN-02",
+  "type": "expert",
+  "risk": "HIGH",
+  "status": "Expert review",
+  "finding": "Oral cavity T table assigns tumors >4 cm with DOI >10 mm to T4a. This matches the UICC 8th edition errata (2018) and several AJCC-derived tables, but other AJCC 8th summaries (e.g., Radiopaedia) define T3 as >4 cm or any DOI >10 mm with T4a reserved for invasion of adjacent structures. The two sources conflict for exactly this subgroup. Content is internally consistent across the reading, quiz, and drill.",
+  "match": [
+   {
+    "file": "src/data/docs/headneck.json",
+    "text": "T4a | >4 cm with DOI >10 mm"
+   },
+   {
+    "file": "src/app.js",
+    "text": "or to T4a if it is also >4cm"
+   }
+  ],
+  "sources": [
+   {
+    "title": "UICC TNM Classification 8th edition errata (25 May 2018)",
+    "year": "2018",
+    "url": "https://www.uicc.org/sites/main/files/atoms/files/UICC%208th%20Edition%20Errata_25May2018%20final.pdf"
+   },
+   {
+    "title": "Radiopaedia: Oral cavity carcinoma staging",
+    "year": "2025",
+    "url": "https://radiopaedia.org/articles/oral-cavity-carcinoma-staging"
+   }
+  ],
+  "correction": "Keep the current table; add a footnote that this subgroup is T4a in the UICC errata and some AJCC printings, and confirm against the AJCC manual edition the site cites.",
+  "date": "2026-10-16",
+  "reviewer": "Claude (AI-assisted audit); not a substitute for radiation oncologist review"
+ },
+ {
+  "finding_id": "F-GI-01",
+  "type": "error",
+  "risk": "HIGH",
+  "status": "Verified",
+  "finding": "GI Case 4 stages anal cancer T3 N1a M0 as Stage IIIC. The GI cases and reading state that anal cancer uses the AJCC version 9 system, where T3 N0-1 is Stage IIIA (IIIC is T4 N1). IIIC is the AJCC 8th edition grouping. Contradicts the reading's own stage-group row. Treatment answer is unaffected.",
+  "match": [
+   {
+    "file": "src/data/cases/gi.json",
+    "text": "T3 N1a M0, Stage IIIA"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Janczewski LM et al. Survival outcomes used to generate version 9 AJCC staging system for anal cancer. CA Cancer J Clin",
+    "year": "2023",
+    "pmid": "37114458",
+    "doi": "10.3322/caac.21780",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/37114458/"
+   },
+   {
+    "title": "Data-driven optimization of version 9 AJCC staging system for anal cancer. Cancer",
+    "year": "2024",
+    "pmid": "38140735",
+    "doi": "10.1002/cncr.35155",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38140735/"
+   }
+  ],
+  "correction": "Answer: T3 N1a M0, Stage IIIA (AJCC version 9: T3 N0-1 is IIIA; it was IIIC in the 8th edition). Update the distractor list so 'Stage IIIA' is the correct choice.",
+  "date": "2026-10-16",
+  "reviewer": "Claude (AI-assisted audit); not a substitute for radiation oncologist review",
+  "original_match": [
+   {
+    "file": "src/data/cases/gi.json",
+    "text": "T3 N1a M0, Stage IIIC"
+   }
+  ],
+  "implemented": "Yes, 2026-10-17: tools/cases/gi_cases.py Case 4 (regenerated). Claim now matches the cited source."
+ },
+ {
+  "finding_id": "F-GI-02",
+  "type": "misleading",
+  "risk": "MODERATE",
+  "status": "Verified",
+  "finding": "Case 7, the GI reading, and flashcard gix-51 say RTOG 1112 'improved overall and progression-free survival'. In the published trial (closed early), OS for SBRT + sorafenib vs sorafenib was 15.8 vs 12.3 months, HR 0.77, one-sided P = .06 (did not meet the prespecified threshold); OS was significant only after adjusting for stratification factors (HR 0.72, P = .04). PFS clearly improved (9.2 vs 5.5 months, HR 0.55, P < .001). Sorafenib is also no longer the usual first-line systemic therapy, which limits how directly the result applies today.",
+  "match": [
+   {
+    "file": "src/data/cases/gi.json",
+    "text": "improved progression-free survival, with a borderline overall survival gain"
+   },
+   {
+    "file": "src/data/cases/gi.json",
+    "text": "RTOG 1112: PFS 9.2 vs 5.5 months"
+   },
+   {
+    "file": "src/data/decks/gi.json",
+    "text": "RTOG 1112: SBRT + sorafenib improved progression-free survival"
+   },
+   {
+    "file": "src/data/docs/gi.json",
+    "text": "Adding SBRT to sorafenib improved progression-free survival"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Dawson LA et al. Stereotactic Body Radiotherapy vs Sorafenib Alone in Hepatocellular Carcinoma: The NRG Oncology/RTOG 1112 Phase 3 Randomized Clinical Trial. JAMA Oncol",
+    "year": "2025",
+    "pmid": "39699905",
+    "doi": "10.1001/jamaoncol.2024.5403",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39699905/"
+   }
+  ],
+  "correction": "Case 7 question: 'Which trial found that adding SBRT to sorafenib improved progression-free survival, with a trend toward better overall survival, in locally advanced HCC?' Explanation: 'OS 15.8 vs 12.3 months (borderline; significant only after adjustment); PFS 9.2 vs 5.5 months.'",
+  "date": "2026-10-16",
+  "reviewer": "Claude (AI-assisted audit); not a substitute for radiation oncologist review",
+  "original_match": [
+   {
+    "file": "src/data/cases/gi.json",
+    "text": "adding SBRT to sorafenib improved overall and progression-free survival"
+   },
+   {
+    "file": "src/data/decks/gi.json",
+    "text": "RTOG 1112: SBRT + sorafenib improved outcomes"
+   },
+   {
+    "file": "src/data/docs/gi.json",
+    "text": "Adding SBRT to sorafenib improved outcomes in unresectable HCC"
+   }
+  ],
+  "implemented": "Yes, 2026-10-17: gi_cases.py Case 7, decks/gi.json gix-51, docs/gi.json. Claim now matches the cited source."
+ },
+ {
+  "finding_id": "F-GI-03",
+  "type": "expert",
+  "risk": "HIGH",
+  "status": "Expert review",
+  "finding": "GI reading and anatomy plate say supraclavicular nodes are 'generally considered distant (M1)' for esophageal cancer and are 'included electively for some cervical/upper tumors'. AJCC 8th edition regional nodes for the esophagus include lower cervical paratracheal stations (1R/1L), and treatment of supraclavicular nodes for cervical/upper thoracic primaries is common. Whether 'supraclavicular = M1' is accurate as written could not be confirmed against the AJCC manual text.",
+  "match": [
+   {
+    "file": "src/data/docs/gi.json",
+    "text": "supraclavicular nodes are generally considered distant (M1)"
+   },
+   {
+    "file": "src/data/anatomy/gi.json",
+    "text": "Distant (M1) for esophageal cancer; included electively"
+   }
+  ],
+  "sources": [],
+  "correction": "Proposed (needs confirmation): 'Lower cervical paratracheal nodes are regional in the AJCC 8th edition; how supraclavicular nodes are classified depends on the primary's location, and they are routinely covered for cervical and upper thoracic tumors.'",
+  "date": "2026-10-16",
+  "reviewer": "Claude (AI-assisted audit); not a substitute for radiation oncologist review"
+ },
+ {
+  "finding_id": "F-PR-01",
+  "type": "error",
+  "risk": "HIGH",
+  "status": "Verified",
+  "finding": "Prostate Case 5 defines NCCN very high risk as '2 or more of: T3-4, Gleason 8-10, PSA 40 or more'. Those are the STAMPEDE criteria for adding abiraterone, not the NCCN very-high-risk definition (T3b-T4, primary Gleason pattern 5, >4 cores with GG4-5, or 2-3 high-risk features: T3a, GG4-5, PSA >20). Contradicts the prostate reading's risk table, flashcard prx-36, and the risk builder. The answer (very high risk) is still correct for this patient.",
+  "match": [
+   {
+    "file": "src/data/cases/prostate.json",
+    "text": "Very high risk means T3b-T4, primary Gleason pattern 5"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Attard G et al. Abiraterone acetate and prednisolone with or without enzalutamide for high-risk non-metastatic prostate cancer: a meta-analysis of two randomised controlled trials (STAMPEDE). Lancet (eligibility: node-positive or >=2 of T3/4, Gleason 8-10, PSA >=40)",
+    "year": "2022",
+    "pmid": "34953525",
+    "doi": "10.1016/S0140-6736(21)02437-5",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/34953525/"
+   },
+   {
+    "title": "NCCN Clinical Practice Guidelines: Prostate Cancer (risk stratification table; login required, not accessed)",
+    "year": "current",
+    "url": "https://www.nccn.org/guidelines/guidelines-detail?category=1&id=1459"
+   }
+  ],
+  "correction": "Very high risk means T3b-T4, primary Gleason pattern 5, more than 4 cores with Grade Group 4-5, or 2-3 high-risk features (T3a, GG4-5, PSA over 20). He has T3b and two high-risk features (GG5, PSA 45). He also meets the STAMPEDE criteria for abiraterone (2 or more of T3-4, Gleason 8-10, PSA 40 or more).",
+  "date": "2026-10-16",
+  "reviewer": "Claude (AI-assisted audit); not a substitute for radiation oncologist review",
+  "original_match": [
+   {
+    "file": "src/data/cases/prostate.json",
+    "text": "Very high risk is 2 or more of: T3-4, Gleason 8-10, PSA 40 or more"
+   }
+  ],
+  "implemented": "Yes, 2026-10-17: tools/cases/prostate_cases.py Case 5 (regenerated). Claim now matches the cited source."
+ },
+ {
+  "finding_id": "F-PR-02",
+  "type": "contradiction",
+  "risk": "HIGH",
+  "status": "Expert review",
+  "finding": "The prostate reading and flashcard prx-33 teach that clinical T stage is set by DRE ('a big tumor that can't be felt is still T1c, even if the MRI shows it clearly'), but Case 5 assigns cT3b from MRI and PSMA findings. Practice varies: AJCC/NCCN cT is DRE-based, while many clinicians use MRI evidence of EPE/SVI for risk assignment. The case teaches the opposite rule from the reading without saying so.",
+  "match": [
+   {
+    "file": "src/data/cases/prostate.json",
+    "text": "What is his clinical T stage?"
+   },
+   {
+    "file": "src/data/docs/prostate.json",
+    "text": "T1 vs T2 is about the finger, not the size"
+   }
+  ],
+  "sources": [],
+  "correction": "Proposed: keep the case, but have the explanation say 'Formally, clinical T comes from the DRE; MRI evidence of seminal vesicle invasion is commonly used to treat him as T3b (very high risk).' A radiation oncologist should confirm the preferred teaching.",
+  "date": "2026-10-16",
+  "reviewer": "Claude (AI-assisted audit); not a substitute for radiation oncologist review"
+ },
+ {
+  "finding_id": "F-PR-03",
+  "type": "verified",
+  "risk": "MODERATE",
+  "status": "Verified",
+  "finding": "The 2026 AUA/SUO amendment exists (J Urol 2026). Its abstract describes updates to MRI, biomarkers, biopsy technique, and ASAP; the screening-age statements (shared decision-making from 40-45 for increased-risk men; 50/55-69 core group) come from the 2023 Part I guideline the amendment builds on. The flashcard's wording is consistent with both.",
+  "match": [
+   {
+    "file": "src/data/decks/prostate.json",
+    "text": "AUA amended 2026"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Updates to Early Detection of Prostate Cancer: AUA/SUO Guideline (2026). J Urol",
+    "year": "2026",
+    "pmid": "41744286",
+    "doi": "10.1097/ju.0000000000004995",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41744286/"
+   },
+   {
+    "title": "Wei JT et al. Early Detection of Prostate Cancer: AUA/SUO Guideline Part I: Prostate Cancer Screening. J Urol",
+    "year": "2023",
+    "pmid": "37096582",
+    "doi": "10.1097/ju.0000000000003491",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/37096582/"
+   }
+  ],
+  "correction": "",
+  "date": "2026-10-16",
+  "reviewer": "Claude (AI-assisted audit); not a substitute for radiation oncologist review"
+ },
+ {
+  "finding_id": "F-GY-01",
+  "type": "misleading",
+  "risk": "HIGH",
+  "status": "Verified",
+  "finding": "The Sedlis/Peters builder says adjuvant chemoradiation for Peters criteria is '45-50.4 Gy + weekly cisplatin (GOG 109)'. GOG 109/SWOG 8797/RTOG 91-12 gave 49.3 Gy with cisplatin 70 mg/m2 plus 96-hour 5-FU every 3 weeks for 4 cycles (2 concurrent). Weekly cisplatin is common modern practice, extrapolated from the definitive-setting trials, but it is not what GOG 109 tested.",
+  "match": [
+   {
+    "file": "src/app.js",
+    "text": "GOG 109 used cisplatin + 5-FU"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Peters WA 3rd et al. Concurrent chemotherapy and pelvic radiation therapy compared with pelvic radiation therapy alone as adjuvant therapy after radical surgery in high-risk early-stage cancer of the cervix. J Clin Oncol 2000;18:1606-13 (reprinted J Clin Oncol 2023)",
+    "year": "2000",
+    "pmid": "10764420",
+    "doi": "10.1200/JCO.2000.18.8.1606",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/10764420/"
+   }
+  ],
+  "correction": "Adjuvant pelvic chemoradiation: 45-50.4 Gy with concurrent cisplatin-based chemo (GOG 109 used cisplatin + 5-FU; weekly cisplatin is the common modern choice).",
+  "date": "2026-10-16",
+  "reviewer": "Claude (AI-assisted audit); not a substitute for radiation oncologist review",
+  "original_match": [
+   {
+    "file": "src/app.js",
+    "text": "45-50.4 Gy + weekly cisplatin (GOG 109)"
+   }
+  ],
+  "implemented": "Yes, 2026-10-17: src/app.js POSTOP_TX peters. Claim now matches the cited source."
+ },
+ {
+  "finding_id": "F-OV-01",
+  "type": "error",
+  "risk": "MODERATE",
+  "status": "Revise",
+  "finding": "[Retired file, not user-facing] Radiation Physics reading says 'a 9 MeV electron beam has a Dmax of about 4.5 cm and a practical range of about 4.5 cm'. By the page's own rule of thumb (Dmax ~ E/5) Dmax is about 1.8-2 cm; 4.5 cm is the practical range (E/2). As written, Dmax and the practical range coincide, which is physically impossible and contradicts the preceding sentence.",
+  "match": [],
+  "sources": [
+   {
+    "title": "Internal arithmetic: the same paragraph defines Dmax ~ E/5, R90 ~ E/3.2-3.3, Rp ~ E/2 (9/5 = 1.8 cm)",
+    "year": "",
+    "url": ""
+   }
+  ],
+  "correction": "For example, a 9 MeV electron beam has a Dmax of about 2 cm, a 90% isodose depth of about 2.8 cm, and a practical range of about 4.5 cm.",
+  "date": "2026-10-16",
+  "reviewer": "Claude (AI-assisted audit); not a substitute for radiation oncologist review",
+  "retired_file": "docs/legacy-overview-docs.json (moved out of src/data by the Before You Start session on 2026-10-16; not rendered in the app)"
+ },
+ {
+  "finding_id": "F-OV-02",
+  "type": "error",
+  "risk": "MODERATE",
+  "status": "Revise",
+  "finding": "[Retired file, not user-facing] QUANTEC table in the Common Dose Constraints reading lists 'Bilateral parotid | Mean < 26 Gy | <25% long-term salivary function'. QUANTEC gives a mean dose of about 25 Gy for both glands (or about 20 Gy for one gland) to avoid severe xerostomia, defined as long-term salivary function below 25% of baseline; the 25% is the definition of the endpoint, not the risk. (The 26 Gy figure is the older Eisbruch threshold quoted correctly in the flashcard.)",
+  "match": [],
+  "sources": [
+   {
+    "title": "Deasy JO et al. Radiotherapy dose-volume effects on salivary gland function (QUANTEC). Int J Radiat Oncol Biol Phys",
+    "year": "2010",
+    "pmid": "20171519",
+    "doi": "10.1016/j.ijrobp.2009.06.090",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20171519/"
+   }
+  ],
+  "correction": "Parotids | Mean < 25 Gy (both) or < 20 Gy (one) | <20% risk of severe xerostomia (salivary function <25% of baseline)",
+  "date": "2026-10-16",
+  "reviewer": "Claude (AI-assisted audit); not a substitute for radiation oncologist review",
+  "retired_file": "docs/legacy-overview-docs.json (moved out of src/data by the Before You Start session on 2026-10-16; not rendered in the app)"
+ },
+ {
+  "finding_id": "F-OV-03",
+  "type": "expert",
+  "risk": "MODERATE",
+  "status": "Expert review",
+  "finding": "[Retired file, not user-facing] The same QUANTEC table lists 'Stomach | Max < 45 Gy | <7% ulceration' and the text then names the stomach as a max-dose (serial) organ. The QUANTEC summary table is recalled to list the whole-stomach D100 < 45 Gy for <7% ulceration, not a maximum dose. The summary table in the free manuscript is an image and could not be read programmatically, and the organ-specific abstract does not state the parameter.",
+  "match": [],
+  "sources": [
+   {
+    "title": "Kavanagh BD et al. Radiation dose-volume effects in the stomach and small bowel (QUANTEC). Int J Radiat Oncol Biol Phys",
+    "year": "2010",
+    "pmid": "20171503",
+    "doi": "10.1016/j.ijrobp.2009.05.071",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20171503/"
+   },
+   {
+    "title": "Marks LB et al. Use of normal tissue complication probability models in the clinic (QUANTEC summary, Table 1)",
+    "year": "2010",
+    "pmid": "20171502",
+    "doi": "10.1016/j.ijrobp.2009.07.1754",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20171502/"
+   }
+  ],
+  "correction": "Proposed after checking Table 1: 'Stomach (whole organ) | D100 < 45 Gy | <7% ulceration', and drop stomach from the list of max-dose organs.",
+  "date": "2026-10-16",
+  "reviewer": "Claude (AI-assisted audit); not a substitute for radiation oncologist review",
+  "retired_file": "docs/legacy-overview-docs.json (moved out of src/data by the Before You Start session on 2026-10-16; not rendered in the app)"
+ },
+ {
+  "finding_id": "F-OV-04",
+  "type": "verified",
+  "risk": "HIGH",
+  "status": "Verified",
+  "finding": "[Retired file, not user-facing] HyTEC spinal cord Dmax limits in the table (1 fx 12.4 Gy, 2 fx 17, 3 fx 20.3, 4 fx 23, 5 fx 25.3 Gy for 1-5% myelopathy risk) match the HyTEC abstract exactly (the 1-fraction range there is 12.4-14.0 Gy). The conventional cord gradient (0.2% at 50 Gy, 6% at 60 Gy, 50% at 69 Gy) is the QUANTEC summary-table figure; the QUANTEC spinal cord abstract gives the consistent estimate of <1% at 54 Gy and <10% at 61 Gy.",
+  "match": [],
+  "sources": [
+   {
+    "title": "Sahgal A et al. Spinal Cord Dose Tolerance to Stereotactic Body Radiation Therapy (HyTEC). Int J Radiat Oncol Biol Phys",
+    "year": "2021",
+    "pmid": "31606528",
+    "doi": "10.1016/j.ijrobp.2019.09.038",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/31606528/"
+   },
+   {
+    "title": "Kirkpatrick JP et al. Radiation dose-volume effects in the spinal cord (QUANTEC). Int J Radiat Oncol Biol Phys",
+    "year": "2010",
+    "pmid": "20171517",
+    "doi": "10.1016/j.ijrobp.2009.04.095",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20171517/"
+   }
+  ],
+  "date": "2026-10-16",
+  "reviewer": "Claude (AI-assisted audit); not a substitute for radiation oncologist review",
+  "retired_file": "docs/legacy-overview-docs.json (moved out of src/data by the Before You Start session on 2026-10-16; not rendered in the app)"
+ },
+ {
+  "finding_id": "F-OV-05",
+  "type": "weak",
+  "risk": "MODERATE",
+  "status": "Verified",
+  "finding": "Before You Start flashcard ov-95 gives the parotid goal as 'mean dose under about 26 Gy'. 26 Gy is the older Eisbruch threshold; QUANTEC recommends about 25 Gy mean when both glands are spared, or about 20 Gy for one gland. Not wrong, but less precise than the consensus source.",
+  "match": [],
+  "sources": [
+   {
+    "title": "Deasy JO et al. Radiotherapy dose-volume effects on salivary gland function (QUANTEC). Int J Radiat Oncol Biol Phys",
+    "year": "2010",
+    "pmid": "20171519",
+    "doi": "10.1016/j.ijrobp.2009.06.090",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20171519/"
+   }
+  ],
+  "correction": "Back: 'Mean dose under about 25 Gy (both glands) or 20 Gy (at least one gland)'. Extra: add 'Older series used 26 Gy.' (Owned by the Before You Start session; proposed, not edited here.)",
+  "date": "2026-10-16",
+  "reviewer": "Claude (AI-assisted audit); not a substitute for radiation oncologist review",
+  "implemented": "Yes, 2026-10-17, by the Before You Start session: ov-95 now reads about 25 Gy for both parotids or 20 Gy for one (QUANTEC), with 'many protocols use about 26 Gy' in the extra."
+ },
+ {
+  "finding_id": "F-REF-01",
+  "type": "reference",
+  "risk": "MODERATE",
+  "status": "Verified",
+  "finding": "At the start of the audit, curriculum.json listed 155 trial names with no PMID, DOI, or link. The Before You Start session added src/data/sources.json + tools/sources.py during the audit (uncommitted). All 155 trial PMIDs in it resolve in Europe PMC, and every stored title matches the real paper title (2 differences are HTML markup only). The 4 guideline entries without a pmid field point to correct PubMed/NICE URLs. An independent lookup (docs/audit/trial_references.csv) agrees.",
+  "match": [],
+  "sources": [
+   {
+    "title": "Europe PMC REST API lookups (docs/audit/trial_references.csv)",
+    "year": "2026",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/"
+   }
+  ],
+  "date": "2026-10-16",
+  "reviewer": "Claude (AI-assisted audit); not a substitute for radiation oncologist review"
+ },
+ {
+  "finding_id": "F-REF-02",
+  "type": "reference",
+  "risk": "LOWER",
+  "status": "Revise",
+  "finding": "Figure caption attribution: all 101 cited PMC IDs exist. PMC6661304 is credited to 'Hashmi R, Sectional Anatomy Quiz IV' but its first author is Lathif. PMC10847842 (Crosetti) is cited as 2024; the record says 2023. PMC7874055 (Sardaro) is cited as 2021; the record says 2020 (likely epub vs issue year). Ten captions give the journal and year without an author. See docs/audit/caption_reference_check.csv.",
+  "match": [],
+  "sources": [
+   {
+    "title": "docs/audit/caption_reference_check.csv (Europe PMC lookups)",
+    "year": "2026",
+    "url": ""
+   }
+  ],
+  "correction": "Fix the PMC6661304 author; add first authors to the ten unattributed captions; align years with the PubMed record.",
+  "date": "2026-10-16",
+  "reviewer": "Claude (AI-assisted audit); not a substitute for radiation oncologist review"
+ },
+ {
+  "finding_id": "F-TH-08",
+  "type": "misleading",
+  "risk": "MODERATE",
+  "status": "Verified",
+  "finding": "Flashcard thx-50 says 'Gomez and SABR-COMET showed better survival', and the reading says the same without qualification. Both were randomized phase II trials. SABR-COMET used a screening design with two-sided alpha 0.20 (OS 41 vs 28 months, HR 0.57, p=0.090), with 3 of 66 SABR-arm treatment-related deaths. Gomez (49 patients, closed early, p<.10 counted as significant) showed OS 41.2 vs 17.0 months, p=.017. The reading's Case 7 already labels Gomez as phase II. Raised by the Before You Start session; confirmed here against the abstracts.",
+  "match": [
+   {
+    "file": "src/data/decks/thoracic.json",
+    "text": "Gomez and SABR-COMET, both randomized phase II trials"
+   },
+   {
+    "file": "src/data/docs/thoracic.json",
+    "text": "both randomized phase II trials, showed longer survival"
+   },
+   {
+    "file": "src/data/cases/thoracic.json",
+    "text": "Two randomized phase II trials, SABR-COMET"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Palma DA et al. SABR-COMET: a randomised, phase 2, open-label trial. Lancet",
+    "year": "2019",
+    "pmid": "30982687",
+    "doi": "10.1016/s0140-6736(18)32487-5",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30982687/"
+   },
+   {
+    "title": "Gomez DR et al. Local Consolidative Therapy vs Maintenance Therapy or Observation for Oligometastatic NSCLC: Long-Term Results. J Clin Oncol",
+    "year": "2019",
+    "pmid": "31067138",
+    "doi": "10.1200/jco.19.00201",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/31067138/"
+   }
+  ],
+  "correction": "Two randomized phase II trials (Gomez; SABR-COMET, which used a relaxed p<0.20 threshold) showed longer survival with local therapy to every site; SABR-COMET had about 4.5% treatment-related deaths. Phase III trials are ongoing.",
+  "date": "2026-10-16",
+  "reviewer": "Claude (AI-assisted audit); not a substitute for radiation oncologist review",
+  "original_match": [
+   {
+    "file": "src/data/decks/thoracic.json",
+    "text": "Gomez and SABR-COMET showed better survival"
+   },
+   {
+    "file": "src/data/docs/thoracic.json",
+    "text": "Gomez (phase II) and SABR-COMET showed better survival"
+   }
+  ],
+  "implemented": "Yes, 2026-10-17: decks/thoracic.json thx-50, docs/thoracic.json, thoracic Case 7. Claim now matches the cited source."
+ },
+ {
+  "finding_id": "F-CX-01",
+  "type": "contradiction",
+  "risk": "LOWER",
+  "status": "Expert review",
+  "finding": "Limited-stage SCLC once-daily dose is given as '60-66 Gy daily' in the thoracic quiz (app.js) and flashcard thx-52, but as '60-70 Gy daily' in the reading's NCCN table. Both are defensible (CONVERT used 66 Gy; CALGB 30610 tested 70 Gy), but students see two ranges.",
+  "match": [
+   {
+    "file": "src/app.js",
+    "text": "60-66 Gy daily (CONVERT)"
+   },
+   {
+    "file": "src/data/decks/thoracic.json",
+    "text": "or 60-66 Gy daily), then durvalumab"
+   },
+   {
+    "file": "src/data/docs/thoracic.json",
+    "text": "45 Gy BID or 60-70 Gy daily"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Faivre-Finn C et al. CONVERT. Lancet Oncol",
+    "year": "2017",
+    "pmid": "28642008",
+    "doi": "10.1016/s1470-2045(17)30318-2",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28642008/"
+   }
+  ],
+  "correction": "Harmonize on one range after checking the current NCCN SCLC guideline (proposed: '60-70 Gy daily, for example 66 Gy in 33 as in CONVERT').",
+  "date": "2026-10-16",
+  "reviewer": "Claude (AI-assisted audit); not a substitute for radiation oncologist review"
+ },
+ {
+  "finding_id": "F-REF-03",
+  "type": "reference",
+  "risk": "MODERATE",
+  "status": "Verified",
+  "finding": "src/data/sources.json linked three trials to NEJM correspondence instead of the trial reports (Perry 28564572, RTOG 9802 27518677, MA.20 26535517). Fixed by the owning session. This audit's own trial table had the same MA.20 letter, now corrected to 26200977.",
+  "match": [],
+  "sources": [
+   {
+    "title": "Perry JR et al. Short-Course Radiation plus Temozolomide in Elderly Patients with Glioblastoma. N Engl J Med",
+    "year": "2017",
+    "pmid": "28296618",
+    "doi": "10.1056/nejmoa1611977",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28296618/"
+   },
+   {
+    "title": "Buckner JC et al. Radiation plus Procarbazine, CCNU, and Vincristine in Low-Grade Glioma. N Engl J Med",
+    "year": "2016",
+    "pmid": "27050206",
+    "doi": "10.1056/nejmoa1500925",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/27050206/"
+   }
+  ],
+  "correction": "In tools/sources.py: Perry -> 28296618; RTOG 9802 -> 27050206. Reported to the owning session.",
+  "date": "2026-10-16",
+  "reviewer": "Claude (AI-assisted audit); not a substitute for radiation oncologist review",
+  "implemented": "Yes, 2026-10-17, by the Before You Start session in tools/sources.py: Perry -> 28296618, RTOG 9802 -> 27050206, plus a third letter it found (MA.20 26535517 -> 26200977). That session's verifier now rejects Letter/Comment publication types."
+ }
+]

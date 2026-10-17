@@ -79,7 +79,7 @@
  {
   "id": "prx-26",
   "category": "Imaging",
-  "front": "What can PSMA PET do that CT plus bone scan can't, and what can't a negative PSMA PET tell you?",
+  "front": "What can PSMA PET do that CT plus bone scan cannot, and what cannot a negative PSMA PET tell you?",
   "back": "It is more sensitive for nodal and distant disease (and recurrence at low PSA), but a negative scan does not exclude microscopic disease.",
   "extra": "PSMA PET can change the radiation map (add nodes, boost a lesion). The trials that set most treatment standards used conventional imaging."
  },
@@ -102,7 +102,7 @@
   "category": "Workup & Staging",
   "front": "What does the AJCC stage describe, and what does the NCCN risk group describe?",
   "back": "AJCC stage = anatomic extent. NCCN risk group = a treatment-oriented risk classification (PSA, Grade Group, clinical T stage, biopsy extent).",
-  "extra": "They aren't interchangeable: cT1c, 4+5, PSA 6 is AJCC IIIC but NCCN high risk."
+  "extra": "They are not interchangeable: cT1c, 4+5, PSA 6 is AJCC IIIC but NCCN high risk."
  },
  {
   "id": "prx-32",
@@ -129,7 +129,7 @@
   "id": "prx-33",
   "category": "Workup & Staging",
   "front": "What sets clinical T stage in prostate cancer, and what does cT1c mean?",
-  "back": "The DRE. cT1c is cancer found on biopsy for a raised PSA that can't be felt, even if MRI shows a visible lesion.",
+  "back": "The DRE. cT1c is cancer found on biopsy for a raised PSA that cannot be felt, even if MRI shows a visible lesion.",
   "extra": "T1c is the most common T stage today. Palpable confined tumors are T2."
  },
  {
@@ -249,7 +249,7 @@
   "category": "Treatment Paradigms",
   "front": "What are the main side effects of ADT?",
   "back": "Hot flashes, fatigue, low libido/erectile dysfunction, bone loss, weight gain, and metabolic and cardiovascular risk",
-  "extra": "It usually starts 2-3 months before RT to shrink the gland. GnRH agonists cause a testosterone flare (block with an antiandrogen first); antagonists don't."
+  "extra": "It usually starts 2-3 months before RT to shrink the gland. GnRH agonists cause a testosterone flare (block with an antiandrogen first); antagonists do not."
  },
  {
   "id": "prx-50",

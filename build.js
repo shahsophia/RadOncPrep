@@ -109,6 +109,7 @@ const dataBlock = [
   `const CASES = ${JSON.stringify(cases)};`,
   `const CARD_ART = ${JSON.stringify(cards)};`,
   `const CURRICULUM = ${JSON.stringify(readJSON(path.join(SRC, "data", "curriculum.json")))};`,
+  `const SOURCES = ${JSON.stringify(readJSON(path.join(SRC, "data", "sources.json")))};`,
 ].join("\n");
 
 let out = template.replace("/*__STYLES__*/", styles);

@@ -26,7 +26,7 @@ CASES = [
         "What adjuvant treatment fits best?",
         ["Observation only", "Vaginal brachytherapy", "Pelvic EBRT plus chemo", "Whole-abdomen RT"],
         1,
-        "Deep invasion makes her recurrence risk intermediate, and most of that risk is at the vaginal cuff, so vaginal brachytherapy (or observation) is the usual choice. Her NSMP molecular group doesn't move her up or down."),
+        "Deep invasion makes her recurrence risk intermediate, and most of that risk is at the vaginal cuff, so vaginal brachytherapy (or observation) is the usual choice. Her NSMP molecular group does not move her up or down."),
       mcq("Trial",
         "Which trial showed vaginal brachytherapy controlled vaginal recurrence as well as pelvic EBRT, with far less GI toxicity?",
         ["PORTEC-2", "PORTEC-3", "GOG 258", "LACC"],
@@ -88,7 +88,7 @@ CASES = [
   {
     "id": "gyn-case-2", "level": "Intermediate",
     "title": "Case 3: Bleeding After Intercourse",
-    "oneLiner": "A 52-year-old woman who hasn't had a Pap smear in 15 years has bleeding after intercourse. Speculum exam shows a friable mass on the cervix, and the rectovaginal exam suggests thickening on the right.",
+    "oneLiner": "A 52-year-old woman who has not had a Pap smear in 15 years has bleeding after intercourse. Speculum exam shows a friable mass on the cervix, and the rectovaginal exam suggests thickening on the right.",
     "steps": [
       mcq("Imaging",
         "Biopsy shows squamous cell carcinoma. Which imaging best defines the parametria?",
@@ -251,7 +251,7 @@ CASES = [
         "The pelvic bones and lumbar spine hold much of the adult marrow. Sparing it with IMRT reduces low counts and chemo interruptions."),
       mcq("Timing",
         "Because of the delays, she finishes brachytherapy on day 63. Why does that matter?",
-        ["It doesn't", "Treatment longer than 56 days lowers local control by roughly 0.5-1% per extra day", "It only affects side effects", "It means she needs surgery"],
+        ["It does not", "Treatment longer than 56 days lowers local control by roughly 0.5-1% per extra day", "It only affects side effects", "It means she needs surgery"],
         1,
         "Tumor repopulation during prolonged treatment costs local control, which is why breaks are avoided and brachytherapy is scheduled tightly."),
     ],

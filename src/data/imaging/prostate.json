@@ -388,7 +388,7 @@
   ]
  },
  "img-pr-ct": {
-  "intro": "<p>The <strong>CT simulation</strong> is the scan you'll contour on. Prostate edges are hard to see on CT, so it's usually fused with MRI.</p>",
+  "intro": "<p>The <strong>CT simulation</strong> is the scan you will contour on. Prostate edges are hard to see on CT, so it is usually fused with MRI.</p>",
   "plates": [
    {
     "id": "pr-ct-sim",
@@ -481,7 +481,7 @@
   ]
  },
  "img-pr-trus": {
-  "intro": "<p>This is what you'll see on the monitor in the <strong>brachytherapy suite</strong>: a <strong>transrectal ultrasound (TRUS)</strong> with a grid overlay. The probe is in the rectum, so the <strong>rectum is at the bottom</strong> of the screen and anterior is at the top.</p>",
+  "intro": "<p>This is what you will see on the monitor in the <strong>brachytherapy suite</strong>: a <strong>transrectal ultrasound (TRUS)</strong> with a grid overlay. The probe is in the rectum, so the <strong>rectum is at the bottom</strong> of the screen and anterior is at the top.</p>",
   "plates": [
    {
     "id": "pr-trus-ax",
@@ -616,7 +616,7 @@
   ]
  },
  "img-pr-psma": {
-  "intro": "<p><strong>PSMA PET/CT</strong> (Ga-68 or F-18 tracers) sees small nodes and bone metastases that CT and bone scan miss. It's used for staging unfavorable-intermediate and higher disease and for <strong>biochemical recurrence</strong>.</p>",
+  "intro": "<p><strong>PSMA PET/CT</strong> (Ga-68 or F-18 tracers) sees small nodes and bone metastases that CT and bone scan miss. It is used for staging unfavorable-intermediate and higher disease and for <strong>biochemical recurrence</strong>.</p>",
   "plates": [
    {
     "id": "pr-psma-mip",
