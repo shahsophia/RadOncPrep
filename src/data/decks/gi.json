@@ -53,7 +53,7 @@
   "category": "Anatomy & Lymphatics",
   "front": "What is the mesorectal fascia, and why does it matter?",
   "back": "The envelope around the mesorectum. It is the plane of total mesorectal excision (TME), so it acts as the surgical margin.",
-  "extra": "Tumor close to it on MRI is a threatened margin, the strongest predictor of local recurrence."
+  "extra": "Tumor close to it on MRI (within 1 mm) is a threatened margin, which raises the risk of local recurrence."
  },
  {
   "id": "gix-13",
@@ -95,7 +95,7 @@
   "category": "Imaging",
   "front": "What is EMVI in rectal cancer, and what does it predict?",
   "back": "Extramural venous invasion: tumor in veins outside the rectal wall. It predicts distant metastases.",
-  "extra": "EMVI and tumor deposits predict distant recurrence better than nodal status."
+  "extra": "EMVI and tumor deposits predict distant recurrence, so do not anchor only on the N stage."
  },
  {
   "id": "gix-23",
@@ -119,18 +119,18 @@
   "extra": "HCC enhances early because it is fed by the hepatic artery."
  },
  {
-  "id": "gix-57",
-  "category": "Workup & Staging",
-  "front": "What pattern does TNM staging follow for most GI cancers?",
-  "back": "T = depth through the wall layers; N = number of involved regional nodes; M = distant spread",
-  "extra": "Wall layers: mucosa → submucosa → muscularis propria → beyond the wall → adjacent organs. But GI has no single staging logic: pancreas is planned by resectability, HCC by tumor burden plus liver function, and anal cancer by size and node location."
- },
- {
   "id": "gix-27",
   "category": "Workup & Staging",
   "front": "How does anal cancer staging break the usual GI pattern?",
   "back": "T is by tumor size (≤2, >2-5, >5 cm, T4 = invades adjacent organs), and N is by node location, not number.",
-  "extra": "Treatment is chemoRT for nearly every stage, so the stage mainly shapes the dose."
+  "extra": "Treatment is chemoRT for nearly every stage, so the stage mainly shapes the dose. Sphincter or skin involvement alone is not T4; only an adjacent organ is."
+ },
+ {
+  "id": "gix-64",
+  "category": "Workup & Staging",
+  "front": "In esophageal cancer, are celiac nodes regional or distant? Supraclavicular nodes?",
+  "back": "Celiac nodes are regional. Supraclavicular nodes are generally considered distant (M1).",
+  "extra": "The opposite of lung and breast cancer, where a supraclavicular node is N3 and still curable. Fields for upper esophageal tumors may still cover the supraclavicular nodes electively, and distal or GEJ fields cover the celiac region."
  },
  {
   "id": "gix-30",

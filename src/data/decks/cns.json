@@ -1,12 +1,5 @@
 [
  {
-  "id": "cnsx-1",
-  "category": "Tumor Biology & Risk Factors",
-  "front": "What is the most common intracranial tumor in adults?",
-  "back": "Brain metastases",
-  "extra": "Lung is the most common source; melanoma has the highest tendency to spread to the brain. Most patients have more than one lesion."
- },
- {
   "id": "cnsx-63",
   "category": "Tumor Biology & Risk Factors",
   "front": "Which primary cancers most commonly metastasize to the brain?",
@@ -16,9 +9,9 @@
  {
   "id": "cnsx-2",
   "category": "Tumor Biology & Risk Factors",
-  "front": "What is the most common primary brain tumor, and the most common malignant primary brain tumor in adults?",
-  "back": "Most common primary: meningioma. Most common malignant primary: glioblastoma.",
-  "extra": "Meningiomas are usually benign and more common in women. Glioblastoma is the aggressive adult diffuse glioma."
+  "front": "In adults, what is the most common intracranial tumor overall, the most common primary brain tumor, and the most common malignant primary brain tumor?",
+  "back": "Overall: brain metastases. Primary: meningioma. Malignant primary: glioblastoma.",
+  "extra": "These three are easy to mix up. Meningiomas are usually benign and more common in women. Glioblastoma is the aggressive adult diffuse glioma."
  },
  {
   "id": "cnsx-53",
@@ -214,7 +207,7 @@
   "category": "Treatment Paradigms",
   "front": "What treatment improves survival for high-risk grade 2 gliomas after surgery?",
   "back": "Radiation plus chemotherapy (PCV or temozolomide)",
-  "extra": "RTOG 9802 nearly doubled survival. These patients live years, so late effects (memory, endocrine) matter."
+  "extra": "RTOG 9802: adding PCV to RT substantially improved overall survival. These patients live years, so late effects (memory, endocrine) matter."
  },
  {
   "id": "cnsx-47",

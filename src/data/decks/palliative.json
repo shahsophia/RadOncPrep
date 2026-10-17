@@ -44,8 +44,8 @@
  {
   "id": "pal-7",
   "category": "Workup & Prognosis",
-  "front": "In palliative care, what three things replace stage in deciding the plan?",
-  "back": "The goal, the prognosis, and the stability of the bone or spine (and whether the cord is safe)",
+  "front": "In palliative care, what replaces stage in deciding the plan?",
+  "back": "The goal, the prognosis, the urgency, and the stability of the bone or spine (including whether the cord is safe)",
   "extra": "Also ask about prior radiation to the same area."
  },
  {
@@ -122,8 +122,8 @@
   "id": "pal-17",
   "category": "Palliative Radiation",
   "front": "What is the trade-off of 8 Gy in 1 compared with 30 Gy in 10 for bone metastases?",
-  "back": "About twice as much retreatment (about 20% vs 8%), for fewer visits and less acute toxicity",
-  "extra": "RTOG 9714 (8 Gy in 1 vs 30 Gy in 10, breast and prostate) and the Dutch Bone Metastasis Study (8 Gy in 1 vs 24 Gy in 6)."
+  "back": "About twice as much retreatment (18% vs 9% in RTOG 9714), for fewer visits and less acute toxicity",
+  "extra": "The Dutch Bone Metastasis Study (8 Gy in 1 vs 24 Gy in 6) found the same pattern. Retreatment is higher partly because clinicians are more willing to retreat after one fraction."
  },
  {
   "id": "pal-18",
@@ -261,9 +261,9 @@
  {
   "id": "pal-37",
   "category": "Benign Disease",
-  "front": "What is a typical radiation regimen for early Dupuytren disease?",
-  "back": "About 30 Gy in two courses of 5 x 3 Gy, 6-12 weeks apart (or 21 Gy in 7)",
-  "extra": "Orthovoltage or electrons with a 1-2 cm margin. The same approach treats Ledderhose disease."
+  "front": "How strong is the evidence that radiation helps early Dupuytren disease, and how should the benefit be described?",
+  "back": "Modest: about 90% of treated hands were stable or improved at 1 year, but there was no untreated control, and early disease does not always progress. Describe it as possible slowing of progression, not a guarantee.",
+  "extra": "NICE judged the efficacy evidence inadequate. A typical regimen is about 30 Gy in two courses of 5 x 3 Gy, 6-12 weeks apart, with orthovoltage or electrons. The same approach treats Ledderhose disease."
  },
  {
   "id": "pal-38",

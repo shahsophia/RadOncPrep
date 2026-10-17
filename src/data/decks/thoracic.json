@@ -56,6 +56,13 @@
   "extra": "Station 7 drains both lungs, so it always counts as ipsilateral. It is the most commonly involved mediastinal station."
  },
  {
+  "id": "thx-67",
+  "category": "Anatomy & Lymphatics",
+  "front": "A right upper lobe tumor has a biopsy-proven station 5 (AP window) node. What N stage is it, and why?",
+  "back": "N3. Stations 5 and 6 are left-sided, so for a right-sided tumor they are contralateral.",
+  "extra": "The same node with a left upper lobe tumor would be N2. Station 7 is the opposite trap: it is always N2, whichever side the tumor is on. N3 is still regional (stage III), so the patient can be treated for cure."
+ },
+ {
   "id": "thx-56",
   "category": "Imaging",
   "front": "What does FDG PET/CT add to lung cancer staging?",
@@ -206,8 +213,8 @@
   "id": "thx-44",
   "category": "Treatment Paradigms",
   "front": "What is the standard treatment sequence for a resectable superior sulcus (Pancoast) tumor?",
-  "back": "Neoadjuvant concurrent chemoradiation (~45-50 Gy), then surgery, then more systemic therapy",
-  "extra": "SWOG 9416 / INT 0160: complete resection in 76% of all patients (over 90% of those who reached surgery); 5-year survival 44%. Unresectable → definitive chemoRT; watch the brachial plexus dose."
+  "back": "Neoadjuvant concurrent chemoradiation, then surgery, then more systemic therapy",
+  "extra": "SWOG 9416 / INT 0160 (induction chemoRT to 45 Gy) gave a complete (R0) resection in most patients, establishing trimodality therapy. Unresectable → definitive chemoRT; watch the brachial plexus dose."
  },
  {
   "id": "thx-45",

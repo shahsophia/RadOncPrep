@@ -1,12 +1,5 @@
 [
  {
-  "id": "br-2",
-  "category": "Epidemiology & Risk Factors",
-  "front": "Which two biomarkers are checked on every breast cancer, and why do they matter?",
-  "back": "Hormone receptor status (ER/PR) and HER2. Together they define the subtype, which picks the systemic therapy and shapes prognosis.",
-  "extra": "With Ki-67 they define Luminal A, Luminal B, HER2-enriched, and basal-like (mostly triple-negative). BRCA1 cancers are usually triple-negative; BRCA2 cancers look more like sporadic HR+ disease. BRCA status alone is not a reason to avoid RT. AJCC 8 prognostic staging uses this biology: favorable markers lower the anatomic stage; triple-negative or high grade raise it."
- },
- {
   "id": "br-5",
   "category": "Epidemiology & Risk Factors",
   "front": "What are the three practical breast cancer groups by receptor status, and what is the systemic backbone of each?",
@@ -133,11 +126,18 @@
   "extra": "Often there is no discrete mass. It is at least stage IIIB."
  },
  {
+  "id": "br-59",
+  "category": "Workup & Staging",
+  "front": "A 1.5 cm breast cancer has a biopsy-proven ipsilateral supraclavicular node. What is the stage, and is the goal still cure?",
+  "back": "cN3c, stage IIIC. Yes: supraclavicular nodes are regional, not distant, so she is treated for cure (neoadjuvant systemic therapy, surgery, and comprehensive nodal RT including the supraclavicular fossa).",
+  "extra": "Any N3 is stage IIIC no matter how small the primary is. A contralateral axillary or supraclavicular node, by contrast, is M1."
+ },
+ {
   "id": "br-35",
   "category": "Workup & Staging",
   "front": "What separates clinical N1, N2, and N3 in breast cancer?",
   "back": "N1 = movable level I/II axillary nodes. N2 = fixed/matted axillary nodes, or internal mammary nodes alone. N3 = infraclavicular, internal mammary plus axillary, or supraclavicular nodes.",
-  "extra": "Breast N stage depends on which basin is involved as much as how many nodes. An ipsilateral supraclavicular node is regional (cN3c, stage IIIC) and still treated for cure; a contralateral axillary or supraclavicular node is M1."
+  "extra": "Breast N stage depends on which basin is involved as much as how many nodes."
  },
  {
   "id": "br-36",
@@ -207,7 +207,7 @@
   "category": "Treatment Paradigms",
   "front": "What does radiation add once breast cancer is node-positive, and what is the evidence?",
   "back": "Regional nodal irradiation (level III, supraclavicular, and internal mammary nodes) on top of the breast or chest wall; MA.20 and EORTC 22922 showed better disease-free survival.",
-  "extra": "Exception: Z0011-type patients (1-2 positive sentinel nodes after lumpectomy) often get whole-breast RT alone, sometimes with high tangents."
+  "extra": "Four or more positive nodes almost always get RNI; 1-3 nodes usually do, weighed with tumor biology, location, and the axillary surgery done."
  },
  {
   "id": "br-52",

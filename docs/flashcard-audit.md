@@ -426,3 +426,8 @@ survival secondary), pal-23, pal-30 (SCORAD noninferiority at 8 weeks not met), 
 pal-45, pal-47, pal-48 (AVM latency risk lower, not gone), pal-49, pal-54 (plasmacytoma
 35-50 Gy). Added pal-57 (what makes a bone metastasis uncomplicated). CNS cnsx-52 aligned
 on AVM latency.
+
+**Review against the rewritten readings (October 17, 2026), 394 → 395 cards.** Every
+card was checked against the reading it now sits under: 368 kept unchanged, 16 minor
+edits, 4 rewrites, 6 removed, 7 added. Full per-card log, content gaps, and clinical
+review items: docs/flashcard-review-2026-10.md.

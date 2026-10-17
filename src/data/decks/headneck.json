@@ -81,7 +81,7 @@
   "category": "Lymph Nodes",
   "front": "Which neck level is the most commonly involved in head and neck cancer?",
   "back": "Level II (upper jugular)",
-  "extra": "Levels II-IV are covered for almost every H&N site, usually on both sides."
+  "extra": "Levels II-IV are common parts of elective neck treatment, but the exact levels and whether one or both sides are treated depend on the primary site and its extent."
  },
  {
   "id": "hn-52",
@@ -277,7 +277,7 @@
   "category": "Treatment Paradigms",
   "front": "Which late toxicity does parotid-sparing IMRT reduce?",
   "back": "Xerostomia (dry mouth)",
-  "extra": "PARSPORT showed much less xerostomia with IMRT than with older 3D techniques. Dry mouth also drives dental decay and osteoradionecrosis risk."
+  "extra": "PARSPORT showed much less xerostomia with parotid-sparing IMRT than with older conventional RT, without worse tumor control. Dry mouth also drives dental decay and osteoradionecrosis risk."
  },
  {
   "id": "hn-58",

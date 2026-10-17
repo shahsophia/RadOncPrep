@@ -23,16 +23,16 @@
  {
   "id": "ov-26",
   "category": "How Radiation Works",
-  "front": "Which cell cycle phase is most radiosensitive, and which is most radioresistant?",
-  "back": "Most sensitive: M (mitosis). Most resistant: late S, because a replicated copy of DNA is available for accurate repair.",
-  "extra": "Redistribution between fractions catches more cells in sensitive phases."
+  "front": "What is redistribution, and why does it help fractionated radiation?",
+  "back": "Cells are more sensitive to radiation at some points in their growth cycle than others. Cells that survive one fraction may be caught at a more sensitive point by the next one.",
+  "extra": "For reference: mitosis (M) is the most sensitive phase and late S the most resistant. Redistribution is one of the four R's."
  },
  {
   "id": "ov-31",
   "category": "How Radiation Works",
   "front": "Which tissues have a high α/β ratio and which have a low one?",
-  "back": "High (~10): early-responding tissues (skin, mucosa, marrow) and most tumors. Low (~3): late-responding tissues (spinal cord, lung, kidney, liver, bladder).",
-  "extra": "Prostate and breast cancers are exceptions with low α/β."
+  "back": "High: most tumors and fast-dividing (early-responding) tissues such as skin, mucosa, and marrow. Low: late-responding normal tissues such as the spinal cord, lung, and kidney, and a few tumors, most famously prostate cancer.",
+  "extra": "Typical values are about 10 (high) and about 3 (low). Low α/β tissues are more sensitive to fraction size, which is why large fractions demand precise aim and why prostate (and breast) cancer can be treated with fewer, larger fractions."
  },
  {
   "id": "ov-92",
@@ -53,7 +53,7 @@
   "category": "How Radiation Works",
   "front": "What is the main way radiation kills cancer cells?",
   "back": "DNA damage, especially double-strand breaks, which kill the cell when it tries to divide",
-  "extra": "Single-strand breaks are easily repaired off the intact opposite strand; double-strand breaks are what lead to lethal chromosome damage."
+  "extra": "Single-strand breaks are easily repaired off the intact opposite strand. Because cells die when they try to divide, tumors shrink over weeks to months, so a scan on the last day of treatment can underestimate the response."
  },
  {
   "id": "ov-55",
@@ -82,13 +82,6 @@
   "front": "Why can treatment breaks make radiation less effective?",
   "back": "Surviving tumor cells keep dividing (repopulation) during gaps in treatment.",
   "extra": "Especially important for fast-growing tumors like head and neck squamous cell carcinoma."
- },
- {
-  "id": "ov-88",
-  "category": "Radiation Modalities",
-  "front": "Why does a megavoltage photon beam spare the skin?",
-  "back": "Dose builds up over the first part of tissue and peaks below the surface (at Dmax), so the skin gets less than the peak dose.",
-  "extra": "Higher-energy photons push the dose peak deeper. Bolus is placed on the skin when the skin itself is the target (for example, a post-mastectomy chest wall)."
  },
  {
   "id": "ov-90",
@@ -161,6 +154,13 @@
   "extra": "Small margins and steep dose falloff mean a few millimeters of error can miss the tumor, so immobilization and image guidance are critical."
  },
  {
+  "id": "ov-107",
+  "category": "Radiation Modalities",
+  "front": "If splitting the dose protects healthy tissue, why can SRS and SBRT safely give just 1-5 large fractions?",
+  "back": "The target is small and many beams cross only at the target, so the dose falls off steeply and very little healthy tissue sits in the high-dose region.",
+  "extra": "This is also why stereotactic treatment demands careful immobilization, motion management, and image guidance: a few millimeters of error matters."
+ },
+ {
   "id": "ov-68",
   "category": "Radiation Modalities",
   "front": "What is the difference between LDR and HDR brachytherapy, with a classic example of each?",
@@ -170,9 +170,16 @@
  {
   "id": "ov-96",
   "category": "How to Give a Presentation",
-  "front": "At an on-treatment visit, what system is used to grade a side effect like dermatitis or mucositis?",
-  "back": "CTCAE (Common Terminology Criteria for Adverse Events)",
-  "extra": "Present it with the grade and the trend: \"grade 1 dermatitis, slightly worse than last week.\" The older RTOG scale is radiation-specific."
+  "front": "At a weekly on-treatment visit, why should you look ahead rather than only record how the patient feels today?",
+  "back": "Radiation side effects build up over the course and often peak at the end of treatment or just after, so a patient who is fine at fraction 5 may be much worse by fraction 20.",
+  "extra": "Present the fraction number (\"fraction 12 of 15\"), the side effects and their trend, a focused exam, weight, and the plan. Side effects are graded with CTCAE, for example \"grade 1 dermatitis, slightly worse than last week.\""
+ },
+ {
+  "id": "ov-108",
+  "category": "How to Give a Presentation",
+  "front": "What four things should a Rad Onc one-liner tell the room?",
+  "back": "Who the patient is, what cancer they have, how far it has spread (the stage), and why they are here.",
+  "extra": "Example: \"Mr. K is a 64-year-old man with newly diagnosed cT3bN1M0 low rectal adenocarcinoma, referred to us to consider radiation before surgery.\""
  },
  {
   "id": "ov-105",
@@ -266,13 +273,6 @@
   "extra": "Exceeding these risks brainstem necrosis or blindness."
  },
  {
-  "id": "ov-95",
-  "category": "Treatment Planning",
-  "front": "What parotid dose goal helps preserve salivary function?",
-  "back": "Mean dose under about 25 Gy to both parotids (or about 20 Gy to one)",
-  "extra": "QUANTEC (Deasy 2010). A parallel organ, so the mean dose matters. Many protocols use about 26 Gy. Sparing the parotids reduces xerostomia."
- },
- {
   "id": "ov-12",
   "category": "Treatment Planning",
   "front": "What is the difference between a sequential boost and a simultaneous integrated boost (SIB)?",
@@ -313,6 +313,13 @@
   "front": "When is a hotspot in a radiation plan acceptable, and when is it a problem?",
   "back": "A small hotspot inside the tumor is usually fine; one inside an organ at risk (e.g., the spinal cord) is not.",
   "extra": ""
+ },
+ {
+  "id": "ov-109",
+  "category": "Treatment Planning",
+  "front": "A target touches the spinal cord, and full coverage would exceed the cord limit. What does the plan usually give up?",
+  "back": "A little coverage at the edge of the target next to the cord. The cord limit is respected even if that edge gets slightly less than the prescribed dose.",
+  "extra": "A good plan fully treats the target while keeping side effects acceptable; when the two conflict, the doctor decides. The same logic drives ultracentral lung SBRT, where airway limits can win over full PTV coverage."
  },
  {
   "id": "ov-77",

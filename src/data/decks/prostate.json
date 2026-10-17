@@ -7,13 +7,6 @@
   "extra": "Localized disease is usually silent. Urinary symptoms are usually BPH; bone or back pain suggests metastases."
  },
  {
-  "id": "prx-2",
-  "category": "Epidemiology & Risk Factors",
-  "front": "Which group of US men has the highest prostate cancer incidence and mortality, and how does that change screening?",
-  "back": "Black men (about twice the mortality of White men). Screening discussions start earlier, at 40-45.",
-  "extra": "Same earlier start for a strong family history or a known germline mutation."
- },
- {
   "id": "prx-3",
   "category": "Epidemiology & Risk Factors",
   "front": "Which germline mutation is most associated with aggressive prostate cancer?",
@@ -25,7 +18,7 @@
   "category": "Epidemiology & Risk Factors",
   "front": "How should the decision to screen with PSA be made, and who should start the conversation earlier?",
   "back": "Individualized shared decision-making, started earlier for men at increased risk (Black ancestry, strong family history, germline mutations)",
-  "extra": "Screening modestly lowers prostate cancer deaths but has no clear overall survival benefit and causes overdiagnosis. Guideline ages change (AUA amended 2026: about 40-45 for increased risk; 55-69 is the core average-risk group)."
+  "extra": "Black men have a higher incidence and about twice the mortality of White men. Screening modestly lowers prostate cancer deaths but has no clear overall survival benefit and causes overdiagnosis. Guideline ages change (AUA amended 2026: about 40-45 for increased risk; 55-69 is the core average-risk group)."
  },
  {
   "id": "prx-7",
@@ -94,7 +87,7 @@
   "id": "prx-15",
   "category": "Imaging",
   "front": "What makes a patient a poor candidate for prostate brachytherapy?",
-  "back": "A large gland (over ~60 cc, pubic arch interference), a prior TURP defect, or bad baseline urinary symptoms",
+  "back": "A large gland (pubic arch interference), a prior TURP defect, or bad baseline urinary symptoms",
   "extra": "Seeds near the urethra cause retention and urinary toxicity, so baseline urinary function matters."
  },
  {
@@ -152,6 +145,13 @@
   "front": "What separates favorable from unfavorable intermediate-risk prostate cancer?",
   "back": "Favorable has exactly one intermediate risk factor, GG1-2, and <50% of cores positive. Unfavorable has 2-3 factors, GG3, or ≥50% of cores positive.",
   "extra": "The distinction decides whether ADT is added to radiation."
+ },
+ {
+  "id": "prx-72",
+  "category": "Workup & Staging",
+  "front": "cT1c, Gleason 3+4, PSA 12, 5 of 12 cores positive. Which NCCN risk group, and why?",
+  "back": "Unfavorable intermediate: two intermediate risk factors (Grade Group 2 and PSA 10-20). Favorable intermediate allows only one.",
+  "extra": "cT1c is not a risk factor. With a PSA of 8 instead, he would be favorable intermediate (one factor, under 50% of cores). Unfavorable intermediate is where short-term ADT enters the radiation plan."
  },
  {
   "id": "prx-36",
@@ -263,7 +263,7 @@
   "category": "Treatment Paradigms",
   "front": "After prostatectomy with adverse pathology but an undetectable PSA, is adjuvant RT or early salvage RT preferred?",
   "back": "Observe and give early salvage RT if the PSA rises.",
-  "extra": "RAVES, RADICALS-RT, GETUG-AFU 17: routine adjuvant RT added nothing, and about half the men never needed RT. Exception: pN1 or very adverse pathology."
+  "extra": "RAVES, RADICALS-RT, GETUG-AFU 17: early salvage gave outcomes similar to routine adjuvant RT, and many men never needed RT. Exception: pN1 or very adverse pathology."
  },
  {
   "id": "prx-51",
