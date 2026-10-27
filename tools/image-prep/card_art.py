@@ -12,7 +12,7 @@ CARDS = {
  "headneck": (R + "src/images/headneck/hn-np-mri.jpg", .5, .45, "Axial T2 MRI of the nasopharynx. J Korean Soc Radiol 2026 (PMC12883944), CC BY-NC 4.0."),
  "breast": (R + "src/images/breast/br-g-mammo-cc.jpg", .45, .5, "Mammogram of a spiculated breast mass. Razdan S et al., Cureus 2025 (PMC12791182), CC BY 4.0."),
  "thoracic": (R + "src/images/thoracic/th-g-pet7.jpg", .5, .45, "PET/CT of a subcarinal node. Khosa J, Cho RJ, Diagnostics 2026 (PMC13206069), CC BY 4.0."),
- "prostate": (CS + "Radiation_therapy_for_cancer.jpg", .5, .55, "Pelvic radiotherapy on a linac. Jakembradford (Wikimedia Commons), CC BY-SA 4.0."),
+ "prostate": (R + "src/images/prostate/pr-mri-t2b.jpg", .5, .42, "Axial T2 MRI of a peripheral zone prostate cancer. Calderone CE et al., Diagnostics 2023 (PMC10252565), CC BY 4.0."),
  "gyn": (R + "src/images/gyn/gyn-mri-cx-sag.jpg", .5, .45, "Sagittal T2 MRI of cervical cancer. Otero-García et al., Insights Imaging 2019 (PMC6375059), CC BY 4.0."),
  "cns": (R + "src/images/cns/cns-gbm-t1c.jpg", .5, .5, "T1 post-contrast MRI of glioblastoma. Armed Forces Institute of Pathology (Wikimedia Commons), public domain."),
  "gi": (R + "src/images/gi/gi-pct.jpg", .5, .45, "Pancreatic-protocol CT. Louis M et al., Cureus 2025 (PMC11981547), CC BY 4.0."),

@@ -295,7 +295,7 @@ const BG_HOME_QUESTIONS = {
   "how-rt-works": "Why does radiation kill cancer cells?",
   "machines-modalities": "What tools does a radiation oncologist use?",
   "presenting-patients": "How do I present a patient on service?",
-  "the-consult": "How does a radiation oncologist decide what role radiation should play?",
+  "the-consult": "How do I talk with a patient about their cancer and radiation?",
   "treatment-planning": "How does a clinical decision become an actual treatment plan?",
 };
 function renderBeforeYouStart(){
@@ -689,7 +689,7 @@ function buildSearchIndex(){
         go: () => { openResources(); const d = document.getElementById("sources-" + svc.id); if(d){ d.open = true; scrollToAnchor(d.id); } } });
     }
   }
-  idx.push({ title: "About RadOnc Sub-I Companion", where: "About", kind: "Page", raw: "about independent educational resource disclaimer philosophy", go: openAbout });
+  idx.push({ title: "About Radoncprep", where: "About", kind: "Page", raw: "about independent educational resource disclaimer philosophy", go: openAbout });
   for(const item of idx){ item.raw = strip(item.raw); item.text = item.raw.toLowerCase(); }
   return idx;
 }
@@ -1912,6 +1912,14 @@ const QUIZ_SETS = {
     {
       q: "A patient feels completely fine in the first week of treatment and wonders whether it is working. What should you tell them?",
       a: "Side effects build up slowly over the course, so the later weeks, and sometimes the week or two after finishing, are usually harder than the first days. Feeling well early on does not mean the treatment is not working.",
+    },
+    {
+      q: "You are about to explain a new patient's cancer. What should you do before you start explaining?",
+      a: "<strong>Ask what they already know</strong>, for example: \"Can you tell me what your other doctors have told you so far?\" Their answer tells you where to start, which words they use, and what they are worried about.",
+    },
+    {
+      q: "A patient asks whether they will be radioactive around their grandchildren during external beam radiation. What do you say?",
+      a: "<strong>No.</strong> The radiation is on only while the machine is running, and nothing stays in the body. Some brachytherapy implants are different, and the team gives specific precautions for those.",
     },
   ],
   "breast-epi": [

@@ -189,50 +189,43 @@
   "extra": "Always include prior radiation (site, dose, and when) and radiation-safety issues such as connective tissue disease, IBD before pelvic RT, or a pacemaker."
  },
  {
-  "id": "ov-106",
-  "category": "How to Give a Presentation",
-  "front": "What four questions should a radiation recommendation answer at the end of a presentation?",
-  "back": "What (the radiation and its intent), why (the problem it solves), how (what you would treat and protect), and what the main risks are.",
-  "extra": "Then name what is still open, for example whether a complete response might allow organ preservation."
- },
- {
   "id": "ov-2",
-  "category": "The Rad Onc Consult",
+  "category": "Radiation 101",
   "front": "What is the difference between neoadjuvant and adjuvant therapy?",
   "back": "Neoadjuvant is given before the main treatment (e.g., to shrink a tumor before surgery); adjuvant is given after it to lower the risk of recurrence.",
   "extra": "Always ask what the intent of this specific treatment is; one patient's plan can include both."
  },
  {
   "id": "ov-79",
-  "category": "The Rad Onc Consult",
+  "category": "Radiation 101",
   "front": "What does it mean when radiation is called \"definitive\"?",
   "back": "It is intended to be the complete, final treatment, with no further therapy planned to finish the job (e.g., definitive chemoradiation instead of surgery).",
   "extra": "Curative describes the goal (cure); definitive describes the role of the treatment."
  },
  {
   "id": "ov-80",
-  "category": "The Rad Onc Consult",
+  "category": "Radiation 101",
   "front": "Why is chemotherapy often given concurrently with radiation?",
   "back": "It sensitizes the tumor to radiation (and treats disease outside the field).",
   "extra": "Classic examples: cisplatin with head and neck or cervical RT."
  },
  {
   "id": "ov-81",
-  "category": "The Rad Onc Consult",
+  "category": "Radiation 101",
   "front": "What is the goal of palliative radiation, and what are classic reasons to give it?",
   "back": "Symptom relief in incurable disease, e.g., painful bone metastases, spinal cord compression, bleeding, airway obstruction, or SVC syndrome",
   "extra": "Palliative courses are usually short, chosen by prognosis and goals of care."
  },
  {
   "id": "ov-82",
-  "category": "The Rad Onc Consult",
+  "category": "Radiation 101",
   "front": "What is the role of radiation in oligometastatic disease?",
   "back": "Focused high-dose RT (usually SBRT/SRS) to the few sites of metastatic disease to control them, often alongside systemic therapy",
   "extra": "It can delay progression or the need to change systemic therapy."
  },
  {
   "id": "ov-103",
-  "category": "The Rad Onc Consult",
+  "category": "Radiation 101",
   "front": "What is consolidative radiation?",
   "back": "RT given after another treatment modality, usually chemotherapy, to improve control of the disease that remains (e.g., residual bulky lymphoma).",
   "extra": "Name the intent before the dose: it decides how much toxicity is acceptable and how aggressive the plan is."
@@ -341,5 +334,61 @@
   "front": "What does the plan-review checklist CB-CHOP stand for?",
   "back": "Contours, Beams, Coverage, Hotspots, OARs, Prescription",
   "extra": "It is the order an attending runs through a plan on the screen."
+ },
+ {
+  "id": "ov-110",
+  "category": "How to Give a Presentation",
+  "front": "In the plan at the end of a Rad Onc presentation, what should you address before naming a dose?",
+  "back": "The patient's goals and preferences, and the intent (cure or relief).",
+  "extra": "Then give a dose and number of fractions, your reasoning and the trial behind it, the surgery and systemic therapy around the radiation, and any patient-specific risks."
+ },
+ {
+  "id": "ov-111",
+  "category": "The Rad Onc Consult",
+  "front": "At a consult, what should you ask before explaining the patient's cancer?",
+  "back": "What they already know: what their other doctors have told them so far.",
+  "extra": "Then use ask, tell, ask: explain one piece in plain words, check what they took from it, and repeat."
+ },
+ {
+  "id": "ov-112",
+  "category": "The Rad Onc Consult",
+  "front": "What is teach-back?",
+  "back": "Asking the patient to explain the plan back in their own words, to check how well you explained it.",
+  "extra": "Use it at the end of the visit, for example: \"Can you tell me in your own words what the next steps are?\""
+ },
+ {
+  "id": "ov-113",
+  "category": "The Rad Onc Consult",
+  "front": "A patient receiving external beam radiation asks whether they will be radioactive around their grandchildren. What is the answer?",
+  "back": "No. The radiation is on only while the machine runs, and nothing stays in the body.",
+  "extra": "Some brachytherapy implants, such as permanent prostate seeds, come with specific precautions."
+ },
+ {
+  "id": "ov-114",
+  "category": "Treatment Planning",
+  "front": "For a target, what is the difference between D95% and V95%?",
+  "back": "D95% is the dose that 95% of the target receives. V95% is the percentage of the target that receives at least 95% of the prescribed dose.",
+  "extra": "Both describe coverage from the same DVH curve: D asks what dose a given volume gets, V asks how much volume gets a given dose."
+ },
+ {
+  "id": "ov-115",
+  "category": "Treatment Planning",
+  "front": "What is DIBH, and why is it used for left-sided breast radiation?",
+  "back": "Deep inspiration breath hold: treating only while the patient holds a deep breath, which moves the heart away from the field and lowers heart dose.",
+  "extra": "Late heart risk rises with the average heart dose."
+ },
+ {
+  "id": "ov-116",
+  "category": "Treatment Planning",
+  "front": "How does adaptive radiation therapy differ from IGRT?",
+  "back": "IGRT moves the patient to match the plan. Adaptive therapy changes the plan itself when the anatomy has changed, such as after major weight loss or tumor shrinkage.",
+  "extra": ""
+ },
+ {
+  "id": "ov-117",
+  "category": "Treatment Planning",
+  "front": "Why can a standard spinal cord limit be unsafe for a plan that re-treats the same area?",
+  "back": "The cord already received dose from the first course, so the limit has to apply to the total (cumulative) dose.",
+  "extra": "Re-treatment needs the old plan, the time since it was given, and stricter limits."
  }
 ]
