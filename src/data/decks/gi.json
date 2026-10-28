@@ -35,6 +35,34 @@
   "extra": "Hepatitis B can cause HCC without cirrhosis. Liver function often limits treatment as much as the tumor does."
  },
  {
+  "id": "gix-65",
+  "category": "Epidemiology & Risk Factors",
+  "front": "Why is radiation rarely part of routine colon cancer treatment, unlike rectal cancer?",
+  "back": "Colon cancer is treated with surgery and systemic therapy. The rectum sits in the fixed pelvis, where local recurrence after surgery is the problem radiation addresses.",
+  "extra": "The upper rectum above the peritoneal reflection behaves more like colon."
+ },
+ {
+  "id": "gix-66",
+  "category": "Epidemiology & Risk Factors",
+  "front": "Which pancreatic cancer patients should be offered germline genetic testing?",
+  "back": "Every patient",
+  "extra": "BRCA1/2, PALB2, and Lynch syndrome matter, and BRCA-associated tumors may respond to platinum and PARP inhibitors."
+ },
+ {
+  "id": "gix-67",
+  "category": "Epidemiology & Risk Factors",
+  "front": "Which hereditary syndrome links MSI-high colorectal cancer with endometrial cancer, and why does it matter for treatment?",
+  "back": "Lynch syndrome (mismatch repair genes). MMR-deficient tumors can respond dramatically to immunotherapy.",
+  "extra": "Lynch also raises the risk of ovarian, gastric, pancreatic, and urinary tract cancers."
+ },
+ {
+  "id": "gix-68",
+  "category": "Epidemiology & Risk Factors",
+  "front": "Why are early anal cancers often missed?",
+  "back": "Bleeding and pain are often blamed on hemorrhoids.",
+  "extra": "Any anal mass needs an exam, anoscopy, and biopsy. HIV is a major risk factor."
+ },
+ {
   "id": "gix-10",
   "category": "Anatomy & Lymphatics",
   "front": "Why do esophageal radiation fields use long margins up and down but short margins sideways?",
@@ -77,6 +105,48 @@
   "extra": "Add external iliac nodes for anterior organ invasion (bladder, prostate, vagina) or selected T4, and inguinal nodes if the anal canal is involved."
  },
  {
+  "id": "gix-69",
+  "category": "Anatomy & Lymphatics",
+  "front": "Why is a cervical esophageal cancer treated more like a head and neck cancer?",
+  "back": "Surgery there would mean removing the larynx, so it is treated with definitive chemoradiation.",
+  "extra": "The cervical esophagus is about 15-20 cm from the incisors."
+ },
+ {
+  "id": "gix-70",
+  "category": "Anatomy & Lymphatics",
+  "front": "Which extra nodal basins are added for a distal or GEJ esophageal tumor, and for an upper esophageal tumor?",
+  "back": "Distal or GEJ: celiac and left gastric nodes. Upper or cervical: supraclavicular nodes.",
+  "extra": "Margins along the esophagus are long (often about 3-4 cm up and down) and short radially (about 1 cm)."
+ },
+ {
+  "id": "gix-71",
+  "category": "Anatomy & Lymphatics",
+  "front": "Which organ most limits the radiation dose in pancreatic cancer?",
+  "back": "The duodenum, which wraps around the pancreatic head",
+  "extra": "Too much dose risks ulcer, bleeding, or perforation. The stomach and bowel are also nearby."
+ },
+ {
+  "id": "gix-72",
+  "category": "Anatomy & Lymphatics",
+  "front": "Why does hepatocellular carcinoma enhance early on the arterial phase?",
+  "back": "HCC is fed by the hepatic artery, while normal liver gets most of its blood from the portal vein.",
+  "extra": "This is the basis of the arterial enhancement with washout pattern."
+ },
+ {
+  "id": "gix-73",
+  "category": "Anatomy & Lymphatics",
+  "front": "When are the external iliac nodes added to a rectal cancer radiation field?",
+  "back": "When the tumor invades an anterior organ (bladder, prostate, or vagina) or in selected T4 disease",
+  "extra": "Inguinal nodes are added when the tumor involves the anal canal."
+ },
+ {
+  "id": "gix-74",
+  "category": "Anatomy & Lymphatics",
+  "front": "How is rectal tumor height described, and from what landmark?",
+  "back": "From the anal verge: low (about 0-5 cm), mid (about 5-10 cm), and upper (about 10-15 cm)",
+  "extra": "Height decides whether sphincter-saving surgery is realistic and is measured with rigid proctoscopy and MRI."
+ },
+ {
   "id": "gix-19",
   "category": "Imaging",
   "front": "What three questions does a rectal MRI answer?",
@@ -117,6 +187,34 @@
   "front": "When can hepatocellular carcinoma be diagnosed without a biopsy?",
   "back": "In an at-risk patient (usually cirrhosis), when multiphase CT or MRI shows arterial enhancement with washout (LI-RADS 5)",
   "extra": "HCC enhances early because it is fed by the hepatic artery."
+ },
+ {
+  "id": "gix-75",
+  "category": "Imaging",
+  "front": "On rectal MRI, what separates T1-2 from T3 disease?",
+  "back": "T1-2: the dark muscularis propria is intact. T3: tumor extends through it into the mesorectal fat.",
+  "extra": "T4 goes through the peritoneum or into another organ."
+ },
+ {
+  "id": "gix-76",
+  "category": "Imaging",
+  "front": "What is the double duct sign?",
+  "back": "Dilation of both the common bile duct and the pancreatic duct, pointing to a pancreatic head or ampullary mass",
+  "extra": "Pancreatic tumors are hypoenhancing (darker than normal pancreas) on pancreatic-protocol CT."
+ },
+ {
+  "id": "gix-77",
+  "category": "Imaging",
+  "front": "Why should a pancreatic-protocol CT be done before a biliary stent when possible?",
+  "back": "Stent-related inflammation blurs the edge of the tumor and makes vessel contact harder to judge.",
+  "extra": "CA 19-9 is also more meaningful after the bilirubin normalizes."
+ },
+ {
+  "id": "gix-78",
+  "category": "Imaging",
+  "front": "What does a restaging rectal MRI look for after neoadjuvant therapy?",
+  "back": "Whether there is a complete clinical response: dark fibrosis without residual intermediate-signal tumor or restricted diffusion",
+  "extra": "It is combined with exam and endoscopy to decide between watch-and-wait and TME."
  },
  {
   "id": "gix-27",
@@ -166,6 +264,48 @@
   "front": "Which tumor markers are followed in pancreatic, colorectal, and liver cancer?",
   "back": "Pancreas: CA 19-9. Colorectal: CEA. HCC: AFP.",
   "extra": "CA 19-9 is unreliable with jaundice and absent in Lewis-antigen-negative patients."
+ },
+ {
+  "id": "gix-79",
+  "category": "Workup & Staging",
+  "front": "How does esophageal cancer depth decide the first treatment?",
+  "back": "T1a: endoscopic resection. T1b-T2 N0: surgery. T3-T4a or node-positive: multimodality therapy. T4b: definitive chemoRT.",
+  "extra": "Depth is measured with endoscopic ultrasound (EUS)."
+ },
+ {
+  "id": "gix-80",
+  "category": "Workup & Staging",
+  "front": "Does involvement of the anal sphincter or perianal skin make an anal cancer T4?",
+  "back": "No. Only invasion of an adjacent organ (vagina, urethra, bladder) is T4.",
+  "extra": "Anal T stage is otherwise by size: ≤2 cm, >2-5 cm, >5 cm."
+ },
+ {
+  "id": "gix-81",
+  "category": "Workup & Staging",
+  "front": "Which rectal cancer MRI features raise the risk enough to favor total neoadjuvant therapy?",
+  "back": "T4, a threatened or involved mesorectal fascia, EMVI or tumor deposits, bulky or lateral pelvic nodes, and a low tumor near the sphincter",
+  "extra": "EMVI and tumor deposits predict distant recurrence, so do not anchor only on N."
+ },
+ {
+  "id": "gix-82",
+  "category": "Workup & Staging",
+  "front": "What does the Child-Pugh score measure, and why does it matter for HCC?",
+  "back": "Liver function (bilirubin, albumin, INR, ascites, encephalopathy). It limits every treatment, including radiation.",
+  "extra": "Liver SBRT is generally reserved for Child-Pugh A and selected B patients."
+ },
+ {
+  "id": "gix-83",
+  "category": "Workup & Staging",
+  "front": "What is the usual treatment for intermediate-stage (BCLC B) HCC?",
+  "back": "TACE or another liver-directed therapy, with transplant in selected patients",
+  "extra": "BCLC 0-A: resection, ablation, or transplant. BCLC C: systemic therapy. BCLC D: best supportive care."
+ },
+ {
+  "id": "gix-84",
+  "category": "Workup & Staging",
+  "front": "Which extra test does every anal cancer patient get as part of the workup?",
+  "back": "HIV testing (with a CD4 count if positive)",
+  "extra": "Women also get a gynecologic exam with cervical screening. HIV with good immune function gets standard chemoradiation."
  },
  {
   "id": "gix-37",
@@ -278,5 +418,96 @@
   "front": "When is SBRT used for hepatocellular carcinoma, and what patient factor limits it?",
   "back": "For tumors not suited to resection or ablation, as a bridge to transplant, or for selected portal vein thrombus; limited by liver function (usually Child-Pugh A, selected B)",
   "extra": "RTOG 1112: SBRT + sorafenib improved progression-free survival, with a borderline overall survival gain. In HCC the liver is also the critical organ at risk, so enough normal liver must be spared to avoid radiation-induced liver disease."
+ },
+ {
+  "id": "gix-85",
+  "category": "Treatment Paradigms",
+  "front": "What did the Nigro regimen show for anal cancer?",
+  "back": "Chemoradiation could eradicate anal cancer without routine APR, so most patients keep their sphincter.",
+  "extra": "Surgery became salvage for biopsy-proven persistent or recurrent disease."
+ },
+ {
+  "id": "gix-86",
+  "category": "Treatment Paradigms",
+  "front": "What did ACT II show about anal cancer chemotherapy?",
+  "back": "Cisplatin did not beat mitomycin, maintenance chemo did not help, and many tumors reached complete response only by about 26 weeks.",
+  "extra": "RTOG 9811 also showed mitomycin-based chemoRT beat cisplatin induction."
+ },
+ {
+  "id": "gix-87",
+  "category": "Treatment Paradigms",
+  "front": "What did RAPIDO and PRODIGE 23 show for high-risk rectal cancer?",
+  "back": "Moving chemotherapy before surgery (total neoadjuvant therapy) reduced treatment failure (RAPIDO) and improved survival (PRODIGE 23).",
+  "extra": "The RAPIDO 5-year update showed more locoregional recurrence with short-course TNT, so many favor long-course chemoRT for a threatened MRF or T4."
+ },
+ {
+  "id": "gix-88",
+  "category": "Treatment Paradigms",
+  "front": "What did the OPRA trial show?",
+  "back": "After total neoadjuvant therapy, about half of patients kept their rectum with watch-and-wait, and giving chemotherapy after chemoradiation favored organ preservation.",
+  "extra": "This supports organ preservation as a planned goal for selected patients."
+ },
+ {
+  "id": "gix-89",
+  "category": "Treatment Paradigms",
+  "front": "What did the Cercek dostarlimab study show in MMR-deficient rectal cancer?",
+  "back": "PD-1 blockade alone produced complete clinical responses in essentially all patients treated, sparing radiation and surgery.",
+  "extra": "This is why MMR status belongs in the first rectal cancer workup."
+ },
+ {
+  "id": "gix-90",
+  "category": "Treatment Paradigms",
+  "front": "What are the CROSS radiation dose and chemotherapy?",
+  "back": "41.4 Gy in 23 fractions with weekly carboplatin and paclitaxel, followed by esophagectomy",
+  "extra": "The pathologic complete response rate was about 29% overall and about 49% in squamous cell carcinoma."
+ },
+ {
+  "id": "gix-91",
+  "category": "Treatment Paradigms",
+  "front": "Why can definitive chemoradiation be reasonable for selected esophageal squamous cell carcinomas?",
+  "back": "SCC is more radiosensitive and more often has a complete pathologic response, so surgery can be held for residual or recurrent disease.",
+  "extra": "For esophageal adenocarcinoma, perioperative chemotherapy has become increasingly important (ESOPEC favored FLOT over CROSS)."
+ },
+ {
+  "id": "gix-92",
+  "category": "Treatment Paradigms",
+  "front": "What is the standard dose for definitive esophageal chemoradiation, and which trial showed higher doses do not help?",
+  "back": "About 50-50.4 Gy with chemo. RTOG 9405: 64.8 Gy was no better than 50.4 Gy.",
+  "extra": "RTOG 8501 showed chemoradiation beats radiation alone."
+ },
+ {
+  "id": "gix-93",
+  "category": "Treatment Paradigms",
+  "front": "What is given after neoadjuvant chemoradiation and esophagectomy when residual disease is found?",
+  "back": "Adjuvant nivolumab (CheckMate 577)",
+  "extra": "Residual disease after surgery is a marker of higher recurrence risk."
+ },
+ {
+  "id": "gix-94",
+  "category": "Treatment Paradigms",
+  "front": "What is the main dose-limiting toxicity of liver SBRT, and what is a common liver constraint?",
+  "back": "Radiation-induced liver disease. A common goal is at least about 700 cc of uninvolved liver below 15 Gy.",
+  "extra": "Nearby stomach, duodenum, and bowel often limit the dose more than the liver itself."
+ },
+ {
+  "id": "gix-95",
+  "category": "Treatment Paradigms",
+  "front": "What did RTOG 1112 show for HCC?",
+  "back": "Adding SBRT to sorafenib improved progression-free survival, with a borderline overall survival gain, in locally advanced HCC.",
+  "extra": "It supports a selected role for liver SBRT."
+ },
+ {
+  "id": "gix-96",
+  "category": "Treatment Paradigms",
+  "front": "Why is chemotherapy the backbone of pancreatic cancer treatment even when the tumor is localized?",
+  "back": "Most patients' risk is distant spread.",
+  "extra": "PRODIGE 24 showed adjuvant mFOLFIRINOX improved survival after resection. Radiation is selective and still evolving."
+ },
+ {
+  "id": "gix-97",
+  "category": "Treatment Paradigms",
+  "front": "After adequate gastric surgery and perioperative chemo, does postoperative chemoradiation help?",
+  "back": "No (CRITICS).",
+  "extra": "INT-0116 showed benefit for adjuvant chemoRT, but mostly after limited node dissection. Postoperative RT is now reserved for positive margins or inadequate nodal surgery."
  }
 ]

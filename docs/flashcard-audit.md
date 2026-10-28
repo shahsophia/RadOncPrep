@@ -431,3 +431,5 @@ on AVM latency.
 card was checked against the reading it now sits under: 368 kept unchanged, 16 minor
 edits, 4 rewrites, 6 removed, 7 added. Full per-card log, content gaps, and clinical
 review items: docs/flashcard-review-2026-10.md.
+
+**Expansion (October 27, 2026), 402 → 708 cards.** Sophia asked for roughly 1.5 to 2 times as many cards in the same style. Each deck's readings were reread section by section and new cards were written only for concepts the reading teaches that no existing card tested (trials named in the readings, staging distinctions, workup steps, OAR and toxicity links). Existing cards were left byte-identical; new cards were inserted after the last card of their category with new IDs above each deck's maximum (checked against every ID in git history, so no removed ID was reused). Cards that would have duplicated a card in another deck were dropped. Per deck: thoracic 77, breast 69, GI 73, GYN 71, prostate 77, head and neck 76, CNS 78, palliative 97, overview 90.

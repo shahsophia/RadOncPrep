@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+<rect width="1200" height="900" fill="#FFFFFF"/>
+<!-- skin silhouette, face on the right -->
+<path d="M0 900 L0 828 C60 812 150 800 232 772 C262 700 268 600 262 520 C258 440 252 380 236 312 C214 240 204 170 222 100 C236 52 262 18 300 0 L1012 0 C1022 20 1036 40 1050 62 C1072 84 1100 100 1104 112 C1100 130 1080 140 1066 146 C1072 160 1080 172 1076 184 C1066 194 1058 200 1060 208 C1068 216 1072 226 1066 236 C1052 246 1040 254 1040 266 C1046 284 1050 300 1044 318 C1036 336 1022 346 1008 350 C982 362 950 374 926 384 C898 398 872 412 854 426 C862 450 870 480 868 506 C866 528 860 548 857 566 C854 600 852 640 848 680 C842 740 832 800 818 868 L816 900 Z" fill="#F7E7DC" stroke="#C9A58F" stroke-width="3"/>
+<!-- eye and mouth -->
+<path d="M948 44 C964 54 984 54 1000 44" fill="none" stroke="#C9A58F" stroke-width="3" stroke-linecap="round"/>
+<path d="M1058 208 C1046 212 1034 212 1024 208" fill="none" stroke="#C9A58F" stroke-width="3" stroke-linecap="round"/>
+<!-- ear -->
+<ellipse cx="455" cy="118" rx="40" ry="72" fill="#F1D6C5" stroke="#C9A58F" stroke-width="3"/>
+<path d="M462 72 C440 84 436 120 450 150 C458 166 470 168 476 160" fill="none" stroke="#C9A58F" stroke-width="2.5"/>
+<!-- internal jugular vein (deep to SCM) -->
+<path d="M548 236 C566 300 590 380 612 440 C640 520 668 610 700 700 C716 760 730 820 740 870" fill="none" stroke="#7FA7D9" stroke-width="16" stroke-linecap="round" opacity=".35"/>
+<!-- nodal levels -->
+<g stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round" opacity=".9">
+ <path d="M318 232 L405 245 L478 432 L548 612 L640 848 L300 836 L310 650 L300 420 Z" fill="#B9A9DE"/>
+ <path d="M405 245 L572 240 L582 330 L592 347 L670 432 L478 432 Z" fill="#7FB2E5"/>
+ <path d="M478 434 L670 434 L718 612 L548 612 Z" fill="#7CCFC4"/>
+ <path d="M548 614 L718 614 L775 858 L640 848 Z" fill="#9ED08A"/>
+ <path d="M672 434 L850 428 L868 505 L858 560 L850 640 L835 780 L818 872 L777 860 L718 612 Z" fill="#F0A3A3"/>
+ <path d="M590 345 L905 345 L825 428 L670 432 Z" fill="#F9CFA0"/>
+ <path d="M905 345 L990 325 L1008 347 L930 382 L852 425 L825 428 Z" fill="#F5AE66"/>
+</g>
+<!-- sublevel dividers -->
+<g stroke="#FFFFFF" stroke-width="3" stroke-dasharray="10 8" fill="none">
+ <path d="M500 243 L540 432"/>
+ <path d="M303 610 L548 612"/>
+</g>
+<!-- mandible -->
+<path d="M574 182 C578 166 600 164 606 180 C616 202 634 204 650 188 L680 264 C760 262 880 258 996 256 C1004 278 1004 300 994 320 C976 334 940 343 890 347 C810 351 710 353 632 351 C604 350 590 340 588 318 C586 286 584 230 574 182 Z" fill="#EEE9E0" stroke="#9C9384" stroke-width="3" stroke-linejoin="round"/>
+<!-- retropharyngeal (level VII), deep -->
+<ellipse cx="605" cy="262" rx="44" ry="50" fill="#C9CFD8" fill-opacity=".55" stroke="#6E7887" stroke-width="3" stroke-dasharray="9 7"/>
+<!-- hyoid -->
+<path d="M762 424 C790 420 820 420 846 424" fill="none" stroke="#9C9384" stroke-width="13" stroke-linecap="round"/>
+<path d="M762 424 C790 420 820 420 846 424" fill="none" stroke="#EEE9E0" stroke-width="7" stroke-linecap="round"/>
+<!-- thyroid and cricoid cartilage, trachea -->
+<path d="M782 452 L856 448 C862 470 868 492 866 506 C860 530 852 550 848 562 L792 566 Z" fill="#EAF0F2" fill-opacity=".85" stroke="#8A9AA3" stroke-width="3" stroke-linejoin="round"/>
+<path d="M794 578 L848 574 L846 610 L800 614 Z" fill="#EAF0F2" fill-opacity=".85" stroke="#8A9AA3" stroke-width="3" stroke-linejoin="round"/>
+<g stroke="#8A9AA3" stroke-width="3" fill="none">
+ <path d="M802 622 L796 872 M842 620 L826 872"/>
+ <path d="M801 648 L840 646 M800 674 L838 672 M799 700 L836 698 M798 726 L834 724 M797 752 L833 750 M797 778 L831 776 M796 804 L830 802 M796 830 L828 828"/>
+</g>
+<!-- sternocleidomastoid (outline over the levels) -->
+<g fill="none" stroke="#B4645B" stroke-linecap="round">
+ <path d="M440 226 C470 222 488 230 490 238 L812 876" stroke-width="3.5"/>
+ <path d="M412 238 L652 876" stroke-width="3.5"/>
+ <path d="M452 240 L700 860 M470 238 L742 862" stroke-width="1.5" opacity=".5"/>
+</g>
+<!-- trapezius anterior border -->
+<path d="M316 228 C302 330 296 420 300 520 C304 610 310 700 298 832" fill="none" stroke="#B4645B" stroke-width="3.5" stroke-linecap="round"/>
+<!-- mastoid -->
+<path d="M424 204 C426 226 438 240 454 240 C466 238 472 226 470 210" fill="#EEE9E0" stroke="#9C9384" stroke-width="3"/>
+<!-- clavicle -->
+<path d="M236 832 C330 826 420 844 520 852 C620 860 720 858 800 874" fill="none" stroke="#9C9384" stroke-width="30" stroke-linecap="round"/>
+<path d="M236 832 C330 826 420 844 520 852 C620 860 720 858 800 874" fill="none" stroke="#EEE9E0" stroke-width="23" stroke-linecap="round"/>
+</svg>

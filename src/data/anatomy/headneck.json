@@ -462,66 +462,66 @@
         "id": "hn-neck-levels",
         "title": "Neck Levels I-VII (Overview)",
         "style": "schematic",
-        "caption": "Lateral view of the head and neck lymph nodes (face on the right). Levels are approximate on a surface drawing; level VII (retropharyngeal) lies deep to what is shown.",
+        "caption": "Lateral view of the neck (face on the right) with each nodal level shaded. The sternocleidomastoid and the front edge of the trapezius are outlined in red. Level VII (retropharyngeal) lies deep to the surface and is drawn as a dashed outline.",
         "hotspots": [
           {
             "id": "level-1a",
             "label": "Level Ia (Submental)",
-            "x": 81,
-            "y": 48,
+            "x": 77.1,
+            "y": 40.6,
             "blurb": "Midline, between the anterior bellies of the digastric muscles. Drains lower lip, anterior floor of mouth, anterior oral tongue."
           },
           {
             "id": "level-1b",
             "label": "Level Ib (Submandibular)",
-            "x": 71,
-            "y": 45,
+            "x": 61.7,
+            "y": 42.8,
             "blurb": "Beneath the body of the mandible. Drains most oral cavity subsites."
           },
           {
             "id": "level-2",
             "label": "Level II (Upper Jugular)",
-            "x": 47,
-            "y": 47,
+            "x": 43.3,
+            "y": 37.8,
             "blurb": "Skull base to hyoid, split into IIa (anterior to IJV) and IIb (posterior). The most commonly involved level in almost every H&N subsite."
           },
           {
             "id": "level-3",
             "label": "Level III (Mid Jugular)",
-            "x": 44,
-            "y": 63,
+            "x": 50.4,
+            "y": 57.8,
             "blurb": "Hyoid to inferior border of cricoid cartilage."
           },
           {
             "id": "level-4",
             "label": "Level IV (Lower Jugular)",
-            "x": 44,
-            "y": 82,
+            "x": 55.7,
+            "y": 81.7,
             "blurb": "Cricoid to clavicle."
           },
           {
             "id": "level-5",
             "label": "Level V (Posterior Triangle)",
-            "x": 34,
-            "y": 75,
+            "x": 34.2,
+            "y": 62.2,
             "blurb": "Posterior to the sternocleidomastoid muscle, skull base to clavicle. Electively covered in nasopharyngeal carcinoma."
           },
           {
             "id": "level-6",
             "label": "Level VI (Central / Pretracheal)",
-            "x": 68,
-            "y": 75,
+            "x": 65.8,
+            "y": 77.8,
             "blurb": "Hyoid to suprasternal notch; includes the prelaryngeal (Delphian) node. Covered when there is subglottic extension."
           },
           {
             "id": "level-7",
             "label": "Level VII (Retropharyngeal)",
-            "x": 51,
-            "y": 36,
+            "x": 50.4,
+            "y": 29.1,
             "blurb": "Posterior to the pharynx (Rouvière nodes), a cranial extension of level II. Covered for any pharyngeal primary; the classic first echelon for nasopharyngeal carcinoma."
           }
         ],
-        "image": "images/headneck/hn-neck-levels.jpg"
+        "image": "images/headneck/hn-neck-levels.svg"
       }
     ],
     "gallery": [
@@ -546,34 +546,34 @@
         "id": "hn-lymph-oral-cavity",
         "title": "Oral Cavity Drainage",
         "style": "schematic",
-        "caption": "Oral cavity primaries drain predictably to levels I-IV (same lateral neck drawing as above, face on the right).",
+        "caption": "Oral cavity primaries drain predictably to levels I-IV (same neck drawing as above, face on the right).",
         "hotspots": [
           {
             "id": "oc-1a",
             "label": "Level Ia",
-            "x": 81,
-            "y": 48,
+            "x": 77.1,
+            "y": 40.6,
             "blurb": "At risk from the lower lip, anterior oral tongue, and anterior floor of mouth. The upper lip is the exception: it drains to facial lymphatics instead."
           },
           {
             "id": "oc-1b",
             "label": "Level Ib",
-            "x": 71,
-            "y": 45,
+            "x": 61.7,
+            "y": 42.8,
             "blurb": "The main level for oral cavity disease, at risk from nearly every subsite (tongue, floor of mouth, gingiva, buccal mucosa, retromolar trigone, and hard palate)."
           },
           {
             "id": "oc-2",
             "label": "Level II",
-            "x": 47,
-            "y": 47,
+            "x": 43.3,
+            "y": 37.8,
             "blurb": "First echelon nodal group for the oral tongue and most other oral cavity subsites, so it is almost always covered."
           },
           {
             "id": "oc-3-4",
             "label": "Levels III-IV",
-            "x": 44,
-            "y": 72,
+            "x": 51.7,
+            "y": 68.0,
             "blurb": "Covered electively for oral tongue and floor of mouth primaries, following the same jugular chain as level II."
           }
         ],
@@ -591,7 +591,7 @@
             "image": "images/headneck/hn-g-ln-oc-photo.jpg"
           }
         ],
-        "image": "images/headneck/hn-neck-levels.jpg"
+        "image": "images/headneck/hn-neck-levels.svg"
       },
       {
         "id": "hn-lymph-oropharynx",
@@ -602,29 +602,29 @@
           {
             "id": "op-2",
             "label": "Level II",
-            "x": 47,
-            "y": 47,
+            "x": 43.3,
+            "y": 37.8,
             "blurb": "The dominant first-echelon level for tonsil and base-of-tongue primaries; base-of-tongue and soft palate tumors are often covered bilaterally given their midline proximity."
           },
           {
             "id": "op-3-4",
             "label": "Levels III-IV",
-            "x": 44,
-            "y": 72,
+            "x": 51.7,
+            "y": 68.0,
             "blurb": "Covered electively along the jugular chain below level II."
           },
           {
             "id": "op-7",
             "label": "Level VII (Retropharyngeal)",
-            "x": 51,
-            "y": 36,
+            "x": 50.4,
+            "y": 29.1,
             "blurb": "Covered for any pharyngeal primary, including the oropharynx. These nodes are easy to forget because they are deep and cannot be felt on exam."
           },
           {
             "id": "op-unilateral",
             "label": "Unilateral Exception",
-            "x": 58,
-            "y": 40,
+            "x": 60.0,
+            "y": 31.3,
             "blurb": "A well-lateralized tonsil tumor without base-of-tongue or soft palate extension is one of the few oropharynx scenarios that can be treated with unilateral neck coverage alone."
           }
         ],
@@ -636,7 +636,7 @@
             "image": "images/headneck/hn-g-ln-op-cystic.jpg"
           }
         ],
-        "image": "images/headneck/hn-neck-levels.jpg"
+        "image": "images/headneck/hn-neck-levels.svg"
       },
       {
         "id": "hn-lymph-larynx",
@@ -647,26 +647,26 @@
           {
             "id": "lx-glottis",
             "label": "Glottis → Minimal Drainage",
-            "x": 68,
-            "y": 60,
+            "x": 68.5,
+            "y": 57.8,
             "blurb": "The true cords have almost no lymphatics. Early glottic cancer (T1-T2) so rarely spreads to nodes (~2-5%) that elective neck treatment is often skipped entirely."
           },
           {
             "id": "lx-2-4",
             "label": "Levels II-IV (Supra/Subglottic)",
-            "x": 45,
-            "y": 62,
+            "x": 50.4,
+            "y": 60.0,
             "blurb": "Supraglottic and subglottic tumors are assumed to be at meaningful occult nodal risk from the outset and get elective bilateral coverage of II-IV even with a clinically negative neck."
           },
           {
             "id": "lx-6",
             "label": "Level VI",
-            "x": 68,
-            "y": 75,
+            "x": 65.8,
+            "y": 77.8,
             "blurb": "Added when there is subglottic extension, because the pretracheal (Delphian) and paratracheal nodes sit in the path of subglottic spread."
           }
         ],
-        "image": "images/headneck/hn-neck-levels.jpg"
+        "image": "images/headneck/hn-neck-levels.svg"
       },
       {
         "id": "hn-lymph-nasopharynx",
@@ -677,26 +677,26 @@
           {
             "id": "np-7",
             "label": "Level VII (Retropharyngeal)",
-            "x": 51,
-            "y": 36,
+            "x": 50.4,
+            "y": 29.1,
             "blurb": "The classic first echelon for NPC. Nearly all patients have retropharyngeal nodal involvement at diagnosis, even when the neck exam is normal."
           },
           {
             "id": "np-2-4",
             "label": "Levels II-IV",
-            "x": 45,
-            "y": 62,
+            "x": 50.4,
+            "y": 60.0,
             "blurb": "Covered bilaterally, following the same jugular chain pattern as other pharyngeal sites."
           },
           {
             "id": "np-5",
             "label": "Level V",
-            "x": 34,
-            "y": 75,
+            "x": 34.2,
+            "y": 62.2,
             "blurb": "Nasopharynx is unique among H&N subsites in routinely requiring elective coverage of level V (posterior triangle) as well."
           }
         ],
-        "image": "images/headneck/hn-neck-levels.jpg"
+        "image": "images/headneck/hn-neck-levels.svg"
       }
     ]
   }

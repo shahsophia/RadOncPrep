@@ -471,9 +471,7 @@ PRESENTATION = f"""
 <div class='spec-row'><dt>Patient-specific risks</dt><dd>Anything that changes how you would plan or what you would worry about: past radiation, inflammatory bowel disease, a pacemaker, a hip replacement, frailty, or an unusual anatomy such as a neobladder. Say how you would plan around it, for example with IMRT to keep dose off a structure.</dd></div>
 <div class='spec-row'><dt>Open questions</dt><dd>Anything still undecided, or anything you want your attending's opinion on.</dd></div>
 </dl>
-{script("Sounds like", "&ldquo;For the plan, I would first talk with Mr. K about his goals, including how he feels about a possible permanent colostomy, since a tumor this low might need one. The goal is cure. Given the high-risk features, I would recommend total neoadjuvant therapy, meaning all of his chemotherapy and radiation before surgery. My preference would be long-course chemoradiation, 50.4 Gy in 28 fractions to the tumor and pelvic lymph nodes with capecitabine, followed by consolidation chemotherapy with FOLFOX or CAPOX. That order is based on OPRA, where giving chemotherapy after chemoradiation led to more patients keeping their rectum. Short-course radiation, 25 Gy in 5 fractions followed by chemotherapy, as in RAPIDO, would also be reasonable if he prefers fewer visits. Afterward he would be restaged with MRI and endoscopy. If the tumor has completely disappeared, he could be offered close surveillance instead of surgery; if not, he would have a total mesorectal excision. He has no past pelvic radiation, no inflammatory bowel disease, and no hip replacements, so nothing limits a standard plan. I would treat with a comfortably full bladder to push small bowel out of the field. The main risks are diarrhea, urinary irritation, skin soreness, and tiredness, with possible long-term bowel, bladder, and sexual side effects. My open question is whether his tumor is low enough that he should be counseled now about the chance of a permanent colostomy.&rdquo;")}
-<p>When the right answer is less clear, the plan gets more interesting, because your reasoning matters more than the dose. Here is a made-up patient where the team has real choices:</p>
-{script("Sounds like (a less straightforward patient)", "&ldquo;Mr. B is an 82-year-old man with muscle-invasive bladder cancer, referred for blood in his urine that has needed two transfusions. For the plan, I would first ask him what matters most to him. He spends most of the day in a chair and is not a candidate for cystectomy. A curative approach, such as 55 Gy in 20 fractions with chemotherapy as in BC2001, was studied in fitter patients, so I do not think it fits him unless he is stronger than the chart suggests. If his goal is relief of bleeding with as few trips as possible, I would recommend 21 Gy in 3 fractions to the bladder. The MRC BA09 trial, in patients like him who were not fit for curative treatment, found that 21 Gy in 3 fractions relieved bladder symptoms about as well as 35 Gy in 10 fractions. He takes apixaban for atrial fibrillation, so I would ask whether it can be held while he is bleeding, and urology can continue bladder irrigation in the meantime. The main side effects would be urinary frequency and burning and some loose stools, which usually settle within a few weeks.&rdquo;")}
+{script("Sounds like", "&ldquo;For the plan, I would first talk with Mr. K about his goals, including how he feels about a possible permanent colostomy, since a tumor this low might need one. The goal is cure. Given the high-risk features, I would recommend total neoadjuvant therapy: long-course chemoradiation, 50.4 Gy in 28 fractions to the tumor and pelvic lymph nodes with capecitabine, followed by FOLFOX or CAPOX. That order comes from OPRA, where chemotherapy after chemoradiation let more patients keep their rectum. Short-course radiation, 25 Gy in 5 fractions followed by chemotherapy as in RAPIDO, is a reasonable alternative if he prefers fewer visits. He would then be restaged with MRI and endoscopy, with close surveillance if the tumor has completely disappeared and total mesorectal excision if not. He has no past pelvic radiation, inflammatory bowel disease, or hip replacements, so nothing limits a standard plan, and I would treat with a full bladder to push small bowel out of the field. The main risks are diarrhea, urinary irritation, skin soreness, and tiredness, with possible long-term bowel, bladder, and sexual effects. My open question is whether he should be counseled now about the chance of a permanent colostomy.&rdquo;")}
 <details class='reveal'>
 <summary>The questions behind every plan<span class='chev'>&#9662;</span></summary>
 <div class='reveal-body'>
@@ -548,7 +546,7 @@ PRESENTATION = f"""
 # ---------------------------------------------------------------------------
 CONSULT = f"""
 <p>By the time you meet the patient, you have already done a lot of work. You read the chart, looked at the scans, worked out the stage, and presented to your attending with a plan in mind (the last reading). The consult is what happens next: you walk into the room and talk with the patient.</p>
-<p>This reading is about that conversation. It starts with what you bring into the room and what you learn there, but most of it is about counseling: explaining the cancer in plain words, explaining what radiation is and why it is part of the plan, talking about side effects, and finding out how the patient feels about all of it.</p>
+<p>This reading is about that conversation. It starts with what you bring into the room and what you learn there, but most of it is about counseling: explaining the cancer in plain words, explaining what radiation is and why it is part of the plan, and talking about side effects.</p>
 
 <h3 id='bring'>What You Bring Into the Room</h3>
 <p>Before you knock, have a short summary in your head, or on a card in your pocket. It is everything from your presentation, boiled down:</p>
@@ -632,26 +630,6 @@ CONSULT = f"""
 <p>Avoid vague words like &ldquo;rare&rdquo; or &ldquo;common,&rdquo; which mean different things to different people. When your attending gives a number, such as &ldquo;about 1 in 10,&rdquo; use the same one. Formal consent, including the risks, is the attending's job, but you can help the patient think through their questions beforehand.</p>
 <div class='quiz-carousel' data-quiz-set='consult-spiel'></div>
 
-<h3 id='how-they-feel'>Finding Out How They Feel About Treatment</h3>
-<p>Two people with the same cancer can reasonably make different choices. Before the plan is final, find out what matters to this patient. Open questions work best:</p>
-<ul>
-<li>&ldquo;What matters most to you as we plan your treatment?&rdquo;</li>
-<li>&ldquo;When you think about the treatment, what worries you most?&rdquo;</li>
-<li>&ldquo;Is there anything that would make coming in every weekday hard, such as getting here, work, or caring for someone at home?&rdquo;</li>
-<li>&ldquo;Some people want every detail, and some want the big picture. What would you prefer?&rdquo;</li>
-</ul>
-<p>Listen for values that can change the plan: keeping an organ, avoiding a colostomy, finishing quickly, staying out of the hospital, or being well enough for a wedding next month. Bring what you hear back to your attending. It is part of the recommendation, not a detail.</p>
-<h4>When the patient is upset</h4>
-<p>Fear, anger, and tears are common at a cancer visit. When emotion comes up, respond to it before giving more information, because a patient who is overwhelmed cannot take in facts. One helpful framework is <strong>NURSE</strong>:</p>
-{table(["Step", "Sounds like"], [
-    ["<strong>N</strong>ame the emotion", "&ldquo;It sounds like this has been really frightening.&rdquo;"],
-    ["<strong>U</strong>nderstand", "&ldquo;That makes sense, given everything that has happened this month.&rdquo;"],
-    ["<strong>R</strong>espect", "&ldquo;You have been handling a lot of appointments and a lot of news.&rdquo;"],
-    ["<strong>S</strong>upport", "&ldquo;We will be with you through every step of this treatment.&rdquo;"],
-    ["<strong>E</strong>xplore", "&ldquo;Can you tell me more about what is worrying you most?&rdquo;"],
-])}
-<p>You do not need all five, and you do not need to fill every silence. Sometimes the most helpful thing is to wait.</p>
-
 <h3 id='not-cure'>When the Goal Is Not Cure</h3>
 <p>Palliative visits need extra care. Some patients do not know their cancer cannot be cured, and some know but do not want to talk about it today. Before the visit, ask your attending what the patient has been told.</p>
 <ul>
@@ -690,7 +668,7 @@ CONSULT = f"""
     "In the room, check the history (especially past radiation), ask about current symptoms and daily life, and do a focused exam.",
     "Ask what the patient knows before you explain, then use ask, tell, ask, one idea at a time, in plain words.",
     "Explain the job radiation is doing for this patient, what treatment will look like, and the side effects for that part of the body, with honest answers to common worries.",
-    "Find out what matters to the patient, respond to emotion before information, and close with a summary, teach-back, and clear next steps.",
+    "Close with a summary, teach-back, and clear next steps.",
 ])}
 """
 
@@ -1032,7 +1010,6 @@ SECTIONS = [
             "Summarize what you know before you walk into the room, and what you still need to learn.",
             "Find out what the patient already knows before explaining.",
             "Explain the cancer, the role of radiation, and its side effects in plain words.",
-            "Explore what matters to the patient and respond to emotion.",
             "Close the visit with a summary, teach-back, and clear next steps.",
         ],
         "html": CONSULT,

@@ -42,6 +42,27 @@
   "extra": "ILC is more often multicentric or bilateral, almost always ER+/HER2-, lower grade, and less FDG-avid."
  },
  {
+  "id": "br-60",
+  "category": "Epidemiology & Risk Factors",
+  "front": "Which breast cancer subtype is linked to BRCA1, and which features does BRCA2 cancer tend to have?",
+  "back": "BRCA1: triple-negative cancer. BRCA2: cancer that looks more like sporadic HR+ disease, and a higher risk of male breast cancer.",
+  "extra": "Neither gene alone makes radiation unsafe. The result belongs in the shared decision about lumpectomy plus RT vs mastectomy."
+ },
+ {
+  "id": "br-61",
+  "category": "Epidemiology & Risk Factors",
+  "front": "Why do women treated with mantle-field radiation for Hodgkin lymphoma get high-risk breast screening?",
+  "back": "Chest radiation at a young age substantially raises breast cancer risk.",
+  "extra": "High-risk screening adds breast MRI. Prior chest radiation also makes breast-conserving radiation harder or impossible later."
+ },
+ {
+  "id": "br-62",
+  "category": "Epidemiology & Risk Factors",
+  "front": "Where does invasive lobular carcinoma metastasize that ductal cancer usually does not?",
+  "back": "Unusual sites: the peritoneum, GI tract, ovaries, and meninges",
+  "extra": "ILC is almost always HR+/HER2-, lower grade, and less FDG-avid, so PET can miss it."
+ },
+ {
   "id": "br-10",
   "category": "Anatomy & Lymphatics",
   "front": "Which breast tumors are most likely to drain to the internal mammary nodes, and why does covering them matter for RT?",
@@ -61,6 +82,34 @@
   "front": "A standard axillary dissection removes which levels, and what does regional nodal irradiation add?",
   "back": "Levels I and II. Regional nodal RT covers level III (infraclavicular), the supraclavicular nodes, and usually the internal mammary nodes, plus any undissected axilla at risk.",
   "extra": "The brachial plexus sits behind the supraclavicular and level III targets, so high nodal doses risk plexopathy."
+ },
+ {
+  "id": "br-63",
+  "category": "Anatomy & Lymphatics",
+  "front": "Which breast quadrant has the most cancers, and why?",
+  "back": "The upper outer quadrant (about half of cancers), because it has the most glandular tissue",
+  "extra": "It includes the axillary tail of Spence. The lower inner quadrant has the fewest cancers."
+ },
+ {
+  "id": "br-64",
+  "category": "Anatomy & Lymphatics",
+  "front": "Does skin dimpling make a breast cancer T4? Does invasion of the pectoralis muscle alone?",
+  "back": "No to both. Dimpling is the tumor pulling on Cooper's ligaments, and pectoralis invasion alone is not chest wall invasion.",
+  "extra": "T4a requires chest wall invasion (ribs, intercostals, serratus). T4b requires ulceration, satellite skin nodules, or peau d'orange."
+ },
+ {
+  "id": "br-65",
+  "category": "Anatomy & Lymphatics",
+  "front": "Where are the internal mammary nodes, and why does treating them matter on a left-sided plan?",
+  "back": "Next to the sternum in intercostal spaces 1-3. Including them brings the field close to the heart and raises heart dose.",
+  "extra": "Medial and central tumors are most likely to drain there."
+ },
+ {
+  "id": "br-66",
+  "category": "Anatomy & Lymphatics",
+  "front": "A breast cancer patient has a positive contralateral axillary node. Is that N3 or M1?",
+  "back": "M1. Contralateral nodes count as distant metastasis.",
+  "extra": "Ipsilateral supraclavicular, infraclavicular, and internal mammary nodes are regional (N2-N3) and still curable."
  },
  {
   "id": "br-17",
@@ -89,6 +138,48 @@
   "front": "For left-sided breast RT, what technique lowers heart dose, and how does it work?",
   "back": "Deep inspiration breath hold (DIBH): a deep breath moves the heart away from the chest wall and out of the tangent fields.",
   "extra": "Darby: major cardiac events rise about 7% per Gy of mean heart dose."
+ },
+ {
+  "id": "br-67",
+  "category": "Imaging",
+  "front": "Which three mammogram findings are suspicious for cancer?",
+  "back": "A spiculated mass, pleomorphic or linear-branching calcifications, and architectural distortion",
+  "extra": "Calcifications alone are the classic way DCIS shows up, and linear branching calcifications suggest higher-grade DCIS."
+ },
+ {
+  "id": "br-68",
+  "category": "Imaging",
+  "front": "What does BI-RADS 3 mean, and what is the next step?",
+  "back": "Probably benign (2% or less cancer risk). Short-interval follow-up imaging in about 6 months, not biopsy.",
+  "extra": "BI-RADS 0 means incomplete (more imaging needed), and BI-RADS 6 means biopsy-proven cancer."
+ },
+ {
+  "id": "br-69",
+  "category": "Imaging",
+  "front": "What ultrasound features make an axillary lymph node suspicious?",
+  "back": "A thickened cortex and loss of the fatty hilum",
+  "extra": "A suspicious node gets an ultrasound-guided biopsy and a clip."
+ },
+ {
+  "id": "br-70",
+  "category": "Imaging",
+  "front": "Why is a clip placed in a biopsy-proven positive axillary node before neoadjuvant therapy?",
+  "back": "So the node can be found and removed at surgery even if it shrinks and is no longer visible",
+  "extra": "Targeted axillary surgery after a good response depends on removing the clipped node."
+ },
+ {
+  "id": "br-71",
+  "category": "Imaging",
+  "front": "Why is breast MRI not ordered for every newly diagnosed breast cancer?",
+  "back": "It is very sensitive but only moderately specific. Routine use leads to extra biopsies and more mastectomies without improving survival.",
+  "extra": "It is used when the answer changes management: high-risk screening, extent (especially ILC), response to neoadjuvant therapy, and an occult primary."
+ },
+ {
+  "id": "br-72",
+  "category": "Imaging",
+  "front": "How much does the risk of major cardiac events rise with mean heart dose in breast radiation?",
+  "back": "Roughly 7% per Gy of mean heart dose (Darby)",
+  "extra": "This linear relationship is why left-sided plans work hard to lower heart dose, often with deep inspiration breath hold."
  },
  {
   "id": "br-11",
@@ -152,6 +243,48 @@
   "front": "What is the difference between anatomic and prognostic stage in breast cancer, and which one do radiation fields follow?",
   "back": "Anatomic = T + N + M (where the cancer is). Prognostic = anatomic plus grade, ER, PR, HER2 ± genomic score (how biology changes outlook). Fields follow the anatomic extent, not prognostic stage alone.",
   "extra": "Favorable biology can lower the prognostic stage and triple-negative disease often raises it, but a node-positive patient downstaged by biology still has node-positive disease for RT planning."
+ },
+ {
+  "id": "br-73",
+  "category": "Workup & Staging",
+  "front": "How is a breast lesion seen only as calcifications biopsied?",
+  "back": "Stereotactic (mammogram-guided) core biopsy",
+  "extra": "Masses are usually biopsied with ultrasound guidance, MRI-only lesions with MRI guidance, and suspected inflammatory or Paget disease with a skin punch biopsy."
+ },
+ {
+  "id": "br-74",
+  "category": "Workup & Staging",
+  "front": "Is LCIS staged as Tis? Which lesions are?",
+  "back": "No. LCIS is no longer staged as cancer. Tis is DCIS, or Paget disease of the nipple without an underlying tumor.",
+  "extra": "LCIS is a risk marker for both breasts and is not treated with radiation."
+ },
+ {
+  "id": "br-75",
+  "category": "Workup & Staging",
+  "front": "How is a sentinel node with only isolated tumor cells (0.2 mm or smaller) staged?",
+  "back": "pN0(i+): it still counts as node-negative.",
+  "extra": "Micrometastasis (more than 0.2 mm to 2 mm) is pN1mi."
+ },
+ {
+  "id": "br-76",
+  "category": "Workup & Staging",
+  "front": "What does ypT0 ypN0 mean after neoadjuvant therapy?",
+  "back": "Pathologic complete response (pCR): no invasive cancer left in the breast or the nodes at surgery",
+  "extra": "A pCR is a strong prognostic sign, but it does not erase the pre-treatment clinical stage for the radiation decision."
+ },
+ {
+  "id": "br-77",
+  "category": "Workup & Staging",
+  "front": "Which way does biology push the AJCC prognostic stage in breast cancer?",
+  "back": "Favorable biology (ER+/PR+/HER2+ or low-grade ER+) often lowers the stage. Triple-negative or high-grade disease often raises it.",
+  "extra": "You do not need to memorize the prognostic table. Radiation fields still follow the anatomic extent."
+ },
+ {
+  "id": "br-78",
+  "category": "Workup & Staging",
+  "front": "Which breast cancer patients should be offered genetic counseling and testing?",
+  "back": "Those with young age at diagnosis, triple-negative cancer, a strong family history, Ashkenazi Jewish ancestry, or male breast cancer",
+  "extra": "A germline result can change the choice between breast conservation and mastectomy."
  },
  {
   "id": "br-51",
@@ -264,5 +397,89 @@
   "front": "Does meeting Z0011 criteria (1-2 positive sentinel nodes, no axillary dissection) mean the patient gets no regional nodal RT?",
   "back": "No. Z0011 answers the surgical question (skip ALND). Whether to treat the regional nodes is a separate decision based on nodal burden, biology, location, and other risk features.",
   "extra": "Z0011 patients were treated with whole-breast tangents, often high tangents. MA.20 and EORTC 22922 are the trials behind adding regional nodal RT."
+ },
+ {
+  "id": "br-79",
+  "category": "Treatment Paradigms",
+  "front": "What did the EBCTCG meta-analysis show about radiation after lumpectomy?",
+  "back": "It halved recurrence and prevented about 1 breast cancer death for every 4 recurrences prevented.",
+  "extra": "After mastectomy for node-positive disease, radiation also lowered recurrence and breast cancer mortality."
+ },
+ {
+  "id": "br-80",
+  "category": "Treatment Paradigms",
+  "front": "What did AMAROS show for a positive sentinel node?",
+  "back": "Axillary radiation instead of axillary dissection gave the same axillary control with about half the lymphedema.",
+  "extra": "Axillary dissection causes lymphedema in about 20-25% of patients."
+ },
+ {
+  "id": "br-81",
+  "category": "Treatment Paradigms",
+  "front": "Does a patient who has a mastectomy for DCIS need radiation?",
+  "back": "No. Mastectomy for DCIS needs no radiation.",
+  "extra": "After lumpectomy for DCIS, radiation roughly halves in-breast recurrence (NSABP B-17, EORTC 10853), with no survival difference."
+ },
+ {
+  "id": "br-82",
+  "category": "Treatment Paradigms",
+  "front": "Which patients are candidates for partial breast irradiation?",
+  "back": "Low-risk patients (generally 40 or older) with small (≤2 cm), node-negative, ER+, lower-grade tumors and clear margins",
+  "extra": "Representative regimens are 30 Gy in 5 fractions or 40 Gy in 15 fractions to the tumor bed only."
+ },
+ {
+  "id": "br-83",
+  "category": "Treatment Paradigms",
+  "front": "Which trials established hypofractionated and then 1-week whole-breast radiation?",
+  "back": "START B (40 Gy in 15 fractions) and FAST-Forward (26 Gy in 5 fractions)",
+  "extra": "Both matched longer courses for local control and side effects, so hypofractionation is now standard for whole-breast RT."
+ },
+ {
+  "id": "br-84",
+  "category": "Treatment Paradigms",
+  "front": "What did the EORTC 22881 boost trial show?",
+  "back": "A 16 Gy tumor bed boost after whole-breast RT lowered local recurrence, with the largest absolute benefit in younger patients and no survival difference.",
+  "extra": "The cost of a boost is more fibrosis and a slightly worse cosmetic result."
+ },
+ {
+  "id": "br-85",
+  "category": "Treatment Paradigms",
+  "front": "Which systemic therapies can safely run during breast radiation, and which cannot?",
+  "back": "Anti-HER2 antibodies (such as trastuzumab) and endocrine therapy can run during RT. Cytotoxic chemotherapy is not given at the same time.",
+  "extra": "The usual order is surgery, adjuvant chemotherapy if needed, radiation, then years of endocrine therapy."
+ },
+ {
+  "id": "br-86",
+  "category": "Treatment Paradigms",
+  "front": "What did KEYNOTE-522 add for stage II-III triple-negative breast cancer?",
+  "back": "Pembrolizumab with neoadjuvant chemotherapy (continued after surgery) raised the pCR rate and improved event-free survival.",
+  "extra": "Residual triple-negative disease after neoadjuvant therapy gets capecitabine, or olaparib if germline BRCA."
+ },
+ {
+  "id": "br-87",
+  "category": "Treatment Paradigms",
+  "front": "What is given after surgery for HER2-positive breast cancer with residual disease after neoadjuvant therapy?",
+  "back": "T-DM1 (KATHERINE)",
+  "extra": "Neoadjuvant chemotherapy plus anti-HER2 therapy produces a high pCR rate in HER2-positive disease."
+ },
+ {
+  "id": "br-88",
+  "category": "Treatment Paradigms",
+  "front": "What question did NSABP B-51 ask, and what did it find?",
+  "back": "Whether biopsy-proven cN1 patients whose nodes became ypN0 after neoadjuvant chemo need regional nodal RT. Adding it did not significantly reduce invasive recurrence.",
+  "extra": "Omitting nodal RT in this group is now a reasonable discussion, not a rule. B-51 does not apply to cN2-N3 disease."
+ },
+ {
+  "id": "br-89",
+  "category": "Treatment Paradigms",
+  "front": "A cN3c breast cancer has a complete response to neoadjuvant therapy. Can comprehensive nodal radiation be skipped?",
+  "back": "No. For locally advanced disease, radiation follows the pre-treatment stage, so comprehensive RT (including the supraclavicular fossa) is given even after a pCR.",
+  "extra": "Locally advanced includes T4, inflammatory, and N2-N3 disease."
+ },
+ {
+  "id": "br-90",
+  "category": "Treatment Paradigms",
+  "front": "Why does the radiation oncologist need to be involved in planning breast reconstruction?",
+  "back": "Radiation raises implant and reconstruction complications.",
+  "extra": "For inflammatory breast cancer, reconstruction is usually delayed until after PMRT."
  }
 ]

@@ -28,6 +28,34 @@
   "extra": "PSA also rises for benign reasons (BPH, prostatitis, UTI, recent instrumentation), so repeat a high value before acting."
  },
  {
+  "id": "prx-73",
+  "category": "Epidemiology & Risk Factors",
+  "front": "Besides cancer, what can raise a PSA?",
+  "back": "Benign enlargement (BPH), inflammation or infection (prostatitis, UTI, retention), and recent instrumentation or ejaculation",
+  "extra": "That is why a newly raised PSA is repeated before MRI or biopsy. PSA measures prostate activity, not cancer."
+ },
+ {
+  "id": "prx-74",
+  "category": "Epidemiology & Risk Factors",
+  "front": "How do Black men differ in prostate cancer incidence and mortality?",
+  "back": "Higher incidence, diagnosis at a younger age, and about twice the mortality of White men",
+  "extra": "The disparity is driven by both biology and access to care. Screening discussions start earlier (about 40-45)."
+ },
+ {
+  "id": "prx-75",
+  "category": "Epidemiology & Risk Factors",
+  "front": "Which prostate cancer patients should have germline genetic testing?",
+  "back": "Men with high-risk, very high-risk, node-positive, or metastatic disease, and anyone with a strong family history",
+  "extra": "A repair-gene mutation (BRCA2, ATM) can open the door to PARP inhibitors in advanced disease."
+ },
+ {
+  "id": "prx-76",
+  "category": "Epidemiology & Risk Factors",
+  "front": "Does BPH cause prostate cancer?",
+  "back": "No. BPH grows in the transition zone, while most cancers arise in the peripheral zone.",
+  "extra": "BPH raises PSA and causes urinary symptoms, which is part of why PSA is not a diagnosis."
+ },
+ {
   "id": "prx-9",
   "category": "Anatomy & Lymphatics",
   "front": "In which prostate zone do most cancers arise, and why can a DRE feel them?",
@@ -54,6 +82,41 @@
   "front": "Which prostate cancer nodes are regional (N1), and which count as distant (M1a)?",
   "back": "Nodes in the true pelvis (obturator, internal and external iliac, sacral) are N1. Common iliac and above, or inguinal, are M1a.",
   "extra": "N1 M0 is stage IVA but still treated for cure. Drainage order: obturator and internal iliac first, then external iliac and presacral, then common iliac, then para-aortic."
+ },
+ {
+  "id": "prx-77",
+  "category": "Anatomy & Lymphatics",
+  "front": "Which part of the prostate is the usual route to seminal vesicle invasion?",
+  "back": "The base, where the seminal vesicles attach",
+  "extra": "The apex is hard to see on CT (MRI fusion helps) and is the most common site of a positive surgical margin."
+ },
+ {
+  "id": "prx-78",
+  "category": "Anatomy & Lymphatics",
+  "front": "Why can a DRE miss an anterior prostate cancer?",
+  "back": "Anterior tumors sit far from the rectum, so the finger cannot reach them. MRI finds them.",
+  "extra": "The DRE feels the posterior peripheral zone, where most cancers arise."
+ },
+ {
+  "id": "prx-79",
+  "category": "Anatomy & Lymphatics",
+  "front": "Where does extraprostatic extension usually occur, and why does that matter for surgery?",
+  "back": "Posterolaterally, where the neurovascular bundles run. A surgeon may not be able to spare the bundle on that side.",
+  "extra": "The radiation target also has to cover the extension."
+ },
+ {
+  "id": "prx-80",
+  "category": "Anatomy & Lymphatics",
+  "front": "Which normal structure cannot be avoided in prostate radiation, and what does its dose cause?",
+  "back": "The urethra, which runs through the gland. Urethral dose drives urinary symptoms, especially after brachytherapy and SBRT.",
+  "extra": "The penile bulb, below the apex, relates to erectile function."
+ },
+ {
+  "id": "prx-81",
+  "category": "Anatomy & Lymphatics",
+  "front": "What does the Roach formula estimate, and how is it calculated?",
+  "back": "The risk of pelvic nodal involvement: (2/3 × PSA) + [(Gleason score - 6) × 10]",
+  "extra": "It is a quick estimate, not a decision rule. Modern practice also uses MRI, PSMA PET, Grade Group, and guideline risk."
  },
  {
   "id": "prx-57",
@@ -89,6 +152,48 @@
   "front": "What makes a patient a poor candidate for prostate brachytherapy?",
   "back": "A large gland (pubic arch interference), a prior TURP defect, or bad baseline urinary symptoms",
   "extra": "Seeds near the urethra cause retention and urinary toxicity, so baseline urinary function matters."
+ },
+ {
+  "id": "prx-82",
+  "category": "Imaging",
+  "front": "On prostate MRI, which sequence matters most for peripheral zone lesions, and which for transition zone lesions and local extension?",
+  "back": "Peripheral zone: DWI/ADC (cancer restricts diffusion, dark on ADC). Transition zone and extension: T2-weighted images.",
+  "extra": "DCE (contrast) has a limited, tie-breaking role in PI-RADS."
+ },
+ {
+  "id": "prx-83",
+  "category": "Imaging",
+  "front": "Does a clearly visible PI-RADS 5 lesion on MRI make a nonpalpable cancer cT2?",
+  "back": "No. Clinical T stage for NCCN risk grouping comes from the DRE, so it stays cT1c.",
+  "extra": "MRI directs the biopsy, flags extension, and shapes the radiation target."
+ },
+ {
+  "id": "prx-84",
+  "category": "Imaging",
+  "front": "What does seminal vesicle invasion look like on T2 MRI?",
+  "back": "Dark T2 tissue filling the normally bright seminal vesicle, often by direct spread from a base tumor",
+  "extra": "Extraprostatic extension shows as a capsular bulge or irregularity, broad tumor-capsule contact, or neurovascular bundle asymmetry."
+ },
+ {
+  "id": "prx-85",
+  "category": "Imaging",
+  "front": "What is a superscan on a bone scan?",
+  "back": "Diffuse, intense skeletal uptake with faint or absent kidneys, which looks deceptively clean but means extensive bone metastases",
+  "extra": "Bone scan false positives include arthritis, fractures, and Paget disease."
+ },
+ {
+  "id": "prx-86",
+  "category": "Imaging",
+  "front": "Why is a planning MRI fused to the planning CT for prostate radiation?",
+  "back": "MRI shows the prostate edges (especially the apex) and the tumor much better than CT.",
+  "extra": "After prostatectomy, the prostate bed is drawn from a consensus atlas because there is no gland to see."
+ },
+ {
+  "id": "prx-87",
+  "category": "Imaging",
+  "front": "Why is the rectum emptied and the bladder filled before every prostate treatment?",
+  "back": "Gas and stool push the prostate forward and change rectal dose, and a comfortably full bladder pushes bowel away and keeps the anatomy reproducible.",
+  "extra": "Daily cone-beam CT or fiducial imaging then corrects for the remaining motion."
  },
  {
   "id": "prx-59",
@@ -173,6 +278,48 @@
   "front": "Before choosing between surveillance, surgery, and radiation, what question about the patient comes first?",
   "back": "Does he have enough life expectancy to benefit from curative treatment?",
   "extra": "Limited life expectancy points toward observation (watchful waiting); baseline urinary, bowel, and sexual function also shape the choice."
+ },
+ {
+  "id": "prx-88",
+  "category": "Workup & Staging",
+  "front": "Why are Gleason 3+4 and 4+3 not equivalent?",
+  "back": "The first number is the dominant pattern, so 4+3 (Grade Group 3) is mostly poorly formed glands and behaves worse than 3+4 (Grade Group 2).",
+  "extra": "Moving from 3+4 to 4+3 makes a patient unfavorable intermediate risk."
+ },
+ {
+  "id": "prx-89",
+  "category": "Workup & Staging",
+  "front": "Why is Gleason 3+3=6 the lowest score you will see on a biopsy, and why does that matter for patients?",
+  "back": "Patterns 1 and 2 are no longer assigned, so 6 is the lowest grade. Grade Group 1 was introduced so \"6 out of 10\" does not sound intermediate.",
+  "extra": "Pattern 3 is small, separate, round glands; pattern 4 is fused or cribriform; pattern 5 is solid sheets or single cells."
+ },
+ {
+  "id": "prx-90",
+  "category": "Workup & Staging",
+  "front": "What defines very low-risk prostate cancer?",
+  "back": "T1c, Grade Group 1, PSA under 10, PSA density under 0.15, and limited core involvement",
+  "extra": "Active surveillance is preferred."
+ },
+ {
+  "id": "prx-91",
+  "category": "Workup & Staging",
+  "front": "How is high-volume metastatic prostate cancer defined (CHAARTED)?",
+  "back": "Four or more bone metastases with at least one outside the spine and pelvis, or any visceral metastasis",
+  "extra": "Everything else is low volume. Volume decides whether the prostate itself is radiated."
+ },
+ {
+  "id": "prx-92",
+  "category": "Workup & Staging",
+  "front": "What separates AJCC M1a, M1b, and M1c in prostate cancer?",
+  "back": "M1a = nonregional nodes. M1b = bone. M1c = other sites (lung, liver) with or without bone.",
+  "extra": "Common iliac and above, or inguinal nodes, are M1a."
+ },
+ {
+  "id": "prx-93",
+  "category": "Workup & Staging",
+  "front": "Before long-term ADT, which baseline tests are checked?",
+  "back": "Baseline testosterone, bone health (DEXA), and cardiovascular risk",
+  "extra": "Castrate testosterone is under 50 ng/dL."
  },
  {
   "id": "prx-41",
@@ -306,5 +453,89 @@
   "front": "What are the main late side effects of prostate radiation?",
   "back": "Rectal bleeding, urethral stricture or hematuria, and erectile dysfunction",
   "extra": "Driven by rectal, bladder/urethral, and penile bulb dose. There is also a small risk of second bladder or rectal cancers."
+ },
+ {
+  "id": "prx-94",
+  "category": "Treatment Paradigms",
+  "front": "How many men on active surveillance eventually need treatment, and does waiting cost survival?",
+  "back": "About half are eventually treated, without a survival cost (ProtecT).",
+  "extra": "Surveillance uses scheduled PSA, MRI, and repeat biopsy, with curative treatment if the cancer upgrades."
+ },
+ {
+  "id": "prx-95",
+  "category": "Treatment Paradigms",
+  "front": "What did RTOG 9408 show?",
+  "back": "Short-term ADT with radiation improved survival, mainly in intermediate-risk disease.",
+  "extra": "This is the basis for 4-6 months of ADT in unfavorable intermediate risk."
+ },
+ {
+  "id": "prx-96",
+  "category": "Treatment Paradigms",
+  "front": "Which trials showed that high-risk prostate cancer needs long-term rather than short-term ADT with radiation?",
+  "back": "RTOG 9202 and EORTC 22961",
+  "extra": "Long-term ADT is about 18-36 months."
+ },
+ {
+  "id": "prx-97",
+  "category": "Treatment Paradigms",
+  "front": "Which trials showed that 60 Gy in 20 fractions and 36.25 Gy in 5 fractions are noninferior to longer courses?",
+  "back": "CHHiP (moderate hypofractionation) and PACE-B (SBRT)",
+  "extra": "PACE-B applied to low and intermediate-risk disease."
+ },
+ {
+  "id": "prx-98",
+  "category": "Treatment Paradigms",
+  "front": "What did ASCENDE-RT show about a brachytherapy boost?",
+  "back": "EBRT plus a brachy boost gave better biochemical control than dose-escalated EBRT, with more urinary toxicity and no survival difference.",
+  "extra": "Brachy needs suitable anatomy: a gland that is not too large, no big TURP defect, and good baseline urinary function."
+ },
+ {
+  "id": "prx-99",
+  "category": "Treatment Paradigms",
+  "front": "What did POP-RT show?",
+  "back": "Whole-pelvis RT improved biochemical and disease-free survival over prostate-only RT in high-risk patients with a substantial estimated nodal risk.",
+  "extra": "Risk group alone does not draw the field; the estimated nodal risk does."
+ },
+ {
+  "id": "prx-100",
+  "category": "Treatment Paradigms",
+  "front": "What did STAMPEDE show about abiraterone and about radiation to the prostate?",
+  "back": "Abiraterone added to ADT and RT improved metastasis-free and overall survival in selected high-risk nonmetastatic disease. Prostate RT improved survival in low-volume metastatic disease.",
+  "extra": "Intensification is not the next rung for everyone with high-risk disease."
+ },
+ {
+  "id": "prx-101",
+  "category": "Treatment Paradigms",
+  "front": "Why is ADT usually started 2-3 months before prostate radiation?",
+  "back": "It shrinks the gland and makes the radiation work better locally, while also treating occult disease.",
+  "extra": "GnRH agonists need an antiandrogen first to block the testosterone flare. Antagonists such as degarelix and relugolix have no flare."
+ },
+ {
+  "id": "prx-102",
+  "category": "Treatment Paradigms",
+  "front": "Which trials showed early salvage RT is as good as routine adjuvant RT after prostatectomy?",
+  "back": "RADICALS-RT, RAVES, and GETUG-AFU 17",
+  "extra": "Many men never needed radiation. Adjuvant RT is still considered for selected very high-risk pathology."
+ },
+ {
+  "id": "prx-103",
+  "category": "Treatment Paradigms",
+  "front": "When does adding ADT to salvage RT help most (RTOG 9601)?",
+  "back": "When the PSA is higher at the time of salvage. At very low PSA the benefit is small, so ADT is risk-adapted.",
+  "extra": "SPPORT showed adding pelvic nodes plus ADT improved freedom from progression."
+ },
+ {
+  "id": "prx-104",
+  "category": "Treatment Paradigms",
+  "front": "What does a short PSA doubling time after treatment suggest?",
+  "back": "A more aggressive recurrence with a higher chance of distant disease",
+  "extra": "Most recurrences show up as a rising PSA years before any scan finding."
+ },
+ {
+  "id": "prx-105",
+  "category": "Treatment Paradigms",
+  "front": "How are acute urinary symptoms during prostate radiation usually managed?",
+  "back": "With an alpha-blocker such as tamsulosin",
+  "extra": "Loose stools are managed with antidiarrheals. Toxicity adds on top of the patient's baseline function."
  }
 ]

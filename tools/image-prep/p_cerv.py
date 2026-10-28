@@ -10,4 +10,5 @@ cv2.imwrite(PREV+'_c_mask.png', ink)
 # lift the off-white paper to pure white so inpainted areas don't show as patches
 out = np.clip(out.astype(np.float32)*255/226, 0, 255).astype(np.uint8)
 out = out[40:800, 40:930]
+# Superseded 2026-10-27: the neck-level plates now use the hand-drawn src/images/headneck/hn-neck-levels.svg.
 save(pad43(out,(255,255,255)),'hn-neck-levels.jpg',grid=True)

@@ -42,6 +42,27 @@
   "extra": "Also keep the thyroid, breast, eyes, and gonads out of the field."
  },
  {
+  "id": "pal-58",
+  "category": "Background & Epidemiology",
+  "front": "Does the dose tell you the intent of a radiation course?",
+  "back": "No. Dose ranges overlap: a benign desmoid may get 50-56 Gy, a curable follicular lymphoma 24 Gy, and a palliative bone metastasis 30 Gy.",
+  "extra": "Name the intent (palliative, prophylactic, emergency, or ablative) before the dose."
+ },
+ {
+  "id": "pal-59",
+  "category": "Background & Epidemiology",
+  "front": "Which bone metastases are lytic, and why does that matter?",
+  "back": "Kidney, thyroid, myeloma, lung, and many breast cancers. Lytic lesions carry a higher fracture risk, and myeloma can be invisible on bone scan.",
+  "extra": "Mixed lesions are judged by their lytic component."
+ },
+ {
+  "id": "pal-60",
+  "category": "Background & Epidemiology",
+  "front": "What is the general rule for offering radiation for a benign condition?",
+  "back": "Alternatives first, the smallest effective dose and volume, and consent that covers the small lifetime risk of a second cancer",
+  "extra": "The risk is highest in younger patients and near the thyroid, breast, eyes, and gonads."
+ },
+ {
   "id": "pal-7",
   "category": "Workup & Prognosis",
   "front": "In palliative care, what replaces stage in deciding the plan?",
@@ -103,6 +124,41 @@
   "front": "Which pain feature in a lytic femur lesion warns of impending fracture?",
   "back": "Pain with weight bearing (functional pain)",
   "extra": "Protect weight bearing and get orthopedics involved."
+ },
+ {
+  "id": "pal-61",
+  "category": "Workup & Prognosis",
+  "front": "Do clinicians tend to overestimate or underestimate survival in palliative patients, and why does it matter?",
+  "back": "They overestimate it, which can lead to radiation courses longer than the patient's remaining time.",
+  "extra": "Pain relief takes 1-2 weeks or more to start, so very short survival may not leave time to benefit."
+ },
+ {
+  "id": "pal-62",
+  "category": "Workup & Prognosis",
+  "front": "What three factors make up the Chow survival model for palliative radiation patients?",
+  "back": "Non-breast primary, metastases beyond bone, and KPS 60 or less",
+  "extra": "More risk factors mean shorter median survival, from over a year with 0-1 factors to about 2 months with all 3."
+ },
+ {
+  "id": "pal-63",
+  "category": "Workup & Prognosis",
+  "front": "How is biologic bone pain different from mechanical pain, and what does each usually need?",
+  "back": "Biologic pain is steady, often worse at night, and better with steroids, and usually responds to radiation. Mechanical pain comes with movement or loading and needs imaging and a surgical opinion.",
+  "extra": "Radiation treats tumor, but it does not restore mechanical stability."
+ },
+ {
+  "id": "pal-64",
+  "category": "Workup & Prognosis",
+  "front": "When does a bone lesion in a palliative patient need a biopsy?",
+  "back": "When there is no known cancer, it would be the first metastasis, it is solitary after a long disease-free interval, or a second cancer, lymphoma, myeloma, or infection is possible",
+  "extra": "Lymphoma and myeloma change the plan because they are very radiosensitive and often treated with drugs first."
+ },
+ {
+  "id": "pal-65",
+  "category": "Workup & Prognosis",
+  "front": "Before re-irradiating a palliative site, what must you get?",
+  "back": "The old radiation plan, to find the previous dose to the spinal cord and other limiting organs",
+  "extra": "Re-irradiation is often possible, especially with conventional palliative doses or SBRT."
  },
  {
   "id": "pal-57",
@@ -189,6 +245,69 @@
   "extra": "An alpha emitter that behaves like calcium. Strontium-89 and samarium-153 relieve pain only."
  },
  {
+  "id": "pal-66",
+  "category": "Palliative Radiation",
+  "front": "What did RTOG 9714 show for breast and prostate bone metastases?",
+  "back": "8 Gy in 1 matched 30 Gy in 10 for pain and narcotic relief at 3 months, with less acute toxicity and more retreatment (18% vs 9%).",
+  "extra": "The Dutch Bone Metastasis Study found the same pattern versus 24 Gy in 6."
+ },
+ {
+  "id": "pal-67",
+  "category": "Palliative Radiation",
+  "front": "What did RTOG 0631 show about single-fraction spine SBRT?",
+  "back": "16-18 Gy did not beat 8 Gy in 1 for pain at 3 months; pain response was actually higher with 8 Gy.",
+  "extra": "SC.24 (24 Gy in 2 vs 20 Gy in 5) went the other way, so higher dose is not automatically better pain relief."
+ },
+ {
+  "id": "pal-68",
+  "category": "Palliative Radiation",
+  "front": "When is SBRT, rather than conventional RT, considered for a bone or spine metastasis?",
+  "back": "When durable local control matters: a good prognosis, a radioresistant tumor (kidney, melanoma, sarcoma), oligometastatic disease, or re-irradiation",
+  "extra": "The main risk of spine SBRT is vertebral compression fracture."
+ },
+ {
+  "id": "pal-69",
+  "category": "Palliative Radiation",
+  "front": "Which palliative regimen is often chosen after surgical fixation of a long-bone metastasis in a patient expected to live years?",
+  "back": "A multifraction course (for example 20 Gy in 5 or 30 Gy in 10) covering the hardware",
+  "extra": "A longer course is also favored for a large soft tissue mass."
+ },
+ {
+  "id": "pal-70",
+  "category": "Palliative Radiation",
+  "front": "What did ORIOLE and STOMP show for oligorecurrent prostate cancer?",
+  "back": "ORIOLE: SBRT lowered progression at 6 months compared with observation. STOMP: metastasis-directed therapy lengthened ADT-free survival.",
+  "extra": "Both were randomized phase II trials."
+ },
+ {
+  "id": "pal-71",
+  "category": "Palliative Radiation",
+  "front": "What did NRG-BR002 show?",
+  "back": "Adding ablation (mostly SBRT) to first-line systemic therapy for oligometastatic breast cancer did not improve progression-free or overall survival.",
+  "extra": "The benefit of treating oligometastases is not universal across cancers."
+ },
+ {
+  "id": "pal-72",
+  "category": "Palliative Radiation",
+  "front": "What palliative regimens are used for airway obstruction or hemoptysis from lung cancer?",
+  "back": "17 Gy in 2 (a week apart), 20 Gy in 5, or 30 Gy in 10, with 10 Gy in 1 for poor performance status",
+  "extra": "Bronchoscopic debulking or a stent is faster when the airway is critical."
+ },
+ {
+  "id": "pal-73",
+  "category": "Palliative Radiation",
+  "front": "Which radiopharmaceutical improved survival in PSMA-positive metastatic castration-resistant prostate cancer?",
+  "back": "Lutetium-177 PSMA-617 (VISION)",
+  "extra": "Lutetium-177 dotatate (NETTER-1) improved progression-free survival in midgut neuroendocrine tumors."
+ },
+ {
+  "id": "pal-74",
+  "category": "Palliative Radiation",
+  "front": "For a patient in the last weeks of life with a painful metastasis, what radiation approach fits?",
+  "back": "One fraction or none, with palliative care and hospice involved",
+  "extra": "A short course should not delay hospice enrollment."
+ },
+ {
   "id": "pal-27",
   "category": "Oncologic Emergencies",
   "front": "What are the first two orders for suspected metastatic spinal cord compression?",
@@ -245,6 +364,55 @@
   "extra": "Usually a multifraction course (20 Gy in 5 or 30 Gy in 10); improves function and lowers repeat surgery."
  },
  {
+  "id": "pal-75",
+  "category": "Oncologic Emergencies",
+  "front": "In SVC syndrome, what relieves symptoms fastest when the patient is severely symptomatic?",
+  "back": "Endovascular stenting, which works within hours to a couple of days",
+  "extra": "Radiation usually takes 1-2 weeks or more to help."
+ },
+ {
+  "id": "pal-76",
+  "category": "Oncologic Emergencies",
+  "front": "Why should a stable patient with SVC syndrome not be radiated before a biopsy?",
+  "back": "Radiation can make the pathology unreadable, and small cell lung cancer, lymphoma, and germ cell tumors are treated with systemic therapy first.",
+  "extra": "Collateral veins develop over weeks, so most patients are not in immediate danger."
+ },
+ {
+  "id": "pal-77",
+  "category": "Oncologic Emergencies",
+  "front": "What is the usual dexamethasone dose for suspected cord compression?",
+  "back": "Commonly 16 mg a day, often after a 10 mg IV load",
+  "extra": "If lymphoma is possible and the patient is neurologically stable, discuss steroids first, because they can make a biopsy nondiagnostic."
+ },
+ {
+  "id": "pal-78",
+  "category": "Oncologic Emergencies",
+  "front": "Which patients were excluded from the Patchell trial?",
+  "back": "Patients with radiosensitive tumors (lymphoma, leukemia, myeloma, germ cell tumors) and those paraplegic for more than 48 hours",
+  "extra": "Patchell studied compression from one area of a non-radiosensitive tumor."
+ },
+ {
+  "id": "pal-79",
+  "category": "Oncologic Emergencies",
+  "front": "A patient with myeloma has cord compression and can still walk. Surgery or radiation?",
+  "back": "Usually radiation, because myeloma is highly radiosensitive",
+  "extra": "Surgery is reserved for instability or bone fragments in the canal."
+ },
+ {
+  "id": "pal-80",
+  "category": "Oncologic Emergencies",
+  "front": "What does a conventional radiation field for cord compression usually cover?",
+  "back": "The involved vertebrae plus about one vertebral body above and below, and any paraspinal mass",
+  "extra": "After surgery, the field covers the operated levels and the hardware."
+ },
+ {
+  "id": "pal-81",
+  "category": "Oncologic Emergencies",
+  "front": "Which symptom of cord compression usually comes first, and which is a late sign?",
+  "back": "Back pain comes first, often for weeks. Bladder or bowel dysfunction is a late sign.",
+  "extra": "New or worsening back pain in a cancer patient deserves a careful neurologic exam and a low threshold for MRI."
+ },
+ {
   "id": "pal-35",
   "category": "Benign Disease",
   "front": "What dose range is used for painful osteoarthritis or plantar fasciitis?",
@@ -292,6 +460,41 @@
   "front": "Why must gynecomastia radiation be given before antiandrogen therapy starts?",
   "back": "Once breast tissue has grown and become fibrotic, radiation works poorly",
   "extra": "A single 10-12 Gy with electrons. In a head-to-head trial, tamoxifen prevented gynecomastia more effectively than radiation."
+ },
+ {
+  "id": "pal-82",
+  "category": "Benign Disease",
+  "front": "Why must radiation for heterotopic ossification be given around the time of surgery?",
+  "back": "It acts on precursor cells before they become bone-forming cells. Once bone has formed, radiation cannot remove it.",
+  "extra": "NSAIDs such as indomethacin are the main alternative."
+ },
+ {
+  "id": "pal-83",
+  "category": "Benign Disease",
+  "front": "What did the sham-controlled Dutch trials show about low-dose radiation for osteoarthritis?",
+  "back": "6 × 1 Gy was no better than sham radiation for pain or function in knee and hand osteoarthritis.",
+  "extra": "The placebo effect in joint pain is large, so low-dose RT for osteoarthritis is contested."
+ },
+ {
+  "id": "pal-84",
+  "category": "Benign Disease",
+  "front": "Which works better to prevent gynecomastia from antiandrogen therapy: tamoxifen or radiation?",
+  "back": "Tamoxifen. Radiation is mainly for men who cannot take tamoxifen.",
+  "extra": "A single 10-12 Gy to each breast bud before the drug starts still reduces gynecomastia."
+ },
+ {
+  "id": "pal-85",
+  "category": "Benign Disease",
+  "front": "What is the simple bedside test for whether Dupuytren disease is early enough for radiation?",
+  "back": "The tabletop test: the patient can still lay the hand flat on a table.",
+  "extra": "A typical regimen is about 30 Gy in two courses of 5 × 3 Gy, 6-12 weeks apart."
+ },
+ {
+  "id": "pal-86",
+  "category": "Benign Disease",
+  "front": "When is radiation used for a desmoid tumor, and how fast does it respond?",
+  "back": "For progressive or symptomatic disease when surgery would be morbid, at about 50-56 Gy. Response is slow, sometimes over years.",
+  "extra": "Active surveillance or systemic therapy usually comes first."
  },
  {
   "id": "pal-42",
@@ -350,6 +553,41 @@
   "extra": "Stopped early (death or stroke 10% vs 31%, mean follow-up about 33 months). Debated because of short follow-up and mixed interventions, but it made observation a real option for unruptured AVMs."
  },
  {
+  "id": "pal-87",
+  "category": "Functional & Vascular Radiosurgery",
+  "front": "What usually causes trigeminal neuralgia, and what features suggest a secondary cause?",
+  "back": "A blood vessel (most often the superior cerebellar artery) pressing on the nerve near the pons. Young age, bilateral symptoms, or sensory loss suggest MS or a tumor.",
+  "extra": "MRI with thin-slice sequences excludes a tumor or MS and looks for the compressing vessel."
+ },
+ {
+  "id": "pal-88",
+  "category": "Functional & Vascular Radiosurgery",
+  "front": "Which trigeminal neuralgia patients are best suited to radiosurgery rather than microvascular decompression?",
+  "back": "Older or medically frail patients, those on anticoagulants, or those whose other procedures failed",
+  "extra": "Microvascular decompression gives the most durable relief but needs a craniotomy."
+ },
+ {
+  "id": "pal-89",
+  "category": "Functional & Vascular Radiosurgery",
+  "front": "How quickly does trigeminal neuralgia radiosurgery work, and how durable is it?",
+  "back": "Initial relief in about 80% at a median of about a month. About 4 in 10 later have pain return (median about 3.5 years), and repeat SRS is possible.",
+  "extra": "New facial numbness appears months later in roughly a quarter of patients."
+ },
+ {
+  "id": "pal-90",
+  "category": "Functional & Vascular Radiosurgery",
+  "front": "What is the annual bleeding risk of a brain AVM, and what raises it?",
+  "back": "Roughly 2-4% per year, higher after a prior bleed, with deep location, deep venous drainage, or an associated aneurysm",
+  "extra": "Hemorrhage is the most common presentation, usually in a young adult."
+ },
+ {
+  "id": "pal-91",
+  "category": "Functional & Vascular Radiosurgery",
+  "front": "Which AVMs are the classic radiosurgery patients?",
+  "back": "Small AVMs (often under about 3 cm) in deep or eloquent brain",
+  "extra": "Low-grade (I-II) AVMs often go to surgery, which closes them immediately. High grades (IV-V) are often observed."
+ },
+ {
   "id": "pal-50",
   "category": "Other Sites in Brief",
   "front": "What dose of ISRT is used after short chemotherapy for favorable early Hodgkin lymphoma?",
@@ -397,5 +635,47 @@
   "front": "What is the main dose-limiting organ in total body irradiation?",
   "back": "The lungs (pneumonitis)",
   "extra": "Myeloablative TBI: about 12-13.2 Gy in 6-8 twice-daily fractions before allogeneic transplant."
+ },
+ {
+  "id": "pal-92",
+  "category": "Other Sites in Brief",
+  "front": "What did the FORT trial show for indolent lymphoma?",
+  "back": "24 Gy controlled follicular lymphoma better than 4 Gy.",
+  "extra": "4 Gy in 2 (\"boom-boom\") is still a useful palliative regimen for indolent lymphoma."
+ },
+ {
+  "id": "pal-93",
+  "category": "Other Sites in Brief",
+  "front": "Why did lymphoma radiation fields shrink from mantle fields to involved-site RT?",
+  "back": "Young women treated with mantle fields had high rates of breast cancer, heart disease, and hypothyroidism decades later.",
+  "extra": "ISRT treats only the originally involved sites."
+ },
+ {
+  "id": "pal-94",
+  "category": "Other Sites in Brief",
+  "front": "When is adjuvant radiation considered after surgery for cutaneous squamous cell carcinoma?",
+  "back": "Perineural invasion of a named or large nerve, positive margins that cannot be re-excised, or nodal disease",
+  "extra": "Merkel cell carcinoma is aggressive and very radiosensitive, and many patients get RT to the tumor bed after excision."
+ },
+ {
+  "id": "pal-95",
+  "category": "Other Sites in Brief",
+  "front": "What is the most common pattern for solitary bone plasmacytoma after definitive radiation?",
+  "back": "The lesion is controlled in most patients, but many later progress to multiple myeloma.",
+  "extra": "Myeloma itself needs only low palliative doses, with small fields to protect marrow."
+ },
+ {
+  "id": "pal-96",
+  "category": "Other Sites in Brief",
+  "front": "How is stage I seminoma usually managed, and what radiation dose is used if RT is chosen?",
+  "back": "Surveillance is preferred for most. Para-aortic RT (20 Gy) or single-dose carboplatin are alternatives.",
+  "extra": "MRC TE18 showed 20 Gy matched 30 Gy."
+ },
+ {
+  "id": "pal-97",
+  "category": "Other Sites in Brief",
+  "front": "What did BC2001 show for bladder cancer?",
+  "back": "Adding chemotherapy to radiation improved locoregional control.",
+  "extra": "Trimodality therapy (maximal TURBT then chemoradiation) is a bladder-sparing alternative to cystectomy in selected patients."
  }
 ]

@@ -35,6 +35,41 @@
   "extra": "For adult diffuse gliomas, IDH and 1p/19q status are the foundation of the integrated diagnosis."
  },
  {
+  "id": "cnsx-70",
+  "category": "Tumor Biology & Risk Factors",
+  "front": "Which brain tumors are associated with prior cranial radiation, and how long after?",
+  "back": "Meningioma most, then glioma, often decades later",
+  "extra": "Ionizing radiation is the only established environmental cause of brain tumors."
+ },
+ {
+  "id": "cnsx-71",
+  "category": "Tumor Biology & Risk Factors",
+  "front": "Which CNS tumors point to NF2?",
+  "back": "Bilateral vestibular schwannomas, meningiomas, and spinal ependymomas",
+  "extra": "NF1 points to optic pathway gliomas. Von Hippel-Lindau points to hemangioblastomas."
+ },
+ {
+  "id": "cnsx-72",
+  "category": "Tumor Biology & Risk Factors",
+  "front": "Which brain metastases tend to bleed?",
+  "back": "Melanoma, renal cell carcinoma, choriocarcinoma, and thyroid cancer",
+  "extra": "Blood shows as dark signal on SWI or GRE MRI."
+ },
+ {
+  "id": "cnsx-73",
+  "category": "Tumor Biology & Risk Factors",
+  "front": "What is the most common malignant pediatric brain tumor, and why does it need craniospinal radiation?",
+  "back": "Medulloblastoma. It spreads through the CSF, so the whole brain and spine are at risk.",
+  "extra": "Most pediatric brain tumors arise in the posterior fossa. Pilocytic astrocytoma is the most common pediatric glioma and is often cured by surgery."
+ },
+ {
+  "id": "cnsx-74",
+  "category": "Tumor Biology & Risk Factors",
+  "front": "Which presentation is typical of a lower-grade glioma?",
+  "back": "A seizure in a younger adult",
+  "extra": "Morning headache with nausea suggests raised intracranial pressure from mass effect or hydrocephalus."
+ },
+ {
   "id": "cnsx-10",
   "category": "Neuroanatomy",
   "front": "A patient has bitemporal hemianopia. Where is the lesion, and what is the classic cause?",
@@ -54,6 +89,48 @@
   "front": "Why do posterior fossa tumors often cause hydrocephalus?",
   "back": "They block CSF outflow at the fourth ventricle or cerebral aqueduct, causing obstructive hydrocephalus.",
   "extra": "Headache, vomiting, papilledema. It needs a shunt or ventriculostomy before RT. Most adult brain tumors are supratentorial; most childhood tumors are infratentorial (posterior fossa)."
+ },
+ {
+  "id": "cnsx-75",
+  "category": "Neuroanatomy",
+  "front": "What does a cerebellar lesion cause, and on which side?",
+  "back": "Ataxia on the same side as the lesion",
+  "extra": "The cerebrum controls the opposite side of the body. Brainstem lesions cause crossed signs (cranial nerve palsy plus contralateral weakness)."
+ },
+ {
+  "id": "cnsx-76",
+  "category": "Neuroanatomy",
+  "front": "Why does hippocampal-avoidance whole-brain RT spare the hippocampus?",
+  "back": "The hippocampus forms new memories, so sparing it protects memory.",
+  "extra": "It sits on the inner surface of the temporal lobe."
+ },
+ {
+  "id": "cnsx-77",
+  "category": "Neuroanatomy",
+  "front": "A tumor crosses the corpus callosum. What two diagnoses should you think of?",
+  "back": "Glioblastoma or lymphoma",
+  "extra": "The \"butterfly\" pattern of glioblastoma crosses the corpus callosum."
+ },
+ {
+  "id": "cnsx-78",
+  "category": "Neuroanatomy",
+  "front": "Which tumors live in the cavernous sinus, and which nerves are at risk there?",
+  "back": "Meningiomas and invasive pituitary adenomas. CN III, IV, V1, V2, and VI run through it, with the internal carotid.",
+  "extra": "Injury causes double vision and facial numbness."
+ },
+ {
+  "id": "cnsx-79",
+  "category": "Neuroanatomy",
+  "front": "Where does the spinal cord end, and where does the thecal sac end?",
+  "back": "The cord ends at L1-L2 (conus medullaris). The thecal sac ends around S2.",
+  "extra": "The bottom of the thecal sac sets the bottom of a craniospinal field."
+ },
+ {
+  "id": "cnsx-80",
+  "category": "Neuroanatomy",
+  "front": "Where do most spine metastases start, and how do they compress the cord?",
+  "back": "In the vertebral body, then they grow back into the epidural space and press on the cord.",
+  "extra": "Multiple levels are common, which is why the whole spine is imaged."
  },
  {
   "id": "cnsx-19",
@@ -96,6 +173,48 @@
   "front": "Months to years after SRS or high-dose brain RT, a lesion enlarges. What is the key imaging dilemma?",
   "back": "Telling radiation necrosis (treatment effect) from recurrent tumor, since both enhance; advanced imaging such as perfusion MRI, or tissue, helps sort it out.",
   "extra": "Necrosis has low blood volume (rCBV) on perfusion; tumor has high rCBV. Spectroscopy and amino-acid PET also help. Necrosis is treated with steroids, bevacizumab, or laser ablation."
+ },
+ {
+  "id": "cnsx-81",
+  "category": "Imaging",
+  "front": "On DWI/ADC, how do an abscess and a necrotic tumor differ?",
+  "back": "An abscess restricts diffusion centrally (bright DWI, dark ADC). A necrotic tumor usually does not.",
+  "extra": "Dense tumors such as lymphoma and medulloblastoma also restrict diffusion but enhance solidly."
+ },
+ {
+  "id": "cnsx-82",
+  "category": "Imaging",
+  "front": "What MRI sign suggests an IDH-mutant astrocytoma, and what CT finding suggests an oligodendroglioma?",
+  "back": "T2-FLAIR mismatch suggests IDH-mutant astrocytoma. Calcification on CT suggests oligodendroglioma.",
+  "extra": "Lower-grade gliomas are usually non-enhancing and FLAIR-bright, with little edema."
+ },
+ {
+  "id": "cnsx-83",
+  "category": "Imaging",
+  "front": "What MRI is needed before SRS for brain metastases, and why?",
+  "back": "A thin-slice (1-1.5 mm) contrast MRI within about 1-2 weeks of treatment, because it finds more lesions than routine MRI and metastases keep growing.",
+  "extra": "Count every lesion and note the largest and the total volume."
+ },
+ {
+  "id": "cnsx-84",
+  "category": "Imaging",
+  "front": "When should the postoperative MRI be done after glioma surgery, and why?",
+  "back": "Within about 48-72 hours, to judge the extent of resection before postoperative changes set in",
+  "extra": "That MRI is fused to the planning CT to draw the target."
+ },
+ {
+  "id": "cnsx-85",
+  "category": "Imaging",
+  "front": "Which advanced imaging findings favor tumor over radiation necrosis?",
+  "back": "High blood volume (rCBV) on perfusion MRI, a high choline-to-NAA ratio on spectroscopy, and uptake on amino-acid PET",
+  "extra": "None is perfect, and mixed tumor and necrosis is common."
+ },
+ {
+  "id": "cnsx-86",
+  "category": "Imaging",
+  "front": "What is the classic MRI appearance of a vestibular schwannoma?",
+  "back": "An \"ice cream cone\" mass that widens the internal auditory canal and fills the cerebellopontine angle",
+  "extra": "Cystic change appears when large."
  },
  {
   "id": "cnsx-28",
@@ -145,6 +264,48 @@
   "front": "In spine metastases, what does the SINS score assess?",
   "back": "Mechanical stability of the spine",
   "extra": "A potentially unstable or unstable spine (SINS 7 or higher) needs a surgical consult. Bilsky grades epidural cord compression."
+ },
+ {
+  "id": "cnsx-87",
+  "category": "Workup & Decision-Making",
+  "front": "What is the strongest favorable prognostic factor in gliomas?",
+  "back": "IDH mutation",
+  "extra": "Oligodendrogliomas (IDH-mutant, 1p/19q codeleted) have the best prognosis and are very chemo-sensitive."
+ },
+ {
+  "id": "cnsx-88",
+  "category": "Workup & Decision-Making",
+  "front": "Can a glioma that looks low grade on histology still be glioblastoma?",
+  "back": "Yes. An IDH-wildtype astrocytic tumor with a TERT promoter mutation, EGFR amplification, or chromosome +7/-10 is glioblastoma on molecular grounds.",
+  "extra": "Histologically, necrosis or microvascular proliferation makes it grade 4."
+ },
+ {
+  "id": "cnsx-89",
+  "category": "Workup & Decision-Making",
+  "front": "An IDH-mutant astrocytoma has CDKN2A/B homozygous deletion. What is the diagnosis?",
+  "back": "Astrocytoma, IDH-mutant, WHO grade 4. It is not called glioblastoma.",
+  "extra": "Glioblastoma is reserved for IDH-wildtype tumors."
+ },
+ {
+  "id": "cnsx-90",
+  "category": "Workup & Decision-Making",
+  "front": "What does the Bilsky grade measure in spine metastases?",
+  "back": "Epidural compression of the spinal cord: low grade (no cord compression) vs high grade (the cord is compressed)",
+  "extra": "Grades 2-3 compress the cord. SINS separately measures stability."
+ },
+ {
+  "id": "cnsx-91",
+  "category": "Workup & Decision-Making",
+  "front": "Which spine metastases respond well to conventional radiation, and which are relatively radioresistant?",
+  "back": "Responsive: lymphoma, myeloma, breast, and prostate cancer. Radioresistant: renal cell, melanoma, and sarcoma.",
+  "extra": "Radioresistant tumors are often considered for SBRT."
+ },
+ {
+  "id": "cnsx-92",
+  "category": "Workup & Decision-Making",
+  "front": "What extra workup does a vestibular schwannoma need, and what does a sellar tumor need?",
+  "back": "Vestibular schwannoma: an audiogram. Sellar tumor: visual fields and pituitary hormone testing.",
+  "extra": "Primary CNS lymphoma adds a slit-lamp eye exam, CSF cytology, and an HIV test."
  },
  {
   "id": "cnsx-61",
@@ -259,6 +420,62 @@
   "extra": "Not a universal rule. Symptomatic brain metastases should not wait for local therapy."
  },
  {
+  "id": "cnsx-93",
+  "category": "Treatment Paradigms",
+  "front": "What did the Mahajan and N107C trials establish after brain metastasis resection?",
+  "back": "Cavity SRS improved local control over observation (Mahajan) and preserved cognition better than whole-brain RT (N107C), making it the standard.",
+  "extra": "Larger cavities are often treated in 3-5 fractions."
+ },
+ {
+  "id": "cnsx-94",
+  "category": "Treatment Paradigms",
+  "front": "What did NRG CC001 show?",
+  "back": "When whole-brain RT is needed, hippocampal avoidance plus memantine protects memory better than whole-brain RT plus memantine.",
+  "extra": "The usual WBRT dose is 30 Gy in 10 fractions."
+ },
+ {
+  "id": "cnsx-95",
+  "category": "Treatment Paradigms",
+  "front": "What did the JLGK0901 study show about SRS?",
+  "back": "Selected patients with 5-10 small metastases did as well after SRS as those with 2-4, so SRS is not limited to a fixed lesion count.",
+  "extra": "Total volume, size, location, and prognosis matter as much as the count."
+ },
+ {
+  "id": "cnsx-96",
+  "category": "Treatment Paradigms",
+  "front": "What is the main late risk of SRS for brain metastases?",
+  "back": "Radionecrosis, which is more likely with larger lesions",
+  "extra": "Normal brain V12 (volume receiving 12 Gy) predicts radionecrosis."
+ },
+ {
+  "id": "cnsx-97",
+  "category": "Treatment Paradigms",
+  "front": "What is the standard glioblastoma radiation dose, and what are the shorter options for older patients?",
+  "back": "60 Gy in 30 fractions. Older or frail patients: 40 Gy in 15 (with temozolomide, Perry) or 25 Gy in 5 (Roa).",
+  "extra": "Very frail patients with MGMT-methylated tumors may get temozolomide alone."
+ },
+ {
+  "id": "cnsx-98",
+  "category": "Treatment Paradigms",
+  "front": "What did RTOG 9802 show?",
+  "back": "Adding PCV chemotherapy to radiation for high-risk grade 2 glioma substantially improved overall survival.",
+  "extra": "Long-term median survival was about 13 vs 8 years."
+ },
+ {
+  "id": "cnsx-99",
+  "category": "Treatment Paradigms",
+  "front": "What does vorasidenib do for IDH-mutant grade 2 gliomas (INDIGO)?",
+  "back": "It delayed progression in selected patients with residual or recurrent disease, postponing radiation and chemotherapy.",
+  "extra": "It is an IDH inhibitor."
+ },
+ {
+  "id": "cnsx-100",
+  "category": "Treatment Paradigms",
+  "front": "What is the first-line treatment for a prolactinoma, even when it is large?",
+  "back": "Cabergoline (a dopamine agonist)",
+  "extra": "Other pituitary adenomas go to transsphenoidal surgery, with RT for residual or recurrent tumor."
+ },
+ {
   "id": "cnsx-56",
   "category": "Radiation Planning & Toxicity",
   "front": "Which tumors need craniospinal irradiation, and why?",
@@ -292,5 +509,40 @@
   "front": "What is the first-line treatment for symptomatic radionecrosis?",
   "back": "Corticosteroids",
   "extra": "Then bevacizumab, laser ablation, or surgery if needed. Radionecrosis can look identical to recurrence on MRI."
+ },
+ {
+  "id": "cnsx-101",
+  "category": "Radiation Planning & Toxicity",
+  "front": "Why is a meningioma touching the optic chiasm treated over several weeks instead of with single-fraction SRS?",
+  "back": "Fractionation lets the nearby nerve repair between treatments, so the chiasm can tolerate the course.",
+  "extra": "Single-fraction chiasm limits are low (max about 8-10 Gy), while fractionated limits are about 54 Gy."
+ },
+ {
+  "id": "cnsx-102",
+  "category": "Radiation Planning & Toxicity",
+  "front": "What is the glioblastoma CTV, and where is it trimmed?",
+  "back": "The GTV plus about 1.5-2 cm for infiltrating cells, trimmed at anatomic barriers (skull, falx, tentorium, ventricles)",
+  "extra": "Lower-grade gliomas use the T2/FLAIR abnormality as the GTV with a smaller CTV margin."
+ },
+ {
+  "id": "cnsx-103",
+  "category": "Radiation Planning & Toxicity",
+  "front": "What is the cochlea dose goal for vestibular schwannoma SRS, and what is the usual marginal dose?",
+  "back": "A mean cochlea dose of often 4 Gy or less, with a marginal dose of 12-13 Gy",
+  "extra": "Lower cochlea dose is associated with better hearing preservation."
+ },
+ {
+  "id": "cnsx-104",
+  "category": "Radiation Planning & Toxicity",
+  "front": "What early side effect follows whole-brain radiation by weeks to months?",
+  "back": "Somnolence and fatigue",
+  "extra": "Late effects include cognitive decline and memory loss, which hippocampal avoidance and memantine help reduce."
+ },
+ {
+  "id": "cnsx-105",
+  "category": "Radiation Planning & Toxicity",
+  "front": "What is the main late effect of radiation for a sellar tumor?",
+  "back": "Hypopituitarism, which needs lifelong endocrine follow-up",
+  "extra": "Hormone levels after RT for a functioning adenoma also fall slowly, over years."
  }
 ]

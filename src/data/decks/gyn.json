@@ -35,6 +35,41 @@
   "extra": "Lynch carries a 30-60% lifetime endometrial cancer risk. A young patient with a family history of colon cancer is the classic case."
  },
  {
+  "id": "gynx-65",
+  "category": "Epidemiology & Risk Factors",
+  "front": "Why do women who received the HPV vaccine still need cervical cancer screening?",
+  "back": "The vaccine prevents new infections but does not clear existing ones, and it does not cover every cancer-causing type.",
+  "extra": "Screening uses cytology and/or HPV testing to find precancer before it becomes cancer."
+ },
+ {
+  "id": "gynx-66",
+  "category": "Epidemiology & Risk Factors",
+  "front": "How do serous and p53-abnormal endometrial cancers differ from endometrioid cancer?",
+  "back": "They are not estrogen-driven, occur in older and often thinner patients, spread early (peritoneum), and carry a poor prognosis even when confined to the uterus.",
+  "extra": "They often need more aggressive adjuvant therapy (chemotherapy ± RT)."
+ },
+ {
+  "id": "gynx-67",
+  "category": "Epidemiology & Risk Factors",
+  "front": "Which endometrial molecular group has a very low recurrence risk even when high grade?",
+  "back": "POLE-mutated tumors",
+  "extra": "They are candidates for de-escalation of adjuvant therapy. p53-abnormal tumors are the most aggressive."
+ },
+ {
+  "id": "gynx-68",
+  "category": "Epidemiology & Risk Factors",
+  "front": "What are the two pathways to vulvar squamous cell carcinoma, and which has the worse prognosis?",
+  "back": "HPV-associated (younger women, usual-type VIN) and HPV-independent (older women, arising in lichen sclerosus). The HPV-independent, p53-mutated type has the worse prognosis.",
+  "extra": "Biopsy any persistent vulvar lesion, because many are treated for months as irritation."
+ },
+ {
+  "id": "gynx-69",
+  "category": "Epidemiology & Risk Factors",
+  "front": "How does tamoxifen affect endometrial cancer risk, and why?",
+  "back": "It raises the risk, because tamoxifen acts as an estrogen agonist in the uterus.",
+  "extra": "Combined oral contraceptives, a progestin IUD, and pregnancy are protective."
+ },
+ {
   "id": "gynx-11",
   "category": "Anatomy & Lymphatics",
   "front": "Why can a cervical cancer that grows sideways cause hydronephrosis?",
@@ -70,6 +105,41 @@
   "extra": "The cuff is the sewn-closed top of the vagina after hysterectomy."
  },
  {
+  "id": "gynx-70",
+  "category": "Anatomy & Lymphatics",
+  "front": "Where does nearly every cervical cancer start, and why are most of them squamous?",
+  "back": "The transformation zone, where the glandular cells of the canal meet the squamous cells of the outer cervix. HPV damages these squamous cells.",
+  "extra": "A minority of cervical cancers are adenocarcinomas from the glandular canal."
+ },
+ {
+  "id": "gynx-71",
+  "category": "Anatomy & Lymphatics",
+  "front": "What is the parametrium, and what runs through it?",
+  "back": "The fatty tissue around the cardinal ligament, between the cervix and the pelvic side wall. It carries the uterine artery, the ureter, and lymphatics.",
+  "extra": "Cervical cancer grows sideways into the parametria, which is why the rectovaginal exam and MRI focus there."
+ },
+ {
+  "id": "gynx-72",
+  "category": "Anatomy & Lymphatics",
+  "front": "How can an endometrial cancer reach the para-aortic nodes without passing through the pelvic nodes?",
+  "back": "From the fundus, directly along the ovarian vessels",
+  "extra": "Endometrial cancer otherwise drains to the pelvic nodes like the cervix."
+ },
+ {
+  "id": "gynx-73",
+  "category": "Anatomy & Lymphatics",
+  "front": "Which normal organ most often limits the cervical brachytherapy dose, and which is easy to forget?",
+  "back": "The rectum most often limits the dose. The sigmoid is easy to forget because it can loop over the tip of the tandem.",
+  "extra": "The bladder also receives dose from both EBRT and brachytherapy."
+ },
+ {
+  "id": "gynx-74",
+  "category": "Anatomy & Lymphatics",
+  "front": "Why does a midline vulvar cancer need both groins evaluated?",
+  "back": "Lymph from midline structures (clitoris, perineal body) drains to both groins.",
+  "extra": "A lesion 2 cm or more from the midline drains mainly to the same-side groin."
+ },
+ {
   "id": "gynx-19",
   "category": "Imaging",
   "front": "Which imaging tests stage cervical cancer locally vs for nodes and distant disease?",
@@ -89,6 +159,41 @@
   "front": "In cervical cancer, what PET/CT finding usually extends the radiation field above the pelvis?",
   "back": "Para-aortic (or high-risk common iliac) nodal uptake, which leads to an extended field covering the para-aortic chain",
   "extra": "PET changes the radiation map: a PET-positive pelvic node gets a boost, and distant disease can change the treatment intent."
+ },
+ {
+  "id": "gynx-75",
+  "category": "Imaging",
+  "front": "What does the HR-CTV represent in cervical brachytherapy, and why is it imaged at each insertion?",
+  "back": "The whole cervix plus any residual tumor at the time of brachytherapy. The tumor shrinks during EBRT, so the target is redrawn on MRI or CT with each applicator placement.",
+  "extra": "A common goal is HR-CTV D90 of at least 85 Gy EQD2 (EBRT plus brachy combined)."
+ },
+ {
+  "id": "gynx-76",
+  "category": "Imaging",
+  "front": "What is point A in cervical brachytherapy?",
+  "back": "The historical prescription point, 2 cm up and 2 cm lateral along the tandem, near where the ureter crosses under the uterine artery",
+  "extra": "Modern image-guided brachytherapy prescribes to the HR-CTV, but point A is still reported for comparison."
+ },
+ {
+  "id": "gynx-77",
+  "category": "Imaging",
+  "front": "On MRI of endometrial cancer, which two findings matter most?",
+  "back": "Depth of myometrial invasion (less than half vs half or more) and whether the cervical stroma is involved",
+  "extra": "MRI is the main staging tool for medically inoperable patients who get definitive RT."
+ },
+ {
+  "id": "gynx-78",
+  "category": "Imaging",
+  "front": "What does a post-treatment PET a few months after cervical chemoradiation tell you?",
+  "back": "Whether the response is complete, which is a strong sign of a good outcome",
+  "extra": "Persistent uptake raises concern for residual disease."
+ },
+ {
+  "id": "gynx-79",
+  "category": "Imaging",
+  "front": "Why is IMRT standard for pelvic GYN radiation?",
+  "back": "It lowers dose to the bowel and bone marrow compared with 3D treatment.",
+  "extra": "RTOG 1203 (TIME-C) showed less GI and urinary toxicity with IMRT after hysterectomy."
  },
  {
   "id": "gynx-64",
@@ -152,6 +257,55 @@
   "front": "Why does endometrial cancer molecular class matter for adjuvant therapy?",
   "back": "It modifies the recurrence risk: POLE-mutated tumors are candidates for de-escalation, and p53-abnormal tumors for escalation.",
   "extra": "The other two groups are MMR-deficient (Lynch screening, immunotherapy-responsive) and no specific profile. FIGO 2023 downstages POLE-mutated and upstages p53-abnormal early tumors."
+ },
+ {
+  "id": "gynx-80",
+  "category": "Workup & Staging",
+  "front": "What depth cutoffs divide cervical cancer stage IA1 and IA2?",
+  "back": "IA1 = invasion under 3 mm. IA2 = 3 to under 5 mm. Deeper than 5 mm (or visible) is IB.",
+  "extra": "IA1 without LVSI needs only a cone or simple hysterectomy."
+ },
+ {
+  "id": "gynx-81",
+  "category": "Workup & Staging",
+  "front": "In cervical cancer, what stage is involvement of the lower third of the vagina?",
+  "back": "IIIA",
+  "extra": "Upper two-thirds of the vagina without parametria is IIA. Lower-third involvement also adds the groin nodes to the field."
+ },
+ {
+  "id": "gynx-82",
+  "category": "Workup & Staging",
+  "front": "Does involvement of the endometrial glands of the cervix make an endometrial cancer stage II?",
+  "back": "No. Stage II requires invasion of the cervical stroma.",
+  "extra": "Deep myometrial invasion (≥50%) without stromal involvement is IB."
+ },
+ {
+  "id": "gynx-83",
+  "category": "Workup & Staging",
+  "front": "How does FIGO 2023 let molecular class change an early endometrial cancer's stage?",
+  "back": "For stage I-II only: POLE-mutated tumors are downstaged (IAmPOLEmut), and p53-abnormal tumors with myometrial invasion are upstaged (IICmp53abn).",
+  "extra": "Stage III-IV are not reclassified by molecular class."
+ },
+ {
+  "id": "gynx-84",
+  "category": "Workup & Staging",
+  "front": "What two numbers define stage IA vulvar cancer, and why does that stage matter?",
+  "back": "2 cm or smaller and 1 mm or less of invasion. Groin evaluation can be skipped because the nodal risk is under 1%.",
+  "extra": "Biopsy with a punch or wedge (not excision) so the depth can be measured on intact tissue."
+ },
+ {
+  "id": "gynx-85",
+  "category": "Workup & Staging",
+  "front": "How does node size change the stage of vulvar cancer?",
+  "back": "Nodes 5 mm or smaller = IIIA. Larger than 5 mm = IIIB. Extracapsular spread = IIIC. Fixed or ulcerated nodes = IVA.",
+  "extra": "Node status is the single most important determinant of vulvar cancer survival."
+ },
+ {
+  "id": "gynx-86",
+  "category": "Workup & Staging",
+  "front": "Before staging a tumor as a vaginal cancer, what must you rule out?",
+  "back": "That it is actually a cervical or vulvar cancer, or a metastasis",
+  "extra": "By FIGO definition, a tumor touching the cervix is cervical and one touching the vulva is vulvar. Most lesions in the vagina are secondary."
  },
  {
   "id": "gynx-59",
@@ -271,5 +425,75 @@
   "front": "What late vaginal side effect follows GYN radiation, and how is it prevented?",
   "back": "Vaginal stenosis (narrowing and dryness), prevented with regular dilator use",
   "extra": "Other late effects: ovarian failure (consider ovarian transposition in young patients), bowel/bladder injury, fistula, insufficiency fractures, lymphedema."
+ },
+ {
+  "id": "gynx-87",
+  "category": "Treatment Paradigms",
+  "front": "What did the LACC trial show about radical hysterectomy for cervical cancer?",
+  "back": "Minimally invasive (laparoscopic or robotic) surgery gave worse disease-free and overall survival than open surgery.",
+  "extra": "This is why radical hysterectomy for cervical cancer is done open."
+ },
+ {
+  "id": "gynx-88",
+  "category": "Treatment Paradigms",
+  "front": "Which trials made concurrent cisplatin standard with radiation for locally advanced cervical cancer?",
+  "back": "The 1999 cisplatin trials (GOG 85, 120, 123, RTOG 9001, SWOG 8797), which showed a substantially lower risk of death",
+  "extra": "The usual regimen is weekly cisplatin 40 mg/m² during pelvic EBRT."
+ },
+ {
+  "id": "gynx-89",
+  "category": "Treatment Paradigms",
+  "front": "What did GOG 92 and GOG 109 show after radical hysterectomy?",
+  "back": "GOG 92: pelvic RT for intermediate-risk (Sedlis) features cut recurrence roughly in half. GOG 109: adding chemo to pelvic RT for high-risk (Peters) features improved overall survival.",
+  "extra": "The two trials define the Sedlis and Peters pathways."
+ },
+ {
+  "id": "gynx-90",
+  "category": "Treatment Paradigms",
+  "front": "What happens if positive nodes are found during a planned radical hysterectomy for cervical cancer?",
+  "back": "The hysterectomy is often abandoned in favor of definitive chemoradiation, rather than finishing a morbid operation that will need chemoRT anyway.",
+  "extra": "Triple therapy (radical surgery plus chemoRT) adds toxicity without better cure."
+ },
+ {
+  "id": "gynx-91",
+  "category": "Treatment Paradigms",
+  "front": "What did KEYNOTE-A18 add for high-risk locally advanced cervical cancer?",
+  "back": "Pembrolizumab during and after chemoradiation improved progression-free and overall survival.",
+  "extra": "INTERLACE showed a short course of induction carboplatin and paclitaxel before chemoRT also improved survival."
+ },
+ {
+  "id": "gynx-92",
+  "category": "Treatment Paradigms",
+  "front": "What did PORTEC-3 and GOG 258 show for high-risk endometrial cancer?",
+  "back": "PORTEC-3: chemoRT beat RT alone, mostly in stage III and serous or p53-abnormal tumors. GOG 258: adding RT to chemo lowered vaginal and pelvic recurrences.",
+  "extra": "High-risk endometrial cancer is treated with combined modality therapy."
+ },
+ {
+  "id": "gynx-93",
+  "category": "Treatment Paradigms",
+  "front": "How is a medically inoperable endometrial cancer treated?",
+  "back": "Definitive brachytherapy ± EBRT, with MRI to define the extent",
+  "extra": "Hormonal therapy is an option for selected patients."
+ },
+ {
+  "id": "gynx-94",
+  "category": "Treatment Paradigms",
+  "front": "What did GOG 37 show for node-positive vulvar cancer?",
+  "back": "Groin and pelvic radiation beat pelvic node dissection.",
+  "extra": "GOG 205 later showed definitive chemoRT with weekly cisplatin gave high complete response rates in locally advanced disease."
+ },
+ {
+  "id": "gynx-95",
+  "category": "Treatment Paradigms",
+  "front": "How can a central pelvic recurrence of cervical cancer after prior radiation be treated for cure?",
+  "back": "Pelvic exenteration in selected patients",
+  "extra": "A pelvic recurrence after surgery alone is treated with chemoradiation ± brachytherapy."
+ },
+ {
+  "id": "gynx-96",
+  "category": "Treatment Paradigms",
+  "front": "What option protects ovarian function in a young woman having surgery who will then need pelvic radiation?",
+  "back": "Ovarian transposition: moving the ovaries out of the radiation field",
+  "extra": "Pelvic radiation otherwise causes ovarian failure and premature menopause."
  }
 ]

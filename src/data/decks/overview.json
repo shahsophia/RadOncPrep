@@ -84,6 +84,62 @@
   "extra": "Especially important for fast-growing tumors like head and neck squamous cell carcinoma."
  },
  {
+  "id": "ov-124",
+  "category": "How Radiation Works",
+  "front": "Why do tumors usually shrink over weeks to months rather than right away after radiation?",
+  "back": "Most damaged cells keep working until they try to divide, and only then does the broken DNA stop them and they die.",
+  "extra": "A scan taken the day treatment ends can make the treatment look less effective than it was."
+ },
+ {
+  "id": "ov-125",
+  "category": "How Radiation Works",
+  "front": "Why do radiation side effects happen only where the radiation goes, and which one is the exception?",
+  "back": "Radiation damages every cell in the beam's path but not cells outside it. Tiredness can appear no matter which part of the body is treated.",
+  "extra": "Pelvic radiation can cause diarrhea, but not mouth sores or hair loss on the head."
+ },
+ {
+  "id": "ov-126",
+  "category": "How Radiation Works",
+  "front": "Which tissues show acute side effects, and which show late side effects?",
+  "back": "Acute: fast-dividing tissues such as skin, mucosa, gut lining, and marrow, and they usually heal. Late: slowly renewing tissues and small vessels, and they are often permanent.",
+  "extra": "Late effects are why dose limits for healthy organs are strict."
+ },
+ {
+  "id": "ov-127",
+  "category": "How Radiation Works",
+  "front": "How much more X-ray dose do cells with no oxygen need to be killed?",
+  "back": "About two to three times as much (the oxygen enhancement ratio)",
+  "extra": "Oxygen makes DNA damage harder to repair, which is why low-oxygen tumors are harder to control."
+ },
+ {
+  "id": "ov-128",
+  "category": "How Radiation Works",
+  "front": "When a patient gets two radiation treatments in one day, how far apart are they spaced, and why?",
+  "back": "At least about six hours apart, so healthy tissue has time to repair between them",
+  "extra": "Repair is the main reason we split the dose."
+ },
+ {
+  "id": "ov-129",
+  "category": "How Radiation Works",
+  "front": "What does LET mean, and how do X-rays compare with heavy ions?",
+  "back": "Linear energy transfer: how densely a particle leaves energy along its path. X-rays and electrons are low LET; heavy ions such as carbon are high LET and depend less on oxygen.",
+  "extra": "Protons are usually counted as about 1.1 times as effective as X-rays (RBE 1.1)."
+ },
+ {
+  "id": "ov-130",
+  "category": "How Radiation Works",
+  "front": "Which tumors are unusually sensitive to radiation (sometimes called the fifth R)?",
+  "back": "Lymphoma and seminoma",
+  "extra": "That is why these cancers can be controlled with low doses."
+ },
+ {
+  "id": "ov-131",
+  "category": "How Radiation Works",
+  "front": "Why do large fractions demand very precise aim?",
+  "back": "Large fractions raise the risk of late side effects in any healthy tissue sitting in the high-dose area.",
+  "extra": "Late-responding healthy tissues have a low α/β ratio, so they are sensitive to fraction size."
+ },
+ {
   "id": "ov-90",
   "category": "Radiation Modalities",
   "front": "Do protons automatically give better results than photons?",
@@ -168,6 +224,34 @@
   "extra": ""
  },
  {
+  "id": "ov-132",
+  "category": "Radiation Modalities",
+  "front": "What is the gantry on a linear accelerator?",
+  "back": "The large arm that holds the head of the machine and rotates in a full circle around the patient, so the beam can come from any direction",
+  "extra": "The multileaf collimator in the head shapes the beam."
+ },
+ {
+  "id": "ov-133",
+  "category": "Radiation Modalities",
+  "front": "When is 3D-conformal radiation usually enough?",
+  "back": "When the target shape is simple or the goal is quick symptom relief, such as a painful bone metastasis or the whole brain",
+  "extra": "IMRT or VMAT is used when the target is complex and close to healthy organs."
+ },
+ {
+  "id": "ov-134",
+  "category": "Radiation Modalities",
+  "front": "What are the common uses of SRS, and of SBRT?",
+  "back": "SRS: brain metastases, vestibular schwannoma, and AVMs. SBRT: early-stage lung cancer, a few metastases (oligometastases), and spine metastases.",
+  "extra": "Gamma Knife and CyberKnife are names of machines that deliver stereotactic treatment."
+ },
+ {
+  "id": "ov-135",
+  "category": "Radiation Modalities",
+  "front": "What is the difference between intracavitary and interstitial brachytherapy?",
+  "back": "Intracavitary: an applicator sits inside a body cavity (such as the uterus and vagina for cervical cancer). Interstitial: needles, tubes, or seeds go directly into the tissue (such as the prostate).",
+  "extra": "LDR and HDR describe how fast the dose is given, a separate question."
+ },
+ {
   "id": "ov-96",
   "category": "How to Give a Presentation",
   "front": "At a weekly on-treatment visit, why should you look ahead rather than only record how the patient feels today?",
@@ -229,6 +313,48 @@
   "front": "What is consolidative radiation?",
   "back": "RT given after another treatment modality, usually chemotherapy, to improve control of the disease that remains (e.g., residual bulky lymphoma).",
   "extra": "Name the intent before the dose: it decides how much toxicity is acceptable and how aggressive the plan is."
+ },
+ {
+  "id": "ov-118",
+  "category": "Radiation 101",
+  "front": "What does the gray (Gy) measure, and how does it relate to the centigray (cGy)?",
+  "back": "The radiation energy absorbed by tissue. 1 Gy = 100 cGy, so 180 cGy is 1.8 Gy.",
+  "extra": "Physicists define 1 Gy as 1 joule absorbed per kilogram of tissue."
+ },
+ {
+  "id": "ov-119",
+  "category": "Radiation 101",
+  "front": "In order, what are the steps every radiation patient goes through?",
+  "back": "Consult, simulation, contouring, planning, quality assurance, treatment, weekly on-treatment visits, and follow-up",
+  "extra": "Simulation to first treatment usually takes about 1-2 weeks for a curative course, but all the steps can happen in one day in an emergency."
+ },
+ {
+  "id": "ov-120",
+  "category": "Radiation 101",
+  "front": "What does \"50.4 Gy in 28 fractions\" mean for the dose per fraction and the schedule?",
+  "back": "1.8 Gy per treatment, given once a day on weekdays, for about five and a half weeks",
+  "extra": "Divide the total dose by the number of fractions to get the dose per fraction."
+ },
+ {
+  "id": "ov-121",
+  "category": "Radiation 101",
+  "front": "What is the difference between curative and palliative intent?",
+  "back": "Curative aims to get rid of the cancer for good, accepting a longer course and more side effects. Palliative aims to relieve or prevent a symptom when cure is not possible, with short courses and minimal side effects.",
+  "extra": "Name the goal before naming a dose."
+ },
+ {
+  "id": "ov-122",
+  "category": "Radiation 101",
+  "front": "What is a tumor board?",
+  "back": "A meeting where the surgeons, medical oncologists, radiation oncologists, radiologists, and pathologists plan a patient's treatment and its order together",
+  "extra": "Many patients get more than one kind of treatment."
+ },
+ {
+  "id": "ov-123",
+  "category": "Radiation 101",
+  "front": "Who designs and checks a radiation plan after the doctor contours it?",
+  "back": "A dosimetrist and a physicist design the beams, the doctor approves the plan, and the physics team checks that the machine will deliver it as designed.",
+  "extra": "This last step is quality assurance."
  },
  {
   "id": "ov-6",
@@ -343,6 +469,41 @@
   "extra": "Then give a dose and number of fractions, your reasoning and the trial behind it, the surgery and systemic therapy around the radiation, and any patient-specific risks."
  },
  {
+  "id": "ov-136",
+  "category": "How to Give a Presentation",
+  "front": "In a Rad Onc presentation, where does the interpretation of a scan belong?",
+  "back": "In the assessment. The imaging section gives only the date, the type of scan, and the key findings.",
+  "extra": "Look at the images yourself so you can point to what you are describing."
+ },
+ {
+  "id": "ov-137",
+  "category": "How to Give a Presentation",
+  "front": "What do the c, p, and yp prefixes on a stage mean?",
+  "back": "c = clinical (exams and scans). p = pathologic (after surgery). yp = after treatment given before surgery.",
+  "extra": "Say the stage out loud in a presentation."
+ },
+ {
+  "id": "ov-138",
+  "category": "How to Give a Presentation",
+  "front": "Which pathology details belong in a Rad Onc presentation?",
+  "back": "The type of cancer, the grade, and any markers that change treatment, not the whole report",
+  "extra": "Example: mismatch-repair status in rectal cancer, because a deficient tumor may respond to immunotherapy."
+ },
+ {
+  "id": "ov-139",
+  "category": "How to Give a Presentation",
+  "front": "In the plan of a presentation, what supports your choice of dose?",
+  "back": "Your reasoning: the landmark trial behind a standard approach, or a study of similar patients when the case is not straightforward",
+  "extra": "If more than one course is reasonable, name both and say what would make you choose one over the other."
+ },
+ {
+  "id": "ov-140",
+  "category": "How to Give a Presentation",
+  "front": "What is the most common mistake in the HPI of a Rad Onc presentation?",
+  "back": "A very long chemotherapy history. Sum it up in one sentence and spend the time on what the radiation team needs to know.",
+  "extra": "Always mention any past radiation and anything that makes radiation riskier."
+ },
+ {
   "id": "ov-111",
   "category": "The Rad Onc Consult",
   "front": "At a consult, what should you ask before explaining the patient's cancer?",
@@ -362,6 +523,41 @@
   "front": "A patient receiving external beam radiation asks whether they will be radioactive around their grandchildren. What is the answer?",
   "back": "No. The radiation is on only while the machine runs, and nothing stays in the body.",
   "extra": "Some brachytherapy implants, such as permanent prostate seeds, come with specific precautions."
+ },
+ {
+  "id": "ov-141",
+  "category": "The Rad Onc Consult",
+  "front": "Why should you ask your attending before a consult what the patient has been told?",
+  "back": "So you never contradict it. Serious news, such as a cancer that cannot be cured, is usually shared by the attending.",
+  "extra": "Ask also how much they want you to do: the history only, or also start explaining the plan."
+ },
+ {
+  "id": "ov-142",
+  "category": "The Rad Onc Consult",
+  "front": "What is the ask, tell, ask rhythm in a consult?",
+  "back": "Ask what they know and want to know, tell one piece in plain words, then ask what they took from it and what questions it raised",
+  "extra": "Give one idea at a time, then pause."
+ },
+ {
+  "id": "ov-143",
+  "category": "The Rad Onc Consult",
+  "front": "Why should you avoid saying a side effect is \"rare\" or \"common\"?",
+  "back": "These words mean different things to different people. Use the same number your attending gives, such as \"about 1 in 10.\"",
+  "extra": "Formal consent, including the risks, is the attending's job."
+ },
+ {
+  "id": "ov-144",
+  "category": "The Rad Onc Consult",
+  "front": "How should you close a consult when inviting questions?",
+  "back": "Ask \"What questions do you have?\" rather than \"Any questions?\" The first invites questions; the second invites a no.",
+  "extra": "Closing also includes a short summary, teach-back, and the next steps."
+ },
+ {
+  "id": "ov-145",
+  "category": "The Rad Onc Consult",
+  "front": "What does a missed radiation treatment usually mean for the course?",
+  "back": "It is usually added at the end, but several missed days can make treatment less effective, so patients should tell the team early if getting there is hard.",
+  "extra": "Repopulation during breaks is why missed days matter, especially for head and neck and cervical cancer."
  },
  {
   "id": "ov-114",
@@ -390,5 +586,47 @@
   "front": "Why can a standard spinal cord limit be unsafe for a plan that re-treats the same area?",
   "back": "The cord already received dose from the first course, so the limit has to apply to the total (cumulative) dose.",
   "extra": "Re-treatment needs the old plan, the time since it was given, and stricter limits."
+ },
+ {
+  "id": "ov-146",
+  "category": "Treatment Planning",
+  "front": "Why does 30 Gy in 5 fractions act more strongly than 30 Gy in 10 fractions?",
+  "back": "Bigger fractions leave cells less chance to repair between treatments, so the same total dose has a stronger effect, especially on late-responding healthy tissue.",
+  "extra": "You cannot compare courses by their totals alone, or borrow a dose limit from one schedule for another."
+ },
+ {
+  "id": "ov-147",
+  "category": "Treatment Planning",
+  "front": "Why is Dmax often reported as the dose to a tiny volume such as D0.03cc?",
+  "back": "The single hottest point is a noisy number, so the dose to the hottest tiny volume is more reliable.",
+  "extra": "Dmax matters most for serial organs such as the spinal cord."
+ },
+ {
+  "id": "ov-148",
+  "category": "Treatment Planning",
+  "front": "Which dose metric matters most for a parallel organ such as the lungs or salivary glands?",
+  "back": "The mean dose (Dmean), or the volume receiving a given dose (such as lung V20)",
+  "extra": "Parallel organs can tolerate a small high-dose area if enough of the organ is spared."
+ },
+ {
+  "id": "ov-149",
+  "category": "Treatment Planning",
+  "front": "What do respiratory gating and tracking do?",
+  "back": "Gating turns the beam on only during one part of the breathing cycle. Tracking moves the beam to follow the tumor.",
+  "extra": "A 4D CT at simulation records the tumor through the whole breathing cycle so the ITV can cover it."
+ },
+ {
+  "id": "ov-150",
+  "category": "Treatment Planning",
+  "front": "Why can a plan that meets every dose goal still be the wrong plan?",
+  "back": "Dose limits are tools for judgment, not a pass-or-fail test: the plan must match the intent, the schedule, the patient, and any past radiation.",
+  "extra": "A six-week IMRT plan is wrong for a frail patient with weeks to live, and a quick palliative plan is wrong for a patient who can be cured."
+ },
+ {
+  "id": "ov-151",
+  "category": "Treatment Planning",
+  "front": "Which organ limits are treated as hard lines, and which can bend?",
+  "back": "Firm: spinal cord and brainstem, because crossing them risks paralysis or death. Flexible goals: for example, the mean dose to a salivary gland, when covering the tumor matters more.",
+  "extra": "The physician decides how much coverage to give up at an edge next to a critical organ."
  }
 ]

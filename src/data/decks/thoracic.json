@@ -28,6 +28,27 @@
   "extra": "Screening finds earlier, often small peripheral tumors, so more patients can be cured with surgery or SBRT."
  },
  {
+  "id": "thx-68",
+  "category": "Epidemiology & Risk Factors",
+  "front": "What is the leading cause of lung cancer in people who have never smoked?",
+  "back": "Radon, a radioactive gas from soil that collects in basements",
+  "extra": "Never-smoker lung cancer is usually adenocarcinoma and should make you think about a targetable driver such as EGFR or ALK."
+ },
+ {
+  "id": "thx-69",
+  "category": "Epidemiology & Risk Factors",
+  "front": "How does asbestos exposure interact with smoking for lung cancer risk?",
+  "back": "It multiplies the risk rather than simply adding to it.",
+  "extra": "Asbestos also causes mesothelioma. Other occupational exposures include silica, arsenic, chromium, nickel, and diesel exhaust."
+ },
+ {
+  "id": "thx-70",
+  "category": "Epidemiology & Risk Factors",
+  "front": "Which paraneoplastic syndromes point to small cell lung cancer?",
+  "back": "SIADH (hyponatremia), ectopic ACTH (Cushing syndrome), and Lambert-Eaton syndrome",
+  "extra": "Squamous cell causes PTHrP-mediated hypercalcemia. Adenocarcinoma is linked to clubbing (hypertrophic pulmonary osteoarthropathy) and hypercoagulability."
+ },
+ {
   "id": "thx-55",
   "category": "Anatomy & Lymphatics",
   "front": "Which lung tumors move the most with breathing, and why does that matter for radiation?",
@@ -63,6 +84,34 @@
   "extra": "The same node with a left upper lobe tumor would be N2. Station 7 is the opposite trap: it is always N2, whichever side the tumor is on. N3 is still regional (stage III), so the patient can be treated for cure."
  },
  {
+  "id": "thx-71",
+  "category": "Anatomy & Lymphatics",
+  "front": "Where does a right upper lobe tumor usually drain, compared with a left upper lobe tumor?",
+  "back": "Right upper lobe: hilar 10R, then right paratracheal 4R and 2R. Left upper lobe: the AP window and para-aortic nodes (stations 5 and 6), then 4L.",
+  "extra": "Lower lobes on either side drain to stations 7, 8, and 9, and left lower lobe tumors can cross to the right paratracheal nodes."
+ },
+ {
+  "id": "thx-72",
+  "category": "Anatomy & Lymphatics",
+  "front": "Why does a normal-looking hilum not rule out mediastinal nodal disease?",
+  "back": "Skip metastases (N2 nodes without N1 involvement) are not rare.",
+  "extra": "This is one reason suspicious mediastinal nodes need tissue even when the hilum looks clean."
+ },
+ {
+  "id": "thx-73",
+  "category": "Anatomy & Lymphatics",
+  "front": "A patient has a biopsy-proven supraclavicular node. What N stage is it, and can the patient still be cured?",
+  "back": "N3 on either side. It is still regional disease (stage III, not M1), so curative chemoradiation remains an option.",
+  "extra": "Station 1 is the low cervical and supraclavicular station."
+ },
+ {
+  "id": "thx-74",
+  "category": "Anatomy & Lymphatics",
+  "front": "Which mediastinal nodal stations can EBUS not reach, and how are they sampled instead?",
+  "back": "Stations 5 and 6 (AP window and para-aortic), sampled by a Chamberlain procedure or VATS",
+  "extra": "EBUS reaches 2, 4, 7, 10, and 11. EUS through the esophagus adds the lower stations (8 and 9). Mediastinoscopy is used when EBUS is negative but suspicion remains."
+ },
+ {
   "id": "thx-56",
   "category": "Imaging",
   "front": "What does FDG PET/CT add to lung cancer staging?",
@@ -96,6 +145,48 @@
   "front": "A mass-like opacity appears at the lung SBRT site months after treatment. What is it most likely, and when should recurrence be suspected?",
   "back": "Usually expected radiation fibrosis, which follows the high-dose region and then stabilizes. Suspect recurrence if a mass-like opacity is new or keeps enlarging after the early post-treatment period; that may prompt PET/CT and/or biopsy.",
   "extra": "Other worrisome signs: a bulging margin or loss of air bronchograms. Calling recurrence too early leads to unnecessary procedures."
+ },
+ {
+  "id": "thx-75",
+  "category": "Imaging",
+  "front": "What scan separates tumor from collapsed lung (atelectasis) when drawing the GTV?",
+  "back": "FDG PET/CT: the tumor is avid, and the atelectatic lung is not.",
+  "extra": "PET also shows which nodes belong in the target for stage III chemoradiation."
+ },
+ {
+  "id": "thx-76",
+  "category": "Imaging",
+  "front": "Why can FDG PET not be used to look for brain metastases?",
+  "back": "Normal brain is always FDG-avid, so metastases are hidden. A contrast brain MRI is used instead.",
+  "extra": "Brain metastases enhance, sit at the gray-white junction, and bring vasogenic edema."
+ },
+ {
+  "id": "thx-77",
+  "category": "Imaging",
+  "front": "In a part-solid lung nodule, which part sets the T stage?",
+  "back": "Only the solid part. The ground-glass part is usually non-invasive growth, and the solid part is the invasive tumor.",
+  "extra": "The classic progression is ground glass, then part-solid, then solid."
+ },
+ {
+  "id": "thx-78",
+  "category": "Imaging",
+  "front": "Which lung tumors can be falsely negative on PET?",
+  "back": "Ground-glass adenocarcinomas, carcinoid tumors, and very small nodules",
+  "extra": "Just as hot does not always mean cancer, cold does not always mean benign."
+ },
+ {
+  "id": "thx-79",
+  "category": "Imaging",
+  "front": "What extra scan does a superior sulcus (Pancoast) tumor need, and why?",
+  "back": "MRI of the chest (thoracic inlet and spine), because it shows the brachial plexus, subclavian vessels, neural foramina, and vertebral body better than CT",
+  "extra": "It decides resectability and what the radiation volume must include and avoid."
+ },
+ {
+  "id": "thx-80",
+  "category": "Imaging",
+  "front": "How is a lung nodule on a screening CT triaged?",
+  "back": "With Lung-RADS: low risk returns to annual CT, intermediate gets a short-interval CT, and suspicious goes to PET/CT or biopsy.",
+  "extra": "Features that favor cancer: growth, spiculation, larger size, part-solid texture, and upper lobe location."
  },
  {
   "id": "thx-57",
@@ -173,6 +264,55 @@
   "front": "What is the difference between stage, resectability, and operability in lung cancer?",
   "back": "Stage = how far the disease has spread. Resectability = whether surgery can achieve an appropriate oncologic resection with acceptable morbidity (the tumor's anatomy and nodal burden). Operability = whether this patient can tolerate the operation.",
   "extra": "A stage IIIA patient can be surgical or unresectable; a stage IA tumor can be resectable but inoperable (then SBRT). Tumor board decides surgery-based treatment vs definitive chemoradiation."
+ },
+ {
+  "id": "thx-81",
+  "category": "Workup & Staging",
+  "front": "How do predicted postoperative FEV1 and DLCO guide surgery vs SBRT in early-stage NSCLC?",
+  "back": "Both over about 60%: low risk, proceed to surgery. Between about 30% and 60%: exercise testing. Under about 30%: high surgical risk, which favors SBRT.",
+  "extra": "Predicted postoperative means the lung function left after the planned resection."
+ },
+ {
+  "id": "thx-82",
+  "category": "Workup & Staging",
+  "front": "A 2.5 cm tumor invades the visceral pleura. What is the T stage?",
+  "back": "T2. Visceral pleural invasion upstages a tumor that would be T1 by size.",
+  "extra": "Always check for invasion before locking in T from size. Invasion beats size."
+ },
+ {
+  "id": "thx-83",
+  "category": "Workup & Staging",
+  "front": "A tumor invades the phrenic nerve. Another invades the recurrent laryngeal nerve. What are their T stages?",
+  "back": "Phrenic nerve = T3. Recurrent laryngeal nerve = T4.",
+  "extra": "Phrenic nerve palsy shows up as an elevated hemidiaphragm. Recurrent laryngeal nerve palsy causes hoarseness, usually from the left nerve in the AP window."
+ },
+ {
+  "id": "thx-84",
+  "category": "Workup & Staging",
+  "front": "What separates M1a, M1b, and M1c in lung cancer?",
+  "back": "M1a = spread within the chest (contralateral lung nodule, pleural or pericardial nodules or effusion). M1b = a single extrathoracic metastasis. M1c = multiple extrathoracic metastases.",
+  "extra": "A patient with one or a few metastases may still get aggressive local therapy alongside systemic therapy."
+ },
+ {
+  "id": "thx-85",
+  "category": "Workup & Staging",
+  "front": "How does the N stage change the treatment approach for NSCLC?",
+  "back": "N0: local therapy (surgery or SBRT). N1: multimodality therapy. N2 or N3: a major change in both the local and the systemic strategy.",
+  "extra": "This is why the nodes are often the biggest treatment switch, more than the size of the primary."
+ },
+ {
+  "id": "thx-86",
+  "category": "Workup & Staging",
+  "front": "What is the difference between N2a and N2b?",
+  "back": "N2a = a single ipsilateral mediastinal or subcarinal station. N2b = multiple ipsilateral mediastinal stations.",
+  "extra": "AJCC 9th edition split N2 because the number of stations carries prognostic weight and comes up in resectability discussions."
+ },
+ {
+  "id": "thx-87",
+  "category": "Workup & Staging",
+  "front": "A patient with lung cancer has a pleural effusion. What is the next step, and why does it matter?",
+  "back": "Thoracentesis. A malignant effusion is M1a (stage IV), which changes the goal of treatment.",
+  "extra": "In small cell lung cancer, a malignant effusion makes the disease extensive stage."
  },
  {
   "id": "thx-59",
@@ -306,5 +446,96 @@
   "front": "What is the backbone treatment for extensive-stage small cell lung cancer, and when is thoracic RT added?",
   "back": "Platinum/etoposide plus immunotherapy (atezolizumab or durvalumab). Consolidative thoracic RT is added for good responders.",
   "extra": "IMpower133 and CASPIAN set the chemo-immunotherapy standard. Palliative RT for symptoms."
+ },
+ {
+  "id": "thx-88",
+  "category": "Treatment Paradigms",
+  "front": "For which early-stage NSCLC patients is segmentectomy an accepted alternative to lobectomy?",
+  "back": "Small (≤2 cm) peripheral, node-negative tumors",
+  "extra": "CALGB 140503 showed sublobar resection was noninferior to lobectomy, and JCOG0802 showed better overall survival with segmentectomy."
+ },
+ {
+  "id": "thx-89",
+  "category": "Treatment Paradigms",
+  "front": "What did RTOG 0236 show?",
+  "back": "SBRT for medically inoperable peripheral stage I NSCLC controlled the primary tumor in nearly all patients at 3 years.",
+  "extra": "A typical peripheral regimen is 54 Gy in 3 fractions."
+ },
+ {
+  "id": "thx-90",
+  "category": "Treatment Paradigms",
+  "front": "What is the \"no-fly zone\" in lung SBRT, and which trial created the idea?",
+  "back": "The region around the proximal bronchial tree, where 3-fraction SBRT caused severe toxicity in the Indiana phase II trial (Timmerman)",
+  "extra": "RTOG 0813 then showed central tumors tolerated 5-fraction SBRT (for example, 50 Gy in 5) with high local control."
+ },
+ {
+  "id": "thx-91",
+  "category": "Treatment Paradigms",
+  "front": "What did the HILUS trial teach about SBRT next to the main bronchi and trachea?",
+  "back": "It caused a high rate of fatal toxicity, mostly bleeding, so ultracentral tumors need individualized fractionation built around organ limits.",
+  "extra": "Organ limits are respected even if part of the PTV is underdosed."
+ },
+ {
+  "id": "thx-92",
+  "category": "Treatment Paradigms",
+  "front": "What is the main toxicity risk when SBRT treats a tumor that abuts the chest wall?",
+  "back": "Chest wall pain and rib fracture",
+  "extra": "SBRT is still standard. More fractions may be used to reduce the risk."
+ },
+ {
+  "id": "thx-93",
+  "category": "Treatment Paradigms",
+  "front": "What did the PACIFIC trial show?",
+  "back": "Consolidation durvalumab for 12 months after concurrent chemoradiation improved survival in unresectable stage III NSCLC.",
+  "extra": "LAURA showed that osimertinib replaces durvalumab for EGFR-mutant tumors."
+ },
+ {
+  "id": "thx-94",
+  "category": "Treatment Paradigms",
+  "front": "A stage III NSCLC patient cannot tolerate concurrent chemotherapy. What are the options?",
+  "back": "Sequential chemotherapy then radiation, or radiation alone",
+  "extra": "Concurrent chemoradiation is preferred for fit patients because it beats sequential treatment."
+ },
+ {
+  "id": "thx-95",
+  "category": "Treatment Paradigms",
+  "front": "What did LungART show about postoperative radiation (PORT)?",
+  "back": "PORT after complete resection of N2 disease did not improve disease-free survival and added heart and lung toxicity.",
+  "extra": "PORT is reserved for a positive margin."
+ },
+ {
+  "id": "thx-96",
+  "category": "Treatment Paradigms",
+  "front": "How does the target for stage III chemoradiation differ from the target for early-stage SBRT?",
+  "back": "Stage III adds the involved nodes and a CTV margin for microscopic spread. SBRT treats only the primary tumor (GTV to ITV to PTV), with no CTV expansion and no nodes.",
+  "extra": "Neither approach includes routine elective nodal irradiation in NSCLC."
+ },
+ {
+  "id": "thx-97",
+  "category": "Treatment Paradigms",
+  "front": "Which trial established twice-daily thoracic radiation for limited-stage small cell lung cancer, and what was the dose?",
+  "back": "Turrisi: 45 Gy in 30 twice-daily fractions beat once-daily radiation to the same dose.",
+  "extra": "CONVERT then found a higher once-daily dose (66 Gy in 33) about equal to twice-daily treatment."
+ },
+ {
+  "id": "thx-98",
+  "category": "Treatment Paradigms",
+  "front": "What did the ADRIATIC trial add to limited-stage small cell lung cancer?",
+  "back": "Consolidation durvalumab after chemoradiation improved survival.",
+  "extra": "Limited-stage small cell is now treated with platinum/etoposide and early concurrent thoracic radiation, then durvalumab, plus a brain plan."
+ },
+ {
+  "id": "thx-99",
+  "category": "Treatment Paradigms",
+  "front": "Which lung dose metrics are checked to limit pneumonitis on a conventionally fractionated plan, and what are typical goals?",
+  "back": "Lung V20 under about 30-35% and mean lung dose under about 20 Gy",
+  "extra": "Other common goals: esophagus mean under about 34 Gy, spinal cord max under about 45-50 Gy, and heart mean as low as reasonably achievable."
+ },
+ {
+  "id": "thx-100",
+  "category": "Treatment Paradigms",
+  "front": "Why does heart dose matter in stage III lung radiation?",
+  "back": "In RTOG 0617, higher heart dose predicted worse survival, so cardiac toxicity can affect survival, not just quality of life.",
+  "extra": "The heart mean dose is kept as low as reasonably achievable, often under about 20 Gy."
  }
 ]

@@ -21,6 +21,34 @@
   "extra": "Salt-preserved fish is the classic dietary risk factor. Endemic disease is the nonkeratinizing, undifferentiated type with the best prognosis. Plasma EBV DNA is used for prognosis and response monitoring in NPC."
  },
  {
+  "id": "hn-61",
+  "category": "Epidemiology & Risk Factors",
+  "front": "Why is p16 staining used as the test for HPV in oropharynx cancer?",
+  "back": "High-risk HPV's E7 protein inactivates pRb, which normally keeps p16 turned down, so p16 becomes overexpressed and shows up on a simple immunostain.",
+  "extra": "HPV-negative tumors are driven by p53 mutation instead."
+ },
+ {
+  "id": "hn-62",
+  "category": "Epidemiology & Risk Factors",
+  "front": "Does p16 positivity change the staging of an oral tongue cancer?",
+  "back": "No. p16 only counts in the oropharynx (and unknown primaries with a neck node). A p16-positive oral tongue cancer is staged as oral cavity.",
+  "extra": "Always identify the subsite before choosing the staging system."
+ },
+ {
+  "id": "hn-63",
+  "category": "Epidemiology & Risk Factors",
+  "front": "Which oral lesions are premalignant, and how should a nonhealing one be handled?",
+  "back": "Leukoplakia (white patch) and erythroplakia (red patch). Any nonhealing white or red lesion gets a biopsy, not reassurance.",
+  "extra": "Field cancerization in smokers means second primaries happen, so examine the whole mouth."
+ },
+ {
+  "id": "hn-64",
+  "category": "Epidemiology & Risk Factors",
+  "front": "What blood test is used as a tumor marker in nasopharyngeal carcinoma?",
+  "back": "Plasma EBV DNA, for staging and for following response",
+  "extra": "EBER testing on the biopsy confirms EBV-related tumor."
+ },
+ {
   "id": "hn-7",
   "category": "Anatomy",
   "front": "Which landmark divides the oral tongue from the base of tongue, and why does that line matter?",
@@ -70,6 +98,55 @@
   "extra": "Masticator space invasion is T4b (generally unresectable) in the oral cavity. Retromolar trigone tumors reach the pterygoids early."
  },
  {
+  "id": "hn-65",
+  "category": "Anatomy",
+  "front": "Which oral cavity subsite sits right on bone and invades the mandible early?",
+  "back": "The gingiva (alveolar ridge)",
+  "extra": "Bone invasion is T4a only if it goes through cortical bone, not superficial erosion of a tooth socket."
+ },
+ {
+  "id": "hn-66",
+  "category": "Anatomy",
+  "front": "A patient with oral tongue cancer has a numb anterior tongue. What does that suggest, and what should you order?",
+  "back": "Perineural invasion along the lingual nerve (CN V3). Get an MRI for perineural spread.",
+  "extra": "PNI can track back toward the foramen ovale and skull base, so the radiation field may follow the nerve."
+ },
+ {
+  "id": "hn-67",
+  "category": "Anatomy",
+  "front": "Ear pain with a normal ear exam in a tonsil cancer is referred along which nerve?",
+  "back": "The glossopharyngeal nerve (CN IX), which supplies both the tonsil and the middle ear",
+  "extra": "In supraglottic or hypopharyngeal cancer, referred otalgia travels along the vagus (CN X)."
+ },
+ {
+  "id": "hn-68",
+  "category": "Anatomy",
+  "front": "Which cranial nerves are at risk when nasopharyngeal carcinoma spreads back into the parapharyngeal (retrostyloid) space?",
+  "back": "CN IX, X, XI, XII and the sympathetic chain: hoarseness, dysphagia, shoulder weakness, tongue deviation, and Horner syndrome",
+  "extra": "Spread up into the cavernous sinus threatens CN III, IV, V1, V2, and VI."
+ },
+ {
+  "id": "hn-69",
+  "category": "Anatomy",
+  "front": "What are the three compartments of the larynx, and which presents earliest?",
+  "back": "Supraglottis, glottis, and subglottis. Glottic cancer presents earliest, with hoarseness.",
+  "extra": "Supraglottic cancer presents late with dysphagia or a neck mass. Subglottic cancer causes stridor."
+ },
+ {
+  "id": "hn-70",
+  "category": "Anatomy",
+  "front": "What does a fixed vocal cord do to the T stage of a larynx cancer?",
+  "back": "Makes it T3",
+  "extra": "Impaired (not fixed) cord mobility is T2. Paraglottic or pre-epiglottic space invasion is also T3."
+ },
+ {
+  "id": "hn-71",
+  "category": "Anatomy",
+  "front": "Which neck nerve crosses levels IIb and V, and what does its injury cause?",
+  "back": "The spinal accessory nerve (CN XI): shoulder drop, weak abduction, and winged scapula",
+  "extra": "The hypoglossal nerve (CN XII) crosses level II above the carotid bifurcation; injury makes the tongue deviate toward the injured side."
+ },
+ {
   "id": "hn-11",
   "category": "Lymph Nodes",
   "front": "Which landmarks divide neck levels II, III, and IV?",
@@ -112,6 +189,41 @@
   "extra": "The PTV adds a small margin around the CTVs for daily setup variation."
  },
  {
+  "id": "hn-72",
+  "category": "Lymph Nodes",
+  "front": "Which neck level contains the Delphian node, and when is it covered?",
+  "back": "Level VI (central compartment). It is covered when there is subglottic extension.",
+  "extra": "Level VI runs from the hyoid to the sternal notch, between the carotids."
+ },
+ {
+  "id": "hn-73",
+  "category": "Lymph Nodes",
+  "front": "Which primaries drain to level Ia (submental)?",
+  "back": "The lower lip, anterior oral tongue, and anterior floor of mouth",
+  "extra": "Level Ib (submandibular) is at risk from most oral cavity sites. The hard palate drains to II-IV, not level I."
+ },
+ {
+  "id": "hn-74",
+  "category": "Lymph Nodes",
+  "front": "What is the usual nodal drainage order for oral cavity cancer?",
+  "back": "Level I, then II, then III",
+  "extra": "Oropharynx follows II, III, IV plus the retropharyngeal nodes. Nasopharynx goes to the retropharyngeal nodes, II, and V on both sides."
+ },
+ {
+  "id": "hn-75",
+  "category": "Lymph Nodes",
+  "front": "Which head and neck primaries usually need both sides of the neck treated?",
+  "back": "Midline or near-midline primaries: base of tongue, soft palate, posterior pharyngeal wall, supraglottis, and nasopharynx, plus any patient with bilateral nodes",
+  "extra": "A well-lateralized tonsil or oral cavity cancer can often be treated to one side."
+ },
+ {
+  "id": "hn-76",
+  "category": "Lymph Nodes",
+  "front": "About what dose do elective neck levels receive compared with gross disease?",
+  "back": "About 50-56 Gy for elective levels, compared with about 70 Gy to gross disease",
+  "extra": "Microscopic disease takes less dose to control."
+ },
+ {
   "id": "hn-21",
   "category": "Imaging",
   "front": "Why is CT, rather than MRI, the standard for staging larynx cancer?",
@@ -145,6 +257,41 @@
   "front": "An adult has a cystic level II neck node and no obvious primary. What diagnosis must be ruled out?",
   "back": "HPV-positive oropharynx cancer (often a small or hidden tonsil or base of tongue primary)",
   "extra": "Do not call a cystic neck node in an adult a benign branchial cleft cyst until this is excluded."
+ },
+ {
+  "id": "hn-77",
+  "category": "Imaging",
+  "front": "What is the earliest imaging sign of nasopharyngeal carcinoma?",
+  "back": "Effacement (filling in) of the fossa of Rosenmüller",
+  "extra": "MRI is the study of choice for skull base, cavernous sinus, and perineural extension."
+ },
+ {
+  "id": "hn-78",
+  "category": "Imaging",
+  "front": "Why is MRI preferred over CT for staging the oral cavity primary?",
+  "back": "Depth of invasion, the biggest driver of oral cavity T stage, is a soft-tissue measurement.",
+  "extra": "CT is better for cortical erosion of the mandible."
+ },
+ {
+  "id": "hn-79",
+  "category": "Imaging",
+  "front": "When is PET/CT done after head and neck chemoradiation, and what can a negative scan spare?",
+  "back": "About 12 weeks after treatment. A negative scan can spare a planned neck dissection.",
+  "extra": "Active tumor is FDG-avid, while scar usually is not."
+ },
+ {
+  "id": "hn-80",
+  "category": "Imaging",
+  "front": "What MRI signs suggest perineural spread?",
+  "back": "Nerve thickening, foraminal widening, loss of perineural fat, and abnormal nerve enhancement",
+  "extra": "Perineural spread is visible on imaging, unlike microscopic perineural invasion seen only on pathology. It most often follows CN V and VII."
+ },
+ {
+  "id": "hn-81",
+  "category": "Imaging",
+  "front": "Which imaging findings suggest extranodal extension, and can imaging confirm it?",
+  "back": "Loss of the fat plane around the node, irregular capsular enhancement, and ill-defined margins. Only pathology confirms it.",
+  "extra": "ENE on pathology is one of the two indications for postoperative chemoradiation."
  },
  {
   "id": "hn-13",
@@ -201,6 +348,41 @@
   "front": "In larynx cancer, what makes a tumor T3 vs T4a?",
   "back": "T3 = a fixed vocal cord (or paraglottic/pre-epiglottic space or inner thyroid cartilage invasion). T4a = through the outer thyroid cartilage or outside the larynx.",
   "extra": "Cord mobility is checked on scope; cartilage invasion is judged on CT."
+ },
+ {
+  "id": "hn-82",
+  "category": "Workup & Staging",
+  "front": "What extra workup does a nasopharyngeal carcinoma need?",
+  "back": "Nasopharyngoscopy with biopsy (with EBV/EBER testing), MRI of the skull base, and plasma EBV DNA",
+  "extra": "A larynx or hypopharynx cancer instead adds direct laryngoscopy under anesthesia to assess cord mobility and the airway."
+ },
+ {
+  "id": "hn-83",
+  "category": "Workup & Staging",
+  "front": "What does T0 mean in p16-positive oropharynx cancer?",
+  "back": "A p16-positive neck node with no primary found",
+  "extra": "In the nasopharynx, T0 means an EBV-positive neck node with no primary found."
+ },
+ {
+  "id": "hn-84",
+  "category": "Workup & Staging",
+  "front": "How is pathologic N stage assigned for p16-positive oropharynx cancer after surgery?",
+  "back": "By node count: 1-4 positive nodes = pN1, 5 or more = pN2",
+  "extra": "Clinical N uses laterality and the 6 cm cutoff. ENE is not used in the p16-positive system."
+ },
+ {
+  "id": "hn-85",
+  "category": "Workup & Staging",
+  "front": "How does microscopic ENE found after surgery change the N stage in non-HPV head and neck cancer?",
+  "back": "It shifts N up: a single ipsilateral node ≤3 cm with ENE becomes pN2a, and larger, multiple, or contralateral nodes with ENE become pN3b.",
+  "extra": "Whatever the stage, ENE on pathology means adding chemo to postoperative radiation."
+ },
+ {
+  "id": "hn-86",
+  "category": "Workup & Staging",
+  "front": "Which head and neck site has the worst prognosis, and why?",
+  "back": "The hypopharynx, because it presents late, usually with nodes",
+  "extra": "It follows the same larynx-preservation logic as the larynx."
  },
  {
   "id": "hn-31",
@@ -292,5 +474,61 @@
   "front": "Dose to which structure is most linked to long-term dysphagia after head and neck RT?",
   "back": "The pharyngeal constrictors",
   "extra": "Parallel links to know: parotids drive xerostomia, the mandible drives osteoradionecrosis risk."
+ },
+ {
+  "id": "hn-87",
+  "category": "Treatment Paradigms",
+  "front": "Why is the neck dissected in oral cavity cancer even when it looks clinically negative?",
+  "back": "Occult nodes are common once the tumor is more than a few millimeters deep. The Tata Memorial trial showed elective neck dissection improved survival over watching the neck.",
+  "extra": "Sentinel node biopsy is an option for selected early tumors."
+ },
+ {
+  "id": "hn-88",
+  "category": "Treatment Paradigms",
+  "front": "What did RTOG 9501 and EORTC 22931 show?",
+  "back": "Adding cisplatin to postoperative RT helped high-risk patients, and the pooled analysis found a consistent benefit only for ENE and/or positive margins.",
+  "extra": "Other adverse features (PNI, LVSI, pT3-T4, pN2-3, close margins) get postoperative RT alone."
+ },
+ {
+  "id": "hn-89",
+  "category": "Treatment Paradigms",
+  "front": "What did RTOG 1016 and De-ESCALaTE show for HPV-positive oropharynx cancer?",
+  "back": "Swapping cisplatin for cetuximab gave worse survival and more recurrences, without meaningfully less toxicity.",
+  "extra": "This is why HPV-positive disease is not de-escalated off trial."
+ },
+ {
+  "id": "hn-90",
+  "category": "Treatment Paradigms",
+  "front": "What did the VA Larynx trial and RTOG 91-11 show?",
+  "back": "VA Larynx: induction chemo then RT matched laryngectomy for survival, and about two-thirds kept their larynx. RTOG 91-11: concurrent cisplatin-RT gave the best larynx preservation, with similar overall survival.",
+  "extra": "A preserved larynx that cannot protect the airway or allow swallowing is not a success."
+ },
+ {
+  "id": "hn-91",
+  "category": "Treatment Paradigms",
+  "front": "How is early (T1-T2 N0) glottic cancer treated?",
+  "back": "Definitive RT to the larynx alone (no elective neck) or transoral larynx-preserving surgery",
+  "extra": "Early supraglottic cancer instead needs both sides of the neck treated."
+ },
+ {
+  "id": "hn-92",
+  "category": "Treatment Paradigms",
+  "front": "How is a T4a larynx cancer treated?",
+  "back": "Total laryngectomy with neck dissection, then postoperative RT or chemoradiation",
+  "extra": "Chemoradiation is reserved for selected patients who decline surgery."
+ },
+ {
+  "id": "hn-93",
+  "category": "Treatment Paradigms",
+  "front": "What did PARSPORT show?",
+  "back": "Parotid-sparing IMRT caused much less xerostomia than conventional RT, without worse tumor control.",
+  "extra": "The submandibular glands also make saliva, especially at rest."
+ },
+ {
+  "id": "hn-94",
+  "category": "Treatment Paradigms",
+  "front": "Which thyroid test is followed after neck radiation, and why?",
+  "back": "TSH, because hypothyroidism is a common late effect of neck radiation",
+  "extra": "Other late effects include xerostomia, dysphagia, trismus, fibrosis, dental caries, and hearing loss (especially with cisplatin)."
  }
 ]
