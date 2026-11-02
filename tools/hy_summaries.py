@@ -302,10 +302,10 @@ HY = {
 ],
 "Palliative Radiation": [
  "For an uncomplicated painful bone metastasis, 8 Gy in 1, 20 Gy in 5, and 30 Gy in 10 relieve pain about equally, but retreatment is about twice as common after a single fraction.",
- "Higher dose is not automatically better pain relief: 24 Gy in 2 beat 20 Gy in 5 in SC.24, but single-fraction SBRT did worse than 8 Gy in 1 in RTOG 0631.",
- "SBRT is mainly for durable local control in selected patients with a good prognosis, radioresistant tumors, oligometastatic disease, or re-irradiation.",
- "The Gillespie phase II trial found that radiating asymptomatic high-risk bone metastases in polymetastatic patients reduced skeletal-related events, but it needs phase III confirmation before it becomes routine.",
- "SABR-COMET suggested a survival benefit from treating a few metastases in selected patients, while NRG-BR002 found no benefit in oligometastatic breast cancer.",
+ "Spine SBRT is for durable local control in selected patients, and higher dose is not automatically better pain relief: 24 Gy in 2 beat 20 Gy in 5 in SC.24, but single-fraction SBRT did worse than 8 Gy in 1 in RTOG 0631.",
+ "The Gillespie phase II trial found that radiating asymptomatic high-risk bone metastases in polymetastatic patients reduced skeletal-related events, but it does not apply to every asymptomatic lesion.",
+ "Metastasis-directed SBRT for oligometastatic disease helped in SABR-COMET, but the benefit varies by cancer type and setting.",
+ "Near the end of life, weigh prognosis, performance status, travel, and the time radiation needs to work, and consider one fraction or none.",
 ],
 "Oncologic Emergencies": [
  "Radiation is rarely the first step in an emergency: steroids, imaging, a surgeon, a stent, resuscitation, or a biopsy often come first.",
