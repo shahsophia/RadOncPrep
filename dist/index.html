@@ -1,6 +1,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Radoncprep</title>
+<title>RadOncPrep</title>
 <meta name="description" content="An independent, structured guide for medical students on a radiation oncology rotation or Sub-I: how radiation oncology works, presenting patients, the major disease sites, clinical cases, and high-yield flashcards.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -2893,9 +2893,9 @@ html:has(body.on-home){scroll-snap-type:y proximity;scroll-padding-top:var(--nav
     <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Open menu and contents" aria-expanded="false" aria-controls="sidebar" title="Menu and contents">
       <span class="edge-toggle-bars"><span></span><span></span><span></span></span>
     </button>
-    <button class="brand" id="brand-home" aria-label="Radoncprep, home">
+    <button class="brand" id="brand-home" aria-label="RadOncPrep, home">
       <span class="brand-dot" aria-hidden="true"></span>
-      <span class="brand-name">Radoncprep</span>
+      <span class="brand-name">RadOncPrep</span>
     </button>
     <nav class="primary-nav" id="primary-nav" aria-label="Primary">
       <div class="pn-item has-mega" data-mega="learn">
@@ -2938,7 +2938,7 @@ html:has(body.on-home){scroll-snap-type:y proximity;scroll-padding-top:var(--nav
     <!-- HERO: what this is and who it is for -->
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow">Radoncprep</p>
+        <p class="eyebrow">RadOncPrep</p>
         <h1 class="hero-title" id="hero-title">The practical guide to succeeding on a radiation oncology rotation.</h1>
         <p class="hero-sub">A guide for medical students to understanding radiation oncology, presenting patients, learning the major disease sites, and becoming useful on service.</p>
         <p class="hero-audience">Built for medical students and Sub-Is on radiation oncology rotations. You do not need to know everything about the field. You need a framework for the patients you see.</p>
@@ -3294,8 +3294,8 @@ html:has(body.on-home){scroll-snap-type:y proximity;scroll-padding-top:var(--nav
     <div class="page-wrap">
       <header class="page-head">
         <p class="eyebrow">About</p>
-        <h1 class="page-title">About Radoncprep</h1>
-        <p class="page-lede">Radoncprep was created as an independent educational resource to make the radiation oncology rotation more structured, approachable, and clinically useful for medical students and junior trainees.</p>
+        <h1 class="page-title">About RadOncPrep</h1>
+        <p class="page-lede">RadOncPrep was created as an independent educational resource to make the radiation oncology rotation more structured, approachable, and clinically useful for medical students and junior trainees.</p>
       </header>
 
       <section class="page-section" aria-labelledby="ab-why-title">
@@ -3321,7 +3321,7 @@ html:has(body.on-home){scroll-snap-type:y proximity;scroll-padding-top:var(--nav
       <section class="page-section" id="independence" aria-labelledby="ab-ind-title">
         <h2 class="page-h2" id="ab-ind-title">Independence</h2>
         <div class="notice">
-          <p>Radoncprep is an independent educational resource and is not affiliated with or endorsed by Jefferson Health, Sidney Kimmel Medical College, ASTRO, NCCN, or any other institution unless otherwise stated.</p>
+          <p>RadOncPrep is an independent educational resource and is not affiliated with or endorsed by Jefferson Health, Sidney Kimmel Medical College, ASTRO, NCCN, or any other institution unless otherwise stated.</p>
           <p>Educational use only. This resource is intended for medical education and should not be used as a substitute for clinical judgment, institutional protocols, or current professional guidelines.</p>
         </div>
       </section>
@@ -3340,7 +3340,7 @@ html:has(body.on-home){scroll-snap-type:y proximity;scroll-padding-top:var(--nav
       <div class="sf-brand">
         <span class="brand-dot" aria-hidden="true"></span>
         <div>
-          <div class="sf-name">Radoncprep</div>
+          <div class="sf-name">RadOncPrep</div>
           <p class="sf-tag">Independent medical education resource.</p>
         </div>
       </div>
@@ -4175,7 +4175,7 @@ function buildSearchIndex(){
         go: () => { openResources(); const d = document.getElementById("sources-" + svc.id); if(d){ d.open = true; scrollToAnchor(d.id); } } });
     }
   }
-  idx.push({ title: "About Radoncprep", where: "About", kind: "Page", raw: "about independent educational resource disclaimer philosophy", go: openAbout });
+  idx.push({ title: "About RadOncPrep", where: "About", kind: "Page", raw: "about independent educational resource disclaimer philosophy", go: openAbout });
   for(const item of idx){ item.raw = strip(item.raw); item.text = item.raw.toLowerCase(); }
   return idx;
 }

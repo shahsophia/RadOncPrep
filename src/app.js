@@ -689,7 +689,7 @@ function buildSearchIndex(){
         go: () => { openResources(); const d = document.getElementById("sources-" + svc.id); if(d){ d.open = true; scrollToAnchor(d.id); } } });
     }
   }
-  idx.push({ title: "About Radoncprep", where: "About", kind: "Page", raw: "about independent educational resource disclaimer philosophy", go: openAbout });
+  idx.push({ title: "About RadOncPrep", where: "About", kind: "Page", raw: "about independent educational resource disclaimer philosophy", go: openAbout });
   for(const item of idx){ item.raw = strip(item.raw); item.text = item.raw.toLowerCase(); }
   return idx;
 }
